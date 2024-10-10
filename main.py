@@ -160,6 +160,51 @@ class EasyApplyBot:
         else:
             df = pd.DataFrame(columns=["Question", "Answer"])
             df.to_csv(self.qa_file, index=False, encoding='utf-8')
+
+    def browser_options(self):
+        """
+        Configures Chrome browser options for the web driver, including settings for window size, 
+        security, sandboxing, and user profile management.
+
+        Returns:
+            options (ChromeOptions): A set of ChromeOptions to be passed to the web driver.
+
+        Workflow:
+            - Starts the browser maximized for better visibility.
+            - Ignores SSL certificate errors.
+            - Disables sandbox for compatibility with certain environments.
+            - Turns off extensions and some WebDriver flags to avoid detection by websites.
+            - Disables Blink automation features, which can help avoid detection that the browser is controlled by automation.
+        """
+        options = webdriver.ChromeOptions()
+
+        # Start the browser in maximized mode
+        options.add_argument("--start-maximized")
+        
+        # Ignore SSL certificate errors
+        options.add_argument("--ignore-certificate-errors")
+        
+        # Disable the Chrome sandbox (useful in certain environments like headless servers)
+        options.add_argument('--no-sandbox')
+        
+        # Disable any browser extensions that may interfere with automation
+        options.add_argument("--disable-extensions")
+
+        # Remove certain flags to avoid being easily detectable as WebDriver
+        options.add_argument("--disable-blink-features")
+        options.add_argument("--disable-blink-features=AutomationControlled")
+
+        # Uncomment if debugging locally via Chrome remote debugging port
+        # options.add_argument(r'--remote-debugging-port=9222')
+        
+        # Uncomment to specify a particular user profile in Chrome
+        # options.add_argument(r'--profile-directory=Person 1')
+
+        # Uncomment if you want to load a specific user profile for persistent session data
+        # options.add_argument(r"--user-data-dir={}".format(self.profile_path))
+
+        return options
+        
     # Method that logs into your account 
     def start_linkedin(self, username, password) -> None:
         log.info("Logging in.....Please wait :)")
@@ -359,6 +404,19 @@ class EasyApplyBot:
                     log.info(f"Failed to apply to {jobID}")
                 jobIDs[jobID] = applied
 
+    def is_present(self, locator):
+        """
+        Helper function to check if a button locator is present on the page.
+
+        Args:
+            button_locator (tuple): Locator to identify elements on the page.
+
+        Returns:
+            bool: True if the element is present, False otherwise.
+        """
+        return len(self.browser.find_elements(locator[0],
+                                              locator[1])) > 0
+
     def apply_to_job(self, jobID):
         """
         Applies to a job using the provided job ID by interacting with the job page and handling the Easy Apply process.
@@ -425,6 +483,485 @@ class EasyApplyBot:
         self.write_to_file(button, jobID, self.browser.title, result)
 
         return result
+
+    def get_job_page(self, jobID):
+
+        job: str = 'https://www.linkedin.com/jobs/view/' + str(jobID)
+        self.browser.get(job)
+        self.job_page = self.load_page(sleep=0.5)
+        return self.job_page
+
+    def load_page(self, sleep=1):
+        scroll_page = 0
+        while scroll_page < 4000:
+            self.browser.execute_script("window.scrollTo(0," + str(scroll_page) + " );")
+            scroll_page += 500
+            time.sleep(sleep)
+
+        if sleep != 1:
+            self.browser.execute_script("window.scrollTo(0,0);")
+            time.sleep(sleep)
+
+        page = BeautifulSoup(self.browser.page_source, "lxml")
+        return page
+
+
+    def get_easy_apply_button(self):
+        EasyApplyButton = False
+        try:
+            buttons = self.get_elements("easy_apply_button")
+
+            for button in buttons:
+                if "Easy Apply" in button.text or "Continue applying" in button.text:
+                    EasyApplyButton = button
+                    self.wait.until(EC.element_to_be_clickable(EasyApplyButton))
+                else:
+                    log.debug("Easy Apply button not found")
+            
+        except Exception as e: 
+            print("Exception:",e)
+            log.debug("Easy Apply button not found")
+
+        return EasyApplyButton
+
+    def fill_out_fields(self):
+        try:
+            fields = self.browser.find_elements(By.CLASS_NAME, "jobs-easy-apply-form-section__grouping")
+            for field in fields:
+
+                if "Mobile phone number" in field.text:
+                    field_input = field.find_element(By.TAG_NAME, "input")
+                    field_input.clear()
+                    field_input.send_keys(self.phone_number)
+        except Exception as e:
+            log.error(e)
+
+    def send_resume(self) -> bool:
+        """
+        Attempts to submit a job application by uploading a resume, a cover letter, and following through with 
+        the submission process.
+
+        Workflow:
+            - Checks for the presence of specific upload locators (resume and cover letter).
+            - Uploads the resume and cover letter if locators are found.
+            - Interacts with follow, submit, next, and continue applying buttons, if present.
+            - Handles errors or additional questions that may appear during the process.
+            - Logs success or failure of the submission process.
+
+        Returns:
+            bool: True if the resume was successfully submitted, False otherwise.
+        """
+
+        try:
+            submitted = False
+            loop = 0
+
+            # Loop twice to attempt the resume submission.
+            while loop < 2:
+                time.sleep(2)
+
+                # Upload the resume if the locator is present.
+                if self.is_present(upload_resume_locator):
+                    try:
+                        resume_locator = self.browser.find_element(By.XPATH, 
+                            "//*[contains(@id, 'jobs-document-upload-file-input-upload-resume')]")
+                        resume = self.uploads["Resume"]
+                        resume_locator.send_keys(resume)
+                    except Exception as e:
+                        log.error(e)
+                        log.error("Resume upload failed")
+                
+                # Upload the cover letter if the locator is present.
+                if self.is_present(upload_cv_locator):
+                    cv = self.uploads["Cover Letter"]
+                    cv_locator = self.browser.find_element(By.XPATH, 
+                        "//*[contains(@id, 'jobs-document-upload-file-input-upload-cover-letter')]")
+                    cv_locator.send_keys(cv)
+
+                # Handle follow button if present.
+                if len(self.get_elements("follow")) > 0:
+                    elements = self.get_elements("follow")
+                    for element in elements:
+                        button = self.wait.until(EC.element_to_be_clickable(element))
+                        button.click()
+
+                # Handle submit button and complete the application.
+                if len(self.get_elements("submit")) > 0:
+                    elements = self.get_elements("submit")
+                    for element in elements:
+                        button = self.wait.until(EC.element_to_be_clickable(element))
+                        button.click()
+                        log.info("Application Submitted")
+                        submitted = True
+                        break
+
+                # Handle errors during submission.
+                elif len(self.get_elements("error")) > 0:
+                    if "application was sent" in self.browser.page_source:
+                        log.info("Application Submitted")
+                        submitted = True
+                        break
+                    else:
+                        while True:
+                            log.info("Please answer the questions, waiting 5 seconds...")
+                            time.sleep(5)
+                            self.process_questions()
+                            if "application was sent" in self.browser.page_source:
+                                log.info("Application Submitted")
+                                submitted = True
+                                break
+                            elif self.is_present(self.locator["easy_apply_button"]):
+                                submitted = False
+                                break
+
+                # Handle next, continue, and review buttons if present.
+                elif len(self.get_elements("next")) > 0:
+                    elements = self.get_elements("next")
+                    for element in elements:
+                        button = self.wait.until(EC.element_to_be_clickable(element))
+                        button.click()
+
+                elif len(self.get_elements("continue_applying")) > 0:
+                    elements = self.get_elements("continue_applying")
+                    for element in elements:
+                        button = self.wait.until(EC.element_to_be_clickable(element))
+                        button.click()
+
+                elif len(self.get_elements("review")) > 0:
+                    elements = self.get_elements("review")
+                    for element in elements:
+                        button = self.wait.until(EC.element_to_be_clickable(element))
+                        button.click()
+
+        except Exception as e:
+            log.error(e)
+            log.error("Cannot apply to this job")
+
+        return submitted
+
+    def is_found_field(self, locator, field):
+        try:
+            return len(field.find_elements(locator[0], locator[1])) > 0
+        except Exception as e:
+            print(f"Error occurred while finding elements: {e}")
+            return False
+
+    def process_questions(self):
+        time.sleep(3)
+
+        form = self.get_elements("fields")  # Getting form elements
+
+        print("Length: ", len(form))
+
+        for i in range(len(form)):  
+
+            try:
+                # Attempt to re-locate the elements dynamically inside the loop
+                form = self.get_elements("fields")
+                field = form[i]
+                question = field.text.strip()  # Ensure question text is stripped of whitespace
+                
+                # Get answer for each question individually
+                answer = self.ans_question(question.lower())  
+
+            except StaleElementReferenceException:
+                log.warning(f"Element became stale: {field}, re-fetching form elements.")
+                continue
+
+            # Clear existing selections
+            try:
+                # Unselect radio buttons
+                if self.is_found_field(self.locator["radio_select"], field):
+                    # Returns a list of web elements
+                    radio_buttons = self.get_child_elements(self.locator["radio_select"], field)
+
+                    for radio_button in radio_buttons: # `radio_button` is a web element
+                        self.browser.execute_script("""
+                            arguments[0].checked = false;
+                            arguments[0].dispatchEvent(new Event('change'));
+                        """, radio_button)
+                        log.info("Radio button unselected")
+
+                # Unselect multi-select options
+                elif self.is_found_field(self.locator["multi_select"], field):
+                    # Get the first and only select element
+                    select_element = self.get_child_elements(self.locator["multi_select"], field)[0]  # `select_element` is a web element
+
+                    # Reset to the default value
+                    self.browser.execute_script("arguments[0].selectedIndex = 0; arguments[0].dispatchEvent(new Event('change'));", select_element)
+                    log.info("Multi-select reset to default value: 'Select an option'")
+
+
+            except Exception as e:
+                log.error(f"Error clearing existing selections: {e}")
+
+        time.sleep(1)
+
+        for i in range(len(form)):
+            try:
+                # Attempt to re-locate the elements dynamically inside the loop
+                form = self.get_elements("fields")
+                field = form[i]
+                question = field.text.strip()  # Strip whitespace from question
+                
+                log.info(f"Processing question: {question}")
+                answer = self.ans_question(question.lower())  # Get answer based on the current question
+                log.info(f"Answer determined: {answer}")
+
+            except StaleElementReferenceException:
+                log.warning(f"Element became stale: {field}, re-fetching form elements.")
+                continue
+
+            # Scroll the field into view before interacting
+            self.browser.execute_script("arguments[0].scrollIntoView(true);", field)
+
+            # Check if input type is radio button
+            if self.is_found_field(self.locator["radio_select"], field) and answer.lower() in ["yes", "no", "1", "0"]:
+                try:
+                    radio_buttons = self.get_child_elements(self.locator["radio_select"], field)
+
+                    if radio_buttons is None or len(radio_buttons) == 0:
+                        log.error(f"No radio buttons found for question: {question}")
+                        continue
+
+                    selected = False
+
+                    for radio_button in radio_buttons:
+                        if radio_button.get_attribute('value').lower() == answer.lower():
+                            WebDriverWait(field, 10).until(EC.element_to_be_clickable(radio_button))
+                            self.browser.execute_script("""
+                                arguments[0].click();
+                                arguments[0].dispatchEvent(new Event('change'));
+                            """, radio_button)
+                            log.info(f"Radio button selected: {radio_button.get_attribute('value')}")
+                            selected = True
+
+                    if not selected:
+                        log.info("Exact match not found, looking for closest answer...")
+                        closest_match = None
+                        for radio_button in radio_buttons:
+                            radio_value = radio_button.get_attribute('value').lower()
+                            if "yes" in radio_value or "no" in radio_value:
+                                closest_match = radio_button
+
+                        if closest_match:
+                            WebDriverWait(field, 10).until(EC.element_to_be_clickable(closest_match))
+                            self.browser.execute_script("""
+                                arguments[0].click();
+                                arguments[0].dispatchEvent(new Event('change'));
+                            """, closest_match)
+                            log.info(f"Closest radio button selected: {closest_match.get_attribute('value')}")
+                            
+                        else:
+                            log.warning("No suitable radio button found to select. Picking first option")
+                            firstOption = radio_buttons[0]
+                            WebDriverWait(field, 10).until(EC.element_to_be_clickable(firstOption))
+                            self.browser.execute_script("""
+                                arguments[0].click();
+                                arguments[0].dispatchEvent(new Event('change'));
+                            """, firstOption)
+                            
+                except StaleElementReferenceException:
+                    log.warning(f"Retrying due to stale element.")
+
+                except Exception as e:
+                    log.error(f"Radio button error for question: {question}, answer: {answer}")
+                    log.error(traceback.format_exc())  # Full traceback for better debugging
+                
+            # Multi-select case
+            elif self.is_found_field(self.locator["multi_select"], field):
+                max_retries = 5
+                retry_count = 0
+                while retry_count < max_retries:
+                    try:
+                        select_element = WebDriverWait(field, 10).until(
+                            EC.presence_of_element_located(self.locator["multi_select"])
+                        )
+
+                        foundChoice = False
+
+                        options = select_element.find_elements(By.TAG_NAME, "option")
+                        for option in options:
+                            if answer.lower() in option.text.strip().lower():
+                                option.click()
+                                foundChoice = True
+                                log.info(f"Option selected: {option.text}")
+                                break
+
+                        if foundChoice == False:
+                            options[1].click()
+                            log.info(f"1st Option selected: {options[1].text}")
+
+                        break  # Exit the loop if successful
+                    except StaleElementReferenceException:
+                        retry_count += 1
+                        log.warning(f"Retrying due to stale element. Attempt {retry_count}/{max_retries}")
+                    
+                    except Exception as e:
+                        retry_count += 1
+                        log.error(f"Multi-select error: {e}")
+                        break
+
+            # Handle text input fields
+            elif self.is_found_field(self.locator["text_select"], field):
+                try:
+                    
+                    text_field = WebDriverWait(field, 10).until(
+                            EC.presence_of_element_located(self.locator["text_select"])
+                        )
+                    time.sleep(3)
+                    text_field.clear()
+                    time.sleep(0.5)
+                    text_field.send_keys(answer)
+                    log.info(f"Text input field populated with: {answer}")
+                except Exception as e:
+                    log.error(f"(process_questions(1)) Text field error: {e}") 
+            # Hanlde textarea fields
+            elif self.is_found_field(self.locator["text_area"], field):
+                try:
+                    text_area = WebDriverWait(field, 10).until(
+                            EC.presence_of_element_located(self.locator["text_area"])
+                        )
+                    time.sleep(3)
+                    text_area.clear()
+                    time.sleep(0.5)
+                    text_area.send_keys(answer)
+                    log.info(f"Text input field populated with: {answer}")
+                except Exception as e:
+                    log.error(f"(process_questions(1)) Text field error: {e}")
+
+            # Handle fieldset fields
+            elif self.is_found_field(self.locator["input_select"], field):  # Adjust options as needed
+                try:
+                    select_elements = self.get_child_elements(self.locator["input_select"], field)
+
+                    if select_elements is None or len(select_elements) == 0:
+                        log.error(f"No select elements found for question: {question}")
+                        continue
+
+                    selected = False
+
+                    for select_element in select_elements:
+                        if answer.lower() in select_element.get_attribute('data-test-text-selectable-option__input').lower():
+                            WebDriverWait(field, 10).until(EC.element_to_be_clickable(select_element))
+                            select_element.click()  # Click instead of just setting the 'selected' attribute
+                            log.info(f"Select element chosen: {select_element.get_attribute('value')}")
+                            selected = True
+                            break  # Exit loop once the option is selected
+
+                    if not selected:
+                        log.info("Exact match not found, looking for closest answer...")
+                        closest_match = None
+                        for select_element in select_elements:
+                            select_value = select_element.get_attribute('value').lower()
+                            if "option1" in select_value or "option2" in select_value or "option3" in select_value:  # Adjust as needed
+                                closest_match = select_element
+                                break
+
+                        if closest_match:
+                            WebDriverWait(field, 10).until(EC.element_to_be_clickable(closest_match))
+                            closest_match.click()  # Use click for better simulation
+                            log.info(f"Closest select element chosen: {closest_match.get_attribute('value')}")
+                        else:
+                            log.warning("No suitable select option found. Picking the 2nd option")
+                            
+                            if len(select_elements) > 0:  # Ensure there is a 2nd option
+                                second_option = select_elements[1]
+                                WebDriverWait(field, 20).until(EC.element_to_be_clickable(second_option))
+
+                                second_option.click()  # Try to click instead of setting selected directly
+                                log.info(f"Second option selected: {second_option.get_attribute('value')}")
+                            else:
+                                log.error("Less than 2 options are available; unable to pick the 2nd option.")
+                                
+                except StaleElementReferenceException:
+                    log.warning(f"Retrying due to stale element.")
+
+                except Exception as e:
+                    log.error(f"Select element error for question: {question}, answer: {answer}")
+                    log.error(traceback.format_exc())  # Full traceback for better debugging
+
+            else:
+                log.info(f"Unable to determine field type for question: {question}, moving to next field.")
+
+    def get_child_elements(self, locator, field):
+        try:
+            return field.find_elements(locator[0], locator[1])
+        except Exception as e:
+            print(f"Error occurred while finding elements: {e}")
+            return []  # Return an empty list instead of False
+
+    def next_jobs_page(self, position, location, jobs_per_page, experience_level=[], time_filter="24 hours"):
+        """
+        Loads the next page of job listings on LinkedIn, applying filters such as position, location, 
+        experience level, and time since the job was posted.
+
+        Args:
+            position (str): The job title or keyword to search for.
+            location (str): The location of the jobs being searched.
+            jobs_per_page (int): The starting index for jobs to be loaded (pagination).
+            experience_level (list): A list of integers representing experience levels to filter jobs by. 
+                                     Defaults to an empty list (no experience level filter).
+            time_filter (str): A string representing the time period within which jobs were posted. 
+                               Can be "24 hours", "past week", or "past month". Defaults to "24 hours".
+
+        Returns:
+            tuple: 
+                - browser (WebDriver): The browser instance that loaded the next jobs page.
+                - jobs_per_page (int): The updated jobs_per_page index for tracking pagination.
+        
+        Workflow:
+            - Constructs the URL based on the position, location, experience level, and time filter.
+            - Filters jobs based on the posting time (last 24 hours, past week, past month, or any time).
+            - Loads the job page into the browser and returns the updated browser instance.
+        """
+        # Construct the experience level part of the URL
+        experience_level_str = ",".join(map(str, experience_level)) if experience_level else ""
+        experience_level_param = f"&f_E={experience_level_str}" if experience_level_str else ""
+
+        # Construct the time filter part of the URL
+        if time_filter == "24 hours":
+            time_posted_param = "&f_TPR=r86400"  # Last 24 hours
+        elif time_filter == "past week":
+            time_posted_param = "&f_TPR=r604800"  # Last week
+        elif time_filter == "past month":
+            time_posted_param = "&f_TPR=r2592000"  # Last month
+        else:
+            time_posted_param = ""  # No filter (Any time)
+
+        self.browser.get(
+            # URL for jobs page with Easy Apply, position, location, and time filter
+            "https://www.linkedin.com/jobs/search/?f_LF=f_AL&keywords=" +
+            position + location + "&start=" + str(jobs_per_page) + experience_level_param + time_posted_param
+        )
+
+        log.info(f"Loading next job page with time filter: {time_filter}")
+        self.load_page()
+        return (self.browser, jobs_per_page)
+
+    def get_elements(self, type) -> list:
+        elements = []
+        element = self.locator[type]
+        if self.is_present(element):
+            elements = self.browser.find_elements(element[0], element[1])
+        return elements
+
+    def write_to_file(self, button, jobID, browserTitle, result) -> None:
+        def re_extract(text, pattern):
+            target = re.search(pattern, text)
+            if target:
+                target = target.group(1)
+            return target
+
+        timestamp: str = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        attempted: bool = False if button == False else True
+        job = re_extract(browserTitle.split(' | ')[0], r"\(?\d?\)?\s?(\w.*)")
+        company = re_extract(browserTitle.split(' | ')[1], r"(\w.*)")
+
+        toWrite: list = [timestamp, jobID, job, company, attempted, result]
+        with open(self.filename, 'a+') as f:
+            writer = csv.writer(f)
+            writer.writerow(toWrite)
 
 if __name__ == '__main__':
     # all user info needed for the applying. Ex: username, password, 
