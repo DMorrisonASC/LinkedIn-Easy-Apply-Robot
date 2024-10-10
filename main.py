@@ -160,7 +160,7 @@ class EasyApplyBot:
         else:
             df = pd.DataFrame(columns=["Question", "Answer"])
             df.to_csv(self.qa_file, index=False, encoding='utf-8')
-    # Method that log 
+    # Method that logs into your account 
     def start_linkedin(self, username, password) -> None:
         log.info("Logging in.....Please wait :)")
         self.browser.get("https://www.linkedin.com/login?trk=guest_homepage-basic_nav-header-signin")
@@ -181,12 +181,13 @@ class EasyApplyBot:
             user_field.send_keys(username)
             time.sleep(0.5)
             user_field.send_keys(Keys.TAB)
-            time.sleep(5)
+            time.sleep(1)
             pw_field.send_keys(password)
-            time.sleep(5)
+            time.sleep(1)
             
             # Click the login button after ensuring it is clickable
             login_button.click()
+            # Timer for 20 seconds, in cases where 2FA and/or CAPTCHA needs to be approved
             time.sleep(20)
 
         except TimeoutException:
@@ -196,23 +197,234 @@ class EasyApplyBot:
  
     # This method that starts application process
     def start_apply(self, positions, locations) -> None:
-        start: float = time.time()
-        self.fill_data()
-        self.positions = positions
-        self.locations = locations
-        combos: list = []
+        """
+        Initiates the job application process by applying to a combination of positions and locations.
+        
+        Args:
+            positions (list): A list of job positions to apply for.
+            locations (list): A list of locations to apply for.
+        
+        Workflow:
+            - Starts by recording the start time.
+            - Fills in initial data for the application.
+            - Iterates through randomly selected combinations of positions and locations.
+            - Ensures each position-location combination is unique.
+            - Logs each application attempt.
+            - Calls the `applications_loop()` method to apply for each position at the specified location.
+            - Stops after either applying to all combinations or after 500 attempts, whichever comes first.
+        
+        Returns:
+            None
+        """
+        start: float = time.time()  # Record the start time for the application process.
+        self.fill_window()  # Minimize the browser window to the background.
+        self.positions = positions  # Set the positions to apply for.
+        self.locations = locations  # Set the locations to apply for.
+        
+        combos: list = []  # List to store unique combinations of position and location.
+        
+        # Continue until all unique combinations of positions and locations are tried.
         while len(combos) < len(positions) * len(locations):
+            # Randomly select a position and location from the provided lists.
             position = positions[random.randint(0, len(positions) - 1)]
             location = locations[random.randint(0, len(locations) - 1)]
-            combo: tuple = (position, location)
+            combo: tuple = (position, location)  # Create a position-location tuple.
+
+            # Ensure the combination has not already been tried.
             if combo not in combos:
-                combos.append(combo)
-                log.info(f"Applying to {position}: {location}")
+                combos.append(combo)  # Add the new combo to the list of applied combos.
+                log.info(f"Applying to {position}: {location}")  # Log the application attempt.
+
+                # Modify location for the application loop.
                 location = "&location=" + location
-                self.applications_loop(position, location)
+                self.applications_loop(position, location)  # Apply for the selected position and location.
+
+            # Break the loop if more than 500 applications are attempted to avoid excessive loops.
             if len(combos) > 500:
                 break
- 
+
+    # Minimize the browser window to the background.
+    def fill_window(self) -> None:
+        self.browser.set_window_size(1, 1)
+        self.browser.set_window_position(2000, 2000)
+
+    def applications_loop(self, position, location):
+        """
+        Main loop to search and apply for jobs based on the specified position and location.
+
+        Args:
+            position (str): The job position to search for (e.g., "Software Engineer").
+            location (str): The location to search in (e.g., "New York").
+
+        Workflow:
+            - Initializes the job search by setting the window and loading the first page of results.
+            - Logs the time remaining for the search based on `MAX_SEARCH_TIME`.
+            - Scrolls through the job listings, looks for job cards, and checks their status (whether applied or not).
+            - Skips jobs that have already been applied to and stores new job IDs for processing.
+            - If new jobs are found, passes them to the `apply_loop()` method for further action.
+            - Continues to the next page of jobs after processing the current page.
+            - Repeats the process until the search time runs out or no more jobs are found.
+
+        Returns:
+            None
+        """
+        jobs_per_page = 0  # Initialize the number of jobs found per page.
+        start_time: float = time.time()  # Record the start time of the job search.
+
+        log.info("Looking for jobs...Please wait...")  # Log that the search has started.
+
+        # Set window position and maximize it for job searching.
+        self.browser.set_window_position(1, 1)
+        self.browser.maximize_window()
+        
+        # Load the first page of jobs based on position and location.
+        self.browser, _ = self.next_jobs_page(position, location, jobs_per_page, experience_level=self.experience_level)
+        log.info("Set and maximize window")
+
+        # Continue searching for jobs until the maximum search time is reached.
+        while time.time() - start_time < self.MAX_SEARCH_TIME:
+            try:
+                # Log the remaining time left for the search.
+                log.info(f"{(self.MAX_SEARCH_TIME - (time.time() - start_time)) // 60} minutes left in this search")
+
+                # Sleep for a random time between 1.5 to 2.9 seconds to mimic human behavior.
+                randoTime: float = random.uniform(1.5, 2.9)
+                log.debug(f"Sleeping for {round(randoTime, 1)}")
+                self.load_page(sleep=0.5)
+
+                # Check if the search results are present.
+                if self.is_present(self.locator["search"]):
+                    
+                    scrollresults = self.get_elements("search")
+
+                    # Scroll through job listings to load more results.
+                    for i in range(300, 5000, 100):
+                        self.browser.execute_script("arguments[0].scrollTo(0, {})".format(i), scrollresults[0])
+                        time.sleep(0.5)  # Wait for new elements to load.
+
+                # Check if job links are present on the page.
+                if self.is_present(self.locator["links"]):
+                    links = self.get_elements("links")
+                    
+                    jobIDs = {}  # Dictionary to store job IDs for processing.
+
+                    for link in links:
+                        try:
+                            # Check if the job has already been applied to.
+                            applied_status = link.find_element(By.XPATH, 
+                                ".//div/ul/li[contains(@class, 'job-card-container__footer-job-state') and normalize-space(.)='Applied']"
+                            )
+
+                            # If the job has been applied, dismiss it and skip to the next.
+                            if applied_status.is_displayed():
+                                log.debug(f"Job already applied: {link.text}")
+                                dismissBtn = link.find_element(By.XPATH, ".//button[starts-with(@aria-label, 'Dismiss')]")
+                                dismissBtn.click()
+                                continue  # Skip this job card if it's already applied.
+
+                        except NoSuchElementException:
+                            # If the job has not been applied and is not in the blacklist.
+                            if link.text not in self.blacklist:
+                                jobID = link.get_attribute("data-job-id")
+                                if jobID == "search":
+                                    log.debug(f"Job ID not found, search keyword found instead? {link.text}")
+                                    continue
+                                else:
+                                    # Ensure the job ID is unique before adding it for processing.
+                                    if jobID not in jobIDs:
+                                        jobIDs[jobID] = "To be processed"
+                    
+                    # If there are new jobs to process, apply to them.
+                    if len(jobIDs) > 0:
+                        self.apply_loop(jobIDs)
+
+                    # Load the next page of job listings.
+                    self.browser, jobs_per_page = self.next_jobs_page(position, location, jobs_per_page, experience_level=self.experience_level)
+
+                else:
+                    # If no jobs found, continue to the next page.
+                    self.browser, jobs_per_page = self.next_jobs_page(position, location, jobs_per_page, experience_level=self.experience_level)
+
+            except Exception as e:
+                print(e)  # Log any exceptions encountered during the search process.
+
+    def apply_loop(self, jobIDs):
+        log.debug("In `apply_loop()`")
+        for jobID in jobIDs:
+            if jobIDs[jobID] == "To be processed":
+                applied = self.apply_to_job(jobID)
+                if applied:
+                    log.info(f"Applied to {jobID}")
+                else:
+                    log.info(f"Failed to apply to {jobID}")
+                jobIDs[jobID] = applied
+
+    def apply_to_job(self, jobID):
+        """
+        Applies to a job using the provided job ID by interacting with the job page and handling the Easy Apply process.
+
+        Args:
+            jobID (str): The unique identifier for the job being applied to.
+
+        Workflow:
+            - Navigates to the job page using the provided job ID.
+            - Checks if the job page contains an Easy Apply button.
+            - Skips applying if any blacklisted keywords are found in the job title.
+            - If the Easy Apply button is present, it clicks the button and proceeds with filling out the application form.
+            - Sends the resume and logs the result of the application (success or failure).
+            - Handles cases where the job has already been applied to or doesn't have the Easy Apply button.
+            - Logs the outcome of the job application and writes the result to a file for future reference.
+
+        Returns:
+            result (bool): True if the application was successfully submitted, False otherwise.
+        """
+        # Navigate to the job page using the job ID.
+        self.get_job_page(jobID)
+
+        # Let the page fully load before interacting with it.
+        time.sleep(1)
+
+        # Try to find the Easy Apply button on the job page.
+        button = self.get_easy_apply_button()
+    
+        # Skip job if the title contains blacklisted keywords.
+        if button is not False:
+            if any(word in self.browser.title for word in blackListTitles):
+                log.info('Skipping this application, a blacklisted keyword was found in the job position')
+                string_easy = "~ Contains blacklisted keyword"
+                result = False
+            else:
+                # Easy Apply button is available, so click it to proceed.
+                string_easy = "~ Has Easy Apply Button. Clicking now!"
+                button.click()
+
+                clicked = True
+                time.sleep(1)
+
+                # Fill out the necessary fields on the Easy Apply form.
+                self.fill_out_fields()
+                
+                # Send the resume and determine if the application was successful.
+                result: bool = self.send_resume()
+                if result:
+                    string_easy = "~ Sent Resume!"
+                else:
+                    string_easy = "~ Did not apply: Failed to send Resume"
+
+        # Handle case where the job has already been applied to.
+        elif "You applied on" in self.browser.page_source:
+            string_easy = "~ Already Applied"
+            result = False
+        # Handle case where no Easy Apply button exists.
+        else:
+            string_easy = "* Doesn't have Easy Apply Button"
+            result = False
+
+        # Log the result of the job application and write to a file for tracking.
+        log.info(f"\nPosition {jobID}:\n {self.browser.title} \n {string_easy} \n")
+        self.write_to_file(button, jobID, self.browser.title, result)
+
+        return result
 
 if __name__ == '__main__':
     # all user info needed for the applying. Ex: username, password, 
