@@ -68,6 +68,152 @@ def setupLogger() -> None:
     # Add the console handler to the logger so that logs go to both the log file and the console.
     log.addHandler(c_handler)
 
+class EasyApplyBot:
+    setupLogger()
+    # MAX_SEARCH_TIME is 10 hours by default.
+    MAX_SEARCH_TIME = 60 * 20 # Modify it to increase search time
+
+    def __init__(self,
+                 username,
+                 password,
+                 phone_number,
+                 # profile_path,
+                 salary,
+                 rate,
+                 uploads={},
+                 filename='output.csv',
+                 blacklist=[],
+                 blackListTitles=[],
+                 experience_level=[]
+                 ) -> None:
+
+        self.uploads = uploads
+        self.salary = salary
+        self.rate = rate
+        past_ids: list | None = self.get_appliedIDs(filename)
+        self.appliedJobIDs: list = past_ids if past_ids != None else []
+        self.filename: str = filename
+        self.options = self.browser_options()
+        self.browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=self.options)
+        self.wait = WebDriverWait(self.browser, 30)
+        self.blacklist = blacklist
+        self.blackListTitles = blackListTitles
+        self.start_linkedin(username, password)
+        self.phone_number = phone_number
+        self.experience_level = experience_level
+
+        log.info("Welcome to Easy Apply Bot")
+        dirpath: str = os.getcwd()
+        log.info("current directory is : " + dirpath)
+        log.info("Please wait for bot to set-up")
+        # Prints only the experience levels specified in the config.yaml file.
+        if experience_level:
+            experience_levels = {
+                1: "Entry level",
+                2: "Associate",
+                3: "Mid-Senior level",
+                4: "Director",
+                5: "Executive",
+                6: "Internship"
+            }
+            applied_levels = [experience_levels[level] for level in experience_level]
+            log.info("Applying for experience level roles: " + ", ".join(applied_levels))
+        # If none are specified, it logs that it is applying for all experience levels
+        else:
+            log.info("Applying for all experience levels")
+
+        self.locator = {
+            "human_verification" : (By.XPATH, "//h1[text()=\"Let’s do a quick security check\"]"),
+            "continue_applying": (By.XPATH, ".//button[contains(., 'Continue applying')]"),
+            "next": (By.CSS_SELECTOR, "button[aria-label='Continue to next step']"),
+            "review": (By.CSS_SELECTOR, "button[aria-label='Review your application']"),
+            "submit": (By.CSS_SELECTOR, "button[aria-label='Submit application']"),
+            "error": (By.CLASS_NAME, "artdeco-inline-feedback__message"),
+            "upload_resume": (By.XPATH, "//*[contains(@id, 'jobs-document-upload-file-input-upload-resume')]"),
+            "upload_cv": (By.XPATH, "//*[contains(@id, 'jobs-document-upload-file-input-upload-cover-letter')]"),
+            "follow": (By.CSS_SELECTOR, "label[for='follow-company-checkbox']"),
+            "upload": (By.NAME, "file"),
+            "search": (By.CLASS_NAME, "jobs-search-results-list"),
+            "links": (By.XPATH, '//div[@data-job-id]'),  # Corrected this line
+            "fields": (By.CLASS_NAME, "jobs-easy-apply-form-section__grouping"),
+            "radio_select": (By.XPATH, ".//input[starts-with(normalize-space(@id), 'urn:li:fsd_formElement:urn:li:jobs_applyformcommon_easyApplyFormElement:') and @type='radio' and @value='Yes']"),
+            "multi_select": (By.XPATH, ".//select[starts-with(normalize-space(@id), 'text-entity-list-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-') and @required='']"),
+            "text_select": (By.XPATH, ".//input[starts-with(@id, 'single-line-text-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-') and @type='text']"),
+            "input_select": (By.CSS_SELECTOR, 'input[type="radio"], input[type="checkbox"]'),
+            "text_area": (By.TAG_NAME, "textarea"),
+            "2fa_oneClick": (By.ID, 'reset-password-submit-button'),
+            "easy_apply_button": (By.XPATH, '//button[contains(@class, "jobs-apply-button")]'),
+            "date_posted_button": (By.XPATH, '//button[contains(@id, "searchFilter_timePostedRange")]'),
+            "date_posted_expanded": (By.XPATH, '//button[contains(@id, "searchFilter_timePostedRange")]'),
+        }
+
+        # Initialize questions and answers file
+        self.qa_file = Path("qa.csv")
+        self.answers = {}
+
+        # If qa file does not exist, create it
+        if self.qa_file.is_file():
+            df = pd.read_csv(self.qa_file)
+            for index, row in df.iterrows():
+                self.answers[row['Question']] = row['Answer']
+        # If qa file does exist, load it
+        else:
+            df = pd.DataFrame(columns=["Question", "Answer"])
+            df.to_csv(self.qa_file, index=False, encoding='utf-8')
+    # Method that log 
+    def start_linkedin(self, username, password) -> None:
+        log.info("Logging in.....Please wait :)")
+        self.browser.get("https://www.linkedin.com/login?trk=guest_homepage-basic_nav-header-signin")
+
+        time.sleep(10)
+
+        try:
+            user_field = self.browser.find_element("id", "username")
+            pw_field = self.browser.find_element("id", "password")
+            
+            # Wait for the 'username' inut field to be present before interacting with it
+            WebDriverWait(self.browser, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//input[@id = 'username']"))
+            )
+
+            login_button = self.browser.find_element("xpath", "//button[normalize-space(text())='Sign in']")
+            
+            user_field.send_keys(username)
+            time.sleep(0.5)
+            user_field.send_keys(Keys.TAB)
+            time.sleep(5)
+            pw_field.send_keys(password)
+            time.sleep(5)
+            
+            # Click the login button after ensuring it is clickable
+            login_button.click()
+            time.sleep(20)
+
+        except TimeoutException:
+            log.info("TimeoutException! Username/password field or login button not found")
+        except NoSuchElementException as e:
+            log.error(f"Element not found: {e}")
+ 
+    # This method that starts application process
+    def start_apply(self, positions, locations) -> None:
+        start: float = time.time()
+        self.fill_data()
+        self.positions = positions
+        self.locations = locations
+        combos: list = []
+        while len(combos) < len(positions) * len(locations):
+            position = positions[random.randint(0, len(positions) - 1)]
+            location = locations[random.randint(0, len(locations) - 1)]
+            combo: tuple = (position, location)
+            if combo not in combos:
+                combos.append(combo)
+                log.info(f"Applying to {position}: {location}")
+                location = "&location=" + location
+                self.applications_loop(position, location)
+            if len(combos) > 500:
+                break
+ 
+
 if __name__ == '__main__':
     # all user info needed for the applying. Ex: username, password, 
     with open("config.yaml", 'r') as stream:
