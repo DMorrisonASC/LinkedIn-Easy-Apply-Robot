@@ -28,8 +28,45 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 import webdriver_manager.chrome as ChromeDriverManager
 ChromeDriverManager = ChromeDriverManager.ChromeDriverManager
 
+log = logging.getLogger(__name__)  # Create a logger object with the current module's name.
 
+def setupLogger() -> None:
+    """
+    Configures the logging setup for the application. This includes:
+    - Setting up log files with timestamps.
+    - Creating a log directory if it doesn't exist.
+    - Defining log formatting for both file and console output.
+    """
+    
+    # Generate a timestamp string for the log file name, e.g., '10_10_24 14_45_30 '.
+    dt: str = datetime.strftime(datetime.now(), "%m_%d_%y %H_%M_%S ")
 
+    # Check if the 'logs' directory exists. If not, create it.
+    if not os.path.isdir('./logs'):
+        os.mkdir('./logs')
+
+    # Set up basic configuration for logging to a file.
+    # Log filename includes the timestamp, and the logs are stored in the 'logs' directory.
+    logging.basicConfig(
+        filename=('./logs/' + str(dt) + 'applyJobs.log'),  # Log file path with timestamp.
+        filemode='w',  # 'w' mode overwrites the log file each time the application runs.
+        format='%(asctime)s::%(name)s::%(levelname)s::%(message)s',  # Log message format.
+        datefmt='./logs/%d-%b-%y %H:%M:%S'  # Timestamp format for log entries.
+    )
+    
+    # Set the logging level to DEBUG for the logger (captures all messages, DEBUG and above).
+    log.setLevel(logging.DEBUG)
+
+    # Create a console handler to also output logs to the console (stdout).
+    c_handler = logging.StreamHandler()
+    c_handler.setLevel(logging.DEBUG)  # Set console logging level to DEBUG.
+
+    # Define the log message format for the console output.
+    c_format = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s', '%H:%M:%S')
+    c_handler.setFormatter(c_format)
+
+    # Add the console handler to the logger so that logs go to both the log file and the console.
+    log.addHandler(c_handler)
 
 if __name__ == '__main__':
     # all user info needed for the applying. Ex: username, password, 
@@ -62,6 +99,7 @@ if __name__ == '__main__':
     for key in uploads.keys():
         assert uploads[key] is not None
     # List comprehension to construct a list of `locations` and `positions` for all items that are not type `None`
+    # Type hint shows that a list is expected
     locations: list = [l for l in parameters['locations'] if l is not None]
     positions: list = [p for p in parameters['positions'] if p is not None]
 
