@@ -136,10 +136,11 @@ class EasyApplyBot:
             "search": (By.CLASS_NAME, "jobs-search-results-list"),
             "links": (By.XPATH, '//div[@data-job-id]'),  # Corrected this line
             "fields": (By.CLASS_NAME, "jobs-easy-apply-form-section__grouping"),
-            "radio_select": (By.XPATH, ".//input[starts-with(normalize-space(@id), 'urn:li:fsd_formElement:urn:li:jobs_applyformcommon_easyApplyFormElement:') and @type='radio' and @value='Yes']"),
+            "radio_select": (By.XPATH, ".//input[starts-with(normalize-space(@id), 'urn:li:fsd_formElement:urn:li:jobs_applyformcommon_easyApplyFormElement:') and @type='radio']"),
             "multi_select": (By.XPATH, ".//select[starts-with(normalize-space(@id), 'text-entity-list-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-') and @required='']"),
             "text_select": (By.XPATH, ".//input[starts-with(@id, 'single-line-text-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-') and @type='text']"),
             "input_select": (By.CSS_SELECTOR, 'input[type="radio"], input[type="checkbox"]'),
+            "location_select": ".//input[@aria-autocomplete='list']",
             "text_area": (By.TAG_NAME, "textarea"),
             "2fa_oneClick": (By.ID, 'reset-password-submit-button'),
             "easy_apply_button": (By.XPATH, '//button[contains(@class, "jobs-apply-button")]'),
@@ -785,12 +786,14 @@ class EasyApplyBot:
                 retry_count = 0
                 while retry_count < max_retries:
                     try:
+                        # Refresh or re-fetch the select element each time
                         select_element = WebDriverWait(field, 10).until(
                             EC.presence_of_element_located(self.locator["multi_select"])
                         )
 
                         foundChoice = False
 
+                        # Get all options again to avoid stale references
                         options = select_element.find_elements(By.TAG_NAME, "option")
                         for option in options:
                             if answer.lower() in option.text.strip().lower():
@@ -799,19 +802,28 @@ class EasyApplyBot:
                                 log.info(f"Option selected: {option.text}")
                                 break
 
-                        if foundChoice == False:
-                            options[1].click()
+                        if not foundChoice:
+                            options[1].click()  # Select the 1st option as a fallback
                             log.info(f"1st Option selected: {options[1].text}")
 
-                        break  # Exit the loop if successful
+                        break  # Successfully selected an option, exit loop
+
                     except StaleElementReferenceException:
                         retry_count += 1
                         log.warning(f"Retrying due to stale element. Attempt {retry_count}/{max_retries}")
-                    
+                        
+                        # Re-locate the field or any container element in case the DOM has been updated
+                        field = WebDriverWait(driver, 10).until(
+                            EC.presence_of_element_located(self.locator["multi_select_container"])
+                        )
+                        
+                        if retry_count >= max_retries:
+                            log.error("Exceeded max retries due to stale element issue")
+                            break  # Exit loop after max retries
+
                     except Exception as e:
-                        retry_count += 1
                         log.error(f"Multi-select error: {e}")
-                        break
+                        break  # Exit loop on any other exception
 
             # Handle text input fields
             elif self.is_found_field(self.locator["text_select"], field):
@@ -827,7 +839,23 @@ class EasyApplyBot:
                     log.info(f"Text input field populated with: {answer}")
                 except Exception as e:
                     log.error(f"(process_questions(1)) Text field error: {e}") 
-            # Hanlde textarea fields
+
+            # Handle auto complete fields
+            elif self.is_found_field(self.locator["location_select"], field):
+                try:
+                    
+                    text_field = WebDriverWait(field, 10).until(
+                            EC.presence_of_element_located(self.locator["location_select"])
+                        )
+                    time.sleep(3)
+                    text_field.clear()
+                    time.sleep(0.5)
+                    text_field.send_keys(answer)
+                    log.info(f"Text input field populated with: {answer}")
+                except Exception as e:
+                    log.error(f"(process_questions(1)) Text field error: {e}") 
+
+            # Handle textarea fields
             elif self.is_found_field(self.locator["text_area"], field):
                 try:
                     text_area = WebDriverWait(field, 10).until(

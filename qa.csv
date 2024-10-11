@@ -3,3 +3,1199 @@ Question,Answer
 enter a whole number between 0 and 99",3
 how many years of work experience do you have with mysql?,3
 how many years of work experience do you have with php?,3
+"have you completed the following level of education: bachelor's degree?
+have you completed the following level of education: bachelor's degree?
+required
+yes
+no",Yes
+how many years of work experience do you have with c++?,5
+"how many years of work experience do you have with python (programming language)?
+enter a whole number between 0 and 99",4
+"are you willing to undergo a background check, in accordance with local law/regulations?
+are you willing to undergo a background check, in accordance with local law/regulations?
+required
+yes
+no",Yes
+"by checking this box, you will declare that you read and agree to the smartrecruiters’ privacy policy and smartrecruiters  terms of use.
+by checking this box, you will declare that you read and agree to the smartrecruiters’and smartrecruiters.
+required
+i agree terms & conditions
+select checkbox to proceed",4
+"how many years of work experience do you have with drupal?
+enter a whole number between 0 and 99",6
+"what is your work status: 1.us citizen, 2.permanent resident, 3.h1b, 4.opt, 5.other?
+enter a decimal number larger than 0.0",4
+how many years of work experience do you have with xamarin products?,5
+how many years of work experience do you have with .net core?,4
+"are you comfortable working in a remote setting?
+are you comfortable working in a remote setting?
+required
+yes
+no
+please make a selection",Yes
+how many years of work experience do you have with microsoft sql server?,5
+"how many years of software development experience do you have?
+enter a decimal number larger than 0.0",4
+"this position requires us citizenship, not just authorization to work in the us. are you a us citizen? 
+this position requires us citizenship, not just authorization to work in the us. are you a us citizen?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"how many years of mobile application development experience do you have?
+enter a decimal number larger than 0.0",5
+"are you comfortable working in a remote setting?
+are you comfortable working in a remote setting?
+required
+yes
+no",Yes
+"how many years of work experience do you have with amazon ec2?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with microsoft azure?,6
+how many years of work experience do you have with cobol?,3
+"how many years of work experience do you have with ibm db2?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with mainframe?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with java?,6
+how many years of work experience do you have with apache spark?,5
+how many years of work experience do you have with apache airflow?,6
+"are you comfortable commuting to this job's location?
+are you comfortable commuting to this job's location?
+required
+yes
+no
+please make a selection",Yes
+"are you comfortable working in a hybrid setting?
+are you comfortable working in a hybrid setting?
+required
+yes
+no",Yes
+"are you comfortable commuting to this job's location?
+are you comfortable commuting to this job's location?
+required
+yes
+no",Yes
+"how many years of work experience do you have with ab initio?
+enter a whole number between 0 and 99",6
+"willing to work at nj location ?
+willing to work at nj location ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"how many years of work experience do you have with web development?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with typescript?
+enter a whole number between 0 and 99",6
+how many years of information technology experience do you currently have?,5
+"have you previously worked at a startup company? if so, which company and what was the scope of work that you were completing? 
+have you previously worked at a startup company? if so, which company and what was the scope of work that you were completing?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you built a challenging react component? what made it complex? 
+have you built a challenging react component? what made it complex?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with react.js?,6
+how many years of work experience do you have with selenium?,5
+"how many years of work experience do you have with large language models (llm)?
+enter a whole number between 0 and 99",4
+how many years of work experience do you have with snowflake?,4
+how many years of work experience do you have with html5?,5
+"are you comfortable working in an onsite setting?
+are you comfortable working in an onsite setting?
+required
+yes
+no",Yes
+"how many years of work experience do you have with investment banking?
+enter a whole number between 0 and 99",4
+"have you completed the following level of education: master's degree?
+have you completed the following level of education: master's degree?
+required
+yes
+no",Yes
+"are you already based in new york city or in a 20 miles radius?
+are you already based in new york city or in a 20 miles radius?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer","Bronx, New York, United States"
+"does your current employment status have any ability to be lost now or in the future?
+does your current employment status have any ability to be lost now or in the future?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"what are your pronouns ?
+what are your pronouns ?
+       select an option
+       she/her/hers
+       he/him/his
+       they/them/theirs
+       ze/hir/hirs
+       not listed",Yes
+"if pronoun is selected as 'not listed', in the previous question, could you please specify
+0/1,440
+1440 maximum characters allowed.",4
+"gender - gender, race and ethnicity (definitions)
+gender - gender, race and ethnicity
+required
+       select an option
+       male
+       female
+       prefer not to answer
+   please make a selection",N/A
+"race/ethnicity - gender, race and ethnicity (definitions)
+race/ethnicity - gender, race and ethnicity
+required
+       select an option
+       american indian or alaska native
+       asian
+       black or african american
+       hispanic or latino
+       native hawaiian or other pacific islander
+       white
+       two or more races
+       prefer not to answer
+   please make a selection",N/A
+"do you have (or have a history/record of having) a disability? (definitions)
+do you have (or have a history/record of having) a disability?
+required
+yes, i have a disability, or have had one in the past.
+no, i do not have a disability and have not had one in the past.
+i do not want to answer.
+please make a selection",No
+"are you a protected veteran? (definitions)
+are you a protected veteran?
+required
+yes
+no
+prefer not to answer
+please make a selection",N/A
+"if pronoun is selected as 'not listed', in the previous question, could you please specify
+1/1,440
+1440 maximum characters allowed.",4
+"gender - gender, race and ethnicity (definitions)
+gender - gender, race and ethnicity
+required
+       select an option
+       male
+       female
+       prefer not to answer",N/A
+"race/ethnicity - gender, race and ethnicity (definitions)
+race/ethnicity - gender, race and ethnicity
+required
+       select an option
+       american indian or alaska native
+       asian
+       black or african american
+       hispanic or latino
+       native hawaiian or other pacific islander
+       white
+       two or more races
+       prefer not to answer",N/A
+how many years of work experience do you have with swift (programming language)?,3
+how many years of work experience do you have with ios?,3
+"are you ok with training placement?
+are you ok with training placement?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you own a mac?
+do you own a mac?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with telon?
+enter a whole number between 0 and 99",4
+how many years of work experience do you have with cobol ii?,4
+"how many years of work experience do you have with serena changeman?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with aws lambda?,4
+"how many years of work experience do you have with postgresql?
+enter a whole number between 0 and 99",4
+how many years of work experience do you have with angularjs?,3
+"require visa independent candidates only - w2 contract. are you willing to work on w2?
+require visa independent candidates only - w2 contract. are you willing to work on w2?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with elixir?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with ruby?,6
+"will you now or in the future require sponsorship for employment visa status?
+will you now or in the future require sponsorship for employment visa status?
+required
+yes
+no
+please make a selection",No
+"will you now or in the future require sponsorship for employment visa status?
+will you now or in the future require sponsorship for employment visa status?
+required
+yes
+no",No
+how many years of work experience do you have with c# in .net?,3
+how many years of work experience do you have with rest apis?,6
+how many years of work experience do you have with c#?,3
+"do you have an active us government issued ts/sci security clearance?
+do you have an active us government issued ts/sci security clearance?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you built/designed a pdf generation tool in the past?
+have you built/designed a pdf generation tool in the past?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"linkedin url
+please enter a valid answer",https://www.linkedin.com/in/daeshaun-morrison-bab77b176/
+"city
+city
+please enter a valid answer","Bronx, New York, United States"
+"city
+city","Bronx, New York, United States"
+personal website/github/portfolio,https://github.com/DMorrisonASC
+"will you now, or in the future require sponsorship to legally work in the country where this role is based?
+will you now, or in the future require sponsorship to legally work in the country where this role is based?
+required
+       select an option
+       yes
+       no
+   please make a selection",No
+"how did you hear about this job?
+how did you hear about this job?
+required
+       select an option
+       linkedin job post
+       a recruiter reached out
+       instagram post
+       linkedin post
+       facebook post
+       twitter post
+       glassdoor
+       blind
+       indeed (do we need this one?)
+       other job board
+       press/media coverage
+       through a connection that works at cohesity
+       on your website
+   please make a selection",Other
+"if you have worked for any of the following companies in the past two years, please select them:
+if you have worked for any of the following companies in the past two years, please select them:
+required
+commvault
+dell emc
+rubrik
+clumio
+druva
+varonis
+veeam
+veritas
+i have not worked at any of these companies
+please make a selection",4
+please type in your current company,4
+what is your role at your current company?,4
+"if you have worked for any of the following companies in the past two years, please select them:
+if you have worked for any of the following companies in the past two years, please select them:
+required
+commvault
+dell emc
+rubrik
+clumio
+druva
+varonis
+veeam
+veritas
+i have not worked at any of these companies",4
+"are you willing to take a drug test, in accordance with local law/regulations?
+are you willing to take a drug test, in accordance with local law/regulations?
+required
+yes
+no
+please make a selection",4
+"are you willing to take a drug test, in accordance with local law/regulations?
+are you willing to take a drug test, in accordance with local law/regulations?
+required
+yes
+no",4
+first name,Daeshaun
+last name,Morrison
+"phone country code
+phone country code
+required
+       select an option
+       united states (+1)
+       afghanistan (+93)
+       aland islands (+358)
+       albania (+355)
+       algeria (+213)
+       american samoa (+1)
+       andorra (+376)
+       angola (+244)
+       anguilla (+1)
+       antarctica (+0)
+       antigua and barbuda (+1)
+       argentina (+54)
+       armenia (+374)
+       aruba (+297)
+       australia (+61)
+       austria (+43)
+       azerbaijan (+994)
+       bahamas (+1)
+       bahrain (+973)
+       bangladesh (+880)
+       barbados (+1)
+       belarus (+375)
+       belgium (+32)
+       belize (+501)
+       benin (+229)
+       bermuda (+1)
+       bhutan (+975)
+       bolivia (+591)
+       bosnia and herzegovina (+387)
+       botswana (+267)
+       bouvet island (+0)
+       brazil (+55)
+       british indian ocean territory (+246)
+       brunei darussalam (+673)
+       bulgaria (+359)
+       burkina faso (+226)
+       burundi (+257)
+       cambodia (+855)
+       cameroon (+237)
+       canada (+1)
+       cape verde (+238)
+       caribbean nations (+0)
+       cayman islands (+1)
+       central african republic (+236)
+       chad (+235)
+       chile (+56)
+       china (+86)
+       christmas island (+61)
+       cocos (keeling) islands (+61)
+       colombia (+57)
+       comoros (+269)
+       congo (+242)
+       cook islands (+682)
+       costa rica (+506)
+       cote d’ivoire (ivory coast) (+225)
+       croatia (+385)
+       cuba (+53)
+       cyprus (+357)
+       czech republic (+420)
+       democratic republic of the congo (+243)
+       denmark (+45)
+       djibouti (+253)
+       dominica (+1)
+       dominican republic (+1)
+       ecuador (+593)
+       egypt (+20)
+       el salvador (+503)
+       equatorial guinea (+240)
+       eritrea (+291)
+       estonia (+372)
+       ethiopia (+251)
+       falkland islands (malvinas) (+500)
+       faroe islands (+298)
+       federated states of micronesia (+691)
+       fiji (+679)
+       finland (+358)
+       france (+33)
+       french guiana (+594)
+       french polynesia (+689)
+       french southern territories (+0)
+       gabon (+241)
+       gambia (+220)
+       georgia (+995)
+       germany (+49)
+       ghana (+233)
+       gibraltar (+350)
+       greece (+30)
+       greenland (+299)
+       grenada (+1)
+       guadeloupe (+590)
+       guam (+1)
+       guatemala (+502)
+       guernsey (+44)
+       guinea (+224)
+       guinea-bissau (+245)
+       guyana (+592)
+       haiti (+509)
+       heard island and mcdonald islands (+0)
+       honduras (+504)
+       hong kong (+852)
+       hungary (+36)
+       iceland (+354)
+       india (+91)
+       indonesia (+62)
+       iran (+98)
+       iraq (+964)
+       ireland (+353)
+       isle of man (+44)
+       israel (+972)
+       italy (+39)
+       jamaica (+1)
+       japan (+81)
+       jersey (+44)
+       jordan (+962)
+       kazakhstan (+7)
+       kenya (+254)
+       kiribati (+686)
+       korea (+82)
+       korea (north) (+850)
+       kosovo (+383)
+       kuwait (+965)
+       kyrgyzstan (+996)
+       laos (+856)
+       latvia (+371)
+       lebanon (+961)
+       lesotho (+266)
+       liberia (+231)
+       libya (+218)
+       liechtenstein (+423)
+       lithuania (+370)
+       luxembourg (+352)
+       macao (+853)
+       macedonia (+389)
+       madagascar (+261)
+       malawi (+265)
+       malaysia (+60)
+       maldives (+960)
+       mali (+223)
+       malta (+356)
+       marshall islands (+692)
+       martinique (+596)
+       mauritania (+222)
+       mauritius (+230)
+       mayotte (+262)
+       mexico (+52)
+       moldova (+373)
+       monaco (+377)
+       mongolia (+976)
+       montenegro (+382)
+       montserrat (+1)
+       morocco (+212)
+       mozambique (+258)
+       myanmar (+95)
+       namibia (+264)
+       nauru (+674)
+       nepal (+977)
+       netherlands (+31)
+       netherlands antilles (+0)
+       new caledonia (+687)
+       new zealand (+64)
+       nicaragua (+505)
+       niger (+227)
+       nigeria (+234)
+       niue (+683)
+       norfolk island (+672)
+       northern mariana islands (+1)
+       norway (+47)
+       pakistan (+92)
+       palau (+680)
+       palestinian territory (+970)
+       panama (+507)
+       papua new guinea (+675)
+       paraguay (+595)
+       peru (+51)
+       philippines (+63)
+       pitcairn (+0)
+       poland (+48)
+       portugal (+351)
+       puerto rico (+1)
+       qatar (+974)
+       reunion (+262)
+       romania (+40)
+       russian federation (+7)
+       rwanda (+250)
+       s. georgia and s. sandwich islands (+0)
+       saint helena (+290)
+       saint kitts and nevis (+1)
+       saint lucia (+1)
+       saint pierre and miquelon (+508)
+       saint vincent and the grenadines (+1)
+       samoa (+685)
+       san marino (+378)
+       sao tome and principe (+239)
+       saudi arabia (+966)
+       senegal (+221)
+       serbia (+381)
+       serbia and montenegro (+0)
+       seychelles (+248)
+       sierra leone (+232)
+       singapore (+65)
+       slovak republic (+421)
+       slovenia (+386)
+       solomon islands (+677)
+       somalia (+252)
+       south africa (+27)
+       south sudan (+211)
+       spain (+34)
+       sri lanka (+94)
+       sudan (+249)
+       sultanate of oman (+968)
+       suriname (+597)
+       svalbard and jan mayen (+47)
+       swaziland (+268)
+       sweden (+46)
+       switzerland (+41)
+       syria (+963)
+       taiwan (+886)
+       tajikistan (+992)
+       tanzania (+255)
+       thailand (+66)
+       timor-leste (+670)
+       togo (+228)
+       tokelau (+690)
+       tonga (+676)
+       trinidad and tobago (+1)
+       tunisia (+216)
+       turkey (+90)
+       turkmenistan (+993)
+       turks and caicos islands (+1)
+       tuvalu (+688)
+       uganda (+256)
+       ukraine (+380)
+       united arab emirates (+971)
+       united kingdom (+44)
+       uruguay (+598)
+       uzbekistan (+998)
+       vanuatu (+678)
+       vatican city state (holy see) (+39)
+       venezuela (+58)
+       vietnam (+84)
+       virgin islands (british) (+1)
+       virgin islands (u.s.) (+1)
+       wallis and futuna (+681)
+       western sahara (+212)
+       yemen (+967)
+       zambia (+260)
+       zimbabwe (+263)","Bronx, New York, United States"
+mobile phone number,4
+"email address
+email address
+required
+       select an option
+       daeshaunkmorrison@gmail.com","Bronx, New York, United States"
+"address
+please enter a valid answer","Bronx, New York, United States"
+"phone country code
+phone country code
+required
+       select an option
+       united states (+1)
+       afghanistan (+93)
+       aland islands (+358)
+       albania (+355)
+       algeria (+213)
+       american samoa (+1)
+       andorra (+376)
+       angola (+244)
+       anguilla (+1)
+       antarctica (+0)
+       antigua and barbuda (+1)
+       argentina (+54)
+       armenia (+374)
+       aruba (+297)
+       australia (+61)
+       austria (+43)
+       azerbaijan (+994)
+       bahamas (+1)
+       bahrain (+973)
+       bangladesh (+880)
+       barbados (+1)
+       belarus (+375)
+       belgium (+32)
+       belize (+501)
+       benin (+229)
+       bermuda (+1)
+       bhutan (+975)
+       bolivia (+591)
+       bosnia and herzegovina (+387)
+       botswana (+267)
+       bouvet island (+0)
+       brazil (+55)
+       british indian ocean territory (+246)
+       brunei darussalam (+673)
+       bulgaria (+359)
+       burkina faso (+226)
+       burundi (+257)
+       cambodia (+855)
+       cameroon (+237)
+       canada (+1)
+       cape verde (+238)
+       caribbean nations (+0)
+       cayman islands (+1)
+       central african republic (+236)
+       chad (+235)
+       chile (+56)
+       china (+86)
+       christmas island (+61)
+       cocos (keeling) islands (+61)
+       colombia (+57)
+       comoros (+269)
+       congo (+242)
+       cook islands (+682)
+       costa rica (+506)
+       cote d’ivoire (ivory coast) (+225)
+       croatia (+385)
+       cuba (+53)
+       cyprus (+357)
+       czech republic (+420)
+       democratic republic of the congo (+243)
+       denmark (+45)
+       djibouti (+253)
+       dominica (+1)
+       dominican republic (+1)
+       ecuador (+593)
+       egypt (+20)
+       el salvador (+503)
+       equatorial guinea (+240)
+       eritrea (+291)
+       estonia (+372)
+       ethiopia (+251)
+       falkland islands (malvinas) (+500)
+       faroe islands (+298)
+       federated states of micronesia (+691)
+       fiji (+679)
+       finland (+358)
+       france (+33)
+       french guiana (+594)
+       french polynesia (+689)
+       french southern territories (+0)
+       gabon (+241)
+       gambia (+220)
+       georgia (+995)
+       germany (+49)
+       ghana (+233)
+       gibraltar (+350)
+       greece (+30)
+       greenland (+299)
+       grenada (+1)
+       guadeloupe (+590)
+       guam (+1)
+       guatemala (+502)
+       guernsey (+44)
+       guinea (+224)
+       guinea-bissau (+245)
+       guyana (+592)
+       haiti (+509)
+       heard island and mcdonald islands (+0)
+       honduras (+504)
+       hong kong (+852)
+       hungary (+36)
+       iceland (+354)
+       india (+91)
+       indonesia (+62)
+       iran (+98)
+       iraq (+964)
+       ireland (+353)
+       isle of man (+44)
+       israel (+972)
+       italy (+39)
+       jamaica (+1)
+       japan (+81)
+       jersey (+44)
+       jordan (+962)
+       kazakhstan (+7)
+       kenya (+254)
+       kiribati (+686)
+       korea (+82)
+       korea (north) (+850)
+       kosovo (+383)
+       kuwait (+965)
+       kyrgyzstan (+996)
+       laos (+856)
+       latvia (+371)
+       lebanon (+961)
+       lesotho (+266)
+       liberia (+231)
+       libya (+218)
+       liechtenstein (+423)
+       lithuania (+370)
+       luxembourg (+352)
+       macao (+853)
+       macedonia (+389)
+       madagascar (+261)
+       malawi (+265)
+       malaysia (+60)
+       maldives (+960)
+       mali (+223)
+       malta (+356)
+       marshall islands (+692)
+       martinique (+596)
+       mauritania (+222)
+       mauritius (+230)
+       mayotte (+262)
+       mexico (+52)
+       moldova (+373)
+       monaco (+377)
+       mongolia (+976)
+       montenegro (+382)
+       montserrat (+1)
+       morocco (+212)
+       mozambique (+258)
+       myanmar (+95)
+       namibia (+264)
+       nauru (+674)
+       nepal (+977)
+       netherlands (+31)
+       netherlands antilles (+0)
+       new caledonia (+687)
+       new zealand (+64)
+       nicaragua (+505)
+       niger (+227)
+       nigeria (+234)
+       niue (+683)
+       norfolk island (+672)
+       northern mariana islands (+1)
+       norway (+47)
+       pakistan (+92)
+       palau (+680)
+       palestinian territory (+970)
+       panama (+507)
+       papua new guinea (+675)
+       paraguay (+595)
+       peru (+51)
+       philippines (+63)
+       pitcairn (+0)
+       poland (+48)
+       portugal (+351)
+       puerto rico (+1)
+       qatar (+974)
+       reunion (+262)
+       romania (+40)
+       russian federation (+7)
+       rwanda (+250)
+       s. georgia and s. sandwich islands (+0)
+       saint helena (+290)
+       saint kitts and nevis (+1)
+       saint lucia (+1)
+       saint pierre and miquelon (+508)
+       saint vincent and the grenadines (+1)
+       samoa (+685)
+       san marino (+378)
+       sao tome and principe (+239)
+       saudi arabia (+966)
+       senegal (+221)
+       serbia (+381)
+       serbia and montenegro (+0)
+       seychelles (+248)
+       sierra leone (+232)
+       singapore (+65)
+       slovak republic (+421)
+       slovenia (+386)
+       solomon islands (+677)
+       somalia (+252)
+       south africa (+27)
+       south sudan (+211)
+       spain (+34)
+       sri lanka (+94)
+       sudan (+249)
+       sultanate of oman (+968)
+       suriname (+597)
+       svalbard and jan mayen (+47)
+       swaziland (+268)
+       sweden (+46)
+       switzerland (+41)
+       syria (+963)
+       taiwan (+886)
+       tajikistan (+992)
+       tanzania (+255)
+       thailand (+66)
+       timor-leste (+670)
+       togo (+228)
+       tokelau (+690)
+       tonga (+676)
+       trinidad and tobago (+1)
+       tunisia (+216)
+       turkey (+90)
+       turkmenistan (+993)
+       turks and caicos islands (+1)
+       tuvalu (+688)
+       uganda (+256)
+       ukraine (+380)
+       united arab emirates (+971)
+       united kingdom (+44)
+       uruguay (+598)
+       uzbekistan (+998)
+       vanuatu (+678)
+       vatican city state (holy see) (+39)
+       venezuela (+58)
+       vietnam (+84)
+       virgin islands (british) (+1)
+       virgin islands (u.s.) (+1)
+       wallis and futuna (+681)
+       western sahara (+212)
+       yemen (+967)
+       zambia (+260)
+       zimbabwe (+263)
+   please enter a valid answer","Bronx, New York, United States"
+"email address
+email address
+required
+       select an option
+       daeshaunkmorrison@gmail.com
+   please enter a valid answer","Bronx, New York, United States"
+"have you completed the following level of education: bachelor's in computer science?
+have you completed the following level of education: bachelor's in computer science?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have previous work experience with backend systems, connectors, search, or other infrastructure?
+do you have previous work experience with backend systems, connectors, search, or other infrastructure?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"would you like to receive emails, text messages, or phone calls about this job and other matching opportunities?
+would you like to receive emails, text messages, or phone calls about this job and other matching opportunities?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"required
+       select an option
+       yes, i submitted the form to give augment jobs my job preferences.
+       no, i did not submit the form and do not want support in my job search
+   please make a selection",N/A
+"can you do hybrid from any of these locations?: ca, tx, tn, in, oh?
+can you do hybrid from any of these locations?: ca, tx, tn, in, oh?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"do you have experience with ci/cd? mentioned in your resume?
+do you have experience with ci/cd? mentioned in your resume?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with python? mentioned in your resume?
+do you have experience with python? mentioned in your resume?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with core java?,3
+"kindly let me know you current work authorization? 1. us citizen 2. green card holder 3. ead (gc, l2, opt, h4) 4. others
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with amazon web services (aws)?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with denodo platform?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with sql?,6
+"¿cuántos años de experiencia tienes con goldengate?
+introduce un número de whole entre 0 y 99",4
+how many years of work experience do you have with node.js?,3
+"how many years of work experience do you have with graphql?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with micro frontend ?
+enter a decimal number larger than 0.0",4
+"have you moved monolithic application to micro front end ?
+have you moved monolithic application to micro front end ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"can you work on w2 ?
+can you work on w2 ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"how many years experience do you have in pv or bess?
+enter a decimal number larger than 0.0",4
+"do you have experience performing power factor, insulation resistance, and dissolved gas analysis?
+do you have experience performing power factor, insulation resistance, and dissolved gas analysis?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with databases?,5
+how many years of work experience do you have with google cloud platform (gcp)?,6
+"how many years of start-up experience do you have?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with fastapi?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with jquery?,6
+how many years of work experience do you have with xml?,5
+"how many years of work experience do you have with mortgage-backed securities (mbs)?
+enter a whole number between 0 and 99",4
+"how many years of help desk or desktop support do you have?
+enter a decimal number larger than 0.0",5
+"are you comfortable working onsite in manhattan, ny?
+are you comfortable working onsite in manhattan, ny?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with c (programming language)?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with html?,6
+"how many years of work experience do you have with microservices
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with agile
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with azure devops
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with product information management?
+enter a whole number between 0 and 99",4
+"how many years of software engineering management experience do you have?
+enter a decimal number larger than 0.0",5
+"how many years of ui/ux experience do you have?
+enter a decimal number larger than 0.0",3
+"do you have any direct riversand pim experience?
+enter a decimal number larger than 0.0",Yes
+how many years of work experience do you have with product information management?,5
+how many years of software engineering management experience do you have?,5
+how many years of ui/ux experience do you have?,4
+how many years of software development experience do you have?,5
+"what is your university grade point average (4.0 gpa scale)?
+enter a decimal number between 0.0 and 5.0",4
+"are you a us citizen?
+are you a us citizen?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with accident insurance?
+enter a whole number between 0 and 99",6
+"""will work onsite on w2 contract.""
+""will work onsite on w2 contract.""
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"how many years of work experience do you have with microsoft exchange?
+enter a whole number between 0 and 99",3
+"how many years of relevant experience do you have?
+enter a decimal number between 0.0 and 9.9999998e12",4
+"what is the highest level of education that you have completed?
+please enter a valid answer",4
+cover letter,4
+"are you authorized to work in the united states?
+are you authorized to work in the united states?
+required
+yes
+no
+please make a selection",4
+"we are an equal opportunity employer and are committed to excellence through diversity. by affixing your name and submitting your resume or completing this application, you certify that the information you have provided is true and complete to the best of your knowledge. if this application leads to employment, you understand that false or misleading information in your application or interview may result in your employment being terminated.
+please enter a valid answer",4
+"how many years of work experience do you have with study data tabulation model (sdtm)?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with biostatistics?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with clinical trial analysis?
+enter a whole number between 0 and 99",6
+"city
+city
+new york, united states
+new york city metropolitan area
+new york, new york, united states
+new delhi, delhi, india
+new zealand
+new south wales, australia
+kings county, new york, united states
+brooklyn, new york, united states
+albany, new york metropolitan area
+10001, new york, new york, united states
+rochester, new york metropolitan area
+nassau county, new york, united states
+greater sydney area
+suffolk county, new york, united states
+bronx, new york, united states
+erie county, new york, united states
+bronx county, new york, united states
+greater new orleans region
+westchester county, new york, united states
+new brunswick, canada
+please enter a valid answer","Bronx, New York, United States"
+"city
+city
+bronx, new york, united states
+bronx county, new york, united states
+bron, auvergne-rhône-alpes, france
+bronxville, new york, united states
+bronte, new south wales, australia
+bronckhorst, gelderland, netherlands
+10467, bronx, new york, united states
+10459, bronx, new york, united states
+10462, bronx, new york, united states
+69500, bron, auvergne-rhône-alpes, france
+10456, bronx, new york, united states
+10458, bronx, new york, united states
+10466, bronx, new york, united states
+bronte, sicily, italy
+10452, bronx, new york, united states
+10463, bronx, new york, united states
+10453, bronx, new york, united states
+10469, bronx, new york, united states
+10468, bronx, new york, united states
+10451, bronx, new york, united states
+please enter a valid answer","Bronx, New York, United States"
+"city
+city
+bronx, new york, united states
+bronx county, new york, united states
+10467, bronx, new york, united states
+10459, bronx, new york, united states
+10462, bronx, new york, united states
+10456, bronx, new york, united states
+10458, bronx, new york, united states
+10466, bronx, new york, united states
+10452, bronx, new york, united states
+10463, bronx, new york, united states
+10453, bronx, new york, united states
+10469, bronx, new york, united states
+10468, bronx, new york, united states
+10451, bronx, new york, united states
+10457, bronx, new york, united states
+10473, bronx, new york, united states
+10461, bronx, new york, united states
+10472, bronx, new york, united states
+10460, bronx, new york, united states
+10475, bronx, new york, united states
+please enter a valid answer","Bronx, New York, United States"
+"do you have experience with core image?
+do you have experience with core image?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with cascading style sheets (css)?,4
+how many years of work experience do you have with r (programming language)?,5
+how many years of work experience do you have with microsoft powerpoint?,5
+"how many years of work experience do you have with visio?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with marketing?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with product development?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with point of sale (pos) systems?
+enter a whole number between 0 and 99",6
+"are you able to work on w2?
+are you able to work on w2?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"male
+female
+decline to answer",4
+"race
+race
+required
+       select an option
+       decline to answer
+       hispanic or latino
+       white, not hispanic or latino
+       black or african-american, not hispanic or latino
+       asian, not hispanic or latino
+       native hawaiian or other pacific islander, not hispanic or latino
+       american indian or alaskan native, not hispanic or latino
+       two or more races, not hispanic or latino",White
+"i identify as one or more of the classifications of protected veteran listed above
+i am not a protected veteran
+i don't wish to answer",I am not
+"yes, i have a disability, or have a history/record of having a disability
+no, i don't have a disability, or a history/record of having a disability
+i don't wish to answer",4
+your name,4
+,4
+"race
+race
+required
+       select an option
+       decline to answer
+       hispanic or latino
+       white, not hispanic or latino
+       black or african-american, not hispanic or latino
+       asian, not hispanic or latino
+       native hawaiian or other pacific islander, not hispanic or latino
+       american indian or alaskan native, not hispanic or latino
+       two or more races, not hispanic or latino
+   please enter a valid answer",White
+"how many years of work experience do you have with jakarta xml binding (jaxb)?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with airlines?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with perl?,4
+"how many years of work experience do you have with windows?
+enter a whole number between 0 and 99",6
+"how many years of hands-on experience do you have with altera/allscripts data model (v22.1), specifically sunrise/cloud?
+enter a decimal number larger than 0.0",6
+"do you have experience in cloudian and cloud-based data systems?
+do you have experience in cloudian and cloud-based data systems?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with test automation?,5
+"how many years of work experience do you have with test automation frameworks?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with test automation tools?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with powershell?,4
+"are you legally authorised to work in the country?
+are you legally authorised to work in the country?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with drupal?,5
+"how many years of work experience do you have with css3?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with acquia drupal platform?
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with gitlab?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with bitbucket?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with twig?
+enter a decimal number larger than 0.0",4
+"are you able to work on a w2? (we do not do c2c)
+are you able to work on a w2? (we do not do c2c)
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
