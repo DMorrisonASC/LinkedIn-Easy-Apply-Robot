@@ -90,8 +90,8 @@ class EasyApplyBot:
         self.uploads = uploads
         self.salary = salary
         self.rate = rate
-        past_ids: list | None = self.get_appliedIDs(filename)
-        self.appliedJobIDs: list = past_ids if past_ids != None else []
+        # past_ids: list | None = self.get_appliedIDs(filename)
+        # self.appliedJobIDs: list = past_ids if past_ids != None else []
         self.filename: str = filename
         self.options = self.browser_options()
         self.browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=self.options)
@@ -204,7 +204,7 @@ class EasyApplyBot:
         # options.add_argument(r"--user-data-dir={}".format(self.profile_path))
 
         return options
-        
+
     # Method that logs into your account 
     def start_linkedin(self, username, password) -> None:
         log.info("Logging in.....Please wait :)")
@@ -553,6 +553,17 @@ class EasyApplyBot:
         """
 
         try:
+            next_locator = (By.CSS_SELECTOR,
+                            "button[aria-label='Continue to next step']")
+            review_locator = (By.CSS_SELECTOR,
+                              "button[aria-label='Review your application']")
+            submit_locator = (By.CSS_SELECTOR,
+                              "button[aria-label='Submit application']")
+            error_locator = (By.CLASS_NAME,"artdeco-inline-feedback__message")
+            upload_resume_locator = (By.XPATH, '//span[text()="Upload resume"]')
+            upload_cv_locator = (By.XPATH, '//span[text()="Upload cover letter"]')
+            # WebElement upload_locator = self.browser.find_element(By.NAME, "file")
+            follow_locator = (By.CSS_SELECTOR, "label[for='follow-company-checkbox']")
             submitted = False
             loop = 0
 
