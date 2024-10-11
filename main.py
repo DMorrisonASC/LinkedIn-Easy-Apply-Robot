@@ -974,6 +974,119 @@ class EasyApplyBot:
             writer = csv.writer(f)
             writer.writerow(toWrite)
 
+    def ans_question(self, question):  # refactor this to an ans.yaml file
+        answer = None
+        question = question.lower().strip()
+        choices = ["6", "5", "4", "3"]
+
+        # English proficiency-related questions
+        if "english" in question:
+            if "speak" in question or "communicate" in question:
+                answer = "Yes"
+            elif "proficiency" in question or "level" in question:
+                answer = "Native"
+
+        # Experience-related questions
+        elif "how many" in question and ("experience" in question or "years" in question):
+            answer = random.choice(choices)
+        elif "do you" in question and "experience" in question:
+            answer = "Yes"
+        elif "how did you hear" in question:
+            answer = "Other"
+        elif "refer" in question or "referred" in question:
+            answer = "N/A"
+        elif "why are you seeking" in question or ("why" in question and "this position"):
+            answer = "Good glassdoor reviews and the workers I talked to love their jobs"
+
+        # Work authorization questions
+        elif "work" in question and ("authorization" in question or "authorized" in question):
+            if "usc" in question:
+                answer = "USC: 0"
+            elif "status" in question:
+                answer = "U.S Citizen"
+        elif "W2" in question:
+            answer = "Yes"
+        elif ("eligible" in question or "able" in question) and "clearance" in question:
+            answer = "Yes"
+        elif ("have" in question or "obtain" in question or "obtained" in question) and "clearance" in question:
+            answer = "Yes"
+        elif ("US" in question or "U.S." in question or "green" in question ) and ("citizen" in question or "card" in question):
+            answer = "Yes"
+        # 
+        elif ("city" in question or "address" in question):
+            answer = "Bronx, New York, United States"
+        elif ("zip" in question or "area code" in question or "postal" in question):
+            answer = "10466"
+        elif ("first" in question):
+            answer = "Daeshaun"
+        elif ("last" in question):
+            answer = "Morrison"
+        # Socials
+        elif ("github" in question):
+            answer = "https://github.com/DMorrisonASC"
+        elif ("linkedin" in question):
+            answer = "https://www.linkedin.com/in/daeshaun-morrison-bab77b176/"
+
+        # Disability and drug test-related questions
+        elif "do you" in question and "disability" in question:
+            answer = "No"
+        elif "drug test" in question:
+            if "positive" in question:
+                answer = "No"
+            elif "can you" in question:
+                answer = "Yes"
+
+        # Commuting and legal questions
+        elif "can you" in question and "commute" in question:
+            answer = "Yes"
+        elif "criminal" in question or "felon" in question or "charged" in question:
+            answer = "No"
+
+        # Other personal questions
+        elif "currently reside" in question:
+            answer = "Yes"
+        elif "sponsor" in question:
+            answer = "No"
+        elif ("us citizen" in question or "u.s. citizen" in question) and "clearance" in question:
+            answer = "Yes"
+        elif "salary" in question:
+            answer = self.salary
+        elif "hourly" in question:
+            answer = "40"
+        elif "gender" in question:
+            answer = "Male"
+        elif "race" in question:
+            answer = "White"
+        elif "lgbtq" in question:
+            answer = "No"
+        elif "ethnicity" in question or "nationality" in question:
+            answer = "White"
+        elif "government" in question or "veteran" in question:
+            answer = "I am not"
+        elif "are you legally" in question:
+            answer = "Yes"
+
+
+        # General affirmative questions
+        elif "do you" in question or "did you" in question or "have you" in question or "are you" in question:
+            answer = "Yes"
+
+        # Default case for unanswered questions
+        if answer is None:
+            log.info("Not able to answer question automatically. Please provide answer")
+            answer = "4"  # Placeholder for unanswered questions
+            time.sleep(5)
+
+        log.info("Answering question: " + question + " with answer: " + answer)
+
+        # Append question and answer to the CSV
+        if question not in self.answers:
+            self.answers[question] = answer
+            new_data = pd.DataFrame({"Question": [question], "Answer": [answer]})
+            new_data.to_csv(self.qa_file, mode='a', header=False, index=False, encoding='utf-8')
+
+        return answer
+
 if __name__ == '__main__':
     # all user info needed for the applying. Ex: username, password, 
     with open("config.yaml", 'r') as stream:
