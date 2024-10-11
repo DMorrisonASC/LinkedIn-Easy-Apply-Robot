@@ -134,18 +134,16 @@ class EasyApplyBot:
             "follow": (By.CSS_SELECTOR, "label[for='follow-company-checkbox']"),
             "upload": (By.NAME, "file"),
             "search": (By.CLASS_NAME, "jobs-search-results-list"),
-            "links": (By.XPATH, '//div[@data-job-id]'),  # Corrected this line
+            "links": (By.XPATH, '//div[@data-job-id]'),
             "fields": (By.CLASS_NAME, "jobs-easy-apply-form-section__grouping"),
-            "radio_select": (By.XPATH, ".//input[starts-with(normalize-space(@id), 'urn:li:fsd_formElement:urn:li:jobs_applyformcommon_easyApplyFormElement:') and @type='radio']"),
-            "multi_select": (By.XPATH, ".//select[starts-with(normalize-space(@id), 'text-entity-list-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-') and @required='']"),
+            "radio_select": (By.XPATH, ".//input[starts-with(@id, 'urn:li:fsd_formElement:urn:li:jobs_applyformcommon_easyApplyFormElement:') and @type='radio']"),
+            "multi_select": (By.XPATH, ".//select[starts-with(@id, 'text-entity-list-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-') and @required='']"),
             "text_select": (By.XPATH, ".//input[starts-with(@id, 'single-line-text-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-') and @type='text']"),
             "input_select": (By.CSS_SELECTOR, 'input[type="radio"], input[type="checkbox"]'),
-            "location_select": ".//input[@aria-autocomplete='list']",
+            "location_select": (By.XPATH, ".//input[@aria-autocomplete='list']"),
             "text_area": (By.TAG_NAME, "textarea"),
             "2fa_oneClick": (By.ID, 'reset-password-submit-button'),
             "easy_apply_button": (By.XPATH, '//button[contains(@class, "jobs-apply-button")]'),
-            "date_posted_button": (By.XPATH, '//button[contains(@id, "searchFilter_timePostedRange")]'),
-            "date_posted_expanded": (By.XPATH, '//button[contains(@id, "searchFilter_timePostedRange")]'),
         }
 
         # Initialize questions and answers file
@@ -373,7 +371,7 @@ class EasyApplyBot:
                             if link.text not in self.blacklist:
                                 jobID = link.get_attribute("data-job-id")
                                 if jobID == "search":
-                                    log.debug(f"Job ID not found, search keyword found instead? {link.text}")
+                                    log.debug(f"Job ID not found, It is likely a 'promoted' job? {link.text}")
                                     continue
                                 else:
                                     # Ensure the job ID is unique before adding it for processing.
@@ -591,6 +589,8 @@ class EasyApplyBot:
                     cv_locator.send_keys(cv)
 
                 # Handle follow button if present.
+                # Application commonly have this option already selected,
+                # So this UNFOLLOWS companies. Comment this out if you wnat to follow companies
                 if len(self.get_elements("follow")) > 0:
                     elements = self.get_elements("follow")
                     for element in elements:
@@ -765,8 +765,8 @@ class EasyApplyBot:
                             log.info(f"Closest radio button selected: {closest_match.get_attribute('value')}")
                             
                         else:
-                            log.warning("No suitable radio button found to select. Picking first option")
-                            firstOption = radio_buttons[0]
+                            log.warning("No suitable radio button found to select. Picking random option")
+                            firstOption = random.choice(radio_buttons)
                             WebDriverWait(field, 10).until(EC.element_to_be_clickable(firstOption))
                             self.browser.execute_script("""
                                 arguments[0].click();
@@ -811,11 +811,6 @@ class EasyApplyBot:
                     except StaleElementReferenceException:
                         retry_count += 1
                         log.warning(f"Retrying due to stale element. Attempt {retry_count}/{max_retries}")
-                        
-                        # Re-locate the field or any container element in case the DOM has been updated
-                        field = WebDriverWait(driver, 10).until(
-                            EC.presence_of_element_located(self.locator["multi_select_container"])
-                        )
                         
                         if retry_count >= max_retries:
                             log.error("Exceeded max retries due to stale element issue")
@@ -881,31 +876,40 @@ class EasyApplyBot:
                     selected = False
 
                     for select_element in select_elements:
-                        if answer.lower() in select_element.get_attribute('data-test-text-selectable-option__input').lower():
+                        # Check for attributes starting with 'data-test-text-selectable-option'
+                        attr_value = select_element.get_attribute('data-test-text-selectable-option__input')
+                        
+                        # Check if the attribute value matches the answer
+                        if attr_value and answer.lower() == attr_value.lower():
+                            # Wait until the select_element is clickable and then click
                             WebDriverWait(field, 10).until(EC.element_to_be_clickable(select_element))
                             select_element.click()  # Click instead of just setting the 'selected' attribute
                             log.info(f"Select element chosen: {select_element.get_attribute('value')}")
                             selected = True
                             break  # Exit loop once the option is selected
 
-                    if not selected:
-                        log.info("Exact match not found, looking for closest answer...")
-                        closest_match = None
-                        for select_element in select_elements:
-                            select_value = select_element.get_attribute('value').lower()
-                            if "option1" in select_value or "option2" in select_value or "option3" in select_value:  # Adjust as needed
-                                closest_match = select_element
-                                break
+                        if not selected:
+                            log.info("Exact match not found, looking for closest answer...")
+                            closest_match = None
+                            for select_element in select_elements:
+                                # Get the value of the specific attribute
+                                attr_value = select_element.get_attribute('data-test-text-selectable-option__input')
+                                
+                                # Check if the attribute value is present and if the answer is in it
+                                if attr_value and answer.lower() in attr_value.lower():  # Check if answer is in the attribute value
+                                    closest_match = select_element
+                                    break  # Exit loop on first closest match
 
-                        if closest_match:
-                            WebDriverWait(field, 10).until(EC.element_to_be_clickable(closest_match))
-                            closest_match.click()  # Use click for better simulation
-                            log.info(f"Closest select element chosen: {closest_match.get_attribute('value')}")
+                            if closest_match:
+                                WebDriverWait(field, 10).until(EC.element_to_be_clickable(closest_match))
+                                closest_match.click()  # Use click for better simulation
+                                log.info(f"Closest select element chosen: {closest_match.get_attribute('value')}")
+
                         else:
-                            log.warning("No suitable select option found. Picking the 2nd option")
+                            log.warning("No suitable select option found. Picking the random option")
                             
-                            if len(select_elements) > 0:  # Ensure there is a 2nd option
-                                second_option = select_elements[1]
+                            if len(select_elements) > 0:  # Pick random choice
+                                second_option = random.choice(select_elements)
                                 WebDriverWait(field, 20).until(EC.element_to_be_clickable(second_option))
 
                                 second_option.click()  # Try to click instead of setting selected directly
@@ -1017,6 +1021,8 @@ class EasyApplyBot:
         # Experience-related questions
         elif "how many" in question and ("experience" in question or "years" in question):
             answer = random.choice(choices)
+        elif "rate" in question and ("yourself" in question or "proficient" in question or "proficiency" in question):
+            answer = "10"
         elif "do you" in question and "experience" in question:
             answer = "Yes"
         elif "how did you hear" in question:
@@ -1040,7 +1046,7 @@ class EasyApplyBot:
             answer = "Yes"
         elif ("US" in question or "U.S." in question or "green" in question ) and ("citizen" in question or "card" in question):
             answer = "Yes"
-        # 
+        # basic info
         elif ("city" in question or "address" in question):
             answer = "Bronx, New York, United States"
         elif ("zip" in question or "area code" in question or "postal" in question):
@@ -1056,7 +1062,7 @@ class EasyApplyBot:
             answer = "https://www.linkedin.com/in/daeshaun-morrison-bab77b176/"
 
         # Disability and drug test-related questions
-        elif "do you" in question and "disability" in question:
+        elif "disability" in question:
             answer = "No"
         elif "drug test" in question:
             if "positive" in question:

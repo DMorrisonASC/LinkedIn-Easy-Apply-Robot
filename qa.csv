@@ -1199,3 +1199,283 @@ required
        yes
        no
    please enter a valid answer",Yes
+"do you have a valid driver's license?
+do you have a valid driver's license?
+required
+yes
+no",Yes
+"how many years of work experience do you have with chatgpt?
+enter a whole number between 0 and 99",4
+,4
+"what are your pronouns?
+what are your pronouns?
+he/him
+she/her
+they/them
+name only
+other/neopronouns (enter below)",Yes
+"other/neopronouns, please list here",4
+"we are committed to ensuring that individuals with disabilities have equitable access to timely, accurate, and contextually relevant information. it is imperative that they can make informed decisions based on this information and are empowered to participate meaningfully and provide feedback. we believe in prioritizing accessibility in our communication practices to achieve these goals. to facilitate this, we kindly ask you to specify your communication preferences to ensure that information reaches you in a format that suits your needs. your input will help us tailor our communication methods to better serve you.",N/A
+"how many years of work experience do you have with ibm mainframe?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with job control language (jcl)?,4
+"how many years of work experience do you have with cerner?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with electronic health records (ehr)?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with cross-functional team leadership?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with kotlin?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with android?,4
+"are you looking to work corp-to-corp (c2c)?
+are you looking to work corp-to-corp (c2c)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with data validation?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with machine learning?,4
+"the position requires the candidate to work on w2. will you be able to work on w2?
+the position requires the candidate to work on w2. will you be able to work on w2?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+,4
+"only gc and usc
+only gc and usc
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"do you have how many years experience into java full stack developer with react & azure?
+do you have how many years experience into java full stack developer with react & azure?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",3
+"please do not apply by any third party and its full time 
+please do not apply by any third party and its full time
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"look for strong back-end development along front end react development (70% backend, 30% front end)
+look for strong back-end development along front end react development (70% backend, 30% front end)
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"need strong experience in kubernetes, redis, caches try to get azure environment.
+need strong experience in kubernetes, redis, caches try to get azure environment.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"are you willing to work onsite memphis, tn / charlotte, nc? 
+are you willing to work onsite memphis, tn / charlotte, nc?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with allscripts?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with sunrise clinical manager?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with data modeling?
+enter a whole number between 0 and 99",3
+"how many years of experience do you have providing technical support to implement, upgrade or maintain peoplesoft erp systems?
+enter a decimal number larger than 0.0",5
+"how many years of experience do you have implementing/upgrading or maintaining a state of texas peoplesoft finance system?
+enter a decimal number larger than 0.0",6
+"how many years of experience do you have creating, maintaining and updating system and configuration specific documentation?
+enter a decimal number larger than 0.0",4
+"how proficient are you in system design? pl rate yourself out of 10.
+enter a decimal number larger than 0.0",Yes
+"how many years of experience do you have with typescript
+enter a decimal number larger than 0.0",4
+"how many years of experience do you have in creating a fast prototype, where you had to get mvp out quickly?
+enter a decimal number larger than 0.0",4
+"what is your expected compensation?
+enter a decimal number larger than 0.0",4
+how many years of work experience do you have with postgresql?,5
+how many years of work experience do you have with python (programming language)?,4
+how many years of experience do you have with typescript,6
+"how many years of experience do you have in creating a fast prototype, where you had to get mvp out quickly?",3
+what is your expected compensation?,4
+"how many years of work experience do you have with mlops?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with kubernetes?,5
+"how did you hear that cai is hiring?
+how did you hear that cai is hiring?
+required
+       select an option
+       linkedin
+       indeed
+       cai careers page
+       cai referral
+       facebook
+       glassdoor
+       ziprecruiter
+       monster
+       talent.com
+       myjobhelper
+       adzuna
+       jora
+       jooble
+       handshake
+       google keyword search
+       other
+   please make a selection",Other
+"are you pursuing a role in data engineering or related to software functions?
+are you pursuing a role in data engineering or related to software functions?
+required
+yes
+no
+please make a selection",Yes
+"please select the correct number of levels of commissioning
+please select the correct number of levels of commissioning
+required
+4
+5
+6
+7
+please make a selection",4
+"are you pursuing a role in data engineering or related to software functions?
+are you pursuing a role in data engineering or related to software functions?
+required
+yes
+no",Yes
+"please select the correct number of levels of commissioning
+please select the correct number of levels of commissioning
+required
+4
+5
+6
+7",4
+"please use the listed options below to identify your current employment status. note: cai does not provide sponsorship at this time.
+please use the listed options below to identify your current employment status. note: cai does not provide sponsorship at this time.
+required
+us citizen
+green card holder/us permanent citizen
+canadian citizen
+mexican citizen
+other - need sponsorship
+please make a selection",Yes
+"please use the listed options below to identify your current employment status. note: cai does not provide sponsorship at this time.
+please use the listed options below to identify your current employment status. note: cai does not provide sponsorship at this time.
+required
+us citizen
+green card holder/us permanent citizen
+canadian citizen
+mexican citizen
+other - need sponsorship",Yes
+"why are you seeking a new position?
+please enter a valid answer",Good glassdoor reviews and the workers I talked to love their jobs
+"when are you available to start a new position?
+when are you available to start a new position?
+required
+immediately
+2 weeks
+30 days
+6 weeks or longer
+please make a selection",Yes
+"when are you available to start a new position?
+when are you available to start a new position?
+required
+immediately
+2 weeks
+30 days
+6 weeks or longer",Yes
+"are you willing to work weekends if/when required by the position? (reasonable accommodations will be made for religious requirements)
+are you willing to work weekends if/when required by the position? (reasonable accommodations will be made for religious requirements)
+required
+yes
+no
+please make a selection",Yes
+"are you willing to work weekends if/when required by the position? (reasonable accommodations will be made for religious requirements)
+are you willing to work weekends if/when required by the position? (reasonable accommodations will be made for religious requirements)
+required
+yes
+no",Yes
+"current address: street, apt#
+please enter a valid answer","Bronx, New York, United States"
+"current address: city, state zip code
+please enter a valid answer","Bronx, New York, United States"
+"how many years of relevant work experience do you have?
+how many years of relevant work experience do you have?
+required
+entry level - 2 years
+2-4 years
+4-8 years
+8-12 years
+12-16 years
+16-20+ years
+please make a selection",4
+"how many years of relevant work experience do you have?
+how many years of relevant work experience do you have?
+required
+entry level - 2 years
+2-4 years
+4-8 years
+8-12 years
+12-16 years
+16-20+ years",4
+"do you currently have a valid passport?
+do you currently have a valid passport?
+required
+yes
+no
+please make a selection",Yes
+"are you willing to relocate if necessary?
+are you willing to relocate if necessary?
+required
+yes
+no
+please make a selection",Yes
+"regarding travel, how much would you be willing to do? travel may include 75%+ travel, monthly to yearly client site commitments, and/or international travel.
+regarding travel, how much would you be willing to do? travel may include 75%+ travel, monthly to yearly client site commitments, and/or international travel.
+required
+25%
+50%
+75%
+100%
+please make a selection",4
+"do you currently have a valid passport?
+do you currently have a valid passport?
+required
+yes
+no",Yes
+"are you willing to relocate if necessary?
+are you willing to relocate if necessary?
+required
+yes
+no",Yes
+"regarding travel, how much would you be willing to do? travel may include 75%+ travel, monthly to yearly client site commitments, and/or international travel.
+regarding travel, how much would you be willing to do? travel may include 75%+ travel, monthly to yearly client site commitments, and/or international travel.
+required
+25%
+50%
+75%
+100%",4
+"are you fluent (written & verbal) in english?
+are you fluent (written & verbal) in english?
+required
+yes
+no
+please make a selection",4
+"are you fluent (written & verbal) in english?
+are you fluent (written & verbal) in english?
+required
+yes
+no",4
