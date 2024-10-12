@@ -481,7 +481,7 @@ class EasyApplyBot:
             result = False
         # Handle case where no Easy Apply button exists.
         else:
-            string_easy = "* Doesn't have Easy Apply Button"
+            string_easy = "~ Doesn't have Easy Apply Button"
             result = False
 
         # Log the result of the job application and write to a file for tracking.
@@ -565,25 +565,31 @@ class EasyApplyBot:
             # Loop twice to attempt the resume submission.
             while loop < 2:
                 time.sleep(2)
+                # # Upload the resume if the locator is present.
+                # if self.is_present(self.locator["upload_resume"]):
+                #     try:
+                #         resume = self.uploads["resume"]
+                #         # Wait until the resume upload button is clickable
+                #         resume_button = WebDriverWait(self.browser, 10).until(
+                #             EC.element_to_be_clickable(self.locator["upload_resume"])
+                #         )
+                #         resume_button.send_keys(resume)
+                #     except Exception as e:
+                #         log.error(f"Resume upload failed. Check file path or the locator: {e}")
+                #         log.error(traceback.format_exc())  # Full traceback for better debugging
 
-                # Upload the resume if the locator is present.
-                if self.is_present(self.locator["upload_resume"]):
-                    try:
-                        resume = self.uploads["resume"]
-                        resume_button = self.get_elements(self.locator["upload_resume"])[0]
-                        resume_button.send_keys(resume)
-                    except Exception as e:
-                        log.error(f"Resume upload failed. Check file path or the locator: {e}")
-                
-                # Upload the cover letter if the locator is present.
-                if self.is_present(self.locator["upload_cover"]):
-                    try:
-                        cover_letter = self.uploads["cover_letter"]
-                        cover_button = self.get_elements(self.locator["upload_cover"])[0]
-                        cover_buttton.send_keys(cover_letter)
-                    except Exception as e:
-                        log.error(f"Cover letter upload failed. Check file path or the locator: {e}")
-
+                # # Upload the cover letter if the locator is present.
+                # if self.is_present(self.locator["upload_cover"]):
+                #     try:
+                #         cover_letter = self.uploads["cover_letter"]
+                #         # Wait until the cover letter upload button is clickable
+                #         cover_button = WebDriverWait(self.browser, 10).until(
+                #             EC.element_to_be_clickable(self.locator["upload_cover"])
+                #         )
+                #         cover_button.send_keys(cover_letter)
+                #     except Exception as e:
+                #         log.error(f"Cover letter upload failed. Check file path or the locator: {e}")
+                        
                 # Handle follow button if present.
                 # Applications commonly have this option already selected,
                 # So this UNFOLLOWS companies. Comment this out if you wnat to follow companies
@@ -595,6 +601,7 @@ class EasyApplyBot:
 
                 # Handle submit button and complete the application.
                 if len(self.get_elements("submit")) > 0:
+                    
                     elements = self.get_elements("submit")
                     for element in elements:
                         button = self.wait.until(EC.element_to_be_clickable(element))
@@ -662,7 +669,6 @@ class EasyApplyBot:
         print("Length: ", len(form))
 
         for i in range(len(form)):  
-
             try:
                 # Attempt to re-locate the elements dynamically inside the loop
                 form = self.get_elements("fields")
@@ -690,15 +696,14 @@ class EasyApplyBot:
                         """, radio_button)
                         log.info("Radio button unselected")
 
-                # Unselect multi-select options
-                elif self.is_found_field(self.locator["multi_select"], field):
-                    # Get the first and only select element
-                    select_element = self.get_child_elements(self.locator["multi_select"], field)[0]  # `select_element` is a web element
+                # # Unselect multi-select options
+                # elif self.is_found_field(self.locator["multi_select"], field):
+                #     # Get the first and only select element
+                #     select_element = self.get_child_elements(self.locator["multi_select"], field)[0]  # `select_element` is a web element
 
-                    # Reset to the default value
-                    self.browser.execute_script("arguments[0].selectedIndex = 0; arguments[0].dispatchEvent(new Event('change'));", select_element)
-                    log.info("Multi-select reset to default value: 'Select an option'")
-
+                #     # Reset to the default value
+                #     self.browser.execute_script("arguments[0].selectedIndex = 0; arguments[0].dispatchEvent(new Event('change'));", select_element)
+                #     log.info("Multi-select reset to default value: 'Select an option'")
 
             except Exception as e:
                 log.error(f"Error clearing existing selections: {e}")
@@ -724,7 +729,7 @@ class EasyApplyBot:
             self.browser.execute_script("arguments[0].scrollIntoView(true);", field)
 
             # Check if input type is radio button
-            if self.is_found_field(self.locator["radio_select"], field) and answer.lower() in ["yes", "no", "1", "0"]:
+            if self.is_found_field(self.locator["radio_select"], field):
                 try:
                     radio_buttons = self.get_child_elements(self.locator["radio_select"], field)
 
@@ -744,7 +749,7 @@ class EasyApplyBot:
                             log.info(f"Radio button selected: {radio_button.get_attribute('value')}")
                             selected = True
 
-                    if not selected:
+                    if selected == False:
                         log.info("Exact match not found, looking for closest answer...")
                         closest_match = None
                         for radio_button in radio_buttons:
@@ -753,7 +758,7 @@ class EasyApplyBot:
                                 closest_match = radio_button
 
                         if closest_match:
-                            WebDriverWait(field, 10).until(EC.element_to_be_clickable(closest_match))
+                            WebDriverWait(field, 15).until(EC.element_to_be_clickable(closest_match))
                             self.browser.execute_script("""
                                 arguments[0].click();
                                 arguments[0].dispatchEvent(new Event('change'));
@@ -762,15 +767,15 @@ class EasyApplyBot:
                             
                         else:
                             log.warning("No suitable radio button found to select. Picking random option")
-                            firstOption = random.choice(radio_buttons)
-                            WebDriverWait(field, 10).until(EC.element_to_be_clickable(firstOption))
+                            ran_option = random.choice(radio_buttons)
+                            WebDriverWait(field, 10).until(EC.element_to_be_clickable(ran_option))
                             self.browser.execute_script("""
                                 arguments[0].click();
                                 arguments[0].dispatchEvent(new Event('change'));
-                            """, firstOption)
+                            """, ran_option)
                             
                 except StaleElementReferenceException:
-                    log.warning(f"Retrying due to stale element.")
+                    log.warning(f"Retrying due to stale element in radio button. ")
 
                 except Exception as e:
                     log.error(f"Radio button error for question: {question}, answer: {answer}")
@@ -806,7 +811,7 @@ class EasyApplyBot:
 
                     except StaleElementReferenceException:
                         retry_count += 1
-                        log.warning(f"Retrying due to stale element. Attempt {retry_count}/{max_retries}")
+                        log.warning(f"Retrying due to stale element in multi-select. Attempt {retry_count}/{max_retries}")
                         
                         if retry_count >= max_retries:
                             log.error("Exceeded max retries due to stale element issue")
@@ -818,12 +823,11 @@ class EasyApplyBot:
 
             # Handle text input fields
             elif self.is_found_field(self.locator["text_select"], field):
-                try:
-                    
+                try:    
                     text_field = WebDriverWait(field, 10).until(
                             EC.presence_of_element_located(self.locator["text_select"])
                         )
-                    time.sleep(3)
+                    
                     text_field.clear()
                     time.sleep(0.5)
                     text_field.send_keys(answer)
@@ -838,13 +842,14 @@ class EasyApplyBot:
                     text_field = WebDriverWait(field, 10).until(
                             EC.presence_of_element_located(self.locator["location_select"])
                         )
-                    time.sleep(3)
                     text_field.clear()
-                    time.sleep(0.5)
                     text_field.send_keys(answer)
-                    log.info(f"Text input field populated with: {answer}")
+                    time.sleep(5)
+                    text_field.send_keys(Keys.ARROW_DOWN)
+                    text_field.send_keys(Keys.ENTER)
+                    log.info(f"Auto complete input field populated with: {answer}")
                 except Exception as e:
-                    log.error(f"(process_questions(1)) Text field error: {e}") 
+                    log.error(f"Text field error: {e}") 
 
             # Handle textarea fields
             elif self.is_found_field(self.locator["text_area"], field):
@@ -884,37 +889,45 @@ class EasyApplyBot:
                             selected = True
                             break  # Exit loop once the option is selected
 
-                        if not selected:
-                            log.info("Exact match not found, looking for closest answer...")
-                            closest_match = None
-                            for select_element in select_elements:
-                                # Get the value of the specific attribute
-                                attr_value = select_element.get_attribute('data-test-text-selectable-option__input')
-                                
-                                # Check if the attribute value is present and if the answer is in it
-                                if attr_value and answer.lower() in attr_value.lower():  # Check if answer is in the attribute value
-                                    closest_match = select_element
-                                    break  # Exit loop on first closest match
+                    if selected == False:
+                        log.info("Exact match not found, looking for closest answer...")
+                        closest_match = None
+                        for select_element in select_elements:
+                            # Get the value of the specific attribute
+                            attr_value = select_element.get_attribute('data-test-text-selectable-option__input')
+                            
+                            # Check if the attribute value is present and if the answer is in it
+                            if attr_value and answer.lower() in attr_value.lower():  # Check if answer is in the attribute value
+                                closest_match = select_element
+                                break  # Exit loop on first closest match
 
-                            if closest_match:
-                                WebDriverWait(field, 10).until(EC.element_to_be_clickable(closest_match))
+                        if closest_match:
+                            WebDriverWait(field, 10).until(EC.element_to_be_clickable(closest_match))
+                            try:
                                 closest_match.click()  # Use click for better simulation
                                 log.info(f"Closest select element chosen: {closest_match.get_attribute('value')}")
+                            except Exception as e:
+                                log.warning(f"Regular click failed for closes match option. Using JavaScript click. Error: {e}")
+                                # Fallback to JavaScript click
+                                self.browser.execute_script("arguments[0].click();", closest_match)
+                                log.info(f"Random option selected via JS: {closest_match.get_attribute('value')}")
+
 
                         else:
                             log.warning("No suitable select option found. Picking the random option")
-                            
-                            if len(select_elements) > 0:  # Pick random choice
-                                second_option = random.choice(select_elements)
-                                WebDriverWait(field, 20).until(EC.element_to_be_clickable(second_option))
-
-                                second_option.click()  # Try to click instead of setting selected directly
-                                log.info(f"Second option selected: {second_option.get_attribute('value')}")
-                            else:
-                                log.error("Less than 2 options are available; unable to pick the 2nd option.")
+                            # Pick random choice
+                            random_option = random.choice(select_elements)
+                            try:
+                                random_option.click()
+                                log.info(f"Random option selected: {random_option.get_attribute('value')}")
+                            except Exception as e:
+                                log.warning(f"Regular click failed for random option. Using JavaScript click. Error: {e}")
+                                # Fallback to JavaScript click
+                                self.browser.execute_script("arguments[0].click();", random_option)
+                                log.info(f"Random option selected via JS: {random_option.get_attribute('value')}")
                                 
                 except StaleElementReferenceException:
-                    log.warning(f"Retrying due to stale element.")
+                    log.warning(f"Retrying due to stale element in fieldset.")
 
                 except Exception as e:
                     log.error(f"Select element error for question: {question}, answer: {answer}")
@@ -1042,6 +1055,8 @@ class EasyApplyBot:
             answer = "Yes"
         elif ("US" in question or "U.S." in question or "green" in question ) and ("citizen" in question or "card" in question):
             answer = "Yes"
+        elif ("privacy policy" in question):
+            answer = "I agree"
         # basic info
         elif ("city" in question or "address" in question):
             answer = self.city

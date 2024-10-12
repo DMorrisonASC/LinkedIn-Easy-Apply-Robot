@@ -141,6 +141,10 @@ config.yaml
 # mkdocs documentation
 /site
 
+# folders
+resumes/
+cover_letters/
+
 # mypy
 .mypy_cache/
 .dmypy.json

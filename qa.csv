@@ -1749,3 +1749,568 @@ required
        yes
        no
    please enter a valid answer",Yes
+"fulltime tcs // onsite 
+fulltime tcs // onsite
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"do you have (or have a history/record of having) a disability? (definitions)
+do you have (or have a history/record of having) a disability?
+required
+yes, i have a disability, or have had one in the past.
+no, i do not have a disability and have not had one in the past.
+i do not want to answer.",No
+"are you a protected veteran? (definitions)
+are you a protected veteran?
+required
+yes
+no
+prefer not to answer",N/A
+"by checking this box, you will declare that you read and understand the turnitin, llc privacy policy, and the smartrecruiters privacy policy and smartrecruiters  terms of use.
+by checking this box, you will declare that you read and understand the turnitin, llc, and the smartrecruitersand smartrecruiters.
+required
+i agree terms & conditions
+select checkbox to proceed",4
+"by checking this box, you will declare that you read and understand the turnitin, llc privacy policy, and the smartrecruiters privacy policy and smartrecruiters  terms of use.
+by checking this box, you will declare that you read and understand the turnitin, llc, and the smartrecruitersand smartrecruiters.
+required
+i agree terms & conditions",4
+"are you able to communicate both written and verbal fluently in english for business?
+are you able to communicate both written and verbal fluently in english for business?
+required
+yes
+no
+please make a selection",Yes
+"are you willing to undergo a background check?
+are you willing to undergo a background check?
+required
+yes
+no
+please make a selection",Yes
+"share your experience related to this role
+0/1,440
+1440 maximum characters allowed.
+please enter a valid answer",Yes
+"are you currently residing in the country of the advertised role?
+are you currently residing in the country of the advertised role?
+required
+yes
+no
+please make a selection",Yes
+"are you legally able to work in the country of the advertised role?
+are you legally able to work in the country of the advertised role?
+required
+yes
+no
+please make a selection",Yes
+"will you now or in the future require sponsorship to work in the country of the advertised role?
+will you now or in the future require sponsorship to work in the country of the advertised role?
+required
+yes
+no
+please make a selection",No
+"what certifications do you currently have or are you pursuing that are relevant to this position?
+0/1,440
+1440 maximum characters allowed.
+please enter a valid answer",Yes
+"do you have experience in edtech or saas environment?
+do you have experience in edtech or saas environment?
+required
+yes
+no
+please make a selection",Yes
+"how many years of work experience do you have with database applications?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with database design?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with database development?
+enter a whole number between 0 and 99",4
+how many years of work experience do you have with sitecore?,3
+"please confirm you are aware this is a part-time role (20+ hours/a week) with flexible hours. 
+please confirm you are aware this is a part-time role (20+ hours/a week) with flexible hours.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"do you have experience with v10.2?
+do you have experience with v10.2?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of technical lead experience do you have?
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with supply chain management?
+enter a whole number between 0 and 99",3
+"do you have a project management or related certification?
+do you have a project management or related certification?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"synon?
+enter a decimal number larger than 0.0",4
+"cl in as400?
+enter a decimal number larger than 0.0",4
+"cobol/400?
+enter a decimal number larger than 0.0",4
+"rxclaim application background?
+enter a decimal number larger than 0.0",4
+"are you ready to work on full time role?
+are you ready to work on full time role?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you ready to work 3 days/week onsite in jersey city, nj?
+are you ready to work 3 days/week onsite in jersey city, nj?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Bronx
+"do you have the following license or certification: scrum master certified?
+do you have the following license or certification: scrum master certified?
+required
+yes
+no
+please make a selection",Yes
+"how many years of financial services experience do you have?
+enter a decimal number larger than 0.0",5
+"do you have the following license or certification: scrum master certified?
+do you have the following license or certification: scrum master certified?
+required
+yes
+no",Yes
+"how many years of work experience do you have with data warehouse architecture?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with data architecture?
+enter a whole number between 0 and 99",3
+"this job requires regular in-person office attendance. are you comfortable commuting to the office on a regular basis?
+this job requires regular in-person office attendance. are you comfortable commuting to the office on a regular basis?
+required
+yes
+no
+please make a selection",Yes
+"how many years of software engineering experience do you have?
+enter a decimal number larger than 0.0",5
+"how many years of experience do you have in prioritizing tasks, managing stakeholders, and excelling in fast-paced environments with data-driven decision-making?
+enter a decimal number larger than 0.0",5
+"how many years of experience do you have in spearheading training and educational initiatives to promote collaboration and knowledge exchange among internal and external stakeholders?
+enter a decimal number larger than 0.0",3
+"how many years of experience do you have in directly engaging with clients to elicit requirements and ensure project objectives meet client expectations?
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have with python (programming language)?
+enter a decimal number larger than 0.0",3
+"how many years of experience do you have working with cloud platforms, particularly aws, for developing and deploying scalable applications?
+enter a decimal number larger than 0.0",5
+"this job requires regular in-person office attendance. are you comfortable commuting to the office on a regular basis?
+this job requires regular in-person office attendance. are you comfortable commuting to the office on a regular basis?
+required
+yes
+no",Yes
+"how many years of work experience do you have with video playback?
+enter a whole number between 0 and 99",5
+"how many years of experience with javascript in node.js or deno?
+enter a decimal number larger than 0.0",4
+"how many years of experience with video playback technologies like mse/eme, hls, mpeg-dash, transport stream or cmaf?
+enter a decimal number larger than 0.0",3
+"can you work onsite in either new york, ny or seattle, wa?
+can you work onsite in either new york, ny or seattle, wa?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"can you be considered on a w2 basis without sponsorship on day one of the assignment?
+can you be considered on a w2 basis without sponsorship on day one of the assignment?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"how many years of experience deploying web applications in aws?
+enter a decimal number larger than 0.0",5
+how many years of work experience do you have with content management systems (cms)?,3
+"how many years of work experience do you have with .net core?
+enter a whole number between 0 and 99",3
+"how did you hear about us? 
+how did you hear about us?
+required
+       select an option
+       company website
+       linkedin
+       indeed
+       builtin
+       referred by current employee
+   please make a selection",Other
+"do you have at least 5 years of professional, full-time software development experience (not including co-op or internships?) 
+do you have at least 5 years of professional, full-time software development experience (not including co-op or internships?)
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"do you have 5 years of professional working experience with python and java?
+do you have 5 years of professional working experience with python and java?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"do you have experience working in an amazon web services environment? 
+do you have experience working in an amazon web services environment?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"do you have hands on experience with nosql or sql databases?
+do you have hands on experience with nosql or sql databases?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"do you have experience with kafka or other streaming technologies?
+do you have experience with kafka or other streaming technologies?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"are you eligible and legally able to work in the united states?
+are you eligible and legally able to work in the united states?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"do you now, or will you in the future require immigration sponsorship for work authorization?
+do you now, or will you in the future require immigration sponsorship for work authorization?
+required
+       select an option
+       yes
+       no
+   please make a selection",4
+"are you at least 18 years of age? 
+are you at least 18 years of age?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"are you currently, or have you ever been, excluded from, debarred or otherwise ineligible to participate in state or federally funded programs (“government programs”) or federal healthcare programs as defined in 42 usc § 1320a-7b(f) (“federal programs”)?
+are you currently, or have you ever been, excluded from, debarred or otherwise ineligible to participate in state or federally funded programs (“government programs”) or federal healthcare programs as defined in 42 usc § 1320a-7b(f) (“federal programs”)?
+required
+       select an option
+       yes
+       no
+   please make a selection",I am not
+"i understand that if i receive an offer of employment from cohere health that a background check that includes a criminal background check will be performed on my behalf.
+i understand that if i receive an offer of employment from cohere health that a background check that includes a criminal background check will be performed on my behalf.
+required
+       select an option
+       yes
+       no
+   please make a selection",No
+"i have read the certification above and understand and agree to its terms. please type your name and the date.
+please enter a valid answer",4
+"how many years of professional experience do you have with react native?
+enter a decimal number larger than 0.0",3
+"how many years of professional experience do you have with typescript?
+enter a decimal number larger than 0.0",4
+"are you a us citizen or resident
+are you a us citizen or resident
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you able to be onboarded as an hourly w2 employee at the start of the contract?
+are you able to be onboarded as an hourly w2 employee at the start of the contract?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",40
+"do you have 3+ years of c# .net experience?
+do you have 3+ years of c# .net experience?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"this role is hybrid role, onsite in the nyc office. are you able to commute to nyc?
+this role is hybrid role, onsite in the nyc office. are you able to commute to nyc?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with angular?
+enter a whole number between 0 and 99",3
+"how many years of advertising services experience do you currently have?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with tensorflow?,4
+how many years of work experience do you have with trading systems?,6
+"do you have commercial hft experience? 
+do you have commercial hft experience?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you currently based in the us? 
+are you currently based in the us?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with pyspark?,5
+"how many years of work experience do you have with data reconciliation?
+enter a whole number between 0 and 99",3
+"how many years' experience do you have with rust?
+enter a decimal number larger than 0.0",6
+"how many years of experience do you have as java developer ?
+enter a decimal number larger than 0.0",3
+"how many years of experience do you have in credit risk domain ?
+enter a decimal number larger than 0.0",3
+"how many years of experience do you have in microservices , spring boot ?
+enter a decimal number larger than 0.0",4
+"how many years of experience do you have in banking domain ?
+enter a decimal number larger than 0.0",4
+how many years of work experience do you have with .net in azure?,5
+how many years of work experience do you have with azure sql?,5
+"do you live in a commutable distance from nyc? 
+do you live in a commutable distance from nyc?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with bamboohr?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with api development?,3
+"how many years of work experience do you have with identity and access management (iam)?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with authentication protocols?
+enter a whole number between 0 and 99",6
+"do you have the following license or certification: google cloud certified professional cloud architect?
+do you have the following license or certification: google cloud certified professional cloud architect?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: google cloud certified professional cloud architect?
+do you have the following license or certification: google cloud certified professional cloud architect?
+required
+yes
+no",Yes
+"how many years of work experience do you have with data privacy?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with product management?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with legal compliance?
+enter a whole number between 0 and 99",4
+"business analyst experience
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with epicor?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with epicor erp?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with business analysis?
+enter a whole number between 0 and 99",5
+"city
+city
+bronx, new york, united states
+bronx county, new york, united states
+10467, bronx, new york, united states
+10459, bronx, new york, united states
+10462, bronx, new york, united states
+bronxville, new york, united states
+10456, bronx, new york, united states
+10458, bronx, new york, united states
+10466, bronx, new york, united states
+10452, bronx, new york, united states
+10463, bronx, new york, united states
+10453, bronx, new york, united states
+10469, bronx, new york, united states
+10468, bronx, new york, united states
+10451, bronx, new york, united states
+10457, bronx, new york, united states
+10473, bronx, new york, united states
+10461, bronx, new york, united states
+10472, bronx, new york, united states
+10460, bronx, new york, united states
+please enter a valid answer",Bronx
+"city
+city
+new york city metropolitan area
+new york, united states
+new delhi, delhi, india
+new york, new york, united states
+new jersey, united states
+new zealand
+new south wales, australia
+australia and new zealand
+new mexico, united states
+new hampshire, united states
+new orleans, louisiana, united states
+sydney, new south wales, australia
+new haven county, connecticut, united states
+new castle county, delaware, united states
+new brunswick, canada
+new taipei city, new taipei city, taiwan
+greater sydney area
+new taipei city, taiwan
+new taipei city, new taipei city, taiwan
+kings county, new york, united states
+please enter a valid answer",Bronx
+"city
+city
+new york, united states
+new york, new york, united states
+new york city metropolitan area
+kings county, new york, united states
+brooklyn, new york, united states
+albany, new york metropolitan area
+10001, new york, new york, united states
+rochester, new york metropolitan area
+nassau county, new york, united states
+suffolk county, new york, united states
+bronx, new york, united states
+erie county, new york, united states
+bronx county, new york, united states
+westchester county, new york, united states
+queens county, new york, united states
+monroe county, new york, united states
+queens, new york, united states
+buffalo, new york, united states
+10025, new york, new york, united states
+rochester, new york, united states
+please enter a valid answer",Bronx
+"disability status
+disability status
+required
+       select an option
+       i do not want to answer
+       no, i do not have a disability and have not had one in the past
+       yes, i have a disability, or have had one in the past
+   please make a selection",No
+"veteran status
+veteran status
+required
+       select an option
+       i don't wish to answer
+       i identify as one or more of the classifications of a protected veteran
+       i am not a protected veteran
+   please make a selection",I am not
+"required
+       select an option
+       decline to self identify
+       two or more races
+       native hawaiian or other pacific islander
+       white
+       hispanic or latino
+       black or african american
+       asian
+       american indian or alaskan native
+   please make a selection",White
+"gender
+gender
+required
+       select an option
+       decline to self identify
+       female
+       male
+   please make a selection",Male
+"location preference
+location preference
+required
+san mateo, ca
+columbus, oh
+austin, tx
+remote
+please make a selection",N/A
+"have you been employed by upstart before?
+have you been employed by upstart before?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"are you authorized to work lawfully in the united states for upstart? 
+are you authorized to work lawfully in the united states for upstart?
+required
+       select an option
+       yes
+       no
+   please make a selection",4
+"will you now or in the future require sponsorship for employment visa status (e.g., h-1b visa status)?
+will you now or in the future require sponsorship for employment visa status (e.g., h-1b visa status)?
+       select an option
+       yes
+       no",No
+,4
+"do you have a minimum 1 year experience with elastic and kofka?
+do you have a minimum 1 year experience with elastic and kofka?
+required
+yes
+no",Yes
+"do you have a minimum 1 year experience with complex coding?
+do you have a minimum 1 year experience with complex coding?
+required
+yes
+no",Yes
+,4
+"what level clearance do you posses?
+what level clearance do you posses?
+required
+none
+secret
+top-secret or higher",Yes
+"how many years experience do you have in web development?
+how many years experience do you have in web development?
+required
+less than 1 year
+1-3 years
+3-5 years
+5+ years",5
+address 2,Bronx
+"city
+please enter a valid answer",Bronx
+"county
+please enter a valid answer",4
+"state
+please enter a valid answer",4
+"êtes-vous actuellement à la recherche de stage ? 
+êtes-vous actuellement à la recherche de stage ?
+required
+       sélectionnez une option
+       yes
+       no
+   veuillez saisir une réponse valable",4
+"accepteriez-vous de travailler à distance ?
+accepteriez-vous de travailler à distance ?
+required
+oui
+non
+effectuez une sélection",4
+"accepteriez-vous de travailler à distance ?
+accepteriez-vous de travailler à distance ?
+required
+oui
+non",4
+"are you a us citizen?
+are you a us citizen?
+required
+yes
+no",Yes
