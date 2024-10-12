@@ -74,12 +74,13 @@ class EasyApplyBot:
     MAX_SEARCH_TIME = 60 * 20 # Modify it to increase search time
 
     def __init__(self,
-                 username,
-                 password,
-                 phone_number,
-                 # profile_path,
+                #  username,
+                #  password,
+                #  phone_number,
                  salary,
                  rate,
+                 person,
+                 profile_path,
                  uploads={},
                  filename='output.csv',
                  blacklist=[],
@@ -89,19 +90,25 @@ class EasyApplyBot:
 
         self.uploads = uploads
         self.salary = salary
-        self.rate = rate
-        # past_ids: list | None = self.get_appliedIDs(filename)
-        # self.appliedJobIDs: list = past_ids if past_ids != None else []
+        self.first_name = person['name']['first_name']
+        self.last_name = person['name']['last_name']
+        self.street = person['address']['street']
+        self.city = person['address']['city']
+        self.state = person['address']['state']
+        self.zipcode = person['address']['zip']
+        self.github = person['social_media']['github']
+        self.linkedin = person['social_media']['linkedin']
+        self.portfolio = person['social_media']['portfolio']
+        self.phone_number = person['social_media']['phone_number']
+        self.profile_path = profile_path
         self.filename: str = filename
         self.options = self.browser_options()
         self.browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=self.options)
         self.wait = WebDriverWait(self.browser, 30)
         self.blacklist = blacklist
         self.blackListTitles = blackListTitles
-        self.start_linkedin(username, password)
-        self.phone_number = phone_number
+        self.start_linkedin(person['account']['username'], person['account']['password'])
         self.experience_level = experience_level
-
         log.info("Welcome to Easy Apply Bot")
         dirpath: str = os.getcwd()
         log.info("current directory is : " + dirpath)
@@ -1019,7 +1026,7 @@ class EasyApplyBot:
                 answer = "Native"
 
         # Experience-related questions
-        elif "how many" in question and ("experience" in question or "years" in question):
+        elif "how many" in question:
             answer = random.choice(choices)
         elif "rate" in question and ("yourself" in question or "proficient" in question or "proficiency" in question):
             answer = "10"
@@ -1048,18 +1055,18 @@ class EasyApplyBot:
             answer = "Yes"
         # basic info
         elif ("city" in question or "address" in question):
-            answer = "Bronx, New York, United States"
+            answer = self.city
         elif ("zip" in question or "area code" in question or "postal" in question):
-            answer = "10466"
+            answer = self.zipcode
         elif ("first" in question):
-            answer = "Daeshaun"
+            answer = self.first_name
         elif ("last" in question):
-            answer = "Morrison"
+            answer = self.last_name
         # Socials
         elif ("github" in question):
-            answer = "https://github.com/DMorrisonASC"
+            answer = self.github
         elif ("linkedin" in question):
-            answer = "https://www.linkedin.com/in/daeshaun-morrison-bab77b176/"
+            answer = self.linkedin
 
         # Disability and drug test-related questions
         elif "disability" in question:
@@ -1131,16 +1138,16 @@ if __name__ == '__main__':
     # Ensure required parameters are present
     assert len(parameters['positions']) > 0, "There are no positions to be searched. Check `config.yaml`"
     assert len(parameters['locations']) > 0, "There are no locations to be searched. Check `config.yaml`"
-    assert parameters['username'] is not None, "No username provided. Check `config.yaml`" 
-    assert parameters['password'] is not None, "No password provided. Check `config.yaml`"
-    assert parameters['phone_number'] is not None, "No phone number provided. Check `config.yaml`"
+    assert parameters['person']['account']['username'] is not None, "No username provided. Check `config.yaml`" 
+    assert parameters['person']['account']['password'] is not None, "No password provided. Check `config.yaml`"
+    assert parameters['person']['social_media']['phone_number'] is not None, "No phone number provided. Check `config.yaml`"
     # catch configuration errors where uploads is mistakenly formatted as a list instead of a dictionary
     if 'uploads' in parameters.keys() and type(parameters['uploads']) == list:
         raise Exception("uploads read from the config file appear to be in list format" +
                         " while should be dict. Try removing '-' from line containing" +
                         " filename & path")
     # Log all parameters except for password and username
-    log.info({k: parameters[k] for k in parameters.keys() if k not in ['username', 'password']})
+    log.info({k: parameters[k] for k in parameters.keys()})
     # This WILL output applied jobs in a csv. Does nothing right noe
     output_filename: list = [f for f in parameters.get('output_filename', ['output.csv']) if f is not None]
     output_filename: list = output_filename[0] if len(output_filename) > 0 else 'output.csv'
@@ -1156,11 +1163,10 @@ if __name__ == '__main__':
     locations: list = [l for l in parameters['locations'] if l is not None]
     positions: list = [p for p in parameters['positions'] if p is not None]
 
-    bot = EasyApplyBot(parameters['username'],
-                       parameters['password'],
-                       parameters['phone_number'],
-                       parameters['salary'],
+    bot = EasyApplyBot(parameters['salary'],
                        parameters['rate'], 
+                       parameters['person'],
+                       parameters['profile_path'],
                        uploads=uploads,
                        filename=output_filename,
                        blacklist=blacklist,

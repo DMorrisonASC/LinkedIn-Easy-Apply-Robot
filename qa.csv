@@ -1479,3 +1479,185 @@ are you fluent (written & verbal) in english?
 required
 yes
 no",4
+"do you have recent life/70 - lookup mainframe software experience?
+do you have recent life/70 - lookup mainframe software experience?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with tableau?,3
+how many years of work experience do you have with marketing?,4
+"how many years of work experience do you have with data engineering?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with salesforce.com?,5
+"how many years of work experience do you have with test management?
+enter a whole number between 0 and 99",4
+"it's w2 role. only gc and usc can apply 
+it's w2 role. only gc and usc can apply
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"how many years of work experience do you have with azure api management?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with event management?
+enter a whole number between 0 and 99",4
+how many years of work experience do you have with docker products?,3
+how many years of work experience do you have with .net framework?,3
+"do you have expertise in typescript and full-stack development.
+do you have expertise in typescript and full-stack development.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have hands-on experience and solid understanding of microservices architecture and apis.
+do you have hands-on experience and solid understanding of microservices architecture and apis.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"• strong sql skills and experience with rdbms (e.g., sql server, postgresql).
+• strong sql skills and experience with rdbms (e.g., sql server, postgresql).
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"do you have the following license or certification: professional engineer (pe)?
+do you have the following license or certification: professional engineer (pe)?
+required
+yes
+no
+please make a selection",Yes
+how many years of engineering experience do you currently have?,3
+"do you have the following license or certification: professional engineer (pe)?
+do you have the following license or certification: professional engineer (pe)?
+required
+yes
+no",Yes
+"how many years of work experience do you have with ncarb?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with working experience?
+enter a whole number between 0 and 99",3
+"how many years of analyst experience do you currently have?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with foxpro?
+enter a whole number between 0 and 99",3
+"how many years of experience do you have in cross functional team lead?
+enter a decimal number larger than 0.0",6
+"how many years of experience do you have in rest apis?
+enter a decimal number larger than 0.0",4
+"how many years of banking experience do you currently have ?
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have with human capital management?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with delphi?,6
+"how many years of work experience do you have with business process?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with appian?
+enter a whole number between 0 and 99",5
+"are you open to work 2-3 days per week hybrid at park avenue, ny?
+are you open to work 2-3 days per week hybrid at park avenue, ny?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have 2+ years of experience working with snowflake, preferably in azure cloud?
+do you have 2+ years of experience working with snowflake, preferably in azure cloud?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience working within a hospital setting/office/company?
+do you have experience working within a hospital setting/office/company?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have over 8 years of experience in data integration, as well as skills using integration tools like dbt and/or adf?
+do you have over 8 years of experience in data integration, as well as skills using integration tools like dbt and/or adf?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with sap ariba
+do you have experience with sap ariba
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"experience with supply chain
+experience with supply chain
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"experience with procure to pay
+experience with procure to pay
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"how many years of work experience do you have with workday?
+enter a decimal number larger than 0.0",6
+"how many peoplesoft to workday data migration projects have you led?
+enter a decimal number larger than 0.0",Yes
+"have you worked snowflake as a data warehouse tool? 
+have you worked snowflake as a data warehouse tool?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with workday?,4
+"have you worked snowflake as a data warehouse tool? 
+have you worked snowflake as a data warehouse tool?
+required
+       select an option
+       yes
+       no",Yes
+how many peoplesoft to workday data migration projects have you led?,Yes
+"how many years of work experience do you have with sitecore?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with relational databases?,3
+"are you open for w2?
+are you open for w2?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"total years of it experience
+enter a decimal number larger than 0.0",4
+"do you have any sample work? if so, please send it to: nilesh.kumar.professional@gmail.com
+do you have any sample work? if so, please send it to: nilesh.kumar.professional@gmail.com
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"this role is only for volunteer? [please keep in mind, before applying]
+this role is only for volunteer? [please keep in mind, before applying]
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"have you ever developed a tool website before?
+have you ever developed a tool website before?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
