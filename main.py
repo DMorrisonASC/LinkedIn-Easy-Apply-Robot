@@ -136,8 +136,8 @@ class EasyApplyBot:
             "review": (By.CSS_SELECTOR, "button[aria-label='Review your application']"),
             "submit": (By.CSS_SELECTOR, "button[aria-label='Submit application']"),
             "error": (By.CLASS_NAME, "artdeco-inline-feedback__message"),
-            "upload_resume": (By.XPATH, "//*[contains(@id, 'jobs-document-upload-file-input-upload-resume')]"),
-            "upload_cv": (By.XPATH, "//*[contains(@id, 'jobs-document-upload-file-input-upload-cover-letter')]"),
+            "upload_resume": (By.XPATH, "//input[starts-with(@id, 'jobs-document-upload-file-input-upload-resume') and @type='file']"),
+            "upload_cover": (By.XPATH, "//*[contains(@id, 'jobs-document-upload-file-input-upload-cover-letter')]"),
             "follow": (By.CSS_SELECTOR, "label[for='follow-company-checkbox']"),
             "upload": (By.NAME, "file"),
             "search": (By.CLASS_NAME, "jobs-search-results-list"),
@@ -559,17 +559,6 @@ class EasyApplyBot:
         """
 
         try:
-            next_locator = (By.CSS_SELECTOR,
-                            "button[aria-label='Continue to next step']")
-            review_locator = (By.CSS_SELECTOR,
-                              "button[aria-label='Review your application']")
-            submit_locator = (By.CSS_SELECTOR,
-                              "button[aria-label='Submit application']")
-            error_locator = (By.CLASS_NAME,"artdeco-inline-feedback__message")
-            upload_resume_locator = (By.XPATH, '//span[text()="Upload resume"]')
-            upload_cv_locator = (By.XPATH, '//span[text()="Upload cover letter"]')
-            # WebElement upload_locator = self.browser.find_element(By.NAME, "file")
-            follow_locator = (By.CSS_SELECTOR, "label[for='follow-company-checkbox']")
             submitted = False
             loop = 0
 
@@ -578,25 +567,25 @@ class EasyApplyBot:
                 time.sleep(2)
 
                 # Upload the resume if the locator is present.
-                if self.is_present(upload_resume_locator):
+                if self.is_present(self.locator["upload_resume"]):
                     try:
-                        resume_locator = self.browser.find_element(By.XPATH, 
-                            "//*[contains(@id, 'jobs-document-upload-file-input-upload-resume')]")
-                        resume = self.uploads["Resume"]
-                        resume_locator.send_keys(resume)
+                        resume = self.uploads["resume"]
+                        resume_button = self.get_elements(self.locator["upload_resume"])[0]
+                        resume_button.send_keys(resume)
                     except Exception as e:
-                        log.error(e)
-                        log.error("Resume upload failed")
+                        log.error(f"Resume upload failed. Check file path or the locator: {e}")
                 
                 # Upload the cover letter if the locator is present.
-                if self.is_present(upload_cv_locator):
-                    cv = self.uploads["Cover Letter"]
-                    cv_locator = self.browser.find_element(By.XPATH, 
-                        "//*[contains(@id, 'jobs-document-upload-file-input-upload-cover-letter')]")
-                    cv_locator.send_keys(cv)
+                if self.is_present(self.locator["upload_cover"]):
+                    try:
+                        cover_letter = self.uploads["cover_letter"]
+                        cover_button = self.get_elements(self.locator["upload_cover"])[0]
+                        cover_buttton.send_keys(cover_letter)
+                    except Exception as e:
+                        log.error(f"Cover letter upload failed. Check file path or the locator: {e}")
 
                 # Handle follow button if present.
-                # Application commonly have this option already selected,
+                # Applications commonly have this option already selected,
                 # So this UNFOLLOWS companies. Comment this out if you wnat to follow companies
                 if len(self.get_elements("follow")) > 0:
                     elements = self.get_elements("follow")

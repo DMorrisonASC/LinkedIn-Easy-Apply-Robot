@@ -1661,3 +1661,91 @@ required
        yes
        no
    please enter a valid answer",Yes
+"blue prism
+enter a decimal number larger than 0.0",4
+"power automate
+enter a decimal number larger than 0.0",4
+"are you currently located in any of these states ?? ny, nj, nh, ct, vt, ma me, pa, md, va, ri, d.c.
+are you currently located in any of these states ?? ny, nj, nh, ct, vt, ma me, pa, md, va, ri, d.c.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have in roku development?
+enter a decimal number larger than 0.0",3
+"what is your level of proficiency in spanish?
+what is your level of proficiency in spanish?
+required
+       select an option
+       none
+       conversational
+       professional
+       native or bilingual
+   please make a selection",4
+"what is your level of proficiency in english?
+what is your level of proficiency in english?
+required
+       select an option
+       none
+       conversational
+       professional
+       native or bilingual
+   please make a selection",Native
+how many years of work experience do you have with react native?,4
+how many years of work experience do you have with spring framework?,4
+"how many years of work experience do you have with soap?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with spring boot?,5
+"experience migrating sql server to postgres?
+experience migrating sql server to postgres?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"experience with big data tools: spark, kafka, etc.?
+experience with big data tools: spark, kafka, etc.?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"experience with aws
+enter a decimal number larger than 0.0",4
+"experience writing sql queries and sp
+enter a decimal number larger than 0.0",4
+"how many years of sql server development experience?
+enter a decimal number larger than 0.0",3
+"how many years of postgres sql experience?
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have with django?
+enter a whole number between 0 and 99",6
+"are you physically located in the united states or the european union (eu)?
+are you physically located in the united states or the european union (eu)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have a degree in mathematics, physics or software engineering?
+do you have a degree in mathematics, physics or software engineering?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience developing cloud-based applications (front and back-end)?
+do you have experience developing cloud-based applications (front and back-end)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you previously developed integrations with financial brokers?
+have you previously developed integrations with financial brokers?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
