@@ -81,6 +81,7 @@ class EasyApplyBot:
                  rate,
                  person,
                  profile_path,
+                 time_filter,
                  uploads={},
                  filename='output.csv',
                  blacklist=[],
@@ -109,6 +110,7 @@ class EasyApplyBot:
         self.blackListTitles = blackListTitles
         self.start_linkedin(person['account']['username'], person['account']['password'])
         self.experience_level = experience_level
+        self.time_filter = time_filter
         self.visited_IDs = {}
 
         # First message
@@ -332,7 +334,7 @@ class EasyApplyBot:
         self.browser.maximize_window()
         
         # Load the first page of jobs based on position and location.
-        self.browser, _ = self.next_jobs_page(position, location, jobs_per_page, experience_level=self.experience_level)
+        self.browser, _ = self.next_jobs_page(position, location, jobs_per_page, experience_level=self.experience_level, self.time_filter)
         log.info("Set and maximize window")
 
         # Continue searching for jobs until the maximum search time is reached.
@@ -393,11 +395,11 @@ class EasyApplyBot:
                         self.apply_loop(jobIDs)
 
                     # Load the next page of job listings.
-                    self.browser, jobs_per_page = self.next_jobs_page(position, location, jobs_per_page, experience_level=self.experience_level)
+                    self.browser, jobs_per_page = self.next_jobs_page(position, location, jobs_per_page, experience_level=self.experience_level, self.time_filter)
 
                 else:
                     # If no jobs found, continue to the next page.
-                    self.browser, jobs_per_page = self.next_jobs_page(position, location, jobs_per_page, experience_level=self.experience_level)
+                    self.browser, jobs_per_page = self.next_jobs_page(position, location, jobs_per_page, experience_level=self.experience_level, self.time_filter)
 
             except Exception as e:
                 print(e)  # Log any exceptions encountered during the search process.
@@ -947,7 +949,7 @@ class EasyApplyBot:
             print(f"Error occurred while finding elements: {e}")
             return []  # Return an empty list instead of False
 
-    def next_jobs_page(self, position, location, jobs_per_page, experience_level=[], time_filter="24 hours"):
+    def next_jobs_page(self, position, location, jobs_per_page, experience_level=[], time_filter=""):
         """
         Loads the next page of job listings on LinkedIn, applying filters such as position, location, 
         experience level, and time since the job was posted.
@@ -976,11 +978,11 @@ class EasyApplyBot:
         experience_level_param = f"&f_E={experience_level_str}" if experience_level_str else ""
 
         # Construct the time filter part of the URL
-        if time_filter == "24 hours":
+        if time_filter == 1:
             time_posted_param = "&f_TPR=r86400"  # Last 24 hours
-        elif time_filter == "past week":
+        elif time_filter == 2:
             time_posted_param = "&f_TPR=r604800"  # Last week
-        elif time_filter == "past month":
+        elif time_filter == 3:
             time_posted_param = "&f_TPR=r2592000"  # Last month
         else:
             time_posted_param = ""  # No filter (Any time)
@@ -1175,6 +1177,7 @@ if __name__ == '__main__':
                        parameters['rate'], 
                        parameters['person'],
                        parameters['profile_path'],
+                       parameters['time_filter'],
                        uploads=uploads,
                        filename=output_filename,
                        blacklist=blacklist,

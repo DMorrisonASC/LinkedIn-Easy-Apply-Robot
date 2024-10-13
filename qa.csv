@@ -2463,3 +2463,158 @@ required
        yes
        no
    please enter a valid answer",4
+"are you available on a w2 basis? 
+are you available on a w2 basis?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"can you work on w2 contract from day one? no c2c or 1099 is workable with us.
+can you work on w2 contract from day one? no c2c or 1099 is workable with us.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"is your visa status is usc/gc/gc-ead/h4-ead/tn?
+is your visa status is usc/gc/gc-ead/h4-ead/tn?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"experience as a solution architect?
+enter a decimal number larger than 0.0",4
+"experience with app development including multiple platforms: web, mobile, desktop, handheld, and point of sale (pos).
+enter a decimal number larger than 0.0",4
+"experience in having applications meet quality, security, modifiability, extensibility, and scalability.
+enter a decimal number larger than 0.0",4
+"have you filled out this form? https://form.typeform.com/to/zmcgdfzv this is how we will contact you
+have you filled out this form? https://form.typeform.com/to/zmcgdfzv this is how we will contact you
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with sap products?,6
+"how many years of work experience do you have with sap erp?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with microsoft power automate?
+enter a whole number between 0 and 99",3
+"can you work on our w2? this role is not open for c2c engagements.
+can you work on our w2? this role is not open for c2c engagements.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"this role is 1 day a week on-site in midtown manhattan. will you need to re-locate in order to do this?
+this role is 1 day a week on-site in midtown manhattan. will you need to re-locate in order to do this?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"how many years of work experience do you have with git?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with front-end technologies (e.g., html5, css3, javascript)
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with modern framework (e.g., react, angular, or vue.js)?
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have with back-end development (e.g., node.js, python, or java)
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with databases (e.g., sql and nosql concepts)?
+enter a decimal number larger than 0.0",3
+"are you considering participating in an unpaid internship program?
+are you considering participating in an unpaid internship program?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have 5+ years of commercial experience working as a quant developer within a systematic trading business? 
+do you have 5+ years of commercial experience working as a quant developer within a systematic trading business?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with programming languages?,4
+"how many years of work experience do you have with software development life cycle (sdlc)?
+enter a whole number between 0 and 99",5
+"how many years of an experience do you have with creating rest web services using c#?
+enter a decimal number larger than 0.0",4
+"this role requires 3 days attendance per week in ny - please confirm you fine with this.
+this role requires 3 days attendance per week in ny - please confirm you fine with this.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"how many years of work experience do you have with github?
+enter a whole number between 0 and 99",5
+"do you have the following license or certification: linux foundation certified system administrator (lfcs)?
+do you have the following license or certification: linux foundation certified system administrator (lfcs)?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: comptia linux+?
+do you have the following license or certification: comptia linux+?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: red hat certified system administrator (rhcsa)?
+do you have the following license or certification: red hat certified system administrator (rhcsa)?
+required
+yes
+no
+please make a selection",Yes
+"you must have experience working with google cloud platform or aws to do work. do you have experience with gcp or aws? if you do not have gcp or aws experience. are you willing to learn in 30 days?
+you must have experience working with google cloud platform or aws to do work. do you have experience with gcp or aws? if you do not have gcp or aws experience. are you willing to learn in 30 days?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have the following license or certification: linux foundation certified system administrator (lfcs)?
+do you have the following license or certification: linux foundation certified system administrator (lfcs)?
+required
+yes
+no",Yes
+"do you have the following license or certification: comptia linux+?
+do you have the following license or certification: comptia linux+?
+required
+yes
+no",Yes
+"do you have the following license or certification: red hat certified system administrator (rhcsa)?
+do you have the following license or certification: red hat certified system administrator (rhcsa)?
+required
+yes
+no",Yes
+"do you have 3+ years of commercial c++ experience? 
+do you have 3+ years of commercial c++ experience?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you able to work onsite in nyc full time?
+are you able to work onsite in nyc full time?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with next.js?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with laravel?,6
+"have you ever refactored cakephp to laravel php?
+have you ever refactored cakephp to laravel php?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
