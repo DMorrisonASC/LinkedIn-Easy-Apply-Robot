@@ -1,5 +1,5 @@
 # LinkedIn-Easy-Apply-Robot
-Automate the applying for jobs on LinkedIn (Only for 'easy apply' jobs)
+Automate the applying for jobs on LinkedIn (Only for 'easy apply' jobs). [Modified](https://github.com/nicolomantini/LinkedIn-Easy-Apply-Bot)
 
 ## Setup 
 
