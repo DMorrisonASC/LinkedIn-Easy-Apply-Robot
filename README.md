@@ -118,7 +118,7 @@ experience_level:
   - 5 # Executive
   - 6 # Internship
 ```
-__NOTE: Add `config.yaml`, 'resume/' and 'cover_letters' into .gitignore file!
+__NOTE: Add `config.yaml`, 'resume/' and 'cover_letters' into .gitignore file!__
 
 ### Uploads
 
