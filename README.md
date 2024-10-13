@@ -131,3 +131,8 @@ To execute the bot run the following in your terminal
 ```
 python3 easyapplybot.py
 ```
+## Bugs
+- Uploading resume doesn't work; upload it manually
+- a slight chance that the bot gets stuck in a loop if the job is closed while still applying
+- Small chance that previously applied jobs appear when bot is supposed to ignore applied jobs
+- Have not accounted foir all possible web elements yet. Ex: if bot was not programmed to answer a specific web element and/or the 'locator' breaks(often when LinkedIn changes id and class names)
