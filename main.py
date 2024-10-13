@@ -384,7 +384,7 @@ class EasyApplyBot:
                             jobIsBanned = False
 
                             for word in blacklist + blackListTitles:
-                                if word in link.text:
+                                if word.lower() in link.text.lower():
                                     log.debug(f"Job has a banned word: {word}\nDetails: {link.text}")
                                     jobIsBanned = True
 
