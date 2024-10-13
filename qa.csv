@@ -2314,3 +2314,152 @@ are you a us citizen?
 required
 yes
 no",Yes
+"how many years of work experience do you have with microsoft power apps?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with data visualization?
+enter a whole number between 0 and 99",3
+"are you able to travel to norway for 1-2 weeks at the beginning of the contract?
+are you able to travel to norway for 1-2 weeks at the beginning of the contract?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you completed the following level of education: associate's degree?
+have you completed the following level of education: associate's degree?
+required
+yes
+no
+please make a selection",Yes
+how many years of work experience do you have with microsoft excel?,6
+"have you completed the following level of education: associate's degree?
+have you completed the following level of education: associate's degree?
+required
+yes
+no",Yes
+"are you a u.s. citizen?
+are you a u.s. citizen?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you had any experience with a similar role in a state or federal position?
+have you had any experience with a similar role in a state or federal position?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have as a mainframe developer.
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have in managing and resolving critical incidents in backend systems?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have in developing and maintaining automated deployment pipelines for backend systems?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have in setting up and managing monitoring systems and other engineering tools?
+enter a decimal number larger than 0.0",5
+"how many years of experience do you have with containerization tools (docker, kubernetes)?
+enter a decimal number larger than 0.0",3
+"how many years of work-related software engineering experience do you have?
+enter a decimal number larger than 0.0",4
+"how many years of experience do you have in designing and implementing complex, scalable, and fault-tolerant backend architectures?
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have in optimizing the performance of backend systems, ensuring high throughput and low latency?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have in successfully completing projects of significant scope in backend development?
+enter a decimal number larger than 0.0",5
+"is your latest work experience in a w-2 position?
+is your latest work experience in a w-2 position?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"will you now or in the future require visa sponsorship (i.e. h-1b)? please answer “yes” if you are currently on a student visa and will require visa sponsorship upon completion of your student visa curricular training.
+will you now or in the future require visa sponsorship (i.e. h-1b)? please answer “yes” if you are currently on a student visa and will require visa sponsorship upon completion of your student visa curricular training.
+required
+yes
+no
+please make a selection",No
+"are you a state of california resident?
+are you a state of california resident?
+required
+yes
+no
+please make a selection",Yes
+"for state of california residents - by checking this box, you are confirming that you have read and understand the following statement. under the california consumer privacy act (ccpa) your right to delete personal information does not apply to job applicant data. - for more information on your job applicant data and ccpa, contact captech's hr department (hr@captechconsulting.com).
+for state of california residents - by checking this box, you are confirming that you have read and understand the following statement. under the california consumer privacy act (ccpa) your right to delete personal information does not apply to job applicant data. - for more information on your job applicant data and ccpa, contact captech's hr department (hr@captechconsulting.com).
+confirmed",4
+"ability to travel:
+ability to travel:
+       select an option
+       4 - 5 days per week
+       3 days per week
+       1 - 2 days per week
+       1 - 2 days every other week
+       no travel",4
+"do you have any agreements that would prevent you from working at captech? anything from your current employer or former employer?
+do you have any agreements that would prevent you from working at captech? anything from your current employer or former employer?
+yes
+no",Yes
+"if you answered yes to the above question, please explain below.
+0/1,440
+1440 maximum characters allowed.",4
+"i certify that answers given herein are true and complete to the best of my knowledge. i authorize investigation of all statements contained in this application for employment as may be necessary in arriving at an employment decision. i hereby understand and acknowledge that, unless otherwise defined by applicable law, any employment relationship with this organization is of an ""at will"" nature, which means that the employee may resign at any time and the employer may discharge employee at any time for any reason as long as it is not discriminatory. it is further understood that this ""at will"" employment relationship may not be changed by any written document or by conduct unless such change is specifically acknowledged in writing by an authorized executive of this organization. in the event of employment, i understand that false or misleading information given in my application of interview(s) may result in discharge. i understand, and agree, that i am required to abide by all rules and regulations of the employer.
+i certify that answers given herein are true and complete to the best of my knowledge. i authorize investigation of all statements contained in this application for employment as may be necessary in arriving at an employment decision. i hereby understand and acknowledge that, unless otherwise defined by applicable law, any employment relationship with this organization is of an ""at will"" nature, which means that the employee may resign at any time and the employer may discharge employee at any time for any reason as long as it is not discriminatory. it is further understood that this ""at will"" employment relationship may not be changed by any written document or by conduct unless such change is specifically acknowledged in writing by an authorized executive of this organization. in the event of employment, i understand that false or misleading information given in my application of interview(s) may result in discharge. i understand, and agree, that i am required to abide by all rules and regulations of the employer.
+required
+confirmed
+select checkbox to proceed",4
+"are you authorized to work in the united states?
+are you authorized to work in the united states?
+required
+yes
+no",4
+"will you now or in the future require visa sponsorship (i.e. h-1b)? please answer “yes” if you are currently on a student visa and will require visa sponsorship upon completion of your student visa curricular training.
+will you now or in the future require visa sponsorship (i.e. h-1b)? please answer “yes” if you are currently on a student visa and will require visa sponsorship upon completion of your student visa curricular training.
+required
+yes
+no",No
+"are you a state of california resident?
+are you a state of california resident?
+required
+yes
+no",Yes
+"by checking this box, you will declare that you read and understand the privacy policy of captech consulting.
+by checking this box, you will declare that you read and understand the privacy policy of captech consulting.
+required
+i consent
+select checkbox to proceed",I agree
+"sql and t-sql - 4 years of experience
+enter a decimal number larger than 0.0",4
+"c# - 4 years of experience
+enter a decimal number larger than 0.0",4
+"do you have experience working with kubernetes? 
+do you have experience working with kubernetes?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience working with helm software? 
+do you have experience working with helm software?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with aws cloud services?
+do you have experience with aws cloud services?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"can you start asap?
+can you start asap?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4

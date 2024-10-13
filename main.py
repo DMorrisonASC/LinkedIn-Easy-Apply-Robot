@@ -109,6 +109,9 @@ class EasyApplyBot:
         self.blackListTitles = blackListTitles
         self.start_linkedin(person['account']['username'], person['account']['password'])
         self.experience_level = experience_level
+        self.visited_IDs = {}
+
+        # First message
         log.info("Welcome to Easy Apply Bot")
         dirpath: str = os.getcwd()
         log.info("current directory is : " + dirpath)
@@ -402,13 +405,14 @@ class EasyApplyBot:
     def apply_loop(self, jobIDs):
         log.debug("In `apply_loop()`")
         for jobID in jobIDs:
-            if jobIDs[jobID] == "To be processed":
+            if jobIDs[jobID] == "To be processed" and jobID not in self.visited_IDs:
                 applied = self.apply_to_job(jobID)
                 if applied:
                     log.info(f"Applied to {jobID}")
                 else:
                     log.info(f"Failed to apply to {jobID}")
                 jobIDs[jobID] = applied
+                self.visited_IDs[jobID] = True
 
     def is_present(self, locator):
         """
