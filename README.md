@@ -117,6 +117,7 @@ experience_level:
   - 4 # Director
   - 5 # Executive
   - 6 # Internship
+time_filter: 1 # 24 hours
 ```
 __NOTE: Add `config.yaml`, 'resume/' and 'cover_letters' into .gitignore file!__
 
