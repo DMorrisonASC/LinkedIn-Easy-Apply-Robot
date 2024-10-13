@@ -334,7 +334,7 @@ class EasyApplyBot:
         self.browser.maximize_window()
         
         # Load the first page of jobs based on position and location.
-        self.browser, _ = self.next_jobs_page(position, location, jobs_per_page, experience_level=self.experience_level, self.time_filter)
+        self.browser, _ = self.next_jobs_page(position, location, jobs_per_page, experience_level=self.experience_level, time_filter=self.time_filter)
         log.info("Set and maximize window")
 
         # Continue searching for jobs until the maximum search time is reached.
@@ -395,11 +395,11 @@ class EasyApplyBot:
                         self.apply_loop(jobIDs)
 
                     # Load the next page of job listings.
-                    self.browser, jobs_per_page = self.next_jobs_page(position, location, jobs_per_page, experience_level=self.experience_level, self.time_filter)
+                    self.browser, jobs_per_page = self.next_jobs_page(position, location, jobs_per_page, experience_level=self.experience_level, time_filter=self.time_filter)
 
                 else:
                     # If no jobs found, continue to the next page.
-                    self.browser, jobs_per_page = self.next_jobs_page(position, location, jobs_per_page, experience_level=self.experience_level, self.time_filter)
+                    self.browser, jobs_per_page = self.next_jobs_page(position, location, jobs_per_page, experience_level=self.experience_level, time_filter=self.time_filter)
 
             except Exception as e:
                 print(e)  # Log any exceptions encountered during the search process.
