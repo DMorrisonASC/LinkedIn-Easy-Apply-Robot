@@ -2618,3 +2618,1070 @@ required
        yes
        no
    please enter a valid answer",Yes
+how many years of work experience do you have with database design?,3
+"how many years of experience with cisco unified intelligence center (cuic)?
+enter a decimal number larger than 0.0",6
+"are you able and willing to work on a w-2 without sponsorship from an employer?
+are you able and willing to work on a w-2 without sponsorship from an employer?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"how many years of work experience do you have with data analytics?
+enter a whole number between 0 and 99",3
+"are you represented by a vendor or a third party?
+are you represented by a vendor or a third party?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of payments domain experience do you currently have?
+enter a decimal number larger than 0.0",5
+"how many years of experience do you have in evaluating and deploying new technologies within an organization?
+enter a decimal number larger than 0.0",5
+"how many years of experience do you have with pc hardware, software applications and mobile devices setup and troubleshooting?
+enter a decimal number larger than 0.0",5
+how many years of work experience do you have with data architects?,5
+"do you currently reside in one of the following states: arizona, california, florida, idaho, or utah?
+do you currently reside in one of the following states: arizona, california, florida, idaho, or utah?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with google data studio?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with embedded software programming?,4
+"this job location is on-site in easton, pa usa. are you able to interview in person in easton, pa on short notice?
+this job location is on-site in easton, pa usa. are you able to interview in person in easton, pa on short notice?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"will you now or in the future require sponsorship to legally work in the united states?
+will you now or in the future require sponsorship to legally work in the united states?
+required
+yes
+no
+please make a selection",No
+"are you currently living in the area where this job is posted?
+are you currently living in the area where this job is posted?
+required
+yes
+no
+please make a selection",Yes
+"are you willing to travel (domestic and international)?
+are you willing to travel (domestic and international)?
+required
+yes
+no
+please make a selection",Yes
+"how many years of work experience do you have with microservices?
+enter a whole number between 0 and 99",4
+"how many years of experience do you have with high-performance data processing systems, including batch and streaming?
+enter a decimal number larger than 0.0",4
+how many years of work experience do you have with citrix products?,4
+"how many years of experience do you have in the law firm?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with yocto project?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with wg11?
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have with xu67 firmware?
+enter a decimal number larger than 0.0",5
+"are you currently a high school or college student?
+are you currently a high school or college student?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of total experience do you have?
+enter a decimal number larger than 0.0",6
+legal name (if different than above),4
+"would you like to include your linkedin profile, personal website or blog?",https://www.linkedin.com/in/daeshaun-morrison-bab77b176/
+"how did you hear about this job?
+please enter a valid answer",Other
+"do you now or will you in the future require immigration sponsorship to work at cloudflare?
+do you now or will you in the future require immigration sponsorship to work at cloudflare?
+required
+       select an option
+       yes
+       no
+   please make a selection",No
+"please review and acknowledge cloudflare's candidate privacy policy (cloudflare.com/candidate-privacy-notice/).
+please review and acknowledge cloudflare's candidate privacy policy (cloudflare.com/candidate-privacy-notice/).
+required
+acknowledge/confirm
+select checkbox to proceed",I agree
+"this role will be based near one of our offices in either mexico city, austin, san francisco, or washington, dc. are you based in one of these locations or willing to relocate for this opportunity? 
+this role will be based near one of our offices in either mexico city, austin, san francisco, or washington, dc. are you based in one of these locations or willing to relocate for this opportunity?
+required
+       select an option
+       yes
+       no
+   please make a selection",Bronx
+website,4
+linkedin profile,https://www.linkedin.com/in/daeshaun-morrison-bab77b176/
+"will you now, or in the future, require xurrent to provide employment sponsorship for the country in which you are applying? (for example, h-1b, or other employment-based visas)
+will you now, or in the future, require xurrent to provide employment sponsorship for the country in which you are applying? (for example, h-1b, or other employment-based visas)
+required
+yes
+no
+please make a selection",No
+"do you have hands-on experience with html, css, or javascript? 
+do you have hands-on experience with html, css, or javascript?
+yes
+no",Yes
+"are you based in austin or texas?
+are you based in austin or texas?
+required
+yes
+no
+please make a selection",Yes
+"will you now, or in the future, require xurrent to provide employment sponsorship for the country in which you are applying? (for example, h-1b, or other employment-based visas)
+will you now, or in the future, require xurrent to provide employment sponsorship for the country in which you are applying? (for example, h-1b, or other employment-based visas)
+required
+yes
+no",No
+"are you based in austin or texas?
+are you based in austin or texas?
+required
+yes
+no",Yes
+how many years of work experience do you have with android sdk?,5
+"how much did content from the doordash engineering blog influence your decision to apply for a role at doordash?
+how much did content from the doordash engineering blog influence your decision to apply for a role at doordash?
+required
+       select an option
+       5 = strong
+       4 = moderate
+       3 = neutral
+       2 = somewhat
+       1 = none
+   please make a selection",4
+"are you currently authorized to work lawfully in the u.s.?
+are you currently authorized to work lawfully in the u.s.?
+required
+       select an option
+       yes
+       no
+   please make a selection",4
+"will you now or in the future require employment-based visa sponsorship?
+will you now or in the future require employment-based visa sponsorship?
+required
+       select an option
+       yes
+       no
+   please make a selection",No
+"have you worked at doordash?
+have you worked at doordash?
+required
+       select an option
+       i am a previous employee
+       i am a previous contractor
+       i am a previous doordash dasher
+       i am a current contractor
+       i am a current doordash dasher
+       i am a current doordash employee
+       i have not worked at doordash
+   please make a selection",Yes
+"applicant privacy acknowledgement 
+applicant privacy acknowledgement
+required
+       select an option
+       yes
+       no
+   please make a selection",4
+"we would like to contact you via sms or whatsapp to provide updates on your progress. mark yes if you agree. if you mark no, we will contact you via the email you provided.
+we would like to contact you via sms or whatsapp to provide updates on your progress. mark yes if you agree. if you mark no, we will contact you via the email you provided.
+required
+       select an option
+       yes
+       no
+   please make a selection",4
+"select all locations you would be open to being placed for an in-person internship
+select all locations you would be open to being placed for an in-person internship
+required
+san francisco
+sunnyvale
+seattle
+new york
+los angeles
+please make a selection",4
+"please select your top preferred location
+please select your top preferred location
+required
+san francisco
+sunnyvale
+seattle
+new york
+los angeles
+please make a selection",N/A
+"have you previously completed at least 1 internship or have relevant full-time experience? 
+have you previously completed at least 1 internship or have relevant full-time experience?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"please indicate your most recent gpa 
+please indicate your most recent gpa
+required
+       select an option
+       3.8+
+       3.41 - 3.79
+       below 3.4
+   please make a selection",4
+"please select and confirm your anticipated graduation date 
+please select and confirm your anticipated graduation date
+required
+       select an option
+       fall 2025
+       winter 2025
+       spring 2026
+       summer 2026
+       fall 2026
+       winter 2026
+       winter 2023
+       spring 2023
+       summer 2024
+       winter 2024
+       spring 2024
+       summer 2025
+       spring 2027
+       summer 2027
+       fall 2027
+       winter 2027
+   please make a selection",4
+"gender
+gender
+required
+male
+female
+non-binary
+i don't wish to answer
+please make a selection",Male
+"do you identify as transgender?
+do you identify as transgender?
+required
+yes
+no
+i don't wish to answer
+please make a selection",Male
+"are you hispanic or latinx?
+are you hispanic or latinx?
+required
+yes
+no
+i don't wish to answer
+please make a selection",Yes
+"race (*please select one option that best describes how you identify*)
+race (*please select one option that best describes how you identify*)
+required
+american indian or alaska native
+asian
+black or african american
+hispanic or latino
+native hawaiian or other pacific islander
+two or more races
+white
+i don't wish to answer
+please make a selection",White
+"protected veteran status
+protected veteran status
+required
+i am one or more of the classifications of protected veterans
+i am not a protected veteran
+i don't wish to answer
+please make a selection",I am not
+"disability status
+disability status
+required
+yes, i have (or have previously had) a disability
+no, i don’t have a disability
+i don't wish to answer
+please make a selection",No
+"how much did content from the doordash engineering blog influence your decision to apply for a role at doordash?
+how much did content from the doordash engineering blog influence your decision to apply for a role at doordash?
+required
+       select an option
+       5 = strong
+       4 = moderate
+       3 = neutral
+       2 = somewhat
+       1 = none",4
+"are you currently authorized to work lawfully in the u.s.?
+are you currently authorized to work lawfully in the u.s.?
+required
+       select an option
+       yes
+       no",4
+"will you now or in the future require employment-based visa sponsorship?
+will you now or in the future require employment-based visa sponsorship?
+required
+       select an option
+       yes
+       no",No
+"have you worked at doordash?
+have you worked at doordash?
+required
+       select an option
+       i am a previous employee
+       i am a previous contractor
+       i am a previous doordash dasher
+       i am a current contractor
+       i am a current doordash dasher
+       i am a current doordash employee
+       i have not worked at doordash",Yes
+"applicant privacy acknowledgement 
+applicant privacy acknowledgement
+required
+       select an option
+       yes
+       no",4
+"we would like to contact you via sms or whatsapp to provide updates on your progress. mark yes if you agree. if you mark no, we will contact you via the email you provided.
+we would like to contact you via sms or whatsapp to provide updates on your progress. mark yes if you agree. if you mark no, we will contact you via the email you provided.
+required
+       select an option
+       yes
+       no",4
+"select all locations you would be open to being placed for an in-person internship
+select all locations you would be open to being placed for an in-person internship
+required
+san francisco
+sunnyvale
+seattle
+new york
+los angeles",4
+"please select your top preferred location
+please select your top preferred location
+required
+san francisco
+sunnyvale
+seattle
+new york
+los angeles",N/A
+"have you previously completed at least 1 internship or have relevant full-time experience? 
+have you previously completed at least 1 internship or have relevant full-time experience?
+required
+       select an option
+       yes
+       no",Yes
+"please indicate your most recent gpa 
+please indicate your most recent gpa
+required
+       select an option
+       3.8+
+       3.41 - 3.79
+       below 3.4",4
+"please select and confirm your anticipated graduation date 
+please select and confirm your anticipated graduation date
+required
+       select an option
+       fall 2025
+       winter 2025
+       spring 2026
+       summer 2026
+       fall 2026
+       winter 2026
+       winter 2023
+       spring 2023
+       summer 2024
+       winter 2024
+       spring 2024
+       summer 2025
+       spring 2027
+       summer 2027
+       fall 2027
+       winter 2027",4
+"do you identify as transgender?
+do you identify as transgender?
+required
+yes
+no
+i don't wish to answer",Male
+how did you hear about this job?,Other
+"are you legally authorized to work in the united states?
+are you legally authorized to work in the united states?
+required
+       select an option
+       yes
+       no
+   please make a selection",4
+"will you now or in the future require sponsorship for employment visa status (e.g. h-1b visa status)?
+will you now or in the future require sponsorship for employment visa status (e.g. h-1b visa status)?
+required
+       select an option
+       yes
+       no
+   please make a selection",No
+"have you been employed by gemini in the past?
+have you been employed by gemini in the past?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"this role is required to be based near one of our hubs (seattle, wa or new york city, ny). are you open to relocating if you're not currently based there?
+this role is required to be based near one of our hubs (seattle, wa or new york city, ny). are you open to relocating if you're not currently based there?
+required
+       select an option
+       yes
+       no
+   please make a selection",Bronx
+"applicant privacy statement
+applicant privacy statement
+required
+by clicking this box and submitting your application, you consent to our applicant privacy statement.
+select checkbox to proceed",4
+"how many years of work experience do you have with .net architecture?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with application architecture?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with pos?
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have with platform architecture?
+enter a decimal number larger than 0.0",6
+"how many years of recent experience do you have in guidewire billingcenter?
+enter a decimal number larger than 0.0",4
+"hispanic or latino
+american indian or alaska native (not hispanic or latino)
+asian (not hispanic or latino)
+black or african american (not hispanic or latino)
+native hawaiian or other pacific islander (not hispanic or latino)
+two or more races (not hispanic or latino)
+white (not hispanic or latino)
+i prefer not to specify",N/A
+"gender
+gender
+required
+male
+female
+i prefer not to specify",N/A
+"i identify as one or more of the classifications of protected veteran listed above
+i am not a protected veteran
+i prefer not to specify",N/A
+"yes, i have a disability, or have had one in the past
+no, i do not have a disability and have not had one in the past
+i do not want to answer",No
+"are you a veteran?
+are you a veteran?
+required
+yes
+no
+please make a selection",I am not
+"do you claim disability status?
+do you claim disability status?
+required
+yes
+no
+please make a selection",No
+"are you a veteran?
+are you a veteran?
+required
+yes
+no",I am not
+"do you claim disability status?
+do you claim disability status?
+required
+yes
+no",No
+"are you legally authorized to work in the united states on a full-time basis?
+are you legally authorized to work in the united states on a full-time basis?
+required
+yes
+no
+please make a selection",4
+"do you currently reside in the united states?
+do you currently reside in the united states?
+required
+yes
+no
+please make a selection",Yes
+"what is your country of citizenship?
+what is your country of citizenship?
+       select an option
+       us citizen
+       non us citizen (includes us permanent residents)",4
+"how many years of work experience do you have with agile environment?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with full-stack development?,3
+"how many years of work experience do you have with restful architecture?
+enter a whole number between 0 and 99",4
+how many years of work experience do you have with mongodb?,5
+"how many years of work experience do you have with marklogic?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with isql?
+enter a whole number between 0 and 99",6
+"location (city)
+location (city)
+please enter a valid answer",Bronx
+enter a whole number larger than 0,4
+school,4
+degree,4
+"major / field of study
+please enter a valid answer",4
+"i currently attend this institution
+dates attended
+dates attended
+required
+from
+required
+month of from
+    month
+    january
+    february
+    march
+    april
+    may
+    june
+    july
+    august
+    september
+    october
+    november
+    december
+year of from
+    year
+    2024
+    2023
+    2022
+    2021
+    2020
+    2019
+    2018
+    2017
+    2016
+    2015
+    2014
+    2013
+    2012
+    2011
+    2010
+    2009
+    2008
+    2007
+    2006
+    2005
+    2004
+    2003
+    2002
+    2001
+    2000
+    1999
+    1998
+    1997
+    1996
+    1995
+    1994
+    1993
+    1992
+    1991
+    1990
+    1989
+    1988
+    1987
+    1986
+    1985
+    1984
+    1983
+    1982
+    1981
+    1980
+    1979
+    1978
+    1977
+    1976
+    1975
+    1974
+    1973
+    1972
+    1971
+    1970
+    1969
+    1968
+    1967
+    1966
+    1965
+    1964
+    1963
+    1962
+    1961
+    1960
+    1959
+    1958
+    1957
+    1956
+    1955
+    1954
+    1953
+    1952
+    1951
+    1950
+    1949
+    1948
+    1947
+    1946
+    1945
+    1944
+    1943
+    1942
+    1941
+    1940
+    1939
+    1938
+    1937
+    1936
+    1935
+    1934
+    1933
+    1932
+    1931
+    1930
+    1929
+    1928
+    1927
+    1926
+    1925
+    1924
+to
+required
+month of to
+    month
+    january
+    february
+    march
+    april
+    may
+    june
+    july
+    august
+    september
+    october
+    november
+    december
+year of to
+    year
+    2034
+    2033
+    2032
+    2031
+    2030
+    2029
+    2028
+    2027
+    2026
+    2025
+    2024
+    2023
+    2022
+    2021
+    2020
+    2019
+    2018
+    2017
+    2016
+    2015
+    2014
+    2013
+    2012
+    2011
+    2010
+    2009
+    2008
+    2007
+    2006
+    2005
+    2004
+    2003
+    2002
+    2001
+    2000
+    1999
+    1998
+    1997
+    1996
+    1995
+    1994
+    1993
+    1992
+    1991
+    1990
+    1989
+    1988
+    1987
+    1986
+    1985
+    1984
+    1983
+    1982
+    1981
+    1980
+    1979
+    1978
+    1977
+    1976
+    1975
+    1974
+    1973
+    1972
+    1971
+    1970
+    1969
+    1968
+    1967
+    1966
+    1965
+    1964
+    1963
+    1962
+    1961
+    1960
+    1959
+    1958
+    1957
+    1956
+    1955
+    1954
+    1953
+    1952
+    1951
+    1950
+    1949
+    1948
+    1947
+    1946
+    1945
+    1944
+    1943
+    1942
+    1941
+    1940
+    1939
+    1938
+    1937
+    1936
+    1935
+    1934
+    1933
+    1932
+    1931
+    1930
+    1929
+    1928
+    1927
+    1926
+    1925
+    1924",4
+"are you certified scrum master (csm)
+are you certified scrum master (csm)
+required
+yes
+no
+please make a selection",Yes
+"do you have the ability to work in a fast-paced environment and manage multiple priorities.
+do you have the ability to work in a fast-paced environment and manage multiple priorities.
+required
+yes
+no
+please make a selection",Yes
+"are you proficient in sql server 2016, capable of writing complex stored procedures, and utilizing ssis and ssrs for data integration and reporting
+are you proficient in sql server 2016, capable of writing complex stored procedures, and utilizing ssis and ssrs for data integration and reporting
+required
+yes
+no
+please make a selection",Yes
+"do you require sponsorship now or in the future?
+do you require sponsorship now or in the future?
+required
+yes
+no
+please make a selection",No
+"can you legally work for any employer in the us?
+can you legally work for any employer in the us?
+required
+yes
+no
+please make a selection",4
+"are you certified scrum master (csm)
+are you certified scrum master (csm)
+required
+yes
+no",Yes
+"do you have the ability to work in a fast-paced environment and manage multiple priorities.
+do you have the ability to work in a fast-paced environment and manage multiple priorities.
+required
+yes
+no",Yes
+"are you proficient in sql server 2016, capable of writing complex stored procedures, and utilizing ssis and ssrs for data integration and reporting
+are you proficient in sql server 2016, capable of writing complex stored procedures, and utilizing ssis and ssrs for data integration and reporting
+required
+yes
+no",Yes
+"do you require sponsorship now or in the future?
+do you require sponsorship now or in the future?
+required
+yes
+no",No
+"can you legally work for any employer in the us?
+can you legally work for any employer in the us?
+required
+yes
+no",4
+"do you have the following license or certification: comptia security+?
+do you have the following license or certification: comptia security+?
+required
+yes
+no",Yes
+"do you have the following license or certification: comptia network+?
+do you have the following license or certification: comptia network+?
+required
+yes
+no
+please make a selection",Yes
+"how many years of work experience do you have with active directory?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with microsoft outlook?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with sharepoint?,5
+"how many years of work experience do you have with microsoft teams?
+enter a whole number between 0 and 99",3
+"are you familiar with networking concepts like dns, dhcp, and tcp/ip?
+are you familiar with networking concepts like dns, dhcp, and tcp/ip?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with it ticketing systems such as jira service desk or similar?
+do you have experience with it ticketing systems such as jira service desk or similar?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience troubleshooting hardware issues such as printers, desktops, and laptops?
+do you have experience troubleshooting hardware issues such as printers, desktops, and laptops?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you familiar with microsoft purview for compliance and data governance?
+are you familiar with microsoft purview for compliance and data governance?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have the following license or certification: comptia network+?
+do you have the following license or certification: comptia network+?
+required
+yes
+no",Yes
+"how many years of work experience do you have with cics?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with sql server integration services (ssis)?
+enter a whole number between 0 and 99",5
+"do you have the following license or certification: electrical engineer?
+do you have the following license or certification: electrical engineer?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: electrical engineer?
+do you have the following license or certification: electrical engineer?
+required
+yes
+no",Yes
+"do you have the following license or certification: certified scrummaster (csm)?
+do you have the following license or certification: certified scrummaster (csm)?
+required
+yes
+no
+please make a selection",Yes
+"how many years of work experience do you have with devops?
+enter a whole number between 0 and 99",3
+"do you have the following license or certification: professional scrum master?
+do you have the following license or certification: professional scrum master?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: certified scrummaster (csm)?
+do you have the following license or certification: certified scrummaster (csm)?
+required
+yes
+no",Yes
+"do you have the following license or certification: professional scrum master?
+do you have the following license or certification: professional scrum master?
+required
+yes
+no",Yes
+"how many years of work experience do you have with systemverilog?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with universal verification methodology (uvm)?
+enter a whole number between 0 and 99",3
+"how many years of semiconductor manufacturing experience do you currently have?
+enter a whole number between 0 and 99",5
+"do you have specific experience in uvm and systemverilog?
+do you have specific experience in uvm and systemverilog?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with it audit?
+enter a whole number between 0 and 99",4
+how many years of work experience do you have with azure databricks?,6
+"how many years of work experience do you have with data warehousing?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with microsoft power bi?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with microsoft azure?
+enter a whole number between 0 and 99",4
+"have you worked on replacing a legacy system and data migration?
+have you worked on replacing a legacy system and data migration?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you comfortable with fulltime position?
+are you comfortable with fulltime position?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with terraform?,3
+"how many years of work experience do you have with jira?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with oracle database?,3
+"azure
+enter a decimal number larger than 0.0",4
+"etl development
+enter a decimal number larger than 0.0",4
+"by checking this box, you will declare that you read and understand the elbit systems of america privacy policy, and the smartrecruiters privacy policy and smartrecruiters  terms of use.
+by checking this box, you will declare that you read and understand the elbit systems of america, and the smartrecruitersand smartrecruiters.
+required
+i agree terms & conditions
+select checkbox to proceed",I agree
+"are you able and willing to travel to charleston 1-2 times per month?
+are you able and willing to travel to charleston 1-2 times per month?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with hbase?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with linux?,4
+"how many years of work experience do you have with websphere?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with apache?,3
+"how many years of work experience do you have with c++?
+enter a whole number between 0 and 99",5
+"do you implement and maintain aws iam security policies?
+enter a decimal number larger than 0.0",Yes
+"are you an aws certified solutions architect?
+are you an aws certified solutions architect?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are yoy familiar with containerization technologies (e.g., docker, kubernetes)?
+enter a decimal number larger than 0.0",4
+"do you have llm ops experience?
+enter a decimal number larger than 0.0",Yes
+"are you an aws certified solutions architect?
+are you an aws certified solutions architect?
+required
+       select an option
+       yes
+       no",Yes
+"are yoy familiar with containerization technologies (e.g., docker, kubernetes)?",4
+"in a few sentences, explain what appeals to you about joining the via team.
+please enter a valid answer",4
+"will you now or in the future require visa sponsorship to work in the united states? via supports visa sponsorship and we will get to know more about your sponsorship needs later in the process.
+will you now or in the future require visa sponsorship to work in the united states? via supports visa sponsorship and we will get to know more about your sponsorship needs later in the process.
+required
+       select an option
+       yes
+       no
+   please make a selection",No
+"do you have the following license or certification: insurance agent, accident, health, life, variable life & variable annuities?
+do you have the following license or certification: insurance agent, accident, health, life, variable life & variable annuities?
+required
+yes
+no
+please make a selection",Yes
+"are you a resident of the united states? (insurance licenses require you to be based in the united states)
+are you a resident of the united states? (insurance licenses require you to be based in the united states)
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have the following license or certification: insurance agent, accident, health, life, variable life & variable annuities?
+do you have the following license or certification: insurance agent, accident, health, life, variable life & variable annuities?
+required
+yes
+no",Yes
+"how many years of professional full stack development experience you have? (please note the position requires atleast 2 years)
+enter a decimal number larger than 0.0",5
+"do you possess knowledge of micro-services architecture and security practices, protecting against vulnerabilities?
+do you possess knowledge of micro-services architecture and security practices, protecting against vulnerabilities?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with maintaining soc ii compliance?
+do you have experience with maintaining soc ii compliance?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you experienced in configuration management tools (ansible, puppet, or chef), gitlab ci/cd for automation, and docker and kubernetes for container orchestration?
+are you experienced in configuration management tools (ansible, puppet, or chef), gitlab ci/cd for automation, and docker and kubernetes for container orchestration?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have practical knowledge of cloud platforms (aws, google cloud), and have you implemented monitoring solutions and logging tools?
+do you have practical knowledge of cloud platforms (aws, google cloud), and have you implemented monitoring solutions and logging tools?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have with implementing rest apis?
+enter a decimal number larger than 0.0",3
+"how many years of hands-on experience do you have with aws for backend development?
+enter a decimal number larger than 0.0",5
+"how many years of hands-on experience do you have with using git for ci/cd automation?
+enter a decimal number larger than 0.0",5
+"how many years of experience do you have with contributing to testing and quality assurance practices?
+enter a decimal number larger than 0.0",5
+"have you used infrastructure as code (iac) with terraform or cloudformation?
+have you used infrastructure as code (iac) with terraform or cloudformation?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"power bi sap business objects meddra drug safety
+power bi sap business objects meddra drug safety
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4

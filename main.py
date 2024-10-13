@@ -372,7 +372,7 @@ class EasyApplyBot:
                             )
 
                             # If the job has been applied, dismiss it and skip to the next.
-                            if applied_status.is_displayed():
+                            if applied_status.is_displayed() or link.get_attribute("data-job-id") in self.visited_IDs:
                                 log.debug(f"Job already applied: {link.text}")
                                 dismissBtn = link.find_element(By.XPATH, ".//button[starts-with(@aria-label, 'Dismiss')]")
                                 dismissBtn.click()
@@ -875,6 +875,7 @@ class EasyApplyBot:
             elif self.is_found_field(self.locator["input_select"], field):  # Adjust options as needed
                 try:
                     select_elements = self.get_child_elements(self.locator["input_select"], field)
+                    log.debug(select_elements)
 
                     if select_elements is None or len(select_elements) == 0:
                         log.error(f"No select elements found for question: {question}")
@@ -908,7 +909,7 @@ class EasyApplyBot:
                                 break  # Exit loop on first closest match
 
                         if closest_match:
-                            WebDriverWait(field, 10).until(EC.element_to_be_clickable(closest_match))
+                            WebDriverWait(field, 20).until(EC.element_to_be_clickable(closest_match))
                             try:
                                 closest_match.click()  # Use click for better simulation
                                 log.info(f"Closest select element chosen: {closest_match.get_attribute('value')}")
