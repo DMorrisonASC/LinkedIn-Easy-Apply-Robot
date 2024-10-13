@@ -379,16 +379,25 @@ class EasyApplyBot:
                                 continue  # Skip this job card if it's already applied.
 
                         except NoSuchElementException:
-                            # If the job has not been applied and is not in the blacklist.
-                            if link.text not in self.blacklist:
-                                jobID = link.get_attribute("data-job-id")
-                                if jobID == "search":
-                                    log.debug(f"Job ID not found, It is likely a 'promoted' job? {link.text}")
-                                    continue
-                                else:
+                            # Add the job's ID to the list of `jobIDs`.
+                            # If: 1) The job title is NOT blacklisted. 2) If the company of the job is not blacklisted
+                            jobIsBanned = False
+
+                            for word in blacklist + blackListTitles:
+                                if word in link.text:
+                                    log.debug(f"Job has a banned word: {word}\nDetails: {link.text}")
+                                    jobIsBanned = True
+
+                            if jobIsBanned == False:
+                                if jobID.isdigit():
+                                    jobID = link.get_attribute("data-job-id")
                                     # Ensure the job ID is unique before adding it for processing.
                                     if jobID not in jobIDs:
                                         jobIDs[jobID] = "To be processed"
+
+                                else:
+                                    log.debug(f"Job ID not found, It is likely a 'promoted' job? {link.text}")
+                                    continue
                     
                     # If there are new jobs to process, apply to them.
                     if len(jobIDs) > 0:
