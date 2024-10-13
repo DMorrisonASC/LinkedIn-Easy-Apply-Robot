@@ -117,7 +117,7 @@ experience_level:
   - 4 # Director
   - 5 # Executive
   - 6 # Internship
-time_filter: 1 # 24 hours
+time_filter:  # 1 = 24 hours, 2 = Last week, 3 = Last month. Else, it will pick anytime
 ```
 __NOTE: Add `config.yaml`, 'resume/' and 'cover_letters' into .gitignore file!__
 
