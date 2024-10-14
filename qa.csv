@@ -3685,3 +3685,12 @@ required
        yes
        no
    please enter a valid answer",4
+"how many years of work experience do you have with test automation?
+enter a whole number between 0 and 99",4
+"would you be comfortable working under w2 contracts?
+would you be comfortable working under w2 contracts?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4

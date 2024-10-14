@@ -151,7 +151,7 @@ class EasyApplyBot:
             "radio_select": (By.XPATH, ".//input[starts-with(@id, 'urn:li:fsd_formElement:urn:li:jobs_applyformcommon_easyApplyFormElement:') and @type='radio']"),
             "multi_select": (By.XPATH, ".//select[starts-with(@id, 'text-entity-list-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-') and @required='']"),
             "text_select": (By.XPATH, ".//input[starts-with(@id, 'single-line-text-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-') and @type='text']"),
-            "input_select": (By.CSS_SELECTOR, 'input[type="radio"], input[type="checkbox"]'),
+            "input_select": (By.XPATH, ".//input[@type='checkbox' or @type='radio']"),
             "location_select": (By.XPATH, ".//input[@aria-autocomplete='list']"),
             "text_area": (By.TAG_NAME, "textarea"),
             "2fa_oneClick": (By.ID, 'reset-password-submit-button'),
@@ -1083,6 +1083,8 @@ class EasyApplyBot:
             answer = self.first_name
         elif ("last" in question):
             answer = self.last_name
+        elif ("your name" in question):
+            answer = self.first_name + " " + self.last_name
         # Socials
         elif ("github" in question):
             answer = self.github
