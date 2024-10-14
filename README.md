@@ -120,6 +120,8 @@ experience_level:
 time_filter:  # 1 = 24 hours, 2 = Last week, 3 = Last month. Else, it will pick anytime
 ```
 __NOTE: Add `config.yaml`, 'resume/' and 'cover_letters' into .gitignore file!__
+### Main.py
+Edit the `def ans_question(self, question)` function to modify answers to the questions on applications
 
 ### Uploads
 
