@@ -3694,3 +3694,409 @@ required
        yes
        no
    please enter a valid answer",4
+"how many years of work experience do you have with cisa?
+enter a whole number between 0 and 99",4
+"are you comfortable working on w2 basis?
+are you comfortable working on w2 basis?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with unix?,4
+"how many years of work experience do you have with network administration?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with help desk support?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with computer hardware troubleshooting?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with microsoft word?
+enter a whole number between 0 and 99",5
+"how many years of php developer experience do you have?
+enter a decimal number larger than 0.0",5
+"do you have understanding of gen ai use cases and its impact?
+do you have understanding of gen ai use cases and its impact?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you open to traveling for work-related purposes across the us?
+are you open to traveling for work-related purposes across the us?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"if selected, in how many days can you join?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with eigrp?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with local area network (lan)?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with networking?
+enter a whole number between 0 and 99",6
+"need to be on aekya inc w2 - can you work on w2..
+need to be on aekya inc w2 - can you work on w2..
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"flink in needed - do you have any experience using flink 
+flink in needed - do you have any experience using flink
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have related to the position you are currently applying for?
+how many years of work experience do you have related to the position you are currently applying for?
+required
+       select an option
+       0-2
+       3-5
+       6-9
+       10-15
+       15+
+   please make a selection",6
+"are you authorized to work in the job's location?
+are you authorized to work in the job's location?
+required
+yes
+no
+please make a selection",4
+"will you now, or in the future, require sponsorship for employment visa status (e.g. h-1b visa status) ?
+will you now, or in the future, require sponsorship for employment visa status (e.g. h-1b visa status) ?
+required
+yes
+no
+please make a selection",No
+"how many years of work experience do you have with data warehouse applications and database reporting features?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have creating technical and functional design documentation?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have in designing enterprise applications and services?
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have in oracle database structures and data analysis?
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have in oracle database design, analysis, and performance tuning?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have within the software development lifecycle using agile methodology – (scrum, for example)?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with multi-tier system/application development – (soa, microservices, 3-tier applications, for example)?
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have in jira experience and oracle certification
+enter a decimal number larger than 0.0",4
+"how many years of experience do you have implementing dassault systemes 3dx
+enter a decimal number larger than 0.0",4
+"how many years of experience do you have with product lifecycle management?
+enter a decimal number larger than 0.0",4
+"do you require working on c2c?
+do you require working on c2c?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you ever held a clearance (public trust, secret, etc.) issued by the department of justice?
+have you ever held a clearance (public trust, secret, etc.) issued by the department of justice?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with enterprise resource planning (erp)?
+enter a whole number between 0 and 99",3
+"are you ok with travel up to 25%?
+are you ok with travel up to 25%?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with sailpoint?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with anaplan?
+enter a whole number between 0 and 99",6
+"have you reviewed and agreed to the rules on barque42.ch?
+have you reviewed and agreed to the rules on barque42.ch?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"would you be able to keep your role with us part-time while pursuing other commitments, such as working at another company or studying in school or college?
+would you be able to keep your role with us part-time while pursuing other commitments, such as working at another company or studying in school or college?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"how many years of work experience do you have with git?
+enter a decimal number larger than 0.0",5
+"do you have a dream project or game idea that you’d like to work on with our crew in the future?
+do you have a dream project or game idea that you’d like to work on with our crew in the future?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you ready to come aboard our barque?
+are you ready to come aboard our barque?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you aware that revenue from the project will only be shared after its release on steam, and is this arrangement acceptable to you?
+are you aware that revenue from the project will only be shared after its release on steam, and is this arrangement acceptable to you?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"on a scale from 1 to 10, how would you rate your unreal engine skills?
+enter a decimal number larger than 0.0",4
+"do you agree to an interview before final approval of your application?
+do you agree to an interview before final approval of your application?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you aware this is a unique opportunity and will you value being part of our crew if selected?
+are you aware this is a unique opportunity and will you value being part of our crew if selected?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with pl/sql?,3
+"how many years of work experience do you have with kafka streams?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with microsoft entra id?
+enter a whole number between 0 and 99",5
+"¿cuántos años de experiencia tienes con python?
+introduce un número de whole entre 0 y 99",4
+"¿cuántos años de experiencia tienes con generación aumentada por recuperación (rag)?
+introduce un número de whole entre 0 y 99",4
+"this is unpaid internship program intended for graduate students. are you student and willing to news website to showcase brush up and showcase your skill set and comfortable in unpaid internship ?
+this is unpaid internship program intended for graduate students. are you student and willing to news website to showcase brush up and showcase your skill set and comfortable in unpaid internship ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you having understanding of google lighthouse search console, indexing, meta tags, seo, amp and content management system concepts. or willing to dig deep and learn and apply them in them ?
+are you having understanding of google lighthouse search console, indexing, meta tags, seo, amp and content management system concepts. or willing to dig deep and learn and apply them in them ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of retail experience do you currently have?
+enter a whole number between 0 and 99",3
+"are you available on w2 ?
+are you available on w2 ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with splunk?,3
+"how many years of work experience do you have with splunk cloud?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with splunk enterprise?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with workday?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with workday human capital management?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with manual testing?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with requirements gathering?
+enter a whole number between 0 and 99",5
+"do you currently reside within a 30 minute commute to evanston, il
+do you currently reside within a 30 minute commute to evanston, il
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with revenue cycle management?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with medicare/medicaid reimbursement?
+enter a whole number between 0 and 99",5
+"how many years of functional business analyst experience do you currently have?
+enter a decimal number larger than 0.0",4
+"have you completed an internship at a trading firm?
+have you completed an internship at a trading firm?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with azure sentinel?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with kusto query language (kql)?
+enter a whole number between 0 and 99",6
+"do you have at least 2 years of recent experience in data operations within the healthcare industry?
+do you have at least 2 years of recent experience in data operations within the healthcare industry?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have strong experience in google cloud platform?
+do you have strong experience in google cloud platform?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you ever worked with the nist associate information system?
+have you ever worked with the nist associate information system?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you legally authorized to work in the united states? and will you now, or in the future, not require sponsorship for employment visa?
+are you legally authorized to work in the united states? and will you now, or in the future, not require sponsorship for employment visa?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"are you available for relocation across usa? as the training location will be atlanta, georgia for 8 weeks and project location will be anywhere in us
+are you available for relocation across usa? as the training location will be atlanta, georgia for 8 weeks and project location will be anywhere in us
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have at least 2-3 years of experience working with ibm business rule engine (bre)?
+do you have at least 2-3 years of experience working with ibm business rule engine (bre)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have at least 4 years of experience developing applications in java?
+ do you have at least 4 years of experience developing applications in java?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you worked with both mysql and oracle database in a professional setting for at least 4 years? 
+have you worked with both mysql and oracle database in a professional setting for at least 4 years?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you authorized to work on rose international’s w2 without sponsorship?
+are you authorized to work on rose international’s w2 without sponsorship?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"how many years of experience do you have as a filemaker developer?
+enter a decimal number larger than 0.0",3
+"how long is your experience within the clinical / healthcare industry ?
+enter a decimal number larger than 0.0",4
+"do you have experience with hedis ? if so, how many years?
+enter a decimal number larger than 0.0",3
+"how many years of reporting experience do you have?
+enter a decimal number larger than 0.0",5
+"are you a us citizen or a green card holder? [ you will be asked to provide a proof as no other work authorizations are accepted at this time ]
+are you a us citizen or a green card holder? [ you will be asked to provide a proof as no other work authorizations are accepted at this time ]
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"do you have an demonstrable experience with data in python? if so, how many years?
+enter a decimal number larger than 0.0",3
+"do you have an demonstrable experience with pandas? if so, how many years?
+enter a decimal number larger than 0.0",3
+"do you have experience with qrda ? if so, how many years? be ready to explain it.
+enter a decimal number larger than 0.0",4
+"please select yes if you're a us citizen, or a green card holder and are available to work on w2.
+please select yes if you're a us citizen, or a green card holder and are available to work on w2.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have as a data analyst working on data and analytics for the human resources department?
+enter a decimal number larger than 0.0",6
+"how many years of experience do you have in data visualization and analysis tools such as power bi, looker studio, qlik, or tableau?
+enter a decimal number larger than 0.0",3
+"how many years of experience do you have with workday and developing custom workday reports?
+enter a decimal number larger than 0.0",5
+"do you have experience with coding languages eg; sql, python, or r?
+do you have experience with coding languages eg; sql, python, or r?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have in building and optimizing data warehouses, pipelines, and models?
+enter a decimal number larger than 0.0",4
+"do you have experience with google bigquery?
+do you have experience with google bigquery?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with artificial intelligence (ai)?,4
+"how many years of work experience do you have with box.net?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with google workspace?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with sharegate?
+enter a whole number between 0 and 99",5
+"can you be considered on a w2 basis with out sponsorship on day one of the assignment?
+can you be considered on a w2 basis with out sponsorship on day one of the assignment?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"do you have experience migrating google workspace/g-suite to microsoft-based toolsets?
+do you have experience migrating google workspace/g-suite to microsoft-based toolsets?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with cluster?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with jenkins?,4
+how many years of work experience do you have with javascript frameworks?,3
+"how many years of experience do you have in front-end development as a ui developer?
+enter a decimal number larger than 0.0",3
+"if selected, are you able to work directly as our w2 employee? 
+if selected, are you able to work directly as our w2 employee?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with ibm mainframe?,3
+"how many years of work experience do you have with perforce?
+enter a whole number between 0 and 99",4
+"how many years of total work experience do you have ?
+enter a decimal number larger than 0.0",3
+how many years of work experience do you have with sap erp?,4
+"how many years of work experience do you have with abap?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with web dynpro?
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with ooabap?
+enter a decimal number larger than 0.0",4

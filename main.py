@@ -1049,6 +1049,8 @@ class EasyApplyBot:
             answer = random.choice(choices)
         elif "rate" in question and ("yourself" in question or "proficient" in question or "proficiency" in question):
             answer = "10"
+        elif "rate" in question and ("hourly" in question or "per hour" in question):
+            answer = self.rate
         elif "do you" in question and "experience" in question:
             answer = "Yes"
         elif "how did you hear" in question:
