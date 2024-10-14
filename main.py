@@ -389,8 +389,9 @@ class EasyApplyBot:
                                     jobIsBanned = True
 
                             if jobIsBanned == False:
+                                jobID = link.get_attribute("data-job-id")
+
                                 if jobID.isdigit():
-                                    jobID = link.get_attribute("data-job-id")
                                     # Ensure the job ID is unique before adding it for processing.
                                     if jobID not in jobIDs:
                                         jobIDs[jobID] = "To be processed"
