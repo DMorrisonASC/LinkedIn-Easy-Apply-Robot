@@ -132,7 +132,7 @@ The program reads the titles from the input boxes and matches them with the list
 
 To execute the bot run the following in your terminal
 ```
-python3 easyapplybot.py
+python3 main.py
 ```
 ## Bugs
 - Uploading resume doesn't work; upload it manually
