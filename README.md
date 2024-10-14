@@ -3,7 +3,7 @@ Automate the applying for jobs on LinkedIn (Only for 'easy apply' jobs). [Modifi
 
 ## Setup 
 
-Python 3.10 using a conda virtual environment on Linux (Ubuntu)
+Python 3
 
 The run the bot install requirements
 ```bash
