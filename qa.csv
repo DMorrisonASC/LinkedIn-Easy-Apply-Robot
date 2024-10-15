@@ -5008,3 +5008,26 @@ required",4
 earliest start date?
 required
 please enter a valid answer",4
+"have you completed your bachelor's in computer science?
+have you completed your bachelor's in computer science?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have internship or project experience in backend development or system integration?
+do you have internship or project experience in backend development or system integration?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with core java?
+enter a whole number between 0 and 99",5
+"are you a us citizen or permanent green card holder?
+are you a us citizen or permanent green card holder?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
