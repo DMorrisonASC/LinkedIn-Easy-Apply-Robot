@@ -1,3 +1,4 @@
+# Author: Daeshaun Morrison, modified from: https://github.com/nicolomantini/LinkedIn-Easy-Apply-Bot
 import csv
 import logging
 import traceback
@@ -6,6 +7,7 @@ import random
 import re
 import time
 from datetime import datetime, timedelta
+from datetime import date
 from pathlib import Path
 
 import yaml
@@ -152,6 +154,7 @@ class EasyApplyBot:
             "multi_select": (By.XPATH, ".//select[starts-with(@id, 'text-entity-list-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-') and @required='']"),
             "text_select": (By.XPATH, ".//input[starts-with(@id, 'single-line-text-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-') and @type='text']"),
             "input_select": (By.XPATH, ".//input[@type='checkbox' or @type='radio']"),
+            "date_input": (By.XPATH, ".//input[@placeholder='mm/dd/yyyy']"),
             "location_select": (By.XPATH, ".//input[@aria-autocomplete='list']"),
             "text_area": (By.TAG_NAME, "textarea"),
             "2fa_oneClick": (By.ID, 'reset-password-submit-button'),
@@ -747,6 +750,7 @@ class EasyApplyBot:
             # Check if input type is radio button
             if self.is_found_field(self.locator["radio_select"], field):
                 try:
+                    log.debug("Locator: radio_select")
                     radio_buttons = self.get_child_elements(self.locator["radio_select"], field)
 
                     if radio_buttons is None or len(radio_buttons) == 0:
@@ -803,6 +807,7 @@ class EasyApplyBot:
                 retry_count = 0
                 while retry_count < max_retries:
                     try:
+                        log.debug("Locator: multi_select")
                         # Refresh or re-fetch the select element each time
                         select_element = WebDriverWait(field, 10).until(
                             EC.presence_of_element_located(self.locator["multi_select"])
@@ -840,6 +845,7 @@ class EasyApplyBot:
             # Handle text input fields
             elif self.is_found_field(self.locator["text_select"], field):
                 try:    
+                    log.debug("Locator: text_select")
                     text_field = WebDriverWait(field, 10).until(
                             EC.presence_of_element_located(self.locator["text_select"])
                         )
@@ -854,7 +860,7 @@ class EasyApplyBot:
             # Handle auto complete fields
             elif self.is_found_field(self.locator["location_select"], field):
                 try:
-                    
+                    log.debug("Locator: location_select")
                     text_field = WebDriverWait(field, 10).until(
                             EC.presence_of_element_located(self.locator["location_select"])
                         )
@@ -870,6 +876,7 @@ class EasyApplyBot:
             # Handle textarea fields
             elif self.is_found_field(self.locator["text_area"], field):
                 try:
+                    log.debug("Locator: text_area")
                     text_area = WebDriverWait(field, 10).until(
                             EC.presence_of_element_located(self.locator["text_area"])
                         )
@@ -884,6 +891,7 @@ class EasyApplyBot:
             # Handle fieldset fields
             elif self.is_found_field(self.locator["input_select"], field):  # Adjust options as needed
                 try:
+                    log.debug("Locator: input_select")
                     select_elements = self.get_child_elements(self.locator["input_select"], field)
                     log.debug(select_elements)
 
@@ -898,9 +906,9 @@ class EasyApplyBot:
                         attr_value = select_element.get_attribute('data-test-text-selectable-option__input')
                         
                         # Check if the attribute value matches the answer
-                        if attr_value and answer.lower() == attr_value.lower():
+                        if answer.lower() == attr_value.lower():
                             # Wait until the select_element is clickable and then click
-                            WebDriverWait(field, 10).until(EC.element_to_be_clickable(select_element))
+                            WebDriverWait(field, 20).until(EC.element_to_be_clickable(select_element))
                             select_element.click()  # Click instead of just setting the 'selected' attribute
                             log.info(f"Select element chosen: {select_element.get_attribute('value')}")
                             selected = True
@@ -910,13 +918,18 @@ class EasyApplyBot:
                         log.info("Exact match not found, looking for closest answer...")
                         closest_match = None
                         for select_element in select_elements:
-                            # Get the value of the specific attribute
-                            attr_value = select_element.get_attribute('data-test-text-selectable-option__input')
-                            
-                            # Check if the attribute value is present and if the answer is in it
-                            if attr_value and answer.lower() in attr_value.lower():  # Check if answer is in the attribute value
-                                closest_match = select_element
-                                break  # Exit loop on first closest match
+                            try: 
+                                # Get the value of the specific attribute
+                                attr_value = select_element.get_attribute('data-test-text-selectable-option__input')
+                                
+                                # Check if the attribute value is present and if the answer is in it
+                                if answer.lower() in attr_value.lower():  # Check if answer is in the attribute value
+                                    closest_match = select_element
+                                    break  # Exit loop on first closest match
+                            except Exception as e:
+                                log.error(e)
+                                log.error(traceback.format_exc())  # Full traceback for better debugging
+                                
 
                         if closest_match:
                             WebDriverWait(field, 20).until(EC.element_to_be_clickable(closest_match))
@@ -948,6 +961,16 @@ class EasyApplyBot:
 
                 except Exception as e:
                     log.error(f"Select element error for question: {question}, answer: {answer}")
+                    log.error(traceback.format_exc())  # Full traceback for better debugging
+
+            elif self.is_found_field(self.locator["date_input"], field):
+                try:
+                    date_field = field.find_elements(self.locator["date_input"])[0]
+                    date_field.clear()
+                    date_field.send_keys(answer)
+                
+                except Exception as e:
+                    log.error(e)
                     log.error(traceback.format_exc())  # Full traceback for better debugging
 
             else:
@@ -1049,7 +1072,7 @@ class EasyApplyBot:
             answer = random.choice(choices)
         elif "rate" in question and ("yourself" in question or "proficient" in question or "proficiency" in question):
             answer = "10"
-        elif "rate" in question and ("hourly" in question or "per hour" in question):
+        elif "hourly" in question and ("rate" in question or "salary" in question or "what" in question):
             answer = self.rate
         elif "do you" in question and "experience" in question:
             answer = "Yes"
@@ -1057,7 +1080,7 @@ class EasyApplyBot:
             answer = "Other"
         elif "refer" in question or "referred" in question:
             answer = "N/A"
-        elif "why are you seeking" in question or ("why" in question and "this position"):
+        elif "why" in question and ("position" in question or "role" in questions):
             answer = "Good glassdoor reviews and the workers I talked to love their jobs"
 
         # Work authorization questions
@@ -1076,6 +1099,9 @@ class EasyApplyBot:
             answer = "Yes"
         elif ("privacy policy" in question):
             answer = "I agree"
+        elif "date" in question and ("earliest" in question or "start" in question):
+            today = date.today()
+            answer = today.strftime("%m/%d/%y")
         # basic info
         elif ("city" in question or "address" in question):
             answer = self.city
@@ -1143,7 +1169,7 @@ class EasyApplyBot:
             answer = "4"  # Placeholder for unanswered questions
             time.sleep(5)
 
-        log.info("Answering question: " + question + " with answer: " + answer)
+        log.info("Answering question: " + question + " with answer: " + str(answer))
 
         # Append question and answer to the CSV
         if question not in self.answers:
@@ -1151,7 +1177,7 @@ class EasyApplyBot:
             new_data = pd.DataFrame({"Question": [question], "Answer": [answer]})
             new_data.to_csv(self.qa_file, mode='a', header=False, index=False, encoding='utf-8')
 
-        return answer
+        return str(answer)
 
 if __name__ == '__main__':
     # all user info needed for the applying. Ex: username, password, 

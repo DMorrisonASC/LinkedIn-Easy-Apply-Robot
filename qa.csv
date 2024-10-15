@@ -4100,3 +4100,911 @@ enter a whole number between 0 and 99",5
 enter a decimal number larger than 0.0",5
 "how many years of work experience do you have with ooabap?
 enter a decimal number larger than 0.0",4
+"how many years of experience do you have with c++ development?
+enter a decimal number larger than 0.0",3
+"how many years of experience do you have with linux development, gdb debugging, and command line tools?
+enter a decimal number larger than 0.0",4
+"do you have experience with modern c++ 17 or c++ 20 versions?
+do you have experience with modern c++ 17 or c++ 20 versions?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with craft cms?
+enter a whole number between 0 and 99",6
+"9+ years of proven experience in software test automation
+9+ years of proven experience in software test automation
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"3+ years of experience in thorough testing and validation of etl processes and workflows
+3+ years of experience in thorough testing and validation of etl processes and workflows
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"experience in automation tools such as selenium webdriver with java or c#.
+experience in automation tools such as selenium webdriver with java or c#.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"experience in testing web services / api using automation tools.
+experience in testing web services / api using automation tools.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"good to have testing experience in cloud environment (aws).
+good to have testing experience in cloud environment (aws).
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"how many years of work experience do you have with microstrategy?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with telecommunications?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with business project management?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with enrollment services?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with communication?,4
+"how many years of work experience do you have with customer service management?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with pytorch?,4
+"how many years of work experience do you have with tableau?
+enter a whole number between 0 and 99",5
+"are you local to pa?
+are you local to pa?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience in web development?
+do you have experience in web development?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience in: banking or retail with pos?
+do you have experience in: banking or retail with pos?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with etl testing?
+enter a whole number between 0 and 99",5
+,4
+"what level security clearance do you currently maintain?
+what level security clearance do you currently maintain?
+required
+i do not currently possess a clearance
+public trust
+secret
+ts
+ts/sci
+ts/sci with poly",Yes
+"how many years of work experience do you have with system administration?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with salesforce marketing cloud?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with data analytics?,5
+who referred you to this position?,N/A
+"how many years of work experience do you have with public sector?
+enter a whole number between 0 and 99",6
+"do you have the following license or certification: salesforce certified force.com developer?
+do you have the following license or certification: salesforce certified force.com developer?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: salesforce certified force.com developer?
+do you have the following license or certification: salesforce certified force.com developer?
+required
+yes
+no",Yes
+"how many years of work experience do you have with sap sales & distribution?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with sap materials management (sap mm)?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with computational fluid dynamics (cfd)?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with finite element analysis (fea)?
+enter a whole number between 0 and 99",4
+"are you willing to relocate this this location with relocation assistance?
+are you willing to relocate this this location with relocation assistance?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with htlm5 canvas?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with good clinical practice (gcp)?
+enter a whole number between 0 and 99",6
+"are you willing to work on w2?
+are you willing to work on w2?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you open to freelancing to begin with?
+are you open to freelancing to begin with?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of flutter + nodejs experience do you have?
+enter a decimal number larger than 0.0",6
+"how many paid ai projects have you completed?
+enter a decimal number larger than 0.0",6
+"how many years have you been a full stack developer for?
+enter a decimal number larger than 0.0",5
+"how many years of startup experience do you have?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with hadoop?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with spring boot?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with database development?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with azure sql?
+enter a decimal number larger than 0.0",4
+"how many years of hands-on experience with node or nest do you have?
+enter a decimal number larger than 0.0",3
+"how many years of experience with react or next do you have?
+enter a decimal number larger than 0.0",4
+"how many years of aws experience do you have?
+how many years of aws experience do you have?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",3
+how many years of analyst experience do you currently have?,6
+"do you have 5+ years of clinical imaging architecture experience primarily focused on clinical applications side?
+do you have 5+ years of clinical imaging architecture experience primarily focused on clinical applications side?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience working in cardiology or radiology?
+do you have experience working in cardiology or radiology?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have pacs or epacs experience?
+do you have pacs or epacs experience?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with vmware vsphere?
+enter a whole number between 0 and 99",5
+"do you have 7 years experience as a windows systems administrator and/or engineer?
+do you have 7 years experience as a windows systems administrator and/or engineer?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience working in a bank or financial institution?
+do you have experience working in a bank or financial institution?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with disaster recovery planning?
+do you have experience with disaster recovery planning?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you currently a colorado resident? (this is a must have requirement)
+are you currently a colorado resident? (this is a must have requirement)
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience woking in a field that requires strong writing and grammar skills? 
+do you have experience woking in a field that requires strong writing and grammar skills?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you eligible to work in the us on a w2 tax status? 
+are you eligible to work in the us on a w2 tax status?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience editing and labeling workflows and guidelines? 
+do you have experience editing and labeling workflows and guidelines?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of linguistics experience do you have?
+enter a decimal number larger than 0.0",6
+,4
+"how many years of experience do you have as a business analyst?
+enter a decimal number larger than 0.0",6
+"how many years of experience do you have working with sql and system reporting tools (oracle, sql)?
+enter a decimal number larger than 0.0",3
+"how many years of experience do you have with agile software development methodologies?
+enter a decimal number larger than 0.0",6
+"what is your hourly salary expectation to work directly with us on w2 (no c2c allowed. do not apply if you need to work through your employer or need visa sponsorship)?
+enter a decimal number larger than 0.0",No
+"do you live in texas? if not, can you self-relocate to texas (all work can be done remotely from within texas)?
+do you live in texas? if not, can you self-relocate to texas (all work can be done remotely from within texas)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of experience do you have as a business analyst?,5
+"how many years of experience do you have working with sql and system reporting tools (oracle, sql)?",5
+how many years of experience do you have with agile software development methodologies?,4
+"do you live in texas? if not, can you self-relocate to texas (all work can be done remotely from within texas)?
+do you live in texas? if not, can you self-relocate to texas (all work can be done remotely from within texas)?
+required
+       select an option
+       yes
+       no",Yes
+"do you have experience with migration from sql server to azure?
+do you have experience with migration from sql server to azure?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with flutter?,6
+"how many years of work experience do you have with mobile design?
+enter a whole number between 0 and 99",4
+how many years of project management experience do you currently have?,6
+"how many years of experience do you have with developing rest apis with node.js?
+enter a decimal number larger than 0.0",4
+"how many apps have you released to appstore / google play store?
+enter a decimal number larger than 0.0",6
+"how many years of mysql experience do you have?
+enter a decimal number larger than 0.0",3
+"how many years of python experience do you have using django?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with internet software development?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with representational state transfer (rest)?
+enter a whole number between 0 and 99",4
+"how much proficient experience do you have with ai/ml integration in web applications? 
+how much proficient experience do you have with ai/ml integration in web applications?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"what is the salary you are targeting?
+enter a decimal number larger than 0.0",70000
+"do you have experience with data integrations?
+do you have experience with data integrations?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of professional, hands-on software development do you currently have?
+enter a decimal number larger than 0.0",3
+"are you a fluent english speaker, reader, and writer?
+are you a fluent english speaker, reader, and writer?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you a us citizen working inside the us?
+are you a us citizen working inside the us?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of software development experience do you currently have?,5
+"how many years of work experience do you have with lamp?
+enter a whole number between 0 and 99",6
+"do you feel comfortable in your ability to excel on a ""tough"" sql based online coding test? 
+do you feel comfortable in your ability to excel on a ""tough"" sql based online coding test?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of full stack, production (post-graduate) development work experience do you have?
+enter a decimal number larger than 0.0",3
+"do you feel comfortable in your ability to excel on a ""challenging"" react based online coding test? 
+do you feel comfortable in your ability to excel on a ""challenging"" react based online coding test?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you feel comfortable in your ability to excel on a ""challenging"" php based online coding test? 
+do you feel comfortable in your ability to excel on a ""challenging"" php based online coding test?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with microservices?
+enter a decimal number larger than 0.0",3
+"can you work directly on our w2?
+can you work directly on our w2?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"any experience with deployment of electric vehicles?
+any experience with deployment of electric vehicles?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"any experience in the utilities or energy sector?
+any experience in the utilities or energy sector?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"what is your desired base salary expectation?
+enter a decimal number larger than 0.0",70000
+"are you able to work in the greenwich, ct office couple days a week?
+are you able to work in the greenwich, ct office couple days a week?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"i have contributed to the infra of a flow pipeline and can share my github contributions to this
+i have contributed to the infra of a flow pipeline and can share my github contributions to this
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",https://github.com/DMorrisonASC
+how many years of work experience do you have with nosql?,5
+"do you have opt work authorization ?
+do you have opt work authorization ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"do you have gc , gc ead , h4 ead or usc work authorization ?
+do you have gc , gc ead , h4 ead or usc work authorization ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",USC: 0
+"how many years of work experience do you have with vbscript?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with jquery?
+enter a whole number between 0 and 99",6
+"please confirm your expected annual salary.
+enter a decimal number larger than 0.0",70000
+"do you require employment sponsorship ?
+do you require employment sponsorship ?
+required
+yes
+no
+please make a selection",No
+"are you located outside of the united states?
+are you located outside of the united states?
+required
+yes
+no
+please make a selection",Yes
+"are you willing to relocate?
+are you willing to relocate?
+yes
+no",Yes
+what are your salary expectations?,70000
+"do you have 2 or more years of hands-on experience with microstrategy in a developer, engineer, or architect capacity?
+do you have 2 or more years of hands-on experience with microstrategy in a developer, engineer, or architect capacity?
+required
+yes
+no
+please make a selection",Yes
+"do you require employment sponsorship ?
+do you require employment sponsorship ?
+required
+yes
+no",No
+"are you located outside of the united states?
+are you located outside of the united states?
+required
+yes
+no",Yes
+"do you have 2 or more years of hands-on experience with microstrategy in a developer, engineer, or architect capacity?
+do you have 2 or more years of hands-on experience with microstrategy in a developer, engineer, or architect capacity?
+required
+yes
+no",Yes
+"by checking this box, you will declare that you read and understand the privacy policy of privia health.
+by checking this box, you will declare that you read and understand the privacy policy of privia health.
+required
+i consent
+select checkbox to proceed",I agree
+"please visit this link to complete a short culture survey: https://assessment.predictiveindex.com/84ts/82371677-203c-4638-b33a-d2c7e3b6b973?type=candidateba note: this will take you to a different window and is separate from the application.
+please enter a valid answer",4
+"how many years of work experience do you have with adobe xd?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with figma (software)?,5
+"sql server dba certification 
+sql server dba certification
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"db vm servers experience
+db vm servers experience
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"min 9 years of experience
+min 9 years of experience
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"how may years of experience in pega
+enter a decimal number larger than 0.0",4
+"do you have csa or cssa certification
+do you have csa or cssa certification
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with pegasystems prpc?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with pega prpc?,3
+"how many years of work experience do you have with prpc?
+enter a whole number between 0 and 99",6
+"how many years of experience do you have working as an oracle dba?
+enter a decimal number larger than 0.0",6
+"are you currently based in tx? (this position is only available for those who are based in tx)
+are you currently based in tx? (this position is only available for those who are based in tx)
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"what is your current postal zip code?
+enter a decimal number larger than 0.0",10466
+"are you a usc or a gc holder? (informational only, this role is open for every visa holder except opt/cpt)
+are you a usc or a gc holder? (informational only, this role is open for every visa holder except opt/cpt)
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"this is a fulltime position with photon, are you willing to work fulltime on photon's w2, we cannot work c2c.
+this is a fulltime position with photon, are you willing to work fulltime on photon's w2, we cannot work c2c.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with electron.js?
+enter a whole number between 0 and 99",3
+"do you have made contributions to vscode or similar projects?
+do you have made contributions to vscode or similar projects?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with powerbuilder?
+enter a whole number between 0 and 99",3
+"do you have 1 or more years of experience with typescript? 
+do you have 1 or more years of experience with typescript?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you able to work 8am to 4pm cdt?
+are you able to work 8am to 4pm cdt?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you local to the covington, ky area? 
+are you local to the covington, ky area?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"this position is hybrid and requires working onsite in the office in covington, ky every other week. are you comfortable with this? 
+this position is hybrid and requires working onsite in the office in covington, ky every other week. are you comfortable with this?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you familiar with various project management methodologies and concepts, including agile, waterfall, or hybrid approaches? 
+are you familiar with various project management methodologies and concepts, including agile, waterfall, or hybrid approaches?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with project management tools such as jira, aprimo, workfront, or monday.com? 
+do you have experience with project management tools such as jira, aprimo, workfront, or monday.com?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with jakarta ee?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with spring framework?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with electron.js?,6
+"how many years of work experience do you have with python?
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with aws?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with either remedy, servicenow, or moogsoft?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with autosys?
+enter a decimal number larger than 0.0",5
+"are you comfortable work 24/7 shifts, including overnights or weekends?
+are you comfortable work 24/7 shifts, including overnights or weekends?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have in oracle database design, analysis, and performance tuning?
+enter a decimal number larger than 0.0",6
+"how many years of experience do you have with multi-tier system/application development – (soa, microservices, 3-tier applications, for example)?
+enter a decimal number larger than 0.0",6
+"how many years of experience do you have with data warehouse applications and/or database reporting features?
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with mac?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with agile methodologies?,4
+how many years of work experience do you have with operating systems?,3
+"how many years of work experience do you have with computer hardware installation?
+enter a whole number between 0 and 99",3
+"how many years of experience do you have working with the natural programming language in a mainframe environment?
+enter a decimal number larger than 0.0",3
+"how many years of experience do you have with jcl (job control language) and mainframe tools like tso/ispf?
+enter a decimal number larger than 0.0",3
+"how many years of experience do you have in troubleshooting mainframe systems and resolving incidents in a production environment?
+enter a decimal number larger than 0.0",5
+"do you have 10+ years experience with java developer?
+do you have 10+ years experience with java developer?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you local to dc area? or can you relocate to dc?
+are you local to dc area? or can you relocate to dc?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have active security clearance? generic security clearance?
+do you have active security clearance? generic security clearance?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you looking for w2 or 1099?
+are you looking for w2 or 1099?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you currently local to nyc/jc and can work on a w2???
+are you currently local to nyc/jc and can work on a w2???
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with powershell?
+enter a whole number between 0 and 99",4
+how many years of work experience do you have with office 365?,6
+"do you have experience with exchange?
+do you have experience with exchange?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with onedrive?
+do you have experience with onedrive?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with informatica?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with android jetpack?
+enter a whole number between 0 and 99",5
+"this position is a hybrid schedule in plano tx, does that work for you ? 
+this position is a hybrid schedule in plano tx, does that work for you ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"how many years of work experience do you have with edi mapping?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with itx or itxa or ibm sterling
+enter a decimal number larger than 0.0",5
+"how many years of healthcare experience do you currently have?
+enter a decimal number larger than 0.0",6
+"summary
+please enter a valid answer",4
+how many years of work experience do you have with teamcenter?,4
+"how many years of work experience do you have with plm software?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with continuous integration and continuous delivery (ci/cd)?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with gitlab?
+enter a whole number between 0 and 99",4
+"we are looking for a consultant with 1-4 years of experience. please do not apply if you are a senior consultant. if you agree to this, please confirm with 'yes.'
+we are looking for a consultant with 1-4 years of experience. please do not apply if you are a senior consultant. if you agree to this, please confirm with 'yes.'
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"can you do both frontend and backend work on a high level ?
+can you do both frontend and backend work on a high level ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"have you ever worked/shipped production applications before ?
+have you ever worked/shipped production applications before ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with blockchain?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with cryptocurrency?
+enter a whole number between 0 and 99",6
+"do you hold a master’s or bachelor’s degree in computer science/engineering or a related field?
+do you hold a master’s or bachelor’s degree in computer science/engineering or a related field?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have a minimum of 2 years of work experience in a related field?
+do you have a minimum of 2 years of work experience in a related field?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have strong proficiency in django for backend development?
+do you have strong proficiency in django for backend development?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have solid experience with react and next.js for front-end development?
+do you have solid experience with react and next.js for front-end development?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have hands-on experience with mongodb and mysql databases?
+do you have hands-on experience with mongodb and mysql databases?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience in integrating apis and working with restful services?
+do you have experience in integrating apis and working with restful services?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you legally authorized to work in the united states? this includes individuals on opt, h-1b visas, or other valid work authorizations.
+are you legally authorized to work in the united states? this includes individuals on opt, h-1b visas, or other valid work authorizations.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+how many years of work experience do you have with revit?,4
+"do you have the following license or certification: engineer in training?
+do you have the following license or certification: engineer in training?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: engineer in training?
+do you have the following license or certification: engineer in training?
+required
+yes
+no",Yes
+"what are your salary expectations for this position ? (annually, in us dollars)",70000
+"are you authorized to work in the job's location?
+are you authorized to work in the job's location?
+required
+yes
+no",4
+"will you now, or in the future, require sponsorship for employment visa status (e.g. h-1b visa status) ?
+will you now, or in the future, require sponsorship for employment visa status (e.g. h-1b visa status) ?
+required
+yes
+no",No
+"by checking this box, you will declare that you read and agree to the privacy policy of talan.
+by checking this box, you will declare that you read and agree to the privacy policy of talan.
+required
+i consent
+select checkbox to proceed",I agree
+"do you have a bachelor’s degree/undergraduate degree in engineering, biology, or equivalent. at least 5 years of related work experience in a qa or compliance setting.
+do you have a bachelor’s degree/undergraduate degree in engineering, biology, or equivalent. at least 5 years of related work experience in a qa or compliance setting.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you familiar with a broad range of equipment used in pharmaceutical production, including but not limited to: bioreactors, chromatography skids, centrifuges/separators, air handlers, hepa.
+are you familiar with a broad range of equipment used in pharmaceutical production, including but not limited to: bioreactors, chromatography skids, centrifuges/separators, air handlers, hepa.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of .net experience do you have?
+enter a decimal number larger than 0.0",4
+"how many years of azure development experience do you have?
+enter a decimal number larger than 0.0",4
+"how many years of react development experience do you have?
+enter a decimal number larger than 0.0",4
+"how many years of healthcare experience do you have?
+enter a decimal number larger than 0.0",5
+"do you have an active certificate on az-204?
+do you have an active certificate on az-204?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience developing mobile applications using .net native or xamarin?
+do you have experience developing mobile applications using .net native or xamarin?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you built mobile applications from the ground up in a professional setting? 
+have you built mobile applications from the ground up in a professional setting?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you proficient in using git or another version control system for code management? 
+are you proficient in using git or another version control system for code management?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience working in an agile development environment, participating in sprints and daily stand-ups? 
+do you have experience working in an agile development environment, participating in sprints and daily stand-ups?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you permanently reside in the state of georgia, usa?
+do you permanently reside in the state of georgia, usa?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have a active us clearance? 
+do you have a active us clearance?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you willing to work at the mark center in alexandria? 
+are you willing to work at the mark center in alexandria?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with blazor?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with azure devops services?
+enter a whole number between 0 and 99",6
+"are you open to work second-shift? 
+are you open to work second-shift?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+street address line 1,Bronx
+zip / postal code,10466
+state,4
+"what's your citizenship / employment eligibility?
+what's your citizenship / employment eligibility?
+required
+u.s. citizen/permanent resident
+non-citizen allowed to work for any employer
+non-citizen allowed to work for current employer
+non-citizen seeking work authorization
+canadian citizen/permanent resident
+other",4
+"are you 18 years of age or older?
+are you 18 years of age or older?
+required
+yes
+no",Yes
+desired salary,70000
+"earliest start date?
+earliest start date?
+required",4
+"earliest start date?
+earliest start date?
+required
+please enter a valid answer",4
