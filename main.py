@@ -193,7 +193,7 @@ class EasyApplyBot:
         options = webdriver.ChromeOptions()
 
         # Start the browser in maximized mode
-        options.add_argument("--start-maximized")
+        options.add_argument("--start-maximized") 
         
         # Ignore SSL certificate errors
         options.add_argument("--ignore-certificate-errors")
@@ -965,6 +965,7 @@ class EasyApplyBot:
 
             elif self.is_found_field(self.locator["date_input"], field):
                 try:
+                    log.debug("Locator: date_input")
                     date_field = field.find_elements(self.locator["date_input"])[0]
                     date_field.clear()
                     date_field.send_keys(answer)
@@ -1101,7 +1102,7 @@ class EasyApplyBot:
             answer = "I agree"
         elif "date" in question and ("earliest" in question or "start" in question):
             today = date.today()
-            answer = today.strftime("%m/%d/%y")
+            answer = today.strftime("%m/%d/%Y")
         # basic info
         elif ("city" in question or "address" in question):
             answer = self.city
@@ -1157,6 +1158,9 @@ class EasyApplyBot:
             answer = "I am not"
         elif "are you legally" in question:
             answer = "Yes"
+        elif "phone" in question and ("mobile" in question or "number" in question):
+            answer = self.phone_number
+
 
 
         # General affirmative questions

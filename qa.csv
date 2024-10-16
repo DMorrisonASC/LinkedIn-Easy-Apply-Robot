@@ -5031,3 +5031,281 @@ required
        yes
        no
    please enter a valid answer",Yes
+"how many years of work experience do you have with model-view-viewmodel (mvvm)?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with kotlin coroutines?,5
+"how many years of work experience do you have with microsoft excel?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with delmia?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with front-end development?,6
+"are you comfortable to work on contract w2?
+are you comfortable to work on contract w2?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you a green card holder or us citizen?
+are you a green card holder or us citizen?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you currently living in california state?
+are you currently living in california state?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with asp.net?,3
+"how many years of work experience do you have with ibm planning analytics by tm1?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with system installations?
+enter a whole number between 0 and 99",5
+"do you possess a strong understanding of finance principals?
+do you possess a strong understanding of finance principals?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have working on budgeting and forecasting process and interacting with finance analysts?
+enter a decimal number larger than 0.0",4
+how many years of work experience do you have with mac?,6
+"do you have experience with data quality annotator?
+do you have experience with data quality annotator?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"expert knowledge of macos, ios, and ipados (numbers, keynote and pages)?
+expert knowledge of macos, ios, and ipados (numbers, keynote and pages)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"prior experience with data annotation/quality assurance?
+prior experience with data annotation/quality assurance?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"experience with english literature or associated field/ english grammar?
+experience with english literature or associated field/ english grammar?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"please select yes if you're a us citizen or a green card holder and can work on w2.
+please select yes if you're a us citizen or a green card holder and can work on w2.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of order investigation experience do you have in e-commerce, delivery services, or tech platforms industry?
+enter a decimal number larger than 0.0",4
+"how many years of experience do you have in running sql queries and extract insights?
+enter a decimal number larger than 0.0",5
+"are you proficient in excel formulas, data entry, and basic functions?
+are you proficient in excel formulas, data entry, and basic functions?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"earliest start date?
+earliest start date?
+required
+october 2024
+s
+m
+t
+w
+t
+f
+s
+29
+30
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+1
+2
+3
+4
+5
+6
+7
+8
+9
+go to today
+cancel",10/16/24
+"earliest start date?
+earliest start date?
+required
+please use the format mm/dd/yyyy when entering a date.",10/16/24
+"how many years of work experience do you have with wordpress design?
+enter a whole number between 0 and 99",4
+how many years of work experience do you have with wordpress?,5
+"how many years of work experience do you have with cyberark?
+enter a whole number between 0 and 99",3
+"do you have experience working for a healthcare organization that performs clinical research?
+do you have experience working for a healthcare organization that performs clinical research?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with machine tools?
+enter a whole number between 0 and 99",4
+"do you have the following license or certification: certified in risk and informationsystems control?
+do you have the following license or certification: certified in risk and informationsystems control?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: certified information systems security professional?
+do you have the following license or certification: certified information systems security professional?
+required
+yes
+no
+please make a selection",Yes
+"how many years of work experience do you have with auditing?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with internal audits?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with cybersecurity auditing?
+enter a whole number between 0 and 99",4
+how many years of financial services experience do you currently have?,4
+"how many years of accounting/auditing experience do you currently have?
+enter a whole number between 0 and 99",3
+"do you have the following license or certification: certified in risk and informationsystems control?
+do you have the following license or certification: certified in risk and informationsystems control?
+required
+yes
+no",Yes
+"do you have the following license or certification: certified information systems security professional?
+do you have the following license or certification: certified information systems security professional?
+required
+yes
+no",Yes
+"have you completed your bachelor's degree in computer science?
+have you completed your bachelor's degree in computer science?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with sap s/4hana?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with system implementations?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with u.s. food and drug administration (fda)?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with vue.js?,5
+"how many years of work experience do you have with react native?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with sprinklr?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with google bigquery?,6
+"how many years of experience do you have with aws snowflake and airflow?
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have with spring mvc?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with aws codedeploy?
+enter a whole number between 0 and 99",6
+"an ideal candidate will have hands-on experience in development project for at least 6 years and will be heavy on front end, can have back end as well. please confirm if you have that experience.
+an ideal candidate will have hands-on experience in development project for at least 6 years and will be heavy on front end, can have back end as well. please confirm if you have that experience.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",4
+"are you experienced within a start-up or scale-up environment?
+are you experienced within a start-up or scale-up environment?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with react hooks?,6
+"are you experienced within ai, insurtech, fintech or healthtech?
+are you experienced within ai, insurtech, fintech or healthtech?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"did you attend a 'blue collar college in usa or canada for computer science?
+did you attend a 'blue collar college in usa or canada for computer science?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you experienced working for a scale-up or start-up company?
+are you experienced working for a scale-up or start-up company?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have in full lifecycle application development using c# and .net core (3.x or newer)?
+enter a decimal number larger than 0.0",3
+"are you proficient in sql, including retrieving/manipulating data, writing custom queries, and handling large datasets? 
+are you proficient in sql, including retrieving/manipulating data, writing custom queries, and handling large datasets?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with front-end development using javascript frameworks (vue 3, react, or typescript)? 
+do you have experience with front-end development using javascript frameworks (vue 3, react, or typescript)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you comfortable working in an agile environment with month-long sprints and scrum meetings? 
+are you comfortable working in an agile environment with month-long sprints and scrum meetings?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
