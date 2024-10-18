@@ -7503,3 +7503,389 @@ required
    please make a selection",Yes
 "if applicable, please provide some links to open source projects that might be relevant.
 please enter a valid answer",2
+"have you completed the following level of education: doctor of philosophy?
+have you completed the following level of education: doctor of philosophy?
+required
+yes
+no
+please make a selection",Yes
+how many years of work experience do you have with sas (software)?,5
+"how many years of regulatory submissions experience do you have?
+enter a decimal number larger than 0.0",5
+"have you completed the following level of education: doctor of philosophy?
+have you completed the following level of education: doctor of philosophy?
+required
+yes
+no",Yes
+"how many years of work experience do you have with elasticsearch?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with application development?
+enter a whole number between 0 and 99",5
+"are you us citizen or us person? 
+are you us citizen or us person?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with synopsys tools?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with 3d printing?,5
+"are you ready to work 2 days/week onsite in princeton, nj?
+are you ready to work 2 days/week onsite in princeton, nj?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of engineering experience do you currently have?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with project management?
+enter a whole number between 0 and 99",5
+"must have blue yonder software architecture experience.
+must have blue yonder software architecture experience.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"how many years of work experience do you have with hardware verification?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with laboratory equipment?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with biomedical devices?
+enter a whole number between 0 and 99",5
+"do you have previous experience working with microsoft?
+do you have previous experience working with microsoft?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have the following license or certification: microsoft certified: azure data engineer associate?
+do you have the following license or certification: microsoft certified: azure data engineer associate?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: microsoft certified: azure data engineer associate?
+do you have the following license or certification: microsoft certified: azure data engineer associate?
+required
+yes
+no",Yes
+"how many years of work experience do you have with heroku?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with cli?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with user experience (ux)?
+enter a whole number between 0 and 99",4
+how many years of work experience do you have with user interface design?,4
+"please provide your physical address.
+please enter a valid answer",Bronx
+"are you willing to relocate?
+are you willing to relocate?
+required
+yes.
+no.
+please make a selection",Yes
+"what's your citizenship / employment eligibility?
+what's your citizenship / employment eligibility?
+required
+i am a u.s citizen / permanent resident.
+non-citizen allowed to work for any employer.
+non-citizen allowed to work for current employer.
+non-citizen seeking work authorization.
+please make a selection",2
+"please enter your ideal annual compensation in $00.00 formatting.
+please enter a valid answer",2
+"do you currently hold a federal security clearance? if so, what level of federal security clearance do you currently posses?",Yes
+"are you willing to relocate?
+are you willing to relocate?
+required
+yes.
+no.",Yes
+"what's your citizenship / employment eligibility?
+what's your citizenship / employment eligibility?
+required
+i am a u.s citizen / permanent resident.
+non-citizen allowed to work for any employer.
+non-citizen allowed to work for current employer.
+non-citizen seeking work authorization.",2
+"what versions of drupal do you have experience working with/in?
+please enter a valid answer",Yes
+"do you have experience managing large sql servers in 24/7 always on environments
+do you have experience managing large sql servers in 24/7 always on environments
+required
+yes
+no
+please make a selection",Yes
+"do you have experience managing large sql servers in 24/7 always on environments
+do you have experience managing large sql servers in 24/7 always on environments
+required
+yes
+no",Yes
+"have you successfully undergone the irs mbi process?
+have you successfully undergone the irs mbi process?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with biztalk?
+enter a whole number between 0 and 99",4
+how many years of work experience do you have with pandas (software)?,4
+"willing to work for w2!!!
+willing to work for w2!!!
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"how many years of work experience do you have with operational efficiency?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with engineering?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with data cleaning?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with identifying trends?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with salesforce analytics?
+enter a whole number between 0 and 99",5
+address,Bronx
+"have you ever been employed by friends of the high line
+have you ever been employed by friends of the high line
+required
+yes
+no
+please make a selection",Yes
+"do you live in any of the following zip codes?
+do you live in any of the following zip codes?
+10001
+10011
+10012
+10014
+10018
+10036
+prefer not to answer
+none of the above",N/A
+"are you a resident of?
+are you a resident of?
+penn south
+westbeth
+fulton houses
+chelsea-elliott houses
+prefer not to answer
+none of the above",N/A
+we care about addressing everyone correctly. please add your personal pronouns below,Bronx
+"have you ever been employed by friends of the high line
+have you ever been employed by friends of the high line
+required
+yes
+no",Yes
+"how do you identify in terms of race/ethnicity? (check all that apply)
+how do you identify in terms of race/ethnicity? (check all that apply)
+american indian, native american, alaska native or indigenous, first nations
+asian or asian american
+black or african american
+middle eastern or north african
+hispanic, latinx, or spanish origin
+native hawaiian or pacific islander
+white or caucasian
+prefer not to say
+not listed above",N/A
+"gender: how do you identify? (multiple choice - option for multiple answers)
+gender: how do you identify? (multiple choice - option for multiple answers)
+women (cis/transgender)
+man (cis/transgender)
+genderqueer or genderfluid
+non-binary/third gender
+agender
+prefer not to say
+not listed above",N/A
+"do you identify as part of the lgbtq+ community?
+do you identify as part of the lgbtq+ community?
+yes
+no
+prefer not to say",N/A
+"what languages do you speak?
+what languages do you speak?
+arabic
+bengali
+chinese mandarin
+chinese cantonese
+english
+farsi
+french
+haitian creole
+hindi
+korean
+japanese
+polish
+portuguese
+russian
+spanish
+urdu
+prefer not to say
+not listed above",Yes
+"if hired, are you able to provide proof that you are legally able to work in the us?
+if hired, are you able to provide proof that you are legally able to work in the us?
+required
+yes
+no
+please make a selection",Yes
+"do you now, or will you in the future, need sponsorship from an employer in order to obtain, extend or renew your authorization to work in the us?
+do you now, or will you in the future, need sponsorship from an employer in order to obtain, extend or renew your authorization to work in the us?
+required
+yes
+no
+please make a selection",No
+"actual salaries will vary on various factors, including but not limited to experience and performance. does the job range posted in the job description match your salary requirements?
+actual salaries will vary on various factors, including but not limited to experience and performance. does the job range posted in the job description match your salary requirements?
+required
+yes
+no
+please make a selection",70000
+"if hired, are you able to provide proof that you are legally able to work in the us?
+if hired, are you able to provide proof that you are legally able to work in the us?
+required
+yes
+no",Yes
+"do you now, or will you in the future, need sponsorship from an employer in order to obtain, extend or renew your authorization to work in the us?
+do you now, or will you in the future, need sponsorship from an employer in order to obtain, extend or renew your authorization to work in the us?
+required
+yes
+no",No
+"actual salaries will vary on various factors, including but not limited to experience and performance. does the job range posted in the job description match your salary requirements?
+actual salaries will vary on various factors, including but not limited to experience and performance. does the job range posted in the job description match your salary requirements?
+required
+yes
+no",70000
+"how did you hear about this opportunity?
+please enter a valid answer",Other
+"do you have a valid new york state driver's license?
+do you have a valid new york state driver's license?
+required
+yes
+no
+please make a selection",Yes
+"what is your desired salary?
+please enter a valid answer",70000
+"have you ever applied to a position or previously worked at friends of the high line? if so, when?
+please enter a valid answer",Yes
+"by submitting this application and accompanying documentation for consideration of employment with friends of the high line inc. (fhl) i certify that the facts set forth are true and complete to the best of my knowledge. i authorize fhl to verify the accuracy of the information provided and to obtain references on my work performance as described in this application. i hereby release fhl from any/all liability of whatever kind and nature, which, at any time, could result from obtaining reference information and/or making employment decisions with such information as a consideration. i understand that, if employed, false statements or purposeful omissions of facts of any kind in this application shall be considered sufficient basis for termination of employment. however, i further understand that the policies, rules, regulations of employment or anything said during the interview process shall not be deemed to constitute the terms of an implied employment contract.
+by submitting this application and accompanying documentation for consideration of employment with friends of the high line inc. (fhl) i certify that the facts set forth are true and complete to the best of my knowledge. i authorize fhl to verify the accuracy of the information provided and to obtain references on my work performance as described in this application. i hereby release fhl from any/all liability of whatever kind and nature, which, at any time, could result from obtaining reference information and/or making employment decisions with such information as a consideration. i understand that, if employed, false statements or purposeful omissions of facts of any kind in this application shall be considered sufficient basis for termination of employment. however, i further understand that the policies, rules, regulations of employment or anything said during the interview process shall not be deemed to constitute the terms of an implied employment contract.
+required
+yes
+no
+please make a selection",N/A
+"do you have a valid new york state driver's license?
+do you have a valid new york state driver's license?
+required
+yes
+no",Yes
+"by submitting this application and accompanying documentation for consideration of employment with friends of the high line inc. (fhl) i certify that the facts set forth are true and complete to the best of my knowledge. i authorize fhl to verify the accuracy of the information provided and to obtain references on my work performance as described in this application. i hereby release fhl from any/all liability of whatever kind and nature, which, at any time, could result from obtaining reference information and/or making employment decisions with such information as a consideration. i understand that, if employed, false statements or purposeful omissions of facts of any kind in this application shall be considered sufficient basis for termination of employment. however, i further understand that the policies, rules, regulations of employment or anything said during the interview process shall not be deemed to constitute the terms of an implied employment contract.
+by submitting this application and accompanying documentation for consideration of employment with friends of the high line inc. (fhl) i certify that the facts set forth are true and complete to the best of my knowledge. i authorize fhl to verify the accuracy of the information provided and to obtain references on my work performance as described in this application. i hereby release fhl from any/all liability of whatever kind and nature, which, at any time, could result from obtaining reference information and/or making employment decisions with such information as a consideration. i understand that, if employed, false statements or purposeful omissions of facts of any kind in this application shall be considered sufficient basis for termination of employment. however, i further understand that the policies, rules, regulations of employment or anything said during the interview process shall not be deemed to constitute the terms of an implied employment contract.
+required
+yes
+no",N/A
+"do you have extensive experience with collibra platform and its data models?
+do you have extensive experience with collibra platform and its data models?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have proficient experience with sql?
+enter a decimal number larger than 0.0",4
+"how many years of experience do you have in business analysis
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have with javaserver pages (jsp)?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with mysql?
+enter a decimal number larger than 0.0",3
+how many years of work experience do you have with programmable logic controller (plc)?,3
+"how many years of work experience do you have with computer vision?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with matlab?
+enter a whole number between 0 and 99",3
+"do you code in python?
+do you code in python?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you work with cloud-based applications (aws/ gcp/ azure)
+do you work with cloud-based applications (aws/ gcp/ azure)
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"most of the team is based in a new york office (hybrid and remote options). are you currently located in new york city/ willing to relocate, if the role is right for you?
+most of the team is based in a new york office (hybrid and remote options). are you currently located in new york city/ willing to relocate, if the role is right for you?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Bronx
+"how many years of software engineering experience do you have in industry?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with airtable?
+enter a whole number between 0 and 99",5
+"how may years of exprience do you have with microsoft power applications?
+enter a decimal number larger than 0.0",5
+"the pay for this position is $24/hour on apex systems w2 is this something your comfortable with? 
+the pay for this position is $24/hour on apex systems w2 is this something your comfortable with?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"how many years of microsoft development experience do you currently have?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with red hat linux?
+enter a whole number between 0 and 99",3
+"this is a startup and we're compensating with equity, not cash. do you understand?
+this is a startup and we're compensating with equity, not cash. do you understand?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with pharmaceutical companies?,5
+"how many years of work experience do you have with asset management?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with clinical development?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with financial regulation?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with financial management?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with application programming interfaces (api)?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with visual merchandising?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with agile project management?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with engineering drawings?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with jakarta ee?,4
+"how many years of experience do you have working with microstation v8 and later?
+enter a decimal number larger than 0.0",6
+"how many years have you worked on front-end creation and provided end-user support specifically using microstation?
+enter a decimal number larger than 0.0",3
+"how many years of experience do you have in programming languages relevant to systems analysis (e.g., python, c++, etc.)?
+enter a decimal number larger than 0.0",3
+"how many years have you worked in a role where you were required to investigate and resolve technical problems?
+enter a decimal number larger than 0.0",3
+"how many years have you been involved in system testing and design within a project lifecycle?
+enter a decimal number larger than 0.0",5
+"how many years of experience do you have working with autodesk or bentley systems software?
+enter a decimal number larger than 0.0",4
+"how many years have you worked directly with clients to gather requirements and provide solutions?
+enter a decimal number larger than 0.0",4
+"how many years have you been responsible for creating technical documentation for systems or software?
+enter a decimal number larger than 0.0",4
+"how many years of experience do you have collaborating with cross-functional teams, including business stakeholders and programmers?
+enter a decimal number larger than 0.0",4

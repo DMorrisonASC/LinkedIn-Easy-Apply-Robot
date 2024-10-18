@@ -588,38 +588,13 @@ class EasyApplyBot:
         try:
             submitted = False
             loop = 0
+            start_time = time.time()  # Record the start time of the entire process
 
-            # Loop twice to attempt the resume submission.
-            while loop < 2:
+            # Loop to attempt the resume submission.
+            while True:
                 time.sleep(2)
-                # # Upload the resume if the locator is present.
-                # if self.is_present(self.locator["upload_resume"]):
-                #     try:
-                #         resume = self.uploads["resume"]
-                #         # Wait until the resume upload button is clickable
-                #         resume_button = WebDriverWait(self.browser, 10).until(
-                #             EC.element_to_be_clickable(self.locator["upload_resume"])
-                #         )
-                #         resume_button.send_keys(resume)
-                #     except Exception as e:
-                #         log.error(f"Resume upload failed. Check file path or the locator: {e}")
-                #         log.error(traceback.format_exc())  # Full traceback for better debugging
-
-                # # Upload the cover letter if the locator is present.
-                # if self.is_present(self.locator["upload_cover"]):
-                #     try:
-                #         cover_letter = self.uploads["cover_letter"]
-                #         # Wait until the cover letter upload button is clickable
-                #         cover_button = WebDriverWait(self.browser, 10).until(
-                #             EC.element_to_be_clickable(self.locator["upload_cover"])
-                #         )
-                #         cover_button.send_keys(cover_letter)
-                #     except Exception as e:
-                #         log.error(f"Cover letter upload failed. Check file path or the locator: {e}")
-                        
+                
                 # Handle follow button if present.
-                # Applications commonly have this option already selected,
-                # So this UNFOLLOWS companies. Comment this out if you wnat to follow companies
                 if len(self.get_elements("follow")) > 0:
                     elements = self.get_elements("follow")
                     for element in elements:
@@ -628,7 +603,6 @@ class EasyApplyBot:
 
                 # Handle submit button and complete the application.
                 if len(self.get_elements("submit")) > 0:
-                    
                     elements = self.get_elements("submit")
                     for element in elements:
                         button = self.wait.until(EC.element_to_be_clickable(element))
@@ -644,28 +618,27 @@ class EasyApplyBot:
                         submitted = True
                         break
                     else:
-                        start_time = time.time()  # Record the start time
                         while True:
                             log.info("Please answer the questions, waiting 5 seconds...")
                             time.sleep(5)
                             self.process_questions()
-                            
+
                             if "application was sent" in self.browser.page_source:
                                 log.info("Application Submitted")
                                 submitted = True
                                 break
-                            
+
                             elif self.is_present(self.locator["easy_apply_button"]):
                                 submitted = False
                                 break
 
-                            log.debug(f"{time.time() - start_time} minutes elapsed")
-                            
-                            # Check if 5 minutes (300 seconds) have passed
+                            log.debug(f"{(time.time() - start_time) / 60} minutes elapsed")
+
+                            # Check if 5 minutes (300 seconds) have passed since the function started
                             elapsed_time = time.time() - start_time
                             if elapsed_time > 300:  # 300 seconds = 5 minutes
-                                log.info("5 minutes elapsed. Exiting the loop.")
-                                return False
+                                log.info("5 minutes elapsed. Exiting the process.")
+                                return False  # Return here to stop the entire process after 5 minutes
 
                 # Handle next, continue, and review buttons if present.
                 elif len(self.get_elements("next")) > 0:
@@ -686,11 +659,20 @@ class EasyApplyBot:
                         button = self.wait.until(EC.element_to_be_clickable(element))
                         button.click()
 
+                # Check if the total process time has exceeded 5 minutes
+                elapsed_time = time.time() - start_time
+                if elapsed_time > 300:  # 300 seconds = 5 minutes
+                    log.info("5 minutes elapsed. Exiting the process.")
+                    return False  # Stop the entire process if 5 minutes are exceeded
+
+                # loop += 1  # Increment loop counter to attempt a second submission if needed
+
         except Exception as e:
             log.error(e)
             log.error("Cannot apply to this job")
 
         return submitted
+
 
     def is_found_field(self, locator, field):
         try:
@@ -728,6 +710,8 @@ class EasyApplyBot:
                     radio_buttons = self.get_child_elements(self.locator["radio_select"], field)
 
                     for radio_button in radio_buttons: # `radio_button` is a web element
+                        value = radio_button.get_attribute("value")
+                        # radio_button = field.find_element()
                         self.browser.execute_script("""
                             arguments[0].checked = false;
                             arguments[0].dispatchEvent(new Event('change'));
@@ -780,7 +764,7 @@ class EasyApplyBot:
 
                     for radio_button in radio_buttons:
                         if radio_button.get_attribute('value').lower() == answer.lower():
-                            WebDriverWait(field, 10).until(EC.element_to_be_clickable(radio_button))
+                            WebDriverWait(field, 15).until(EC.element_to_be_clickable(radio_button))
                             self.browser.execute_script("""
                                 arguments[0].click();
                                 arguments[0].dispatchEvent(new Event('change'));
