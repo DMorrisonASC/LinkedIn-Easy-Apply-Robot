@@ -1161,7 +1161,7 @@ class EasyApplyBot:
         # Other personal questions
         elif "currently reside" in question:
             answer = "Yes"
-        elif "sponsor" in question:
+        elif "sponsor" in question or "sponsorship" in question:
             answer = "No"
         elif ("us citizen" in question or "u.s. citizen" in question) and "clearance" in question:
             answer = "Yes"

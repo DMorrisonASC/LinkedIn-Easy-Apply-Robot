@@ -6833,3 +6833,20 @@ required
 enter a whole number between 0 and 99",6
 "how many years of work experience do you have with internet of things (iot)?
 enter a whole number between 0 and 99",6
+how many years of work experience do you have with mulesoft anypoint platform?,6
+"can you work on w2?
+can you work on w2?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"how many years of work experience do you have with site reliability engineering?
+enter a whole number between 0 and 99",4
+"are you willing and able to work on-site in syracuse, ny?
+are you willing and able to work on-site in syracuse, ny?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
