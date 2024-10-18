@@ -175,6 +175,14 @@ class EasyApplyBot:
             df = pd.DataFrame(columns=["Question", "Answer"])
             df.to_csv(self.qa_file, index=False, encoding='utf-8')
 
+        # self.applications_file = Path("applications.csv")
+        # self.links = {}
+
+        # if self.applications.is_file():
+        #     df = pd.read_csv(self.applications_file)
+        #     for index, row in df.iterrows():
+        #         self.links[row[title]]
+
     def browser_options(self):
         """
         Configures Chrome browser options for the web driver, including settings for window size, 
@@ -924,7 +932,7 @@ class EasyApplyBot:
                                 
                                 # Check if the attribute value is present and if the answer is in it
                                 if answer.lower() in attr_value.lower():  # Check if answer is in the attribute value
-                                    closest_match = select_element
+                                    closest_match = field.find_element(By.XPATH, f"//input[@data-test-text-selectable-option__input='{attr_value}']")
                                     break  # Exit loop on first closest match
                             except Exception as e:
                                 log.error(e)
@@ -932,7 +940,7 @@ class EasyApplyBot:
                                 
 
                         if closest_match:
-                            WebDriverWait(field, 20).until(EC.element_to_be_clickable(closest_match))
+                            WebDriverWait(field, 20).until(EC.visibility_of_element_located(closest_match))
                             try:
                                 closest_match.click()  # Use click for better simulation
                                 log.info(f"Closest select element chosen: {closest_match.get_attribute('value')}")
@@ -963,15 +971,30 @@ class EasyApplyBot:
                     log.error(f"Select element error for question: {question}, answer: {answer}")
                     log.error(traceback.format_exc())  # Full traceback for better debugging
 
+            # Handle date input fields
             elif self.is_found_field(self.locator["date_input"], field):
                 try:
                     log.debug("Locator: date_input")
-                    date_field = field.find_elements(self.locator["date_input"])[0]
+
+                    # Locate the date field using the correct locator strategy
+                    date_field = WebDriverWait(field, 15).until(
+                        EC.presence_of_element_located(self.locator["date_input"])
+                    )
+                    
+                    # Clear the date field
                     date_field.clear()
-                    date_field.send_keys(answer)
-                
+
+                    # Send the answer (date) to the input
+                    date_field.send_keys(answer)  # Ensure 'answer' is formatted correctly as "mm/dd/yyyy"
+                    time.sleep(1)
+                    date_field.send_keys(Keys.RETURN)
+                    date_field.send_keys(Keys.RETURN)
+                    date_field.send_keys(Keys.RETURN)
+
+                    log.info(f"Date input filled with value: {answer}")
+                    
                 except Exception as e:
-                    log.error(e)
+                    log.error(f"Error while filling the date input: {e}")
                     log.error(traceback.format_exc())  # Full traceback for better debugging
 
             else:
@@ -1069,7 +1092,7 @@ class EasyApplyBot:
                 answer = "Native"
 
         # Experience-related questions
-        elif "how many" in question:
+        elif "how many" in question or "how much" in question:
             answer = random.choice(choices)
         elif "rate" in question and ("yourself" in question or "proficient" in question or "proficiency" in question):
             answer = "10"
@@ -1100,7 +1123,7 @@ class EasyApplyBot:
             answer = "Yes"
         elif ("privacy policy" in question):
             answer = "I agree"
-        elif "date" in question and ("earliest" in question or "start" in question):
+        elif "date" in question and ("earliest" in question or "start" in question or "mm/dd/yyyy" in question or "format" in question):
             today = date.today()
             answer = today.strftime("%m/%d/%Y")
         # basic info
@@ -1170,7 +1193,7 @@ class EasyApplyBot:
         # Default case for unanswered questions
         if answer is None:
             log.info("Not able to answer question automatically. Please provide answer")
-            answer = "4"  # Placeholder for unanswered questions
+            answer = "2"  # Placeholder for unanswered questions
             time.sleep(5)
 
         log.info("Answering question: " + question + " with answer: " + str(answer))
