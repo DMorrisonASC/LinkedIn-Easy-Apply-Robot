@@ -6850,3 +6850,656 @@ required
        yes
        no
    please enter a valid answer",Yes
+how many years of work experience do you have with quartz?,4
+how many years of work experience do you have with microservices?,6
+"if employed and under the age of 18, can you provide a work permit?
+if employed and under the age of 18, can you provide a work permit?
+       select an option
+       yes
+       no
+       not applicable",2
+"this position requires in-office attendance at the location listed in the job description. are you willing to relocate or are you within a commutable distance?
+this position requires in-office attendance at the location listed in the job description. are you willing to relocate or are you within a commutable distance?
+required
+yes
+no
+please make a selection",Yes
+"this position requires in-office attendance at the location listed in the job description. are you willing to relocate or are you within a commutable distance?
+this position requires in-office attendance at the location listed in the job description. are you willing to relocate or are you within a commutable distance?
+required
+yes
+no",Yes
+"by checking this box, you will declare that you read and agree to the privacy policy of socotec.
+by checking this box, you will declare that you read and agree to the privacy policy of socotec.
+required
+i consent
+select checkbox to proceed",I agree
+"have you previously worked at axle?
+have you previously worked at axle?
+required
+yes
+no
+please make a selection",Yes
+"do you have the legal authorization to work on a full-time, indefinite basis in the country where this role is located?
+do you have the legal authorization to work on a full-time, indefinite basis in the country where this role is located?
+required
+yes
+no
+please make a selection",2
+"can you perform the essential functions of this job without reasonable accommodation?
+can you perform the essential functions of this job without reasonable accommodation?
+required
+yes
+no
+please make a selection",2
+"are you willing and able to work at the specified job location, or are you open to relocation if required?
+are you willing and able to work at the specified job location, or are you open to relocation if required?
+required
+yes
+no
+please make a selection",Yes
+"does accepting employment with axle or performing the duties required for this role conflict with any non-compete, non-solicitation, or other contractual agreements you may have?
+does accepting employment with axle or performing the duties required for this role conflict with any non-compete, non-solicitation, or other contractual agreements you may have?
+required
+yes
+no
+please make a selection",2
+"do you meet the eligibility requirements for obtaining a us government security clearance?
+do you meet the eligibility requirements for obtaining a us government security clearance?
+required
+yes
+no
+please make a selection",Yes
+"have you previously worked at axle?
+have you previously worked at axle?
+required
+yes
+no",Yes
+"do you have the legal authorization to work on a full-time, indefinite basis in the country where this role is located?
+do you have the legal authorization to work on a full-time, indefinite basis in the country where this role is located?
+required
+yes
+no",2
+"can you perform the essential functions of this job without reasonable accommodation?
+can you perform the essential functions of this job without reasonable accommodation?
+required
+yes
+no",2
+"are you willing and able to work at the specified job location, or are you open to relocation if required?
+are you willing and able to work at the specified job location, or are you open to relocation if required?
+required
+yes
+no",Yes
+"does accepting employment with axle or performing the duties required for this role conflict with any non-compete, non-solicitation, or other contractual agreements you may have?
+does accepting employment with axle or performing the duties required for this role conflict with any non-compete, non-solicitation, or other contractual agreements you may have?
+required
+yes
+no",2
+"do you meet the eligibility requirements for obtaining a us government security clearance?
+do you meet the eligibility requirements for obtaining a us government security clearance?
+required
+yes
+no",Yes
+"website, blog or portfolio",2
+"are you legally authorized to work in the united states?
+are you legally authorized to work in the united states?
+required
+yes
+no
+please make a selection",2
+"do you understand that this is a fully remote position?
+do you understand that this is a fully remote position?
+required
+yes
+no
+please make a selection",Yes
+what excites you about this opportunity?,2
+"do you understand that this is a fully remote position?
+do you understand that this is a fully remote position?
+required
+yes
+no",Yes
+"what are your salary expectations for this role?
+enter a decimal number larger than 0.0",70000
+"are you subject to any confidentiality, non-solicit or non-compete restrictions with any other employer or company? as a reminder, those restrictions often are found in offer letters, commission, long-term incentive or other compensation agreements and severance agreements.
+are you subject to any confidentiality, non-solicit or non-compete restrictions with any other employer or company? as a reminder, those restrictions often are found in offer letters, commission, long-term incentive or other compensation agreements and severance agreements.
+yes
+no",Yes
+"have you previously been employed with brightspeed, lumen or centurylink as an employee or a contractor?
+have you previously been employed with brightspeed, lumen or centurylink as an employee or a contractor?
+yes
+no",Yes
+"are you legally authorized to work in the united states on a full-time basis?
+are you legally authorized to work in the united states on a full-time basis?
+required
+yes
+no",2
+"do you currently reside in the united states?
+do you currently reside in the united states?
+required
+yes
+no",Yes
+"by checking this box, you will declare that you read and understand the privacy policy of brightspeed.
+by checking this box, you will declare that you read and understand the privacy policy of brightspeed.
+required
+i consent
+select checkbox to proceed",I agree
+github profile,https://github.com/DMorrisonASC
+"[optional] pronouns - how should we refer to you in the third person?
+[optional] pronouns - how should we refer to you in the third person?
+       select an option
+       she/her/hers
+       he/him/his
+       they/them/theirs
+       other (my preference is not reflected by the options above)",N/A
+"[optional, if ""other"" is selected above] my pronouns are",2
+"do you now, or will you in the future, require immigration sponsorship for work authorization to work in this location?
+do you now, or will you in the future, require immigration sponsorship for work authorization to work in this location?
+required
+       select an option
+       yes
+       no
+   please make a selection",No
+"current company
+please enter a valid answer",2
+"current title
+please enter a valid answer",2
+"asana is seeking the below information for the exclusive and limited purpose of complying with u.s. export control laws given that the position for which you are applying may require access to technology subject to those laws. we will not use the information that you provide for any other purpose. are you a citizen or legal permanent resident of cuba, iran, north korea, syria or ukraine (crimea region)?
+asana is seeking the below information for the exclusive and limited purpose of complying with u.s. export control laws given that the position for which you are applying may require access to technology subject to those laws. we will not use the information that you provide for any other purpose. are you a citizen or legal permanent resident of cuba, iran, north korea, syria or ukraine (crimea region)?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+[optional] preferred full name (the name that you would like to be referred to as. please input your legal name in the first and last name fields above.),N/A
+"have you been employed, or otherwise engaged, by an asana entity in the past? (previous independent contractors, select ""yes."")
+have you been employed, or otherwise engaged, by an asana entity in the past? (previous independent contractors, select ""yes."")
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"please identify your gender. (multi-select)
+please identify your gender. (multi-select)
+required
+female
+male
+non-binary
+transgender
+gender identity - not represented
+i don't wish to answer
+please make a selection",Male
+"please identify your ethnicity. (multi-select)
+please identify your ethnicity. (multi-select)
+required
+black or african american
+central asian
+east asian
+latinx or hispanic
+middle eastern or north african
+native american or alaskan native or indigenous
+native hawaiian or pacific islander
+south asian
+southeast asian
+white or caucasian or european
+ethnicity - not represented
+i don't wish to answer
+please make a selection",Bronx
+"please identify your veteran status.
+please identify your veteran status.
+required
+i am not a veteran (i did not serve in the military)
+i am a veteran and i belong to a classification of protected veterans
+i am a veteran and i do not belong to a classification of protected veterans
+i don't wish to answer
+please make a selection",I am not
+"if you wish to disclose a disability, please review and complete our voluntary self-identification of disability form provided above.
+if you wish to disclose a disability, please review and complete our voluntary self-identification of disability form provided above.
+required
+yes, i have completed the form and consent for asana to collect this data.
+no, i don’t have a disability
+i don't wish to answer
+please make a selection",No
+"do you now, or will you in the future, require immigration sponsorship for work authorization to work in this location?
+do you now, or will you in the future, require immigration sponsorship for work authorization to work in this location?
+required
+       select an option
+       yes
+       no",No
+current company,2
+current title,2
+"asana is seeking the below information for the exclusive and limited purpose of complying with u.s. export control laws given that the position for which you are applying may require access to technology subject to those laws. we will not use the information that you provide for any other purpose. are you a citizen or legal permanent resident of cuba, iran, north korea, syria or ukraine (crimea region)?
+asana is seeking the below information for the exclusive and limited purpose of complying with u.s. export control laws given that the position for which you are applying may require access to technology subject to those laws. we will not use the information that you provide for any other purpose. are you a citizen or legal permanent resident of cuba, iran, north korea, syria or ukraine (crimea region)?
+required
+       select an option
+       yes
+       no",Yes
+"have you been employed, or otherwise engaged, by an asana entity in the past? (previous independent contractors, select ""yes."")
+have you been employed, or otherwise engaged, by an asana entity in the past? (previous independent contractors, select ""yes."")
+required
+       select an option
+       yes
+       no",Yes
+"please identify your ethnicity. (multi-select)
+please identify your ethnicity. (multi-select)
+required
+black or african american
+central asian
+east asian
+latinx or hispanic
+middle eastern or north african
+native american or alaskan native or indigenous
+native hawaiian or pacific islander
+south asian
+southeast asian
+white or caucasian or european
+ethnicity - not represented
+i don't wish to answer",Bronx
+"please identify your gender. (multi-select)
+please identify your gender. (multi-select)
+required
+female
+male
+non-binary
+transgender
+gender identity - not represented
+i don't wish to answer",Male
+"please identify your veteran status.
+please identify your veteran status.
+required
+i am not a veteran (i did not serve in the military)
+i am a veteran and i belong to a classification of protected veterans
+i am a veteran and i do not belong to a classification of protected veterans
+i don't wish to answer",I am not
+"if you wish to disclose a disability, please review and complete our voluntary self-identification of disability form provided above.
+if you wish to disclose a disability, please review and complete our voluntary self-identification of disability form provided above.
+required
+yes, i have completed the form and consent for asana to collect this data.
+no, i don’t have a disability
+i don't wish to answer",No
+"how many years of work experience do you have with aws identity and access management (aws iam)?
+enter a whole number between 0 and 99",5
+"have you developed rest apis from scratch?
+have you developed rest apis from scratch?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have with unit testing?
+enter a decimal number larger than 0.0",3
+"do you have a bachelors/masters in computer science or software engineering?
+do you have a bachelors/masters in computer science or software engineering?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"this is a 6-week project only with less chances of extension. would you be comfortable?
+this is a 6-week project only with less chances of extension. would you be comfortable?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"have you worked within ci/cd environments in your most recent roles? 
+have you worked within ci/cd environments in your most recent roles?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years do you have working with react?
+enter a decimal number larger than 0.0",4
+"• optics design exp is required
+• optics design exp is required
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"this is a business analyst role, not it, please confirm you are still interested.
+this is a business analyst role, not it, please confirm you are still interested.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"do you have supervisory experience? 
+do you have supervisory experience?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you legally authorized to work in the country/region of the job for which you are applying?
+are you legally authorized to work in the country/region of the job for which you are applying?
+required
+yes
+no
+please make a selection",2
+"will you now or in the future require sponsorship for an employment visa?
+will you now or in the future require sponsorship for an employment visa?
+required
+yes
+no
+please make a selection",No
+"do you have an active non competition or employment agreement?
+do you have an active non competition or employment agreement?
+required
+yes
+no
+please make a selection",Yes
+"were you referred by a veolia employee?
+were you referred by a veolia employee?
+required
+yes
+no
+please make a selection",N/A
+"if you were referred by a veolia employee, please list the employee's name below.
+0/1,440
+1440 maximum characters allowed.",N/A
+"are you a veteran?
+are you a veteran?
+yes, disabled veteran
+yes, recently separated veteran
+yes, active duty wartime or campaign badge veterans
+yes, armed forces service medal veterans
+yes, none of the above, however i do/did serve in the military
+no, i am not
+opt out",I am not
+"gender:
+gender:
+       select an option
+       female
+       male
+       other
+       i don't wish to answer",Male
+"race/ethnicity:
+race/ethnicity:
+       select an option
+       indian or alaska native (not hispanic or latino)
+       asian (not hispanic or latino)
+       black or african american (not hispanic or latino)
+       hispanic or latino
+       native hawaiian or other pacific islander (not hispanic or latino)
+       white (not hispanic or latino)
+       two or more races (not hispanic or latino)
+       i do not wish to self identify",Bronx
+"form cc-omb control number 1250-0005 expires 04/30/2026 do you have a disability? disabilities include, but are not limited to: https://omb.report/icr/202306-1250-001/doc/132695601 we are a federal contractor or subcontractor. the law requires us to provide equal employment opportunity to qualified people with disabilities. we have a goal of having at least 7% of our workers as people with disabilities. the law says we must measure our progress towards this goal. to do this, we must ask applicants and employees if they have a disability or have ever had one. people can become disabled, so we need to ask this question at least every five years. completing this form is voluntary, and we hope that you will choose to do so. your answer is confidential. no one who makes hiring decisions will see it. your decision to complete the form and your answer will not harm you in any way. if you want to learn more about the law or this form, visit the u.s. department of labor’s office of federal contract compliance programs (ofccp) website at www.dol.gov/ofccp.
+form cc-omb control number 1250-0005 expires 04/30/2026 do you have a disability? disabilities include, but are not limited to: https://omb.report/icr/202306-1250-001/doc/132695601 we are a federal contractor or subcontractor. the law requires us to provide equal employment opportunity to qualified people with disabilities. we have a goal of having at least 7% of our workers as people with disabilities. the law says we must measure our progress towards this goal. to do this, we must ask applicants and employees if they have a disability or have ever had one. people can become disabled, so we need to ask this question at least every five years. completing this form is voluntary, and we hope that you will choose to do so. your answer is confidential. no one who makes hiring decisions will see it. your decision to complete the form and your answer will not harm you in any way. if you want to learn more about the law or this form, visit the u.s. department of labor’s office of federal contract compliance programs (ofccp) website at www.dol.gov/ofccp.
+       select an option
+       yes, i have a disability, or have had one in the past
+       no, i do not have a disability and have not had one in the past
+       i do not want to answer",No
+"are you legally authorized to work in the country/region of the job for which you are applying?
+are you legally authorized to work in the country/region of the job for which you are applying?
+required
+yes
+no",2
+"will you now or in the future require sponsorship for an employment visa?
+will you now or in the future require sponsorship for an employment visa?
+required
+yes
+no",No
+"do you have an active non competition or employment agreement?
+do you have an active non competition or employment agreement?
+required
+yes
+no",Yes
+"were you referred by a veolia employee?
+were you referred by a veolia employee?
+required
+yes
+no",N/A
+"by checking this box, you will declare that you read and understand the privacy policy of veolia environnement sa.
+by checking this box, you will declare that you read and understand the privacy policy of veolia environnement sa.
+required
+i consent
+select checkbox to proceed",I agree
+"are you us citizen or green card holder?
+are you us citizen or green card holder?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with visualization?
+enter a whole number between 0 and 99",6
+"have you ever worked with transcriptomics datasets?
+have you ever worked with transcriptomics datasets?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you currently based in the us?
+are you currently based in the us?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you hispanic or latino?
+are you hispanic or latino?
+required
+yes
+no
+please make a selection",Yes
+"are you hispanic or latino?
+are you hispanic or latino?
+required
+yes
+no",Yes
+"will you now or in the future require sponsorship for employment visa status (e.g., h-1b visa status)?
+will you now or in the future require sponsorship for employment visa status (e.g., h-1b visa status)?
+required
+yes
+no
+please make a selection",No
+"privia only hires employees within the u.s. do you currently reside in the us?
+privia only hires employees within the u.s. do you currently reside in the us?
+required
+yes
+no
+please make a selection",Yes
+"have you, in any capacity, worked at privia health or any medical practice affilated with privia medical group?
+have you, in any capacity, worked at privia health or any medical practice affilated with privia medical group?
+required
+yes
+no
+please make a selection",Bronx
+"if yes, what is the name of the practice/where is it located? when did you last work with this practice?",Morrison
+"do you currently have any personal relationships, such as familial or close friendships, with any existing employees at privia health? if yes, please provide the name(s) of the individual(s) and briefly describe the nature of your relationship with them.
+please enter a valid answer",Yes
+"if yes, please provide more information about your relationship",2
+"what are your compensation expectations? please list out base salary, bonus, and any incentives you expect to receive for this role.
+please enter a valid answer",70000
+"do you intend to have secondary employment while employed at privia health?
+do you intend to have secondary employment while employed at privia health?
+required
+yes
+no
+please make a selection",Yes
+"will you now or in the future require sponsorship for employment visa status (e.g., h-1b visa status)?
+will you now or in the future require sponsorship for employment visa status (e.g., h-1b visa status)?
+required
+yes
+no",No
+"privia only hires employees within the u.s. do you currently reside in the us?
+privia only hires employees within the u.s. do you currently reside in the us?
+required
+yes
+no",Yes
+"have you, in any capacity, worked at privia health or any medical practice affilated with privia medical group?
+have you, in any capacity, worked at privia health or any medical practice affilated with privia medical group?
+required
+yes
+no",Bronx
+"do you intend to have secondary employment while employed at privia health?
+do you intend to have secondary employment while employed at privia health?
+required
+yes
+no",Yes
+"commercial development experience?
+commercial development experience?
+required
+yes
+no
+please make a selection",2
+"thank you for your interest in the full stack developer position at hardcore engineering. we aim to onboard individuals who can bring fresh perspectives and innovative ideas to our mission. as part of your application process, we invite you to submit a contribution to huly via a pull request (pr) on our github: https://github.com/hcengineering/platform. to give you a glimpse into our platform, we invite you to explore this video demonstration. your contribution can take any form you see fit, and we welcome all expressions of creativity. we look forward to seeing how your insights and ideas can enhance our project. once you have submitted your pr, please make sure to send the link to your pr directly to me for review. this step is important for us to ensure that your contribution is properly assessed. please note that this task is designed to assess your suitability for the role. we will not utilize your submission in our project without your explicit consent. if you prefer to keep your work private, you may mark your pr as a draft. if you have any questions or require further clarification, please feel free to reach out. we look forward to reviewing your contribution. best,
+please enter a valid answer",N/A
+"commercial development experience?
+commercial development experience?
+required
+yes
+no",2
+"do you have the following license or certification: aws certifications?
+do you have the following license or certification: aws certifications?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: aws certifications?
+do you have the following license or certification: aws certifications?
+required
+yes
+no",Yes
+"do you have experience with both frontend and backend development?
+do you have experience with both frontend and backend development?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with palantir?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with security operations?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with user requirements?
+enter a whole number between 0 and 99",6
+"do you have the following license or certification: epiccare certification?
+do you have the following license or certification: epiccare certification?
+required
+yes
+no
+please make a selection",Yes
+"have you worked in a healthcare setting?
+have you worked in a healthcare setting?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have the following license or certification: epiccare certification?
+do you have the following license or certification: epiccare certification?
+required
+yes
+no",Yes
+"how many years of work experience do you have with graphic design?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with change management?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with learning & development solutions?
+enter a whole number between 0 and 99",3
+"animation
+enter a decimal number larger than 0.0",2
+"do you have 1 year of accounting experience?
+enter a decimal number larger than 0.0",Yes
+"are you proficient with excel? 
+are you proficient with excel?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with financial systems maintenance?
+do you have experience with financial systems maintenance?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you located in kansas or missouri? this is 100 percent remote but you have to be in those states. 
+are you located in kansas or missouri? this is 100 percent remote but you have to be in those states.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"if no bachelor's degree, do you have a financial or accounting background? 
+if no bachelor's degree, do you have a financial or accounting background?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you proficient with excel? 
+are you proficient with excel?
+required
+       select an option
+       yes
+       no",Yes
+"do you have experience with financial systems maintenance?
+do you have experience with financial systems maintenance?
+required
+       select an option
+       yes
+       no",Yes
+"are you located in kansas or missouri? this is 100 percent remote but you have to be in those states. 
+are you located in kansas or missouri? this is 100 percent remote but you have to be in those states.
+required
+       select an option
+       yes
+       no",Yes
+"if no bachelor's degree, do you have a financial or accounting background? 
+if no bachelor's degree, do you have a financial or accounting background?
+required
+       select an option
+       yes
+       no",Yes
+github account link,https://github.com/DMorrisonASC
+linkedin profile (optional),https://www.linkedin.com/in/daeshaun-morrison-bab77b176/
+personal website or blog (optional),2
+"how many years of other experience do you currently have?
+enter a whole number between 0 and 99",3
+"are you available for relocation across usa? as the training location will be atlanta, georgia for 8 weeks and project location will be anywhere in us. 
+are you available for relocation across usa? as the training location will be atlanta, georgia for 8 weeks and project location will be anywhere in us.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"will you be interested in consulting-based jobs? 
+will you be interested in consulting-based jobs?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"how many years of information technology experience do you currently have? 
+how many years of information technology experience do you currently have?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",5
+"are you located in latam ?
+are you located in latam ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with negotiation?,4
+"how many years of work experience do you have with it integration?
+enter a whole number between 0 and 99",3
+"do you have at least 4 years of professional software development experience? 
+do you have at least 4 years of professional software development experience?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"if applicable, please provide some links to open source projects that might be relevant.
+please enter a valid answer",2

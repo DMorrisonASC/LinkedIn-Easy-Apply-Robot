@@ -644,17 +644,28 @@ class EasyApplyBot:
                         submitted = True
                         break
                     else:
+                        start_time = time.time()  # Record the start time
                         while True:
                             log.info("Please answer the questions, waiting 5 seconds...")
                             time.sleep(5)
                             self.process_questions()
+                            
                             if "application was sent" in self.browser.page_source:
                                 log.info("Application Submitted")
                                 submitted = True
                                 break
+                            
                             elif self.is_present(self.locator["easy_apply_button"]):
                                 submitted = False
                                 break
+
+                            log.debug(f"{time.time() - start_time} minutes elapsed")
+                            
+                            # Check if 5 minutes (300 seconds) have passed
+                            elapsed_time = time.time() - start_time
+                            if elapsed_time > 300:  # 300 seconds = 5 minutes
+                                log.info("5 minutes elapsed. Exiting the loop.")
+                                return False
 
                 # Handle next, continue, and review buttons if present.
                 elif len(self.get_elements("next")) > 0:
@@ -784,6 +795,7 @@ class EasyApplyBot:
                             radio_value = radio_button.get_attribute('value').lower()
                             if "yes" in radio_value or "no" in radio_value:
                                 closest_match = radio_button
+                                
 
                         if closest_match:
                             WebDriverWait(field, 15).until(EC.element_to_be_clickable(closest_match))
@@ -912,6 +924,8 @@ class EasyApplyBot:
                     for select_element in select_elements:
                         # Check for attributes starting with 'data-test-text-selectable-option'
                         attr_value = select_element.get_attribute('data-test-text-selectable-option__input')
+                        select_element = field.find_element(By.XPATH, f".//input[@data-test-text-selectable-option__input=\"{attr_value}\"]")
+
                         
                         # Check if the attribute value matches the answer
                         if answer.lower() == attr_value.lower():
@@ -932,7 +946,8 @@ class EasyApplyBot:
                                 
                                 # Check if the attribute value is present and if the answer is in it
                                 if answer.lower() in attr_value.lower():  # Check if answer is in the attribute value
-                                    closest_match = field.find_element(By.XPATH, f"//input[@data-test-text-selectable-option__input='{attr_value}']")
+                                    closest_match = field.find_element(By.XPATH, f".//input[@data-test-text-selectable-option__input=\"{attr_value}\"]")
+
                                     break  # Exit loop on first closest match
                             except Exception as e:
                                 log.error(e)
@@ -982,14 +997,17 @@ class EasyApplyBot:
                     )
                     
                     # Clear the date field
-                    date_field.clear()
+                    # date_field.clear()
 
                     # Send the answer (date) to the input
                     date_field.send_keys(answer)  # Ensure 'answer' is formatted correctly as "mm/dd/yyyy"
                     time.sleep(1)
-                    date_field.send_keys(Keys.RETURN)
-                    date_field.send_keys(Keys.RETURN)
-                    date_field.send_keys(Keys.RETURN)
+                    date_field.click()
+                    time.sleep(3)
+                    button = WebDriverWait(field, 15).until(
+                        EC.element_to_be_clickable((By.XPATH, ".//button[contains(@aria-label, 'This is today')]"))
+                    )
+                    button.click()
 
                     log.info(f"Date input filled with value: {answer}")
                     
@@ -1092,7 +1110,7 @@ class EasyApplyBot:
                 answer = "Native"
 
         # Experience-related questions
-        elif "how many" in question or "how much" in question:
+        elif "how many" in question or "how much" in question or "enter a decimal number" in question:
             answer = random.choice(choices)
         elif "rate" in question and ("yourself" in question or "proficient" in question or "proficiency" in question):
             answer = "10"
@@ -1108,6 +1126,8 @@ class EasyApplyBot:
             answer = "Good glassdoor reviews and the workers I talked to love their jobs"
 
         # Work authorization questions
+        elif "sponsor" in question or "sponsorship" in question:
+            answer = "No"
         elif "work" in question and ("authorization" in question or "authorized" in question):
             if "usc" in question:
                 answer = "USC: 0"
@@ -1142,6 +1162,8 @@ class EasyApplyBot:
             answer = self.github
         elif ("linkedin" in question):
             answer = self.linkedin
+        elif "portfolio" in question or "personal website" in question:
+            answer = self.portfolio
 
         # Disability and drug test-related questions
         elif "disability" in question:
@@ -1161,8 +1183,6 @@ class EasyApplyBot:
         # Other personal questions
         elif "currently reside" in question:
             answer = "Yes"
-        elif "sponsor" in question or "sponsorship" in question:
-            answer = "No"
         elif ("us citizen" in question or "u.s. citizen" in question) and "clearance" in question:
             answer = "Yes"
         elif "salary" in question:
