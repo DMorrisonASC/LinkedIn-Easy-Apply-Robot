@@ -7889,3 +7889,199 @@ enter a decimal number larger than 0.0",4
 enter a decimal number larger than 0.0",4
 "how many years of experience do you have collaborating with cross-functional teams, including business stakeholders and programmers?
 enter a decimal number larger than 0.0",4
+"only gc and usc 
+only gc and usc
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"are you willing to work strongsville oh or pittsburgh, pa (on-site)? 
+are you willing to work strongsville oh or pittsburgh, pa (on-site)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you currently have a full-time job and are you willing to work evenings and weekends, knowing that a salary may take time?
+do you currently have a full-time job and are you willing to work evenings and weekends, knowing that a salary may take time?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",70000
+how many years of work experience do you have with test management?,4
+"how many years of work experience do you have with medical devices?
+enter a whole number between 0 and 99",4
+"utilize hardware and software tools in the testing of medical devices and test networks
+enter a decimal number larger than 0.0",3
+"design, plan, establish and optimize wireless test networks used in the development and test of medical devices
+enter a decimal number larger than 0.0",5
+"execute tests on medical devices and applications developed in-house
+enter a decimal number larger than 0.0",5
+"must be usa citizen or gc holder 
+must be usa citizen or gc holder
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"how many years of work experience do you have with actimize?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with vibration control?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with signal processing?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with modal analysis?
+enter a whole number between 0 and 99",6
+"do you have a minimum of 1 year experience with test and measurement instrumentation? 
+do you have a minimum of 1 year experience with test and measurement instrumentation?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have a familiarity with a variety of field concepts, practices, and procedures?
+do you have a familiarity with a variety of field concepts, practices, and procedures?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with business process mapping?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with back-end web development?
+enter a whole number between 0 and 99",4
+how many years of work experience do you have with appian?,6
+"how many years of experience do you have working with apis?
+enter a decimal number larger than 0.0",5
+"are you eligible for a public trust security clearance (us citizens only)?
+are you eligible for a public trust security clearance (us citizens only)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you comfortable to work at rate-$40/hr w2 or $45/hr c2c
+are you comfortable to work at rate-$40/hr w2 or $45/hr c2c
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you consent to being contacted about this job via text/sms?
+do you consent to being contacted about this job via text/sms?
+required
+yes
+no
+please make a selection",Yes
+"do you have the legal right to work in the united states, or will you need sponsorship for an employment visa?
+do you have the legal right to work in the united states, or will you need sponsorship for an employment visa?
+required
+us citizen
+require sponsorship
+please make a selection",No
+"do you have an active ts/sci full scope poly?
+do you have an active ts/sci full scope poly?
+required
+yes
+no
+please make a selection",Yes
+"do you have at least 3 years of software engineer expereince?
+do you have at least 3 years of software engineer expereince?
+required
+yes
+no
+please make a selection",Yes
+"do you have a b.s. in a technical discipline (i.e. computer science)?
+do you have a b.s. in a technical discipline (i.e. computer science)?
+required
+yes
+no
+please make a selection",Yes
+"do you have experience using java to build enterprise products and applications?
+do you have experience using java to build enterprise products and applications?
+required
+yes
+no
+please make a selection",Yes
+"knowledge of streaming analytic platforms like kafka, rabbitmq, spark, etc.?
+knowledge of streaming analytic platforms like kafka, rabbitmq, spark, etc.?
+required
+yes
+no
+please make a selection",2
+"familiarity with extract, transform, load (etl) software patterns to ingest large and complex datasets?
+familiarity with extract, transform, load (etl) software patterns to ingest large and complex datasets?
+required
+yes
+no
+please make a selection",2
+"familiarity with git and gitlab ci/cd?
+familiarity with git and gitlab ci/cd?
+required
+yes
+no
+please make a selection",2
+"understanding of common enterprise integration patterns (eip) and how to apply them?
+understanding of common enterprise integration patterns (eip) and how to apply them?
+required
+yes
+no
+please make a selection",2
+"do you consent to being contacted about this job via text/sms?
+do you consent to being contacted about this job via text/sms?
+required
+yes
+no",Yes
+"do you have an active ts/sci full scope poly?
+do you have an active ts/sci full scope poly?
+required
+yes
+no",Yes
+"do you have at least 3 years of software engineer expereince?
+do you have at least 3 years of software engineer expereince?
+required
+yes
+no",Yes
+"do you have a b.s. in a technical discipline (i.e. computer science)?
+do you have a b.s. in a technical discipline (i.e. computer science)?
+required
+yes
+no",Yes
+"do you have experience using java to build enterprise products and applications?
+do you have experience using java to build enterprise products and applications?
+required
+yes
+no",Yes
+"knowledge of streaming analytic platforms like kafka, rabbitmq, spark, etc.?
+knowledge of streaming analytic platforms like kafka, rabbitmq, spark, etc.?
+required
+yes
+no",2
+"familiarity with extract, transform, load (etl) software patterns to ingest large and complex datasets?
+familiarity with extract, transform, load (etl) software patterns to ingest large and complex datasets?
+required
+yes
+no",2
+"familiarity with git and gitlab ci/cd?
+familiarity with git and gitlab ci/cd?
+required
+yes
+no",2
+"understanding of common enterprise integration patterns (eip) and how to apply them?
+understanding of common enterprise integration patterns (eip) and how to apply them?
+required
+yes
+no",2
+"do you have 4+ years of web development experience?
+do you have 4+ years of web development experience?
+required
+yes
+no
+please make a selection",Yes
+"do you have 4+ years of web development experience?
+do you have 4+ years of web development experience?
+required
+yes
+no",Yes

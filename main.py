@@ -682,8 +682,6 @@ class EasyApplyBot:
             return False
 
     def process_questions(self):
-        time.sleep(3)
-
         form = self.get_elements("fields")  # Getting form elements
 
         print("Length: ", len(form))
@@ -711,6 +709,7 @@ class EasyApplyBot:
 
                     for radio_button in radio_buttons: # `radio_button` is a web element
                         value = radio_button.get_attribute("value")
+                        radio_button = field.find_element(By.XPATH, f".//input[@value='{value}']")
                         # radio_button = field.find_element()
                         self.browser.execute_script("""
                             arguments[0].checked = false;
@@ -764,7 +763,6 @@ class EasyApplyBot:
 
                     for radio_button in radio_buttons:
                         if radio_button.get_attribute('value').lower() == answer.lower():
-                            WebDriverWait(field, 15).until(EC.element_to_be_clickable(radio_button))
                             self.browser.execute_script("""
                                 arguments[0].click();
                                 arguments[0].dispatchEvent(new Event('change'));
@@ -782,7 +780,7 @@ class EasyApplyBot:
                                 
 
                         if closest_match:
-                            WebDriverWait(field, 15).until(EC.element_to_be_clickable(closest_match))
+                            # WebDriverWait(field, 15).until(EC.presence_of_element_located())
                             self.browser.execute_script("""
                                 arguments[0].click();
                                 arguments[0].dispatchEvent(new Event('change'));
@@ -792,7 +790,7 @@ class EasyApplyBot:
                         else:
                             log.warning("No suitable radio button found to select. Picking random option")
                             ran_option = random.choice(radio_buttons)
-                            WebDriverWait(field, 10).until(EC.element_to_be_clickable(ran_option))
+                            WebDriverWait(field, 10).until(EC.presence_of_element_located(ran_option))
                             self.browser.execute_script("""
                                 arguments[0].click();
                                 arguments[0].dispatchEvent(new Event('change'));
@@ -1004,7 +1002,10 @@ class EasyApplyBot:
 
     def get_child_elements(self, locator, field):
         try:
-            return field.find_elements(locator[0], locator[1])
+            # return field.find_elements(locator[0], locator[1])
+            return WebDriverWait(self.browser, 10).until(
+                EC.presence_of_all_elements_located((locator[0], locator[1]))
+            )
         except Exception as e:
             print(f"Error occurred while finding elements: {e}")
             return []  # Return an empty list instead of False
