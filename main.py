@@ -545,7 +545,7 @@ class EasyApplyBot:
             buttons = self.get_elements("easy_apply_button")
 
             for button in buttons:
-                if "Easy Apply" in button.text or "Continue applying" in button.text:
+                if "Easy Apply" in button.text:
                     EasyApplyButton = button
                     self.wait.until(EC.element_to_be_clickable(EasyApplyButton))
                 else:
@@ -717,15 +717,6 @@ class EasyApplyBot:
                         """, radio_button)
                         log.info("Radio button unselected")
 
-                # # Unselect multi-select options
-                # elif self.is_found_field(self.locator["multi_select"], field):
-                #     # Get the first and only select element
-                #     select_element = self.get_child_elements(self.locator["multi_select"], field)[0]  # `select_element` is a web element
-
-                #     # Reset to the default value
-                #     self.browser.execute_script("arguments[0].selectedIndex = 0; arguments[0].dispatchEvent(new Event('change'));", select_element)
-                #     log.info("Multi-select reset to default value: 'Select an option'")
-
             except Exception as e:
                 log.error(f"Error clearing existing selections: {e}")
 
@@ -774,10 +765,12 @@ class EasyApplyBot:
                         log.info("Exact match not found, looking for closest answer...")
                         closest_match = None
                         for radio_button in radio_buttons:
-                            radio_value = radio_button.get_attribute('value').lower()
-                            if "yes" in radio_value or "no" in radio_value:
-                                closest_match = radio_button
-                                
+                            radio_value = radio_button.get_attribute('value')
+                            if answer.lower() in radio_value.lower():
+                                try:
+                                    closest_match = field.find_element(By.XPATH, f".//input[@value=\"{radio_value}\"]")
+                                except NoSuchElementException:
+                                    log.error(f"No element found for radio value: {radio_value}")
 
                         if closest_match:
                             # WebDriverWait(field, 15).until(EC.presence_of_element_located())
@@ -789,8 +782,8 @@ class EasyApplyBot:
                             
                         else:
                             log.warning("No suitable radio button found to select. Picking random option")
-                            ran_option = random.choice(radio_buttons)
-                            WebDriverWait(field, 10).until(EC.presence_of_element_located(ran_option))
+                            value = random.choice(radio_buttons).get_attribute('value')
+                            ran_option = field.find_element(By.XPATH, f".//input[@value=\"{value}\"]")
                             self.browser.execute_script("""
                                 arguments[0].click();
                                 arguments[0].dispatchEvent(new Event('change'));
@@ -1002,13 +995,12 @@ class EasyApplyBot:
 
     def get_child_elements(self, locator, field):
         try:
-            # return field.find_elements(locator[0], locator[1])
-            return WebDriverWait(self.browser, 10).until(
-                EC.presence_of_all_elements_located((locator[0], locator[1]))
-            )
+            # find_elements expects two separate arguments, not a tuple
+            return field.find_elements(locator[0], locator[1])
         except Exception as e:
             print(f"Error occurred while finding elements: {e}")
             return []  # Return an empty list instead of False
+
 
     def next_jobs_page(self, position, location, jobs_per_page, experience_level=[], time_filter=""):
         """
@@ -1111,6 +1103,8 @@ class EasyApplyBot:
             answer = "Good glassdoor reviews and the workers I talked to love their jobs"
 
         # Work authorization questions
+        elif ("legal" in question or "legally" in question) and ("work" in question or "author" in question):
+            answer = "Yes"
         elif "sponsor" in question or "sponsorship" in question:
             answer = "No"
         elif "work" in question and ("authorization" in question or "authorized" in question):
@@ -1184,8 +1178,6 @@ class EasyApplyBot:
             answer = "White"
         elif "government" in question or "veteran" in question:
             answer = "I am not"
-        elif "are you legally" in question:
-            answer = "Yes"
         elif "phone" in question and ("mobile" in question or "number" in question):
             answer = self.phone_number
 
