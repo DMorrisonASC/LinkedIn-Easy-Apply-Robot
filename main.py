@@ -165,23 +165,28 @@ class EasyApplyBot:
         self.qa_file = Path("qa.csv")
         self.answers = {}
 
-        # If qa file does not exist, create it
+        # If qa file exists, load it
         if self.qa_file.is_file():
             df = pd.read_csv(self.qa_file)
             for index, row in df.iterrows():
                 self.answers[row['Question']] = row['Answer']
-        # If qa file does exist, load it
+        # If qa file does not exist, create it with columns "Question" and "Answer"
         else:
             df = pd.DataFrame(columns=["Question", "Answer"])
             df.to_csv(self.qa_file, index=False, encoding='utf-8')
 
-        # self.applications_file = Path("applications.csv")
-        # self.links = {}
+        # Initialize the applications file
+        self.applications_file = Path("applications.csv")
 
-        # if self.applications.is_file():
-        #     df = pd.read_csv(self.applications_file)
-        #     for index, row in df.iterrows():
-        #         self.links[row[title]]
+        # If applications.csv does not exist, create it with headers
+        if not self.applications_file.is_file():
+            data = {
+                'company': ['some text'],
+                'link': ['some link'],
+            }
+            df = pd.DataFrame(data)
+            # Write only the header to a CSV file (this will create an empty file with headers)
+            df.head(0).to_csv('applications.csv', index=False)
 
     def browser_options(self):
         """
@@ -406,6 +411,7 @@ class EasyApplyBot:
                                     # Ensure the job ID is unique before adding it for processing.
                                     if jobID not in jobIDs:
                                         jobIDs[jobID] = "To be processed"
+                                        self.add_job_link(link.text, f"https://www.linkedin.com/jobs/view/{jobID}/")
 
                                 else:
                                     log.debug(f"Job ID not found, It is likely a 'promoted' job? {link.text}")
@@ -449,6 +455,7 @@ class EasyApplyBot:
         """
         return len(self.browser.find_elements(locator[0],
                                               locator[1])) > 0
+
 
     def apply_to_job(self, jobID):
         """
@@ -1202,6 +1209,20 @@ class EasyApplyBot:
             new_data.to_csv(self.qa_file, mode='a', header=False, index=False, encoding='utf-8')
 
         return str(answer)
+
+    def add_job_link(self, job_name, job_posting):
+        try:
+            # Wrap job_name and job_posting in lists to create one row
+            new_data = pd.DataFrame({
+                "company": [job_name],
+                "link": [job_posting]
+            })
+
+            # Append to the CSV
+            new_data.to_csv("applications.csv", mode='a', header=False, index=False)
+        except Exception as e:
+            log.error(e)
+
 
 if __name__ == '__main__':
     # all user info needed for the applying. Ex: username, password, 
