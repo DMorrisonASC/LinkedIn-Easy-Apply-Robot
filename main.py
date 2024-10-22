@@ -895,7 +895,6 @@ class EasyApplyBot:
                 try:
                     log.debug("Locator: input_select")
                     select_elements = self.get_child_elements(self.locator["input_select"], field)
-                    log.debug(select_elements)
 
                     if select_elements is None or len(select_elements) == 0:
                         log.error(f"No select elements found for question: {question}")
@@ -905,21 +904,26 @@ class EasyApplyBot:
 
                     for select_element in select_elements:
                         # Check for attributes starting with 'data-test-text-selectable-option'
-                        attr_value = select_element.get_attribute('data-test-text-selectable-option__input')
-                        select_element = field.find_element(By.XPATH, f".//input[@data-test-text-selectable-option__input=\"{attr_value}\"]")
+                        try:
+                            attr_value = select_element.get_attribute('data-test-text-selectable-option__input')
+                            select_element = field.find_element(By.XPATH, f".//input[@data-test-text-selectable-option__input=\"{attr_value}\"]")
 
-                        
-                        # Check if the attribute value matches the answer
-                        if answer.lower() == attr_value.lower():
-                            # Wait until the select_element is clickable and then click
-                            WebDriverWait(field, 20).until(EC.element_to_be_clickable(select_element))
-                            select_element.click()  # Click instead of just setting the 'selected' attribute
-                            log.info(f"Select element chosen: {select_element.get_attribute('value')}")
-                            selected = True
-                            break  # Exit loop once the option is selected
+                            
+                            # Check if the attribute value matches the answer
+                            if answer.lower() == attr_value.lower():
+                                self.browser.execute_script("""
+                                    arguments[0].click();
+                                    arguments[0].dispatchEvent(new Event('change'));
+                                """, select_element)
+                                log.info(f"Select element chosen: {attr_value}")
+                                selected = True
+                                break  # Exit loop once the option is selected
+                        except Exception as e:
+                            log.error(f"Couldn't find exact match: {e}")
+                            log.error(traceback.format_exc())
 
                     if selected == False:
-                        log.info("Exact match not found, looking for closest answer...")
+                        log.info("Looking for closest answer...")
                         closest_match = None
                         for select_element in select_elements:
                             try: 
@@ -1115,10 +1119,7 @@ class EasyApplyBot:
         elif "sponsor" in question or "sponsorship" in question:
             answer = "No"
         elif "work" in question and ("authorization" in question or "authorized" in question):
-            if "usc" in question:
-                answer = "USC: 0"
-            elif "status" in question:
-                answer = "U.S Citizen"
+            answer = "Yes"
         elif "W2" in question:
             answer = "Yes"
         elif ("eligible" in question or "able" in question) and "clearance" in question:

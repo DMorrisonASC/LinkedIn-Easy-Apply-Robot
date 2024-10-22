@@ -10523,3 +10523,520 @@ required
        no
    please enter a valid answer",2
 how many years of work experience do you have with bash?,6
+"how many years of work experience do you have with complex systems?
+enter a whole number between 0 and 99",6
+"earliest start date?
+earliest start date?",10/22/2024
+"are you legally eligible to work in the united states?
+are you legally eligible to work in the united states?
+required
+yes
+no",Yes
+"do you now or in the future require visa sponsorship to continue working in the united states?
+do you now or in the future require visa sponsorship to continue working in the united states?
+required
+yes
+no",No
+"are you based in new york city or the surrounding area and comfortable working onsite tuesday through thursday?
+are you based in new york city or the surrounding area and comfortable working onsite tuesday through thursday?
+required
+yes
+no",Bronx
+"have you previously worked in fintech?
+have you previously worked in fintech?
+required
+yes
+no",Yes
+"how many years of work experience do you have with power systems?
+enter a whole number between 0 and 99",6
+"do you have experience with high voltage hybrid battery systems? 
+do you have experience with high voltage hybrid battery systems?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years do you have in the uas/unmanned aircraft industry?
+enter a decimal number larger than 0.0",3
+"do you have experience in aircraft power systems engineering
+do you have experience in aircraft power systems engineering
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with utility industry?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with telecommunications?,5
+"do you have experience with design tools such as pole foreman, o-calc, spida-calc? 
+do you have experience with design tools such as pole foreman, o-calc, spida-calc?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with rdbms?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with cloud-native applications?
+enter a whole number between 0 and 99",5
+"are you currently living in ca?
+are you currently living in ca?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you able to work independently? 
+are you able to work independently?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"can you work on a team? 
+can you work on a team?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"are you aware that this is unpaid and part-time? 
+are you aware that this is unpaid and part-time?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"can you remain in the internship until may 2025? 
+can you remain in the internship until may 2025?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"do you have a public portfolio you can share? 
+do you have a public portfolio you can share?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",https://dmorrisonasc.github.io/Daeshaun_Portfolio_WP/
+"how many years of work experience do you have with regulatory reporting?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with master data management?
+enter a whole number between 0 and 99",4
+"how many years of experience do you have in personal care/consumer products manufacturing industry?
+enter a decimal number larger than 0.0",6
+"are you going to require sponsorship now or in the future? 
+are you going to require sponsorship now or in the future?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"do you have experience programming in angular v8?
+do you have experience programming in angular v8?
+required
+yes
+no
+please make a selection",Yes
+"do you have experience programming in angular v8?
+do you have experience programming in angular v8?
+required
+yes
+no",Yes
+"what are your salary expectations?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with quantitative analysis (finance)?
+enter a whole number between 0 and 99",4
+"after reviewing the job description, are you comfortable working a 6-month contract position? 
+after reviewing the job description, are you comfortable working a 6-month contract position?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you willing to work on epitec's w2?
+are you willing to work on epitec's w2?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with revenue cycle management?,6
+"this was 100% remote role, but candidates need to reside in ca only are you local to ca?
+this was 100% remote role, but candidates need to reside in ca only are you local to ca?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with u.s. gaap reporting?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with financial accounting erp?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with web app based solutions?
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have with etl?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with power bi?
+enter a decimal number larger than 0.0",5
+"do you have 3+ years of experience developing user interfaces, using oracle redwood ui framework.
+do you have 3+ years of experience developing user interfaces, using oracle redwood ui framework.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of it services and it consulting experience do you currently have?
+enter a whole number between 0 and 99",4
+"how many years of banking experience do you currently have?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with nosql?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with capital markets?,3
+"how many years of work experience do you have with sql database design?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with database development?,5
+"how many years of work experience do you have with reactive programming?
+enter a whole number between 0 and 99",5
+"-2 plus years in microsoft azure snowflake (or similar data warehouse) and snowflake, power bi, power apps and -1 year of experience in manufacturing or warehouse operations, do you have it ?
+-2 plus years in microsoft azure snowflake (or similar data warehouse) and snowflake, power bi, power apps and -1 year of experience in manufacturing or warehouse operations, do you have it ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"notice period as the requirement is immediate (less than 15 days)
+please enter a valid answer",2
+"current annual salary in rs
+please enter a valid answer",70000
+"expected salary annually in rs
+please enter a valid answer",70000
+"current location
+please enter a valid answer",2
+"experience in years on working on camunda - bpm
+please enter a valid answer",2
+"experience in years on working on spring boot
+please enter a valid answer",2
+"experience in years working on mongodb
+please enter a valid answer",2
+"total experience working on camunda, spring boot and mongodb together
+please enter a valid answer",2
+"how many years of experience do you have with google workspace?
+enter a decimal number larger than 0.0",6
+"are you local or cleveland or columbus oh? 
+are you local or cleveland or columbus oh?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have as a systems engineer?
+enter a decimal number larger than 0.0",5
+how many years of work experience do you have with jd edwards?,5
+"how many years of work experience do you have with microsoft publisher?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with etl tools
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with data warehouse
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have with security?
+enter a whole number between 0 and 99",4
+"are you open for w2 position? workable only for gc and usc consultant. 
+are you open for w2 position? workable only for gc and usc consultant.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"current security clearance
+current security clearance
+required
+       select an option
+       none
+       department of energy q clearance
+       department of energy l clearance
+       department of defense top secret clearance
+       department of defense secret clearance
+   please make a selection",2
+"due to the nature of the government contract requirements and/or clearances requirements, us citizenship is required. are you a us citizen?
+due to the nature of the government contract requirements and/or clearances requirements, us citizenship is required. are you a us citizen?
+required
+yes
+no
+please make a selection",Yes
+"due to the nature of the government contract requirements and/or clearances requirements, us citizenship is required. are you a us citizen?
+due to the nature of the government contract requirements and/or clearances requirements, us citizenship is required. are you a us citizen?
+required
+yes
+no",Yes
+"do you currently reside in ne ohio?
+do you currently reside in ne ohio?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with workflow design?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with onbase?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with kofax capture?
+enter a whole number between 0 and 99",3
+"how many years of pharmaceutical manufacturing experience do you currently have?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with r shiny?,3
+"do you have experience within any quality management systems: veeva vault, trackwise, or etc.? 
+do you have experience within any quality management systems: veeva vault, trackwise, or etc.?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with as400 administration?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with integrated development environments?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with java with rad (rational application developer) ?
+enter a decimal number larger than 0.0",6
+"mongo db developer exp 5+ must
+mongo db developer exp 5+ must
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"need citizen & resident 
+need citizen & resident
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"w2 only
+w2 only
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"how many years of work experience do you have with fileaid?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with sybase iq?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with banking?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with sybase products?,5
+"are you having experience with risk management?
+are you having experience with risk management?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with asp.net web api?,6
+"how many years of work experience do you have with microsoft office?
+enter a whole number between 0 and 99",6
+"have you completed the following level of education: high school diploma?
+have you completed the following level of education: high school diploma?
+required
+yes
+no
+please make a selection",Yes
+"have you completed the following level of education: high school diploma?
+have you completed the following level of education: high school diploma?
+required
+yes
+no",Yes
+"how many years of work experience do you have with system architecture?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with hmis?
+enter a whole number between 0 and 99",3
+"how many years of medical equipment manufacturing experience do you currently have?
+enter a whole number between 0 and 99",5
+"looking for local candidates to illinois?
+looking for local candidates to illinois?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"available start date
+please enter a valid answer",10/22/2024
+"current level of clearance
+current level of clearance
+required
+       select an option
+       none
+       public trust
+       secret
+       top secret
+       top secret/sci
+       top secret with poly
+   please make a selection",2
+"bachelor's degree in computer science, electronics engineering or other engineering or technical discipline
+bachelor's degree in computer science, electronics engineering or other engineering or technical discipline
+required
+yes
+no
+please make a selection",2
+"2+ years of relevant experience
+2+ years of relevant experience
+required
+yes
+no
+please make a selection",2
+"experience in conducting routine system administration tasks and logging data in system admin logs
+experience in conducting routine system administration tasks and logging data in system admin logs
+required
+yes
+no
+please make a selection",2
+"knowledge on a number of debugging protocols and processes
+knowledge on a number of debugging protocols and processes
+required
+yes
+no
+please make a selection",2
+"adept knowledge in it principles and practices, proficiency with microsoft office applications, and a basic understanding of system administration in a windows environment
+adept knowledge in it principles and practices, proficiency with microsoft office applications, and a basic understanding of system administration in a windows environment
+required
+yes
+no
+please make a selection",2
+"possessing the physical capability to handle demanding tasks such as lifting equipment up to 50 pounds and navigating through facility spaces to access and repair equipment.
+possessing the physical capability to handle demanding tasks such as lifting equipment up to 50 pounds and navigating through facility spaces to access and repair equipment.
+required
+yes
+no
+please make a selection",2
+"us citizen or green card holder
+us citizen or green card holder
+required
+yes
+no
+please make a selection",Yes
+"willing and able to get a public trust suitability clearance
+willing and able to get a public trust suitability clearance
+required
+yes
+no
+please make a selection",Yes
+"bachelor's degree in computer science, electronics engineering or other engineering or technical discipline
+bachelor's degree in computer science, electronics engineering or other engineering or technical discipline
+required
+yes
+no",2
+"2+ years of relevant experience
+2+ years of relevant experience
+required
+yes
+no",2
+"experience in conducting routine system administration tasks and logging data in system admin logs
+experience in conducting routine system administration tasks and logging data in system admin logs
+required
+yes
+no",2
+"knowledge on a number of debugging protocols and processes
+knowledge on a number of debugging protocols and processes
+required
+yes
+no",2
+"adept knowledge in it principles and practices, proficiency with microsoft office applications, and a basic understanding of system administration in a windows environment
+adept knowledge in it principles and practices, proficiency with microsoft office applications, and a basic understanding of system administration in a windows environment
+required
+yes
+no",2
+"possessing the physical capability to handle demanding tasks such as lifting equipment up to 50 pounds and navigating through facility spaces to access and repair equipment.
+possessing the physical capability to handle demanding tasks such as lifting equipment up to 50 pounds and navigating through facility spaces to access and repair equipment.
+required
+yes
+no",2
+"us citizen or green card holder
+us citizen or green card holder
+required
+yes
+no",Yes
+"willing and able to get a public trust suitability clearance
+willing and able to get a public trust suitability clearance
+required
+yes
+no",Yes
+"do you have experience with working on sustainability initiatives in your resume/profile?
+do you have experience with working on sustainability initiatives in your resume/profile?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with data mapping & integration initiatives in your resume/profile?
+do you have experience with data mapping & integration initiatives in your resume/profile?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"can you work directly with valere on w2? we cannot sponsor visas.
+can you work directly with valere on w2? we cannot sponsor visas.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"how many years of data analyst experience do you have?
+enter a decimal number larger than 0.0",6
+"how many years of value based care experience do you have?
+enter a decimal number larger than 0.0",4
+"how many years of project management experience do you have?
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have with medallia?
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with experience management?
+enter a decimal number larger than 0.0",4
+"do you have following certificate : mpc certified (mpc = medallia product certificate)?
+do you have following certificate : mpc certified (mpc = medallia product certificate)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many maximum tickets you have handled in a month?
+enter a decimal number larger than 0.0",3
+"do you have professional experience with ms playwright? 
+do you have professional experience with ms playwright?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with project managers?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with electrical and instrumentation engineering (eie)?
+enter a whole number between 0 and 99",5
+"w2 ok?
+w2 ok?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"do you have experience with lambda?
+do you have experience with lambda?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with sql server management studio?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with wireless engineering?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with interconnection?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with power flow?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with transmission?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with junit?
+enter a whole number between 0 and 99",4
