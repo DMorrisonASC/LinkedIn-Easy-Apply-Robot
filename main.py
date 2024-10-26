@@ -941,7 +941,6 @@ class EasyApplyBot:
                                 
 
                         if closest_match:
-                            WebDriverWait(field, 20).until(EC.visibility_of_element_located(closest_match))
                             try:
                                 closest_match.click()  # Use click for better simulation
                                 log.info(f"Closest select element chosen: {closest_match.get_attribute('value')}")
@@ -1125,7 +1124,7 @@ class EasyApplyBot:
         elif ("eligible" in question or "able" in question) and "clearance" in question:
             answer = "Yes"
         elif ("have" in question or "obtain" in question or "obtained" in question) and "clearance" in question:
-            answer = "Yes"
+            answer = "No"
         elif ("US" in question or "U.S." in question or "green" in question ) and ("citizen" in question or "card" in question):
             answer = "Yes"
         elif ("privacy policy" in question):
@@ -1170,6 +1169,8 @@ class EasyApplyBot:
         # Other personal questions
         elif "currently reside" in question:
             answer = "Yes"
+        elif "state" in question:
+            answer = self.state
         elif ("us citizen" in question or "u.s. citizen" in question) and "clearance" in question:
             answer = "Yes"
         elif "salary" in question:
@@ -1188,8 +1189,6 @@ class EasyApplyBot:
             answer = "I am not"
         elif "phone" in question and ("mobile" in question or "number" in question):
             answer = self.phone_number
-
-
 
         # General affirmative questions
         elif "do you" in question or "did you" in question or "have you" in question or "are you" in question:
