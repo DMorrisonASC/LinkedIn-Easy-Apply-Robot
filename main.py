@@ -73,12 +73,9 @@ def setupLogger() -> None:
 class EasyApplyBot:
     setupLogger()
     # MAX_SEARCH_TIME is 10 hours by default.
-    MAX_SEARCH_TIME = 60 * 20 # Modify it to increase search time
+    MAX_SEARCH_TIME = 60 * 10 # Modify it to increase search time
 
     def __init__(self,
-                #  username,
-                #  password,
-                #  phone_number,
                  salary,
                  rate,
                  person,
@@ -409,7 +406,7 @@ class EasyApplyBot:
 
                                 if jobID.isdigit():
                                     # Ensure the job ID is unique before adding it for processing.
-                                    if jobID not in jobIDs:
+                                    if "Easy Apply" in link.text:
                                         jobIDs[jobID] = "To be processed"
                                         self.add_job_link(link.text, f"https://www.linkedin.com/jobs/view/{jobID}/")
 
@@ -653,6 +650,12 @@ class EasyApplyBot:
                     for element in elements:
                         button = self.wait.until(EC.element_to_be_clickable(element))
                         button.click()
+
+                elif len(self.get_elements("upload_cover")) > 0:
+                    elements = self.get_elements("upload_cover")
+                    for element in elements:
+                        button = self.wait.until(EC.element_to_be_clickable(element))
+                        button.send_keys(self.uploads["cover_letter"])
 
                 elif len(self.get_elements("continue_applying")) > 0:
                     elements = self.get_elements("continue_applying")
@@ -1103,14 +1106,16 @@ class EasyApplyBot:
             answer = "10"
         elif "hourly" in question and ("rate" in question or "salary" in question or "what" in question):
             answer = self.rate
+        elif "why" in question and ("position" in question or "role" in questions):
+            answer = "Good glassdoor reviews and the workers I talked to love their jobs"
         elif "do you" in question and "experience" in question:
             answer = "Yes"
         elif "how did you hear" in question:
             answer = "Other"
         elif "refer" in question or "referred" in question:
             answer = "N/A"
-        elif "why" in question and ("position" in question or "role" in questions):
-            answer = "Good glassdoor reviews and the workers I talked to love their jobs"
+        elif "can you start" in question:
+            answer = "Yes"
 
         # Work authorization questions
         elif ("legal" in question or "legally" in question) and ("work" in question or "author" in question):
@@ -1173,7 +1178,7 @@ class EasyApplyBot:
             answer = self.state
         elif ("us citizen" in question or "u.s. citizen" in question) and "clearance" in question:
             answer = "Yes"
-        elif "salary" in question:
+        elif "salary" in question or "annual compensation" in question:
             answer = self.salary
         elif "hourly" in question:
             answer = "40"
