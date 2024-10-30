@@ -1,4 +1,3 @@
-# Author: Daeshaun Morrison, modified from: https://github.com/nicolomantini/LinkedIn-Easy-Apply-Bot
 import csv
 import logging
 import traceback
@@ -406,7 +405,7 @@ class EasyApplyBot:
 
                                 if jobID.isdigit():
                                     # Ensure the job ID is unique before adding it for processing.
-                                    if "Easy Apply" in link.text:
+                                    if "Easy Apply" in link.text and jobID not in jobIDs:
                                         jobIDs[jobID] = "To be processed"
                                         self.add_job_link(link.text, f"https://www.linkedin.com/jobs/view/{jobID}/")
 
