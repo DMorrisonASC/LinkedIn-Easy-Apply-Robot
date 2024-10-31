@@ -31,7 +31,13 @@ person:
     street: 
     city: 
     state: 
-    zip: 
+    zip:
+  demographic: # "Yes" and "No" are booleans in yaml, surround them in quotes
+    race: 
+    gender: 
+    disability: 
+    veteran: 
+    lgbtq: 
 
 profile_path: '' # Use it to log into a specific chrome profile. Ex: 'C:\Users\<user>\AppData\Local\Google\Chrome\User Data\Profile 1'
 
