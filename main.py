@@ -99,6 +99,11 @@ class EasyApplyBot:
         self.linkedin = person['social_media']['linkedin']
         self.portfolio = person['social_media']['portfolio']
         self.phone_number = person['social_media']['phone_number']
+        self.race = person['demographic']['race']
+        self.gender = person['demographic']['gender']
+        self.disability = person['demographic']['disability']
+        self.veteran = person['demographic']['veteran']
+        self.lgbtq = person['demographic']['lgbtq']
         self.profile_path = profile_path
         self.filename: str = filename
         self.options = self.browser_options()
@@ -1157,7 +1162,7 @@ class EasyApplyBot:
 
         # Disability and drug test-related questions
         elif "disability" in question:
-            answer = "No"
+            answer = self.disability
         elif "drug test" in question:
             if "positive" in question:
                 answer = "No"
@@ -1179,18 +1184,14 @@ class EasyApplyBot:
             answer = "Yes"
         elif "salary" in question or "annual compensation" in question:
             answer = self.salary
-        elif "hourly" in question:
-            answer = "40"
         elif "gender" in question:
-            answer = "Male"
-        elif "race" in question:
-            answer = "White"
+            answer = self.gender
+        elif "race" in question or "ethnicity" in question:
+            answer = self.race
         elif "lgbtq" in question:
-            answer = "No"
-        elif "ethnicity" in question or "nationality" in question:
-            answer = "White"
+            answer = self.lgbtq
         elif "government" in question or "veteran" in question:
-            answer = "I am not"
+            answer = self.veteran
         elif "phone" in question and ("mobile" in question or "number" in question):
             answer = self.phone_number
 

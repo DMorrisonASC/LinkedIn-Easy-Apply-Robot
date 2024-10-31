@@ -16510,3 +16510,472 @@ required
        yes
        no
    please enter a valid answer",Yes
+"experience with any streaming applications such as kafka, spark streaming, azure event hub?
+experience with any streaming applications such as kafka, spark streaming, azure event hub?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"do you have a proven background in distributed computing, etl development, and large-scale data processing 
+do you have a proven background in distributed computing, etl development, and large-scale data processing
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you able to work as a w2 contractor? (c2c is not available)
+are you able to work as a w2 contractor? (c2c is not available)
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you a us citizen or green card currently living in the united states and able to work w2 as a valere employee?
+are you a us citizen or green card currently living in the united states and able to work w2 as a valere employee?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with react, react native, c#, javascript, typescript, .net framework, fhir infrastructure, and backend development with rest apis?
+do you have experience with react, react native, c#, javascript, typescript, .net framework, fhir infrastructure, and backend development with rest apis?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with crypto?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with snowflake?
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have with customer onboarding?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with cmms?
+enter a whole number between 0 and 99",5
+"do you have experience in the data center industry?
+do you have experience in the data center industry?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of provisioning experience do you have?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with wordpress?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with web design?
+enter a whole number between 0 and 99",5
+"do you currently live within 25 miles of woodbridge, nj?
+do you currently live within 25 miles of woodbridge, nj?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have in creating medium voltage cable specifications for both internal use and customer use? specifically, mv90 and mv105 products ranging from 5kv up to 46kv.
+enter a decimal number larger than 0.0",5
+"how many years of experience do you have in working with internal production teams or external suppliers in the design, development, and production of mv90 and mv105 products?
+enter a decimal number larger than 0.0",5
+"what size of projects have you worked on in both dollars and linear footage as it relates to mv90 and mv105 products?
+enter a decimal number larger than 0.0",5
+"do you have experience working in the wire and cable industry? 
+do you have experience working in the wire and cable industry?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"what is your current location?
+please enter a valid answer",2
+"how many years of experience do you have as an it system analyst?
+enter a decimal number larger than 0.0",5
+"do you have experience with the ehr credible?
+do you have experience with the ehr credible?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you well versed in sql and excel?
+are you well versed in sql and excel?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you familiar with and do you utilize ticketing systems?
+are you familiar with and do you utilize ticketing systems?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with regulatory examinations?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with u.s. office of foreign assets control (ofac)?
+enter a whole number between 0 and 99",6
+"do you have experience in the sanctions compliance field?
+do you have experience in the sanctions compliance field?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"local to ny/nj?
+local to ny/nj?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"are you h1b visa holder?
+are you h1b visa holder?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with ansible?,3
+"please mention your work authorization status using the following codes: usc: 0 | gc: 1 | gc_ead: 2 | h1b: 3 | h4: 4 | tn: 5 | opt - 6 | others: 7
+please mention your work authorization status using the following codes: usc: 0 | gc: 1 | gc_ead: 2 | h1b: 3 | h4: 4 | tn: 5 | opt - 6 | others: 7
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have in yaml?
+enter a decimal number larger than 0.0",4
+"do you have any experience with new relic?
+do you have any experience with new relic?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"we only accept w2, are you willing to work on w2? 
+we only accept w2, are you willing to work on w2?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have us citizenship or a greencard
+do you have us citizenship or a greencard
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"payrate: $23/hr on w2
+payrate: $23/hr on w2
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"how many years of work experience do you have with client services?
+enter a whole number between 0 and 99",5
+"this role is primarily remote, but requires being able to attend occasional meetings in atlanta. are you local to the atlanta area? 
+this role is primarily remote, but requires being able to attend occasional meetings in atlanta. are you local to the atlanta area?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with financial planning and analysis (fp&a)?
+enter a whole number between 0 and 99",3
+"how many years of biotechnology research experience do you currently have?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with onestream?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with biological data analysis?
+enter a whole number between 0 and 99",6
+"do you possess prior retail fit out construction experience?
+do you possess prior retail fit out construction experience?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you comfortable working full time onsite at jfk airport in queens, ny?
+are you comfortable working full time onsite at jfk airport in queens, ny?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience in substation design and engineering of high voltage substation projects do you have?
+enter a decimal number larger than 0.0",5
+"do you have your pmp and/or p.e license? 
+do you have your pmp and/or p.e license?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience assisting with building out bid packages? 
+do you have experience assisting with building out bid packages?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you comfortable with light travel? 
+are you comfortable with light travel?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have the epa 608 certification? 
+do you have the epa 608 certification?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with refrigeration coolers, or ice machines? 
+do you have experience with refrigeration coolers, or ice machines?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience within commercial hvac maintenance? 
+do you have experience within commercial hvac maintenance?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have in application security?
+enter a decimal number larger than 0.0",6
+"do you have experience working with cloud platforms like aws and azure, including cloud security features? 
+do you have experience working with cloud platforms like aws and azure, including cloud security features?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you worked with security tools like siem (devo), soar (rapid7, devo), or edr/container security (crowdstrike)? 
+have you worked with security tools like siem (devo), soar (rapid7, devo), or edr/container security (crowdstrike)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with object-oriented programming (oop)?
+enter a whole number between 0 and 99",6
+"are you able to work on w2 in the us without any sponsorship now or in the future?
+are you able to work on w2 in the us without any sponsorship now or in the future?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"how many years of work experience do you have with telephone support?
+enter a whole number between 0 and 99",4
+how many years of legal services experience do you currently have?,4
+"how many years of work experience do you have with enterprise risk management?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with due diligence?
+enter a whole number between 0 and 99",4
+"are you comfortable working the following hours/times: tuesday-saturday, may rarely include weekends and public holidays as well as the occasional morning/evening shift.
+are you comfortable working the following hours/times: tuesday-saturday, may rarely include weekends and public holidays as well as the occasional morning/evening shift.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with application security?
+enter a whole number between 0 and 99",3
+"how many years do you have with github advanced security?
+enter a decimal number larger than 0.0",4
+"how many years of experience do you have with onetrust?
+enter a decimal number larger than 0.0",6
+"how many years do you have with solution engineering for privacy products?
+enter a decimal number larger than 0.0",4
+"how many years of experience do you have supporting the development and improvement of privacy and security programs, such as data protection impact assessments and privacy by design.
+enter a decimal number larger than 0.0",6
+how many years of work experience do you have with azure cli?,6
+"what is your expected hourly compensation?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with program coordination?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with engagement management?
+enter a whole number between 0 and 99",5
+"how many years of substation protection & controls experience do you have?
+enter a decimal number larger than 0.0",3
+"are you okay with 50% travel out of state? 
+are you okay with 50% travel out of state?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",NY
+how many years of work experience do you have with sap tm?,5
+"how many years of work experience do you have with msp practitioner?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with connectwise manage?
+enter a whole number between 0 and 99",4
+"do you have any masters degree ?
+do you have any masters degree ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with customer facing roles?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with grafana?,3
+"how many years of work experience do you have with aws cloudformation?
+enter a whole number between 0 and 99",4
+"python
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with report writing?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with sustainability?
+enter a whole number between 0 and 99",4
+"do you have 10 years of experience in devops?
+do you have 10 years of experience in devops?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you live in the united states?
+do you live in the united states?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",NY
+"do you have amazon ec2 experience managing lambda, clusters, and vpc?
+do you have amazon ec2 experience managing lambda, clusters, and vpc?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have recent experience in serverless event-driven architecture with aws lambda and aws eventbridge?
+do you have recent experience in serverless event-driven architecture with aws lambda and aws eventbridge?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"will you now, or in the future, need immigration sponsorship in order to work in the u.s.?
+will you now, or in the future, need immigration sponsorship in order to work in the u.s.?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"do you have field commissioning experience?
+do you have field commissioning experience?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have any experience working with sorters?
+do you have any experience working with sorters?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you ever worked with vfd's or servo drives?
+have you ever worked with vfd's or servo drives?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience troubleshooting electrical systems?
+do you have experience troubleshooting electrical systems?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you available to travel up to 40-60%?
+are you available to travel up to 40-60%?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience programming plc code from scratch?
+do you have experience programming plc code from scratch?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with conveyors?
+do you have experience with conveyors?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with programmable logic controller (plc)?
+enter a decimal number larger than 0.0",6
+"have you ever worked on plc's for rockwell controllogix?
+have you ever worked on plc's for rockwell controllogix?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with distributed systems?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with itil?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with (ham)/(sam)?
+enter a decimal number larger than 0.0",6
+"how many years of proven experience do you have with intellinum, including custom development for oracle wms integration.
+enter a decimal number larger than 0.0",4
+"how many years of experience do you have with oracle wms(warehouse management systems) module and its functional and technical components.
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with workforce management?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with sabre?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with magicdraw?
+enter a whole number between 0 and 99",4
+"do you have the following license or certification: faa license?
+do you have the following license or certification: faa license?
+required
+yes
+no
+please make a selection",Yes
+"how many years of work experience do you have with gas turbines?
+enter a whole number between 0 and 99",5
+"do you have the following license or certification: faa license?
+do you have the following license or certification: faa license?
+required
+yes
+no",Yes
+"how many years of work experience do you have with hec-hms?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with hec-ras?
+enter a whole number between 0 and 99",6
+"do you live in either the state of colorado or new mexico? 
+do you live in either the state of colorado or new mexico?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",NY
+"are you certified in epic bridges?
+are you certified in epic bridges?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with looker (software)?
+enter a whole number between 0 and 99",4
