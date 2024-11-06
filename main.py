@@ -89,6 +89,7 @@ class EasyApplyBot:
 
         self.uploads = uploads
         self.salary = salary
+        self.rate = rate
         self.first_name = person['name']['first_name']
         self.last_name = person['name']['last_name']
         self.street = person['address']['street']
@@ -412,7 +413,9 @@ class EasyApplyBot:
                                     # Ensure the job ID is unique before adding it for processing.
                                     if "Easy Apply" in link.text and jobID not in jobIDs:
                                         jobIDs[jobID] = "To be processed"
-                                        self.add_job_link(link.text, f"https://www.linkedin.com/jobs/view/{jobID}/")
+                                        today = date.today()
+                                        posted_date = today.strftime("%m/%d/%Y")
+                                        self.add_job_link(f"Posting({posted_date}): " + link.text, f"https://www.linkedin.com/jobs/view/{jobID}/")
 
                                 else:
                                     log.debug(f"Job ID not found, It is likely a 'promoted' job? {link.text}")
