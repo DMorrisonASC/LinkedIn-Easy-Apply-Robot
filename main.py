@@ -167,15 +167,18 @@ class EasyApplyBot:
         self.qa_file = Path("qa.csv")
         self.answers = {}
 
-        # If qa file exists, load it
-        if self.qa_file.is_file():
-            df = pd.read_csv(self.qa_file)
-            for index, row in df.iterrows():
-                self.answers[row['Question']] = row['Answer']
-        # If qa file does not exist, create it with columns "Question" and "Answer"
+        # Check if the qa file exists and is not empty
+        if self.qa_file.is_file() and self.qa_file.stat().st_size > 0:
+            # Load the existing file into a dictionary
+            try:
+                df = pd.read_csv(self.qa_file)
+                self.answers = dict(zip(df['Question'], df['Answer']))
+            except Exception as e:
+                print(f"Error reading file: {e}")
+                self.create_empty_csv()
         else:
-            df = pd.DataFrame(columns=["Question", "Answer"])
-            df.to_csv(self.qa_file, index=False, encoding='utf-8')
+            # Create a new file with headers "Question" and "Answer"
+            self.create_empty_csv()
 
         # Initialize the applications file
         self.applications_file = Path("applications.csv")
@@ -189,6 +192,12 @@ class EasyApplyBot:
             df = pd.DataFrame(data)
             # Write only the header to a CSV file (this will create an empty file with headers)
             df.head(0).to_csv('applications.csv', index=False)
+
+    def create_empty_csv(self):
+        """Creates an empty CSV file with the correct headers."""
+        df = pd.DataFrame(columns=["Question", "Answer"])
+        df.to_csv(self.qa_file, index=False, encoding='utf-8')
+        print("Created a new qa.csv file with headers.")
 
     def browser_options(self):
         """
