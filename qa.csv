@@ -1,0 +1,108 @@
+Question,Answer
+"how many years of work experience do you have with voice over ip (voip)?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with five9?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with application development?
+enter a whole number between 0 and 99",3
+"will you now, or in the future, require sponsorship for employment visa status (e.g. h-1b visa status)?
+will you now, or in the future, require sponsorship for employment visa status (e.g. h-1b visa status)?
+required
+yes
+no
+please make a selection",No
+"will you now, or in the future, require sponsorship for employment visa status (e.g. h-1b visa status)?
+will you now, or in the future, require sponsorship for employment visa status (e.g. h-1b visa status)?
+required
+yes
+no",No
+"have you completed the following level of education: bachelor's degree?
+have you completed the following level of education: bachelor's degree?
+required
+yes
+no",Yes
+"do you have the following license or certification: application developer?
+do you have the following license or certification: application developer?
+required
+yes
+no
+please make a selection",Yes
+"do you have at least 3-4 years of experience as a servicenow developer? 
+do you have at least 3-4 years of experience as a servicenow developer?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience working on grc/irm projects?
+do you have experience working on grc/irm projects?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have active cad and csa servicenow certifications?
+do you have active cad and csa servicenow certifications?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have the following license or certification: application developer?
+do you have the following license or certification: application developer?
+required
+yes
+no",Yes
+"how many years of work experience do you have with c#?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with radio frequency (rf) engineering?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with typescript?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with node.js?,6
+"how long have you worked with golang?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with blockchain?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with express.js?,5
+"how many years of work experience do you have with back-end web development?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with c++?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with c (programming language)?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with embedded systems?
+enter a whole number between 0 and 99",3
+"what is your level of proficiency in english?
+what is your level of proficiency in english?
+required
+       select an option
+       none
+       conversational
+       professional
+       native or bilingual
+   please make a selection",Native
+"do you have a valid driver's license?
+do you have a valid driver's license?
+required
+yes
+no",Yes
+"how many years of work experience do you have with pega prpc?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with representational state transfer (rest)?
+enter a whole number between 0 and 99",6
+"are you comfortable working in a hybrid setting?
+are you comfortable working in a hybrid setting?
+required
+yes
+no
+please make a selection",Yes
+"are you comfortable working in a hybrid setting?
+are you comfortable working in a hybrid setting?
+required
+yes
+no",Yes
+"how many years of work experience do you have with soap?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with programming?
+enter a whole number between 0 and 99",5
