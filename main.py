@@ -116,6 +116,7 @@ class EasyApplyBot:
         self.experience_level = experience_level
         self.time_filter = time_filter
         self.visited_IDs = {}
+        self.zoom_level = 90
 
         # First message
         log.info("Welcome to Easy Apply Bot")
@@ -141,6 +142,8 @@ class EasyApplyBot:
         self.locator = {
             "human_verification" : (By.XPATH, "//h1[text()=\"Let’s do a quick security check\"]"),
             "continue_applying": (By.XPATH, ".//button[contains(., 'Continue applying')]"),
+            "job_title": (By.XPATH, "//div[contains(@class, 'job-details-jobs-unified-top-card__job-title')]/h1"),
+            "company_name": (By.XPATH, "//div[contains(@class, 'job-details-jobs-unified-top-card__company-name')]/a"),
             "next": (By.CSS_SELECTOR, "button[aria-label='Continue to next step']"),
             "review": (By.CSS_SELECTOR, "button[aria-label='Review your application']"),
             "submit": (By.CSS_SELECTOR, "button[aria-label='Submit application']"),
@@ -199,6 +202,13 @@ class EasyApplyBot:
         df.to_csv(self.qa_file, index=False, encoding='utf-8')
         print("Created a new qa.csv file with headers.")
 
+    def set_browser_zoom(self):
+        """
+        Sets the zoom level for the browser using JavaScript execution.
+        """
+        script = f"document.body.style.zoom='{self.zoom_level}%'"
+        self.browser.execute_script(script)
+
     def browser_options(self):
         """
         Configures Chrome browser options for the web driver, including settings for window size, 
@@ -231,6 +241,7 @@ class EasyApplyBot:
         # Remove certain flags to avoid being easily detectable as WebDriver
         options.add_argument("--disable-blink-features")
         options.add_argument("--disable-blink-features=AutomationControlled")
+        options.add_argument("--force-device-scale-factor=0.8")
 
         # Uncomment if debugging locally via Chrome remote debugging port
         # options.add_argument(r'--remote-debugging-port=9222')
@@ -381,7 +392,7 @@ class EasyApplyBot:
                     scrollresults = self.get_elements("search")
 
                     # Scroll through job listings to load more results.
-                    for i in range(300, 5000, 100):
+                    for i in range(300, 2000, 100):
                         self.browser.execute_script("arguments[0].scrollTo(0, {})".format(i), scrollresults[0])
                         time.sleep(0.5)  # Wait for new elements to load.
 
@@ -422,12 +433,9 @@ class EasyApplyBot:
                                     # Ensure the job ID is unique before adding it for processing.
                                     if "Easy Apply" in link.text and jobID not in jobIDs:
                                         jobIDs[jobID] = "To be processed"
-                                        today = date.today()
-                                        posted_date = today.strftime("%m/%d/%Y")
-                                        self.add_job_link(f"Posting({posted_date}): " + link.text, f"https://www.linkedin.com/jobs/view/{jobID}/")
 
                                 else:
-                                    log.debug(f"Job ID not found, It is likely a 'promoted' job? {link.text}")
+                                    log.debug(f"Job ID not found, It is likely a 'promoted' job; It doesn't fit the current query {link.text}")
                                     continue
                     
                     # If there are new jobs to process, apply to them.
@@ -493,23 +501,39 @@ class EasyApplyBot:
         self.get_job_page(jobID)
 
         # Let the page fully load before interacting with it.
-        time.sleep(1)
+        time.sleep(2)
+        # self.set_browser_zoom()
 
         # Try to find the Easy Apply button on the job page.
         button = self.get_easy_apply_button()
     
-        # Skip job if the title contains blacklisted keywords.
         if button is not False:
+            # Skip job if the title contains blacklisted keywords.
             if any(word in self.browser.title for word in blackListTitles):
                 log.info('Skipping this application, a blacklisted keyword was found in the job position')
                 string_easy = "~ Contains blacklisted keyword"
                 result = False
             else:
+                job_element = self.get_elements("job_title")[0] if self.is_present(self.locator["job_title"]) else None
+                if job_element:
+                    job_title = job_element.text
+                else:
+                    job_title = "No title available"
+                    
+                company_element = self.get_elements("company_name")[0] if self.is_present(self.locator["job_title"]) else None
+                if company_element:
+                    company_name = company_element.text
+                else:
+                    company_name = "No title available"
+
+
+                posted_date = date.today().strftime("%m/%d/%Y")
+                # posted_date = today.
                 # Easy Apply button is available, so click it to proceed.
                 string_easy = "~ Has Easy Apply Button. Clicking now!"
                 button.click()
 
-                clicked = True
+                # clicked = True
                 time.sleep(1)
 
                 # Fill out the necessary fields on the Easy Apply form.
@@ -519,6 +543,7 @@ class EasyApplyBot:
                 result: bool = self.send_resume()
                 if result:
                     string_easy = "~ Sent Resume!"
+                    self.add_job_link(posted_date, job_title, company_name, jobID)
                 else:
                     string_easy = "~ Did not apply: Failed to send Resume"
 
@@ -542,6 +567,7 @@ class EasyApplyBot:
         job: str = 'https://www.linkedin.com/jobs/view/' + str(jobID)
         self.browser.get(job)
         self.job_page = self.load_page(sleep=0.5)
+
         return self.job_page
 
     def load_page(self, sleep=1):
@@ -1008,10 +1034,10 @@ class EasyApplyBot:
                     time.sleep(1)
                     date_field.click()
                     time.sleep(3)
-                    button = WebDriverWait(field, 15).until(
-                        EC.element_to_be_clickable((By.XPATH, ".//button[contains(@aria-label, 'This is today')]"))
-                    )
-                    button.click()
+
+                    today_button = self.get_elements(By.XPATH, ".//button[contains(@aria-label, 'This is today')]")[0]
+                    
+                    self.browser.execute_script("arguments[0].click();", today_button)
 
                     log.info(f"Date input filled with value: {answer}")
                     
@@ -1227,12 +1253,13 @@ class EasyApplyBot:
 
         return str(answer)
 
-    def add_job_link(self, job_name, job_posting):
+    def add_job_link(self, date, title, company, ID):
+        desc = f"Posting({date}): {title} FROM {company}"
         try:
-            # Wrap job_name and job_posting in lists to create one row
+            # Wrap desc and link in lists to create one row
             new_data = pd.DataFrame({
-                "company": [job_name],
-                "link": [job_posting]
+                "company": [desc],
+                "link": [f"https://www.linkedin.com/jobs/view/{ID}/"]
             })
 
             # Append to the CSV
