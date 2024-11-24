@@ -163,7 +163,7 @@ class EasyApplyBot:
             "location_select": (By.XPATH, ".//input[@aria-autocomplete='list']"),
             "text_area": (By.TAG_NAME, "textarea"),
             "2fa_oneClick": (By.ID, 'reset-password-submit-button'),
-            "easy_apply_button": (By.XPATH, '//button[contains(@class, "jobs-apply-button")]'),
+            "easy_apply_button": (By.XPATH, '//button[contains(translate(normalize-space(.), "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz"), "easy apply")]'),
         }
 
         # Initialize questions and answers file
@@ -531,7 +531,7 @@ class EasyApplyBot:
                 # posted_date = today.
                 # Easy Apply button is available, so click it to proceed.
                 string_easy = "~ Has Easy Apply Button. Clicking now!"
-                button.click()
+                self.browser.execute_script("arguments[0].click();", button)
 
                 # clicked = True
                 time.sleep(1)
@@ -589,19 +589,27 @@ class EasyApplyBot:
         EasyApplyButton = False
         try:
             buttons = self.get_elements("easy_apply_button")
-
             for button in buttons:
-                if "Easy Apply" in button.text:
-                    EasyApplyButton = button
-                    self.wait.until(EC.element_to_be_clickable(EasyApplyButton))
-                else:
-                    log.debug("Easy Apply button not found")
-            
-        except Exception as e: 
-            print("Exception:",e)
-            log.debug("Easy Apply button not found")
+                # Capture the button text
+                button_text = button.get_attribute("innerText")
+                print(f"Raw button text: {repr(button_text)}")
 
+                # Normalize and check for a match
+                cleaned_text = " ".join(button_text.lower().split())
+                print(f"Normalized button text: {repr(cleaned_text)}")
+
+                if "easy apply" in cleaned_text:
+                    print("Found Easy Apply button!")
+                    EasyApplyButton = button
+
+                else:
+                    print(f"Button text did not match: {repr(cleaned_text)}")
+
+        except Exception as e:
+            log.error(f"Error finding Easy Apply button: {str(e)}")
+            log.error(traceback.format_exc())
         return EasyApplyButton
+
 
     def fill_out_fields(self):
         try:

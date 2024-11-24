@@ -6545,3 +6545,3255 @@ required
        yes
        no
    please enter a valid answer",black
+"are you comfortable with the payment structure, where compensation will initially be tied to client acquisitions and transition to fixed salaries as we establish a stable subscriber base?
+are you comfortable with the payment structure, where compensation will initially be tied to client acquisitions and transition to fixed salaries as we establish a stable subscriber base?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with netsuite?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with software development life cycle (sdlc)?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with qa engineering?,5
+"how many years of work experience do you have with pyspark?
+enter a whole number between 0 and 99",5
+"sql
+enter a decimal number larger than 0.0",5
+"etl testing
+enter a decimal number larger than 0.0",3
+"any test automation tools experience
+enter a decimal number larger than 0.0",4
+"any scheduler testing experience
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with nuclear energy?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with mechanical engineering?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with vehicles?,5
+"how many years of work experience do you have with automotive?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with electric vehicles?
+enter a whole number between 0 and 99",5
+"how many years of project management experience do you currently have?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with tax accounting?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with personal income tax returns?
+enter a whole number between 0 and 99",4
+"how many years of appliances, electrical, and electronics manufacturing experience do you currently have?",6
+"how many years of work experience do you have with quickbase?
+enter a whole number between 0 and 99",4
+"what is your level of proficiency in french?
+what is your level of proficiency in french?
+required
+       select an option
+       none
+       conversational
+       professional
+       native or bilingual
+   please make a selection",2
+"are you authorized to work lawfully in the united states for oscar?
+are you authorized to work lawfully in the united states for oscar?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"do you now, or will you in the future, require sponsorship for employment visa status (e.g., h-1b visa status, etc.) to work legally for oscar in the united states?
+do you now, or will you in the future, require sponsorship for employment visa status (e.g., h-1b visa status, etc.) to work legally for oscar in the united states?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"do you acknowledge the work location expectations listed on this job posting?
+do you acknowledge the work location expectations listed on this job posting?
+required
+       select an option
+       yes, i acknowledge the work location expectations for this role.
+       no, i do not acknowledge the work location expectation for this role.
+   please make a selection",Yes
+how did you hear about this job?,Other
+"how many years of work experience do you have with data governance?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with data quality?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with groovy?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with oracle cloud?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with demand management?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with production schedules?
+enter a whole number between 0 and 99",3
+"business analysis expertise: 5+ years in business analysis or a related role, including experience in application usage and investment analysis projects.
+enter a decimal number larger than 0.0",5
+"data analysis tools: proficiency in excel, power bi, tableau, or similar platforms for data analysis, visualization, and reporting.
+enter a decimal number larger than 0.0",4
+"analytical skills
+enter a decimal number larger than 0.0",5
+"familiarity with methodologies such as agile and waterfall.
+familiarity with methodologies such as agile and waterfall.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"experience using tools like jira and ms project for managing and tracking project progress.
+experience using tools like jira and ms project for managing and tracking project progress.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"hands-on experience analyzing large portfolios of applications, identifying opportunities for consolidation, optimization, or elimination.
+hands-on experience analyzing large portfolios of applications, identifying opportunities for consolidation, optimization, or elimination.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",https://dmorrisonasc.github.io/Daeshaun_Portfolio_WP/
+"nyc, ny hybrid but local to ny
+nyc, ny hybrid but local to ny
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"do you have experience with aashtoware?
+enter a decimal number larger than 0.0",5
+"are you an independent visa holder and comfortable to work on w2?
+are you an independent visa holder and comfortable to work on w2?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have with oic?
+enter a decimal number larger than 0.0",4
+"do you have experience with fast formula?
+do you have experience with fast formula?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with aashto?
+enter a whole number between 0 and 99",6
+"do you have experience of aashtoware project development?
+do you have experience of aashtoware project development?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with sql?
+do you have experience with sql?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with microsoft 365?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with change management?,6
+"how many years of work experience do you have with microsoft applications?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with cyberark?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with windows programming?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with jquery?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with operational efficiency?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with communication?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with machinery repair?
+enter a whole number between 0 and 99",6
+"how many years of food and beverage manufacturing experience do you currently have?
+enter a whole number between 0 and 99",4
+"school
+school
+required
+       select an option
+       abraham baldwin agricultural college
+       academy of art university
+       acadia university
+       adams state university
+       adelphi university
+       adrian college
+       adventist university of health sciences
+       agnes scott college
+       aib college of business
+       alaska pacific university
+       albany college of pharmacy and health sciences
+       albany state university
+       albertus magnus college
+       albion college
+       albright college
+       alderson broaddus university
+       alfred university
+       alice lloyd college
+       allegheny college
+       allen college
+       allen university
+       alliant international university
+       alma college
+       alvernia university
+       alverno college
+       amberton university
+       american academy of art
+       american indian college of the assemblies of god
+       american intercontinental university
+       american international college
+       american jewish university
+       american public university system
+       american university
+       american university in bulgaria
+       american university in cairo
+       american university of beirut
+       american university of paris
+       american university of puerto rico
+       amherst college
+       amridge university
+       anderson university
+       andrews university
+       angelo state university
+       anna maria college
+       antioch university
+       appalachian bible college
+       aquinas college
+       arcadia university
+       argosy university
+       arizona christian university
+       arizona state university - west
+       arkansas baptist college
+       arkansas tech university
+       armstrong atlantic state university
+       art academy of cincinnati
+       art center college of design
+       art institute of atlanta
+       art institute of colorado
+       art institute of houston
+       art institute of pittsburgh
+       art institute of portland
+       art institute of seattle
+       asbury university
+       ashford university
+       ashland university
+       assumption college
+       athens state university
+       auburn university - montgomery
+       augsburg college
+       augustana college
+       aurora university
+       austin college
+       alcorn state university
+       ave maria university
+       averett university
+       avila university
+       azusa pacific university
+       babson college
+       bacone college
+       baker college of flint
+       baker university
+       baldwin wallace university
+       christian brothers university
+       abilene christian university
+       arizona state university
+       auburn university
+       alabama a&m university
+       alabama state university
+       arkansas state university
+       baptist bible college
+       baptist bible college and seminary
+       baptist college of florida
+       baptist memorial college of health sciences
+       baptist missionary association theological seminary
+       bard college
+       bard college at simon's rock
+       barnard college
+       barry university
+       barton college
+       bastyr university
+       bates college
+       bauder college
+       bay path college
+       bay state college
+       bayamon central university
+       beacon college
+       becker college
+       belhaven university
+       bellarmine university
+       bellevue college
+       bellevue university
+       bellin college
+       belmont abbey college
+       belmont university
+       beloit college
+       bemidji state university
+       benedict college
+       benedictine college
+       benedictine university
+       benjamin franklin institute of technology
+       bennett college
+       bennington college
+       bentley university
+       berea college
+       berkeley college
+       berklee college of music
+       berry college
+       bethany college
+       bethany lutheran college
+       bethel college
+       bethel university
+       bi norwegian business school
+       binghamton university - suny
+       biola university
+       birmingham-southern college
+       bismarck state college
+       black hills state university
+       blackburn college
+       blessing-rieman college of nursing
+       bloomfield college
+       bloomsburg university of pennsylvania
+       blue mountain college
+       bluefield college
+       bluefield state college
+       bluffton university
+       boricua college
+       boston architectural college
+       boston conservatory
+       boston university
+       bowdoin college
+       bowie state university
+       bradley university
+       brandeis university
+       brandman university
+       brazosport college
+       brenau university
+       brescia university
+       brevard college
+       brewton-parker college
+       briar cliff university
+       briarcliffe college
+       bridgewater college
+       bridgewater state university
+       brigham young university - hawaii
+       brigham young university - idaho
+       brock university
+       bryan college
+       bryn athyn college of the new church
+       bryn mawr college
+       boston college
+       buena vista university
+       burlington college
+       bowling green state university
+       brown university
+       appalachian state university
+       brigham young university - provo
+       boise state university
+       bethune-cookman university
+       bryant university
+       cabarrus college of health sciences
+       cabrini college
+       cairn university
+       caldwell college
+       california baptist university
+       california college of the arts
+       california institute of integral studies
+       california institute of technology
+       california institute of the arts
+       california lutheran university
+       california maritime academy
+       california state polytechnic university - pomona
+       california state university - bakersfield
+       california state university - channel islands
+       california state university - chico
+       california state university - dominguez hills
+       california state university - east bay
+       california state university - fullerton
+       california state university - los angeles
+       california state university - monterey bay
+       california state university - northridge
+       california state university - san bernardino
+       california state university - san marcos
+       california state university - stanislaus
+       california university of pennsylvania
+       calumet college of st. joseph
+       calvary bible college and theological seminary
+       calvin college
+       cambridge college
+       cameron university
+       campbellsville university
+       canisius college
+       capella university
+       capital university
+       capitol college
+       cardinal stritch university
+       caribbean university
+       carleton college
+       carleton university
+       carlos albizu university
+       carlow university
+       carnegie mellon university
+       carroll college
+       carroll university
+       carson-newman university
+       carthage college
+       case western reserve university
+       castleton state college
+       catawba college
+       cazenovia college
+       cedar crest college
+       cedarville university
+       centenary college
+       centenary college of louisiana
+       central baptist college
+       central bible college
+       central christian college
+       central college
+       central methodist university
+       central penn college
+       central state university
+       central washington university
+       centre college
+       chadron state college
+       chamberlain college of nursing
+       chaminade university of honolulu
+       champlain college
+       chancellor university
+       chapman university
+       charles r. drew university of medicine and science
+       charter oak state college
+       chatham university
+       chestnut hill college
+       cheyney university of pennsylvania
+       chicago state university
+       chipola college
+       chowan university
+       christendom college
+       baylor university
+       central connecticut state university
+       central michigan university
+       charleston southern university
+       california state university - sacramento
+       california state university - fresno
+       campbell university
+       christopher newport university
+       cincinnati christian university
+       cincinnati college of mortuary science
+       city university of seattle
+       claflin university
+       claremont mckenna college
+       clarion university of pennsylvania
+       clark atlanta university
+       clark university
+       clarke university
+       clarkson college
+       clarkson university
+       clayton state university
+       clear creek baptist bible college
+       clearwater christian college
+       cleary university
+       college of william and mary
+       cleveland chiropractic college
+       cleveland institute of art
+       cleveland institute of music
+       cleveland state university
+       coe college
+       cogswell polytechnical college
+       coker college
+       colby college
+       colby-sawyer college
+       college at brockport - suny
+       college for creative studies
+       college of charleston
+       college of idaho
+       college of mount st. joseph
+       college of mount st. vincent
+       college of new jersey
+       college of new rochelle
+       college of our lady of the elms
+       college of saints john fisher & thomas more
+       college of southern nevada
+       college of st. benedict
+       college of st. elizabeth
+       college of st. joseph
+       college of st. mary
+       college of st. rose
+       college of st. scholastica
+       college of the atlantic
+       college of the holy cross
+       college of the ozarks
+       college of wooster
+       colorado christian university
+       colorado college
+       colorado mesa university
+       colorado school of mines
+       colorado state university - pueblo
+       colorado technical university
+       columbia college
+       columbia college chicago
+       columbia college of nursing
+       columbia international university
+       columbus college of art and design
+       columbus state university
+       conception seminary college
+       concord university
+       concordia college
+       concordia college - moorhead
+       concordia university
+       concordia university chicago
+       concordia university texas
+       concordia university wisconsin
+       concordia university - st. paul
+       connecticut college
+       converse college
+       cooper union
+       coppin state university
+       corban university
+       corcoran college of art and design
+       cornell college
+       cornerstone university
+       cornish college of the arts
+       covenant college
+       cox college
+       creighton university
+       criswell college
+       crown college
+       culinary institute of america
+       culver-stockton college
+       cumberland university
+       columbia university
+       cornell university
+       colorado state university
+       university of virginia
+       colgate university
+       cuny - baruch college
+       cuny - brooklyn college
+       cuny - city college
+       cuny - college of staten island
+       cuny - hunter college
+       cuny - john jay college of criminal justice
+       cuny - lehman college
+       cuny - medgar evers college
+       cuny - new york city college of technology
+       cuny - queens college
+       cuny - york college
+       curry college
+       curtis institute of music
+       d'youville college
+       daemen college
+       dakota state university
+       dakota wesleyan university
+       dalhousie university
+       dallas baptist university
+       dallas christian college
+       dalton state college
+       daniel webster college
+       davenport university
+       davis and elkins college
+       davis college
+       daytona state college
+       dean college
+       defiance college
+       delaware valley college
+       delta state university
+       denison university
+       depaul university
+       depauw university
+       deree - the american college of greece
+       desales university
+       devry university
+       dickinson college
+       dickinson state university
+       dillard university
+       divine word college
+       dixie state college of utah
+       doane college
+       dominican college
+       dominican university
+       dominican university of california
+       donnelly college
+       dordt college
+       dowling college
+       drew university
+       drexel university
+       drury university
+       dunwoody college of technology
+       earlham college
+       drake university
+       east central university
+       east stroudsburg university of pennsylvania
+       east tennessee state university
+       east texas baptist university
+       east-west university
+       eastern connecticut state university
+       eastern mennonite university
+       eastern nazarene college
+       eastern new mexico university
+       eastern oregon university
+       eastern university
+       eckerd college
+       ecpi university
+       edgewood college
+       edinboro university of pennsylvania
+       edison state college
+       edward waters college
+       elizabeth city state university
+       elizabethtown college
+       elmhurst college
+       elmira college
+       embry-riddle aeronautical university
+       embry-riddle aeronautical university - prescott
+       emerson college
+       duquesne university
+       eastern washington university
+       eastern illinois university
+       eastern kentucky university
+       eastern michigan university
+       elon university
+       delaware state university
+       duke university
+       california polytechnic state university - san luis obispo
+       emmanuel college
+       emmaus bible college
+       emory and henry college
+       emory university
+       emporia state university
+       endicott college
+       erskine college
+       escuela de artes plasticas de puerto rico
+       eureka college
+       evangel university
+       everest college - phoenix
+       everglades university
+       evergreen state college
+       excelsior college
+       fairfield university
+       fairleigh dickinson university
+       fairmont state university
+       faith baptist bible college and theological seminary
+       farmingdale state college - suny
+       fashion institute of technology
+       faulkner university
+       fayetteville state university
+       felician college
+       ferris state university
+       ferrum college
+       finlandia university
+       fisher college
+       fisk university
+       fitchburg state university
+       five towns college
+       flagler college
+       florida christian college
+       florida college
+       florida gulf coast university
+       florida institute of technology
+       florida memorial university
+       florida southern college
+       florida state college - jacksonville
+       fontbonne university
+       fort hays state university
+       fort lewis college
+       fort valley state university
+       framingham state university
+       francis marion university
+       franciscan university of steubenville
+       frank lloyd wright school of architecture
+       franklin and marshall college
+       franklin college
+       franklin college switzerland
+       franklin pierce university
+       franklin university
+       franklin w. olin college of engineering
+       freed-hardeman university
+       fresno pacific university
+       friends university
+       frostburg state university
+       gallaudet university
+       gannon university
+       geneva college
+       george fox university
+       george mason university
+       george washington university
+       georgetown college
+       georgia college & state university
+       georgia gwinnett college
+       georgia regents university
+       georgia southwestern state university
+       georgian court university
+       gettysburg college
+       glenville state college
+       god's bible school and college
+       goddard college
+       golden gate university
+       goldey-beacom college
+       goldfarb school of nursing at barnes-jewish college
+       gonzaga university
+       gordon college
+       fordham university
+       georgia institute of technology
+       gardner-webb university
+       georgia southern university
+       georgia state university
+       florida state university
+       dartmouth college
+       florida international university
+       georgetown university
+       furman university
+       gordon state college
+       goshen college
+       goucher college
+       governors state university
+       grace bible college
+       grace college and seminary
+       grace university
+       graceland university
+       grand canyon university
+       grand valley state university
+       grand view university
+       granite state college
+       gratz college
+       great basin college
+       great lakes christian college
+       green mountain college
+       greensboro college
+       greenville college
+       grinnell college
+       grove city college
+       guilford college
+       gustavus adolphus college
+       gwynedd-mercy college
+       hamilton college
+       hamline university
+       hampden-sydney college
+       hampshire college
+       hannibal-lagrange university
+       hanover college
+       hardin-simmons university
+       harding university
+       harrington college of design
+       harris-stowe state university
+       harrisburg university of science and technology
+       hartwick college
+       harvey mudd college
+       haskell indian nations university
+       hastings college
+       haverford college
+       hawaii pacific university
+       hebrew theological college
+       heidelberg university
+       hellenic college
+       henderson state university
+       hendrix college
+       heritage university
+       herzing university
+       hesser college
+       high point university
+       hilbert college
+       hillsdale college
+       hiram college
+       hobart and william smith colleges
+       hodges university
+       hofstra university
+       hollins university
+       holy apostles college and seminary
+       indiana state university
+       holy family university
+       holy names university
+       hood college
+       hope college
+       hope international university
+       houghton college
+       howard payne university
+       hult international business school
+       humboldt state university
+       humphreys college
+       huntingdon college
+       huntington university
+       husson university
+       huston-tillotson university
+       illinois college
+       illinois institute of art at chicago
+       illinois institute of technology
+       illinois wesleyan university
+       immaculata university
+       indian river state college
+       indiana institute of technology
+       indiana university east
+       indiana university northwest
+       indiana university of pennsylvania
+       indiana university southeast
+       illinois state university
+       indiana university - bloomington
+       davidson college
+       idaho state university
+       harvard university
+       howard university
+       houston baptist university
+       indiana university - kokomo
+       indiana university - south bend
+       indiana university-purdue university - fort wayne
+       indiana university-purdue university - indianapolis
+       indiana wesleyan university
+       institute of american indian and alaska native culture and arts development
+       inter american university of puerto rico - aguadilla
+       inter american university of puerto rico - arecibo
+       inter american university of puerto rico - barranquitas
+       inter american university of puerto rico - bayamon
+       inter american university of puerto rico - fajardo
+       inter american university of puerto rico - guayama
+       inter american university of puerto rico - metropolitan campus
+       inter american university of puerto rico - ponce
+       inter american university of puerto rico - san german
+       international college of the cayman islands
+       iona college
+       iowa wesleyan college
+       ithaca college
+       jarvis christian college
+       jewish theological seminary of america
+       john brown university
+       john carroll university
+       john f. kennedy university
+       johns hopkins university
+       johnson & wales university
+       johnson c. smith university
+       johnson state college
+       johnson university
+       jones international university
+       judson college
+       judson university
+       juilliard school
+       juniata college
+       kalamazoo college
+       kansas city art institute
+       kansas wesleyan university
+       kaplan university
+       kean university
+       keene state college
+       keiser university
+       kendall college
+       kennesaw state university
+       kentucky christian university
+       kentucky state university
+       kentucky wesleyan college
+       kenyon college
+       kettering college
+       kettering university
+       keuka college
+       keystone college
+       king university
+       king's college
+       knox college
+       kutztown university of pennsylvania
+       kuyper college
+       la roche college
+       la salle university
+       la sierra university
+       lagrange college
+       laguna college of art and design
+       lake erie college
+       lake forest college
+       lake superior state university
+       lakeland college
+       lakeview college of nursing
+       lancaster bible college
+       lander university
+       lane college
+       langston university
+       lasell college
+       lawrence technological university
+       lawrence university
+       le moyne college
+       lebanon valley college
+       lee university
+       lees-mcrae college
+       kansas state university
+       james madison university
+       lafayette college
+       jacksonville university
+       kent state university
+       lamar university
+       jackson state university
+       lehigh university
+       jacksonville state university
+       lemoyne-owen college
+       lenoir-rhyne university
+       lesley university
+       letourneau university
+       lewis & clark college
+       lewis university
+       lewis-clark state college
+       lexington college
+       life pacific college
+       life university
+       lim college
+       limestone college
+       lincoln christian university
+       lincoln college
+       lincoln memorial university
+       lincoln university
+       lindenwood university
+       lindsey wilson college
+       linfield college
+       lipscomb university
+       liu post
+       livingstone college
+       lock haven university of pennsylvania
+       loma linda university
+       longwood university
+       loras college
+       louisiana college
+       louisiana state university health sciences center
+       louisiana state university - alexandria
+       louisiana state university - shreveport
+       lourdes university
+       loyola marymount university
+       loyola university chicago
+       loyola university maryland
+       loyola university new orleans
+       lubbock christian university
+       luther college
+       lycoming college
+       lyme academy college of fine arts
+       lynchburg college
+       lyndon state college
+       lynn university
+       lyon college
+       macalester college
+       macmurray college
+       madonna university
+       maharishi university of management
+       maine college of art
+       maine maritime academy
+       malone university
+       manchester university
+       manhattan christian college
+       manhattan college
+       manhattan school of music
+       manhattanville college
+       mansfield university of pennsylvania
+       maranatha baptist bible college
+       marian university
+       marietta college
+       marlboro college
+       marquette university
+       mars hill university
+       martin luther college
+       martin methodist college
+       martin university
+       mary baldwin college
+       marygrove college
+       maryland institute college of art
+       marylhurst university
+       marymount manhattan college
+       marymount university
+       maryville college
+       maryville university of st. louis
+       marywood university
+       massachusetts college of art and design
+       massachusetts college of liberal arts
+       massachusetts college of pharmacy and health sciences
+       massachusetts institute of technology
+       massachusetts maritime academy
+       master's college and seminary
+       mayville state university
+       mcdaniel college
+       mcgill university
+       mckendree university
+       mcmurry university
+       mcpherson college
+       medaille college
+       marist college
+       mcneese state university
+       louisiana tech university
+       marshall university
+       medical university of south carolina
+       memorial university of newfoundland
+       memphis college of art
+       menlo college
+       mercy college
+       mercy college of health sciences
+       mercy college of ohio
+       mercyhurst university
+       meredith college
+       merrimack college
+       messiah college
+       methodist university
+       metropolitan college of new york
+       metropolitan state university
+       metropolitan state university of denver
+       miami dade college
+       miami international university of art & design
+       michigan technological university
+       mid-america christian university
+       mid-atlantic christian university
+       mid-continent university
+       midamerica nazarene university
+       middle georgia state college
+       middlebury college
+       midland college
+       midland university
+       midstate college
+       midway college
+       midwestern state university
+       miles college
+       millersville university of pennsylvania
+       milligan college
+       millikin university
+       mills college
+       millsaps college
+       milwaukee institute of art and design
+       milwaukee school of engineering
+       minneapolis college of art and design
+       minnesota state university - mankato
+       minnesota state university - moorhead
+       minot state university
+       misericordia university
+       mississippi college
+       mississippi university for women
+       missouri baptist university
+       missouri southern state university
+       missouri university of science & technology
+       missouri valley college
+       missouri western state university
+       mitchell college
+       molloy college
+       monmouth college
+       monroe college
+       montana state university - billings
+       montana state university - northern
+       montana tech of the university of montana
+       montclair state university
+       monterrey institute of technology and higher education - monterrey
+       montreat college
+       montserrat college of art
+       moody bible institute
+       moore college of art & design
+       moravian college
+       morehouse college
+       morningside college
+       morris college
+       morrisville state college
+       mount aloysius college
+       mount angel seminary
+       mount carmel college of nursing
+       mount holyoke college
+       mount ida college
+       mount marty college
+       mount mary university
+       mount mercy university
+       mount olive college
+       mississippi state university
+       montana state university
+       mississippi valley state university
+       monmouth university
+       morehead state university
+       miami university - oxford
+       morgan state university
+       missouri state university
+       michigan state university
+       mount st. mary college
+       mount st. mary's college
+       mount st. mary's university
+       mount vernon nazarene university
+       muhlenberg college
+       multnomah university
+       muskingum university
+       naropa university
+       national american university
+       national graduate school of quality management
+       national hispanic university
+       national labor college
+       national university
+       national-louis university
+       nazarene bible college
+       nazareth college
+       nebraska methodist college
+       nebraska wesleyan university
+       neumann university
+       nevada state college
+       new college of florida
+       new england college
+       new england conservatory of music
+       new england institute of art
+       new england institute of technology
+       new jersey city university
+       new jersey institute of technology
+       new mexico highlands university
+       new mexico institute of mining and technology
+       new orleans baptist theological seminary
+       new school
+       new york institute of technology
+       new york university
+       newberry college
+       newbury college
+       newman university
+       niagara university
+       nichols college
+       north carolina wesleyan college
+       north central college
+       north central university
+       north greenville university
+       north park university
+       northcentral university
+       northeastern illinois university
+       northeastern state university
+       northeastern university
+       northern kentucky university
+       northern michigan university
+       northern new mexico college
+       northern state university
+       northland college
+       northwest christian university
+       northwest florida state college
+       northwest missouri state university
+       northwest nazarene university
+       northwest university
+       northwestern college
+       northwestern health sciences university
+       northwestern oklahoma state university
+       northwood university
+       norwich university
+       notre dame college of ohio
+       notre dame de namur university
+       notre dame of maryland university
+       nova scotia college of art and design
+       nova southeastern university
+       nyack college
+       oakland city university
+       oakland university
+       oakwood university
+       oberlin college
+       occidental college
+       oglala lakota college
+       north carolina a&t state university
+       northern illinois university
+       north dakota state university
+       nicholls state university
+       north carolina central university
+       norfolk state university
+       northwestern state university of louisiana
+       northern arizona university
+       north carolina state university - raleigh
+       northwestern university
+       oglethorpe university
+       ohio christian university
+       ohio dominican university
+       ohio northern university
+       ohio valley university
+       ohio wesleyan university
+       oklahoma baptist university
+       oklahoma christian university
+       oklahoma city university
+       oklahoma panhandle state university
+       oklahoma state university institute of technology - okmulgee
+       oklahoma state university - oklahoma city
+       oklahoma wesleyan university
+       olivet college
+       olivet nazarene university
+       olympic college
+       oral roberts university
+       oregon college of art and craft
+       oregon health and science university
+       oregon institute of technology
+       otis college of art and design
+       ottawa university
+       otterbein university
+       ouachita baptist university
+       our lady of holy cross college
+       our lady of the lake college
+       our lady of the lake university
+       pace university
+       pacific lutheran university
+       pacific northwest college of art
+       pacific oaks college
+       pacific union college
+       pacific university
+       paine college
+       palm beach atlantic university
+       palmer college of chiropractic
+       park university
+       parker university
+       patten university
+       paul smith's college
+       peirce college
+       peninsula college
+       pennsylvania college of art and design
+       pennsylvania college of technology
+       pennsylvania state university - erie, the behrend college
+       pennsylvania state university - harrisburg
+       pepperdine university
+       peru state college
+       pfeiffer university
+       philadelphia university
+       philander smith college
+       piedmont college
+       pine manor college
+       pittsburg state university
+       pitzer college
+       plaza college
+       plymouth state university
+       point loma nazarene university
+       point park university
+       point university
+       polytechnic institute of new york university
+       pomona college
+       pontifical catholic university of puerto rico
+       pontifical college josephinum
+       post university
+       potomac college
+       pratt institute
+       prescott college
+       presentation college
+       principia college
+       providence college
+       puerto rico conservatory of music
+       purchase college - suny
+       purdue university - calumet
+       purdue university - north central
+       queens university of charlotte
+       oklahoma state university
+       oregon state university
+       portland state university
+       old dominion university
+       prairie view a&m university
+       presbyterian college
+       purdue university - west lafayette
+       ohio university
+       princeton university
+       quincy university
+       quinnipiac university
+       radford university
+       ramapo college of new jersey
+       randolph college
+       randolph-macon college
+       ranken technical college
+       reed college
+       regent university
+       regent's american college london
+       regis college
+       regis university
+       reinhardt university
+       rensselaer polytechnic institute
+       research college of nursing
+       resurrection university
+       rhode island college
+       rhode island school of design
+       rhodes college
+       richard stockton college of new jersey
+       richmond - the american international university in london
+       rider university
+       ringling college of art and design
+       ripon college
+       rivier university
+       roanoke college
+       robert b. miller college
+       roberts wesleyan college
+       rochester college
+       rochester institute of technology
+       rockford university
+       rockhurst university
+       rocky mountain college
+       rocky mountain college of art and design
+       roger williams university
+       rogers state university
+       rollins college
+       roosevelt university
+       rosalind franklin university of medicine and science
+       rose-hulman institute of technology
+       rosemont college
+       rowan university
+       rush university
+       rust college
+       rutgers, the state university of new jersey - camden
+       rutgers, the state university of new jersey - newark
+       ryerson university
+       sacred heart major seminary
+       saginaw valley state university
+       salem college
+       salem international university
+       salem state university
+       salisbury university
+       salish kootenai college
+       salve regina university
+       samuel merritt university
+       san diego christian college
+       san francisco art institute
+       san francisco conservatory of music
+       san francisco state university
+       sanford college of nursing
+       santa clara university
+       santa fe university of art and design
+       sarah lawrence college
+       savannah college of art and design
+       school of the art institute of chicago
+       school of visual arts
+       schreiner university
+       scripps college
+       seattle pacific university
+       seattle university
+       seton hall university
+       seton hill university
+       sewanee - university of the south
+       shaw university
+       shawnee state university
+       shenandoah university
+       shepherd university
+       shimer college
+       sacred heart university
+       robert morris university
+       sam houston state university
+       samford university
+       savannah state university
+       san jose state university
+       rutgers, the state university of new jersey - new brunswick
+       san diego state university
+       shippensburg university of pennsylvania
+       shorter university
+       siena college
+       siena heights university
+       sierra nevada college
+       silver lake college
+       simmons college
+       simon fraser university
+       simpson college
+       simpson university
+       sinte gleska university
+       sitting bull college
+       skidmore college
+       slippery rock university of pennsylvania
+       smith college
+       sojourner-douglass college
+       soka university of america
+       sonoma state university
+       south college
+       south dakota school of mines and technology
+       south seattle community college
+       south texas college
+       south university
+       southeastern oklahoma state university
+       southeastern university
+       southern adventist university
+       southern arkansas university
+       southern baptist theological seminary
+       southern california institute of architecture
+       southern connecticut state university
+       southern illinois university - edwardsville
+       southern nazarene university
+       southern new hampshire university
+       southern oregon university
+       southern polytechnic state university
+       southern university - new orleans
+       southern vermont college
+       southern wesleyan university
+       southwest baptist university
+       southwest minnesota state university
+       southwest university of visual arts
+       southwestern adventist university
+       southwestern assemblies of god university
+       southwestern christian college
+       southwestern christian university
+       southwestern college
+       southwestern oklahoma state university
+       southwestern university
+       spalding university
+       spelman college
+       spring arbor university
+       spring hill college
+       springfield college
+       st. ambrose university
+       st. anselm college
+       st. anthony college of nursing
+       st. augustine college
+       st. augustine's university
+       st. bonaventure university
+       st. catharine college
+       st. catherine university
+       st. charles borromeo seminary
+       st. cloud state university
+       st. edward's university
+       st. francis college
+       st. francis medical center college of nursing
+       st. gregory's university
+       st. john fisher college
+       st. john vianney college seminary
+       st. john's college
+       st. john's university
+       st. joseph seminary college
+       st. joseph's college
+       st. joseph's college new york
+       st. joseph's university
+       st. lawrence university
+       st. leo university
+       southern university and a&m college
+       southern methodist university
+       southeast missouri state university
+       southern utah university
+       south dakota state university
+       st. francis university
+       southeastern louisiana university
+       southern illinois university - carbondale
+       st. louis college of pharmacy
+       st. louis university
+       st. luke's college of health sciences
+       st. martin's university
+       st. mary's college
+       st. mary's college of california
+       st. mary's college of maryland
+       st. mary's seminary and university
+       st. mary's university of minnesota
+       st. mary's university of san antonio
+       st. mary-of-the-woods college
+       st. michael's college
+       st. norbert college
+       st. olaf college
+       st. paul's college
+       st. peter's university
+       st. petersburg college
+       st. thomas aquinas college
+       st. thomas university
+       st. vincent college
+       st. xavier university
+       stephens college
+       sterling college
+       stevens institute of technology
+       stevenson university
+       stillman college
+       stonehill college
+       strayer university
+       suffolk university
+       sul ross state university
+       sullivan university
+       suny buffalo state
+       suny college of agriculture and technology - cobleskill
+       suny college of environmental science and forestry
+       suny college of technology - alfred
+       suny college of technology - canton
+       suny college of technology - delhi
+       suny college - cortland
+       suny college - old westbury
+       suny college - oneonta
+       suny college - potsdam
+       suny downstate medical center
+       suny empire state college
+       suny institute of technology - utica/rome
+       suny maritime college
+       suny upstate medical university
+       suny - fredonia
+       suny - geneseo
+       suny - new paltz
+       suny - oswego
+       suny - plattsburgh
+       swarthmore college
+       sweet briar college
+       tabor college
+       talladega college
+       tarleton state university
+       taylor university
+       tennessee wesleyan college
+       texas a&m international university
+       texas a&m university - commerce
+       texas a&m university - corpus christi
+       texas a&m university - galveston
+       texas a&m university - kingsville
+       texas a&m university - texarkana
+       texas college
+       texas lutheran university
+       bucknell university
+       butler university
+       stephen f. austin state university
+       texas a&m university - college station
+       stanford university
+       stetson university
+       stony brook university - suny
+       syracuse university
+       texas christian university
+       temple university
+       clemson university
+       texas southern university
+       austin peay state university
+       tennessee state university
+       ball state university
+       texas tech university health sciences center
+       texas wesleyan university
+       texas woman's university
+       the catholic university of america
+       the sage colleges
+       thiel college
+       thomas aquinas college
+       thomas college
+       thomas edison state college
+       thomas jefferson university
+       thomas more college
+       thomas more college of liberal arts
+       thomas university
+       tiffin university
+       tilburg university
+       toccoa falls college
+       tougaloo college
+       touro college
+       transylvania university
+       trent university
+       trevecca nazarene university
+       trident university international
+       trine university
+       trinity christian college
+       trinity college
+       trinity college of nursing & health sciences
+       trinity international university
+       trinity lutheran college
+       trinity university
+       trinity western university
+       truett mcconnell college
+       truman state university
+       tufts university
+       tusculum college
+       tuskegee university
+       union college
+       union institute and university
+       union university
+       united states coast guard academy
+       united states international university - kenya
+       united states merchant marine academy
+       united states sports academy
+       unity college
+       universidad adventista de las antillas
+       universidad del este
+       universidad del turabo
+       universidad metropolitana
+       universidad politecnica de puerto rico
+       university of advancing technology
+       university of alabama - huntsville
+       university of alaska - anchorage
+       university of alaska - fairbanks
+       university of alaska - southeast
+       university of alberta
+       university of arkansas for medical sciences
+       university of arkansas - fort smith
+       university of arkansas - little rock
+       university of arkansas - monticello
+       university of baltimore
+       university of bridgeport
+       university of british columbia
+       university of calgary
+       university of california - riverside
+       holy cross college
+       towson university
+       united states military academy
+       the citadel
+       troy university
+       university of california - davis
+       grambling state university
+       university at albany - suny
+       university at buffalo - suny
+       united states naval academy
+       university of arizona
+       university of california - los angeles
+       florida a&m university
+       texas state university
+       university of alabama - birmingham
+       university of california - santa cruz
+       university of central missouri
+       university of central oklahoma
+       university of charleston
+       university of chicago
+       university of cincinnati - uc blue ash college
+       university of colorado - colorado springs
+       university of colorado - denver
+       university of dallas
+       university of denver
+       university of detroit mercy
+       university of dubuque
+       university of evansville
+       university of findlay
+       university of great falls
+       university of guam
+       university of guelph
+       university of hartford
+       university of hawaii - hilo
+       university of hawaii - maui college
+       university of hawaii - west oahu
+       university of houston - clear lake
+       university of houston - downtown
+       university of houston - victoria
+       university of illinois - chicago
+       university of illinois - springfield
+       university of indianapolis
+       university of jamestown
+       university of la verne
+       university of maine - augusta
+       university of maine - farmington
+       university of maine - fort kent
+       university of maine - machias
+       university of maine - presque isle
+       university of mary
+       university of mary hardin-baylor
+       university of mary washington
+       university of maryland - baltimore
+       university of maryland - baltimore county
+       university of maryland - eastern shore
+       university of maryland - university college
+       university of massachusetts - boston
+       university of massachusetts - dartmouth
+       university of massachusetts - lowell
+       university of medicine and dentistry of new jersey
+       university of michigan - dearborn
+       university of michigan - flint
+       university of minnesota - crookston
+       university of minnesota - duluth
+       university of minnesota - morris
+       university of mississippi medical center
+       university of missouri - kansas city
+       university of missouri - st. louis
+       university of mobile
+       university of montana - western
+       university of montevallo
+       university of mount union
+       university of nebraska medical center
+       university of nebraska - kearney
+       university of dayton
+       university of delaware
+       university of florida
+       university of iowa
+       university of idaho
+       university of kentucky
+       university of massachusetts - amherst
+       university of maine
+       university of michigan - ann arbor
+       university of cincinnati
+       university of miami
+       university of louisiana - monroe
+       university of missouri
+       university of mississippi
+       university of memphis
+       university of houston
+       university of colorado - boulder
+       university of nebraska - omaha
+       university of new brunswick
+       university of new england
+       university of new haven
+       university of new orleans
+       university of north alabama
+       university of north carolina school of the arts
+       university of north carolina - asheville
+       university of north carolina - greensboro
+       university of north carolina - pembroke
+       university of north carolina - wilmington
+       university of north florida
+       university of north georgia
+       university of northwestern ohio
+       university of northwestern - st. paul
+       university of ottawa
+       university of phoenix
+       university of pikeville
+       university of portland
+       university of prince edward island
+       university of puerto rico - aguadilla
+       university of puerto rico - arecibo
+       university of puerto rico - bayamon
+       university of puerto rico - cayey
+       university of puerto rico - humacao
+       university of puerto rico - mayaguez
+       university of puerto rico - medical sciences campus
+       university of puerto rico - ponce
+       university of puerto rico - rio piedras
+       university of puget sound
+       university of redlands
+       university of regina
+       university of rio grande
+       university of rochester
+       university of san francisco
+       university of saskatchewan
+       university of science and arts of oklahoma
+       university of scranton
+       university of sioux falls
+       university of south carolina - aiken
+       university of south carolina - beaufort
+       university of south carolina - upstate
+       university of south florida - st. petersburg
+       university of southern indiana
+       university of southern maine
+       university of st. francis
+       university of st. joseph
+       university of st. mary
+       university of st. thomas
+       university of tampa
+       university of texas health science center - houston
+       university of texas health science center - san antonio
+       university of texas medical branch - galveston
+       university of texas of the permian basin
+       university of texas - arlington
+       university of texas - brownsville
+       university of texas - pan american
+       university of oregon
+       university of new mexico
+       university of pennsylvania
+       university of north dakota
+       university of nevada - reno
+       university of new hampshire
+       university of texas - austin
+       university of southern mississippi
+       university of rhode island
+       university of south dakota
+       university of tennessee
+       university of north texas
+       university of north carolina - charlotte
+       university of texas - san antonio
+       university of notre dame
+       university of southern california
+       university of texas - tyler
+       university of the arts
+       university of the cumberlands
+       university of the district of columbia
+       university of the ozarks
+       university of the pacific
+       university of the sacred heart
+       university of the sciences
+       university of the southwest
+       university of the virgin islands
+       university of the west
+       university of toronto
+       university of vermont
+       university of victoria
+       university of virginia - wise
+       university of waterloo
+       university of west alabama
+       university of west florida
+       university of west georgia
+       university of windsor
+       university of winnipeg
+       university of wisconsin - eau claire
+       university of wisconsin - green bay
+       university of wisconsin - la crosse
+       university of wisconsin - milwaukee
+       university of wisconsin - oshkosh
+       university of wisconsin - parkside
+       university of wisconsin - platteville
+       university of wisconsin - river falls
+       university of wisconsin - stevens point
+       university of wisconsin - stout
+       university of wisconsin - superior
+       university of wisconsin - whitewater
+       upper iowa university
+       urbana university
+       ursinus college
+       ursuline college
+       utah valley university
+       utica college
+       valdosta state university
+       valley city state university
+       valley forge christian college
+       vandercook college of music
+       vanguard university of southern california
+       vassar college
+       vaughn college of aeronautics and technology
+       vermont technical college
+       victory university
+       vincennes university
+       virginia commonwealth university
+       virginia intermont college
+       virginia state university
+       virginia union university
+       virginia wesleyan college
+       viterbo university
+       voorhees college
+       wabash college
+       walden university
+       waldorf college
+       walla walla university
+       walsh college of accountancy and business administration
+       walsh university
+       warner pacific college
+       warner university
+       warren wilson college
+       wartburg college
+       washburn university
+       washington adventist university
+       washington and jefferson college
+       washington and lee university
+       washington college
+       washington university in st. louis
+       watkins college of art, design & film
+       wayland baptist university
+       wayne state college
+       wayne state university
+       waynesburg university
+       valparaiso university
+       villanova university
+       virginia tech
+       washington state university
+       university of toledo
+       wagner college
+       university of wyoming
+       university of wisconsin - madison
+       university of tulsa
+       webb institute
+       webber international university
+       webster university
+       welch college
+       wellesley college
+       wells college
+       wentworth institute of technology
+       wesley college
+       wesleyan college
+       wesleyan university
+       west chester university of pennsylvania
+       west liberty university
+       west texas a&m university
+       west virginia state university
+       west virginia university institute of technology
+       west virginia university - parkersburg
+       west virginia wesleyan college
+       western connecticut state university
+       western governors university
+       western international university
+       western nevada college
+       western new england university
+       western new mexico university
+       western oregon university
+       western state colorado university
+       western university
+       western washington university
+       westfield state university
+       westminster college
+       westmont college
+       wheaton college
+       wheeling jesuit university
+       wheelock college
+       whitman college
+       whittier college
+       whitworth university
+       wichita state university
+       widener university
+       wilberforce university
+       wiley college
+       wilkes university
+       willamette university
+       william carey university
+       william jessup university
+       william jewell college
+       william paterson university of new jersey
+       william peace university
+       william penn university
+       william woods university
+       williams baptist college
+       williams college
+       wilmington college
+       wilmington university
+       wilson college
+       wingate university
+       winona state university
+       winston-salem state university
+       winthrop university
+       wisconsin lutheran college
+       wittenberg university
+       woodbury university
+       worcester polytechnic institute
+       worcester state university
+       wright state university
+       xavier university
+       xavier university of louisiana
+       yeshiva university
+       york college
+       york college of pennsylvania
+       york university
+       university of cambridge
+       ucl (university college london)
+       imperial college london
+       university of oxford
+       eth zurich (swiss federal institute of technology)
+       university of edinburgh
+       ecole polytechnique fédérale de lausanne
+       king's college london (kcl)
+       national university of singapore (nus)
+       university of hong kong
+       australian national university
+       ecole normale supérieure, paris
+       university of bristol
+       the university of melbourne
+       the university of tokyo
+       the university of manchester
+       western illinois university
+       wofford college
+       western carolina university
+       west virginia university
+       yale university
+       the hong kong university of science and technology
+       kyoto university
+       seoul national university
+       the university of sydney
+       the chinese university of hong kong
+       ecole polytechnique
+       nanyang technological university (ntu)
+       the university of queensland
+       university of copenhagen
+       peking university
+       tsinghua university
+       ruprecht-karls-universität heidelberg
+       university of glasgow
+       the university of new south wales
+       technische universität münchen
+       osaka university
+       university of amsterdam
+       kaist - korea advanced institute of science & technology
+       trinity college dublin
+       university of birmingham
+       the university of warwick
+       ludwig-maximilians-universität münchen
+       tokyo institute of technology
+       lund university
+       london school of economics and political science (lse)
+       monash university
+       university of helsinki
+       the university of sheffield
+       university of geneva
+       leiden university
+       the university of nottingham
+       tohoku university
+       ku leuven
+       university of zurich
+       uppsala university
+       utrecht university
+       national taiwan university (ntu)
+       university of st andrews
+       the university of western australia
+       university of southampton
+       fudan university
+       university of oslo
+       durham university
+       aarhus university
+       erasmus university rotterdam
+       université de montréal
+       the university of auckland
+       delft university of technology
+       university of groningen
+       university of leeds
+       nagoya university
+       universität freiburg
+       city university of hong kong
+       the university of adelaide
+       pohang university of science and technology (postech)
+       freie universität berlin
+       university of basel
+       university of lausanne
+       université pierre et marie curie (upmc)
+       yonsei university
+       university of york
+       queen mary, university of london (qmul)
+       karlsruhe institute of technology (kit)
+       kth, royal institute of technology
+       lomonosov moscow state university
+       maastricht university
+       university of ghent
+       shanghai jiao tong university
+       humboldt-universität zu berlin
+       universidade de são paulo (usp)
+       georg-august-universität göttingen
+       newcastle university
+       university of liverpool
+       kyushu university
+       eberhard karls universität tübingen
+       technical university of denmark
+       cardiff university
+       université catholique de louvain (ucl)
+       university college dublin
+       mcmaster university
+       hebrew university of jerusalem
+       radboud university nijmegen
+       hokkaido university
+       korea university
+       university of cape town
+       rheinisch-westfälische technische hochschule aachen
+       university of aberdeen
+       wageningen university
+       university of bergen
+       university of bern
+       university of otago
+       lancaster university
+       eindhoven university of technology
+       ecole normale supérieure de lyon
+       university of vienna
+       the hong kong polytechnic university
+       sungkyunkwan university
+       rheinische friedrich-wilhelms-universität bonn
+       universidad nacional autónoma de méxico (unam)
+       zhejiang university
+       pontificia universidad católica de chile
+       universiti malaya (um)
+       université libre de bruxelles (ulb)
+       university of exeter
+       stockholm university
+       queen's university of belfast
+       vrije universiteit brussel (vub)
+       university of science and technology of china
+       nanjing university
+       universitat autónoma de barcelona
+       university of barcelona
+       vu university amsterdam
+       technion - israel institute of technology
+       technische universität berlin
+       university of antwerp
+       universität hamburg
+       university of bath
+       university of bologna
+       queen's university, ontario
+       université paris-sud 11
+       keio university
+       university of sussex
+       universidad autónoma de madrid
+       aalto university
+       sapienza university of rome
+       tel aviv university
+       national tsing hua university
+       chalmers university of technology
+       university of leicester
+       université paris diderot - paris 7
+       university of gothenburg
+       university of turku
+       universität frankfurt am main
+       universidad de buenos aires
+       university college cork
+       university of tsukuba
+       university of reading
+       sciences po paris
+       universidade estadual de campinas
+       king fahd university of petroleum & minerals
+       university complutense madrid
+       université paris-sorbonne (paris iv)
+       university of dundee
+       université joseph fourier - grenoble 1
+       waseda university
+       indian institute of technology delhi (iitd)
+       universidad de chile
+       université paris 1 panthéon-sorbonne
+       université de strasbourg
+       university of twente
+       university of east anglia (uea)
+       national chiao tung university
+       politecnico di milano
+       charles university
+       indian institute of technology bombay (iitb)
+       university of milano
+       westfälische wilhelms-universität münster
+       university of canterbury
+       chulalongkorn university
+       saint-petersburg state university
+       university of liege
+       universität zu köln
+       loughborough university
+       national cheng kung university
+       universität stuttgart
+       hanyang university
+       american university of beirut (aub)
+       norwegian university of science and technology
+       beijing normal university
+       king saud university
+       university of oulu
+       kyung hee university
+       university of strathclyde
+       universität ulm
+       university of pisa
+       technische universität darmstadt
+       technische universität dresden
+       macquarie university
+       vienna university of technology
+       royal holloway university of london
+       victoria university of wellington
+       university of padua
+       universiti kebangsaan malaysia (ukm)
+       university of technology, sydney
+       universität konstanz
+       universidad de los andes colombia
+       université paris descartes
+       tokyo medical and dental university
+       university of wollongong
+       universität erlangen-nürnberg
+       queensland university of technology
+       tecnológico de monterrey (itesm)
+       universität mannheim
+       universitat pompeu fabra
+       mahidol university
+       curtin university
+       national university of ireland, galway
+       universidade federal do rio de janeiro
+       university of surrey
+       hong kong baptist university
+       umeå university
+       universität innsbruck
+       rmit university
+       university of eastern finland
+       christian-albrechts-universität zu kiel
+       indian institute of technology kanpur (iitk)
+       national yang ming university
+       johannes gutenberg universität mainz
+       the university of newcastle
+       al-farabi kazakh national university
+       école des ponts paristech
+       university of jyväskylä
+       l.n. gumilyov eurasian national university
+       kobe university
+       university of tromso
+       hiroshima university
+       université bordeaux 1, sciences technologies
+       university of indonesia
+       universität leipzig
+       university of southern denmark
+       indian institute of technology madras (iitm)
+       university of the witwatersrand
+       university of navarra
+       universidad austral - argentina
+       universidad carlos iii de madrid
+       università¡ degli studi di roma - tor vergata
+       pontificia universidad católica argentina santa maría de los buenos aires
+       uca
+       julius-maximilians-universität würzburg
+       universidad nacional de colombia
+       laval university
+       ben gurion university of the negev
+       linköping university
+       aalborg university
+       bauman moscow state technical university
+       ecole normale supérieure de cachan
+       soas - school of oriental and african studies, university of london
+       university of essex
+       university of warsaw
+       griffith university
+       university of south australia
+       massey university
+       university of porto
+       universitat politècnica de catalunya
+       indian institute of technology kharagpur (iitkgp)
+       city university london
+       dublin city university
+       pontificia universidad javeriana
+       james cook university
+       novosibirsk state university
+       universidade nova de lisboa
+       université aix-marseille
+       universiti sains malaysia (usm)
+       universiti teknologi malaysia (utm)
+       université paris dauphine
+       university of coimbra
+       brunel university
+       king abdul aziz university (kau)
+       ewha womans university
+       nankai university
+       taipei medical university
+       universität jena
+       ruhr-universität bochum
+       heriot-watt university
+       politecnico di torino
+       universität bremen
+       xi'an jiaotong university
+       birkbeck college, university of london
+       oxford brookes university
+       jagiellonian university
+       university of tampere
+       university of florence
+       deakin university
+       university of the philippines
+       universitat politècnica de valència
+       sun yat-sen university
+       université montpellier 2, sciences et techniques du languedoc
+       moscow state institute of international relations (mgimo-university)
+       stellenbosch university
+       politécnica de madrid
+       instituto tecnológico de buenos aires (itba)
+       la trobe university
+       université paul sabatier toulouse iii
+       karl-franzens-universität graz
+       universität düsseldorf
+       university of naples - federico ii
+       aston university
+       university of turin
+       beihang university (former buaa)
+       indian institute of technology roorkee (iitr)
+       national central university
+       sogang university
+       universität regensburg
+       université lille 1, sciences et technologie
+       university of tasmania
+       university of waikato
+       wuhan university
+       national taiwan university of science and technology
+       universidade federal de são paulo (unifesp)
+       università degli studi di pavia
+       universität bayreuth
+       université claude bernard lyon 1
+       université du québec
+       universiti putra malaysia (upm)
+       university of kent
+       university of st gallen (hsg)
+       bond university
+       united arab emirates university
+       universidad de san andrã©s
+       universidad nacional de la plata
+       universität des saarlandes
+       american university of sharjah (aus)
+       bilkent university
+       flinders university
+       hankuk (korea) university of foreign studies
+       middle east technical university
+       philipps-universität marburg
+       swansea university
+       tampere university of technology
+       universität bielefeld
+       university of manitoba
+       chiba university
+       moscow institute of physics and technology state university
+       tallinn university of technology
+       taras shevchenko national university of kyiv
+       tokyo university of science
+       university of salamanca
+       university of trento
+       université de sherbrooke
+       université panthéon-assas (paris 2)
+       university of delhi
+       abo akademi university
+       czech technical university in prague
+       leibniz universität hannover
+       pusan national university
+       shanghai university
+       st. petersburg state politechnical university
+       università cattolica del sacro cuore
+       university of genoa
+       bandung institute of technology (itb)
+       bogazici university
+       goldsmiths, university of london
+       national sun yat-sen university
+       renmin (people’s) university of china
+       universidad de costa rica
+       universidad de santiago de chile - usach
+       university of tartu
+       aristotle university of thessaloniki
+       auckland university of technology
+       bangor university
+       charles darwin university
+       kingston university, london
+       universitat de valencia
+       université montpellier 1
+       university of pretoria
+       lincoln university
+       national taiwan normal university
+       national university of sciences and technology (nust) islamabad
+       swinburne university of technology
+       tongji university
+       universidad de zaragoza
+       universidade federal de minas gerais
+       universität duisburg-essen
+       al-imam mohamed ibn saud islamic university
+       harbin institute of technology
+       people's friendship university of russia
+       universidade estadual paulistajúlio de mesquita filho' (unesp)
+       université nice sophia-antipolis
+       university of crete
+       university of milano-bicocca
+       ateneo de manila university
+       beijing institute of technology
+       chang gung university
+       hung-ang university
+       dublin institute of technology
+       huazhong university of science and technology
+       international islamic university malaysia (iium)
+       johannes kepler university linz
+       justus-liebig-universität gießen
+       kanazawa university
+       keele university
+       koc university
+       national and kapodistrian university of athens
+       national research university – higher school of economics (hse)
+       national technical university of athens
+       okayama university
+       sabanci university
+       southeast university
+       sultan qaboos university
+       technische universität braunschweig
+       technische universität dortmund
+       the catholic university of korea
+       tianjin university
+       tokyo metropolitan university
+       universidad de antioquia
+       university of granada
+       universidad de palermo
+       universidad nacional de córdoba
+       universidade de santiago de compostela
+       universidade federal do rio grande do sul
+       university of siena
+       university of trieste
+       universitas gadjah mada
+       université de lorraine
+       université de rennes 1
+       university of bradford
+       university of hull
+       university of kwazulu-natal
+       university of limerick
+       university of stirling
+       university of szeged
+       ural federal university
+       xiamen university
+       yokohama city university
+       aberystwyth university
+       belarus state university
+       cairo university
+       chiang mai university
+       chonbuk national university
+       eötvös loránd university
+       inha university
+       instituto politécnico nacional (ipn)
+       istanbul technical university
+       kumamoto university
+       kyungpook national university
+       lingnan university (hong kong)
+       masaryk university
+       murdoch university
+       nagasaki university
+       national chung hsing university
+       national taipei university of technology
+       national university of ireland maynooth
+       osaka city university
+       pontificia universidad católica del perú
+       pontificia universidade católica de são paulo (puc -sp)
+       pontificia universidade católica do rio de janeiro (puc - rio)
+       qatar university
+       rhodes university
+       tokyo university of agriculture and technology
+       tomsk polytechnic university
+       tomsk state university
+       umm al-qura university
+       universidad católica andrés bello - ucab
+       universidad central de venezuela - ucv
+       universidad de belgrano
+       universidad de concepción
+       universidad de sevilla
+       universidade catolica portuguesa, lisboa
+       universidade de brasilia (unb)
+       university of lisbon
+       university of ljubljana
+       university of seoul
+       abu dhabi university
+       ain shams university
+       ajou university
+       de la salle university
+       dongguk university
+       gifu university
+       hacettepe university
+       indian institute of technology guwahati (iitg)
+       jilin university
+       kazan federal university
+       king khalid university
+       martin-luther-universität halle-wittenberg
+       national chengchi university
+       national technical university of ukrainekyiv polytechnic institute'
+       niigata university
+       osaka prefecture university
+       paris lodron university of salzburg
+       sharif university of technology
+       southern federal university
+       thammasat university
+       universidad de guadalajara (udg)
+       universidad de la república (udelar)
+       universidad iberoamericana (uia)
+       universidad torcuato di tella
+       universidade federal da bahia
+       universidade federal de são carlos
+       universidade federal de viçosa
+       perugia university
+       université de nantes
+       université saint-joseph de beyrouth
+       university of canberra
+       university of debrecen
+       university of johannesburg
+       university of mumbai
+       university of patras
+       university of tehran
+       university of ulsan
+       university of ulster
+       university of zagreb
+       vilnius university
+       warsaw university of technology
+       al azhar university
+       bar-ilan university
+       brno university of technology
+       chonnam national university
+       chungnam national university
+       corvinus university of budapest
+       gunma university
+       hallym university
+       instituto tecnológico autonomo de méxico (itam)
+       istanbul university
+       jordan university of science & technology
+       kasetsart university
+       kazakh-british technical university
+       khazar university
+       london metropolitan university
+       middlesex university
+       universidad industrial de santander
+       pontificia universidad católica de valparaíso
+       pontificia universidade católica do rio grande do sul
+       qafqaz university
+       ritsumeikan university
+       shandong university
+       university of st. kliment ohridski
+       south kazakhstan state university (sksu)
+       universidad adolfo ibáñez
+       universidad autónoma del estado de méxico
+       universidad autónoma metropolitana (uam)
+       universidad de alcalá
+       universidad nacional costa rica
+       universidad nacional de mar del plata
+       universidad peruana cayetano heredia
+       universidad simón bolívar venezuela
+       universidade federal de santa catarina
+       universidade federal do paraná (ufpr)
+       universidade federal fluminense
+       university of modena
+       université lumière lyon 2
+       université toulouse 1, capitole
+       university of economics prague
+       university of hertfordshire
+       university of plymouth
+       university of salford
+       university of science and technology beijing
+       university of western sydney
+       yamaguchi university
+       yokohama national university
+       airlangga university
+       alexandria university
+       alexandru ioan cuza university
+       alpen-adria-universität klagenfurt
+       aoyama gakuin university
+       athens university of economy and business
+       babes-bolyai university
+       baku state university
+       belarusian national technical university
+       benemérita universidad autónoma de puebla
+       bogor agricultural university
+       coventry university
+       cukurova university
+       diponegoro university
+       donetsk national university
+       doshisha university
+       e.a.buketov karaganda state university
+       far eastern federal university
+       fu jen catholic university
+       kagoshima university
+       kaunas university of technology
+       kazakh ablai khan university of international relations and world languages
+       kazakh national pedagogical university abai
+       kazakh national technical university
+       khon kaen university
+       king faisal university
+       king mongkut''s university of technology thonburi
+       kuwait university
+       lodz university
+       manchester metropolitan university
+       lobachevsky state university of nizhni novgorod
+       national technical universitykharkiv polytechnic institute'
+       nicolaus copernicus university
+       northumbria university at newcastle
+       nottingham trent university
+       ochanomizu university
+       plekhanov russian university of economics
+       pontificia universidad catolica del ecuador
+       prince of songkla university
+       s.seifullin kazakh agro technical university
+       saitama university
+       sepuluh nopember institute of technology
+       shinshu university
+       the robert gordon university
+       tokai university
+       universidad anahuac
+       universidad austral de chile
+       university autónoma de nuevo león (uanl)
+       universidad de la habana
+       universidad de la sabana
+       universidad de las américas puebla (udlap)
+       universidad de los andes mérida
+       university of murcia
+       universidad de puerto rico
+       universidad de san francisco de quito
+       universidad de talca
+       universidad del norte
+       universidad del rosario
+       universidad del valle
+       universidad nacional de cuyo
+       universidad nacional de rosario
+       universidad nacional de tucumán
+       universidad nacional del sur
+       universidad nacional mayor de san marcos
+       universidad técnica federico santa maría
+       universidad tecnológica nacional (utn)
+       universidade do estado do rio de janeiro (uerj)
+       universidade estadual de londrina (uel)
+       universidade federal de santa maria
+       universidade federal do ceará (ufc)
+       universidade federal do pernambuco
+       università ca'' foscari venezia
+       catania university
+       università degli studi roma tre
+       université charles-de-gaulle lille 3
+       université de caen basse-normandie
+       université de cergy-pontoise
+       université de poitiers
+       université jean moulin lyon 3
+       université lille 2 droit et santé
+       université paris ouest nanterre la défense
+       université paul-valéry montpellier 3
+       université pierre mendès france - grenoble 2
+       université stendhal grenoble 3
+       université toulouse ii, le mirail
+       universiti teknologi mara - uitm
+       university of baghdad
+       university of bahrain
+       university of bari
+       university of belgrade
+       university of brawijaya
+       university of brescia
+       university of bucharest
+       university of calcutta
+       university of central lancashire
+       university of colombo
+       university of dhaka
+       university of east london
+       university of engineering & technology (uet) lahore
+       university of greenwich
+       university of jordan
+       university of karachi
+       university of lahore
+       university of latvia
+       university of new england
+       university of pune
+       university of santo tomas
+       university of southern queensland
+       university of wroclaw
+       verona university
+       victoria university
+       vilnius gediminas technical university
+       voronezh state university
+       vytautas magnus university
+       west university of timisoara
+       university of south alabama
+       university of arkansas
+       university of california - berkeley
+       university of connecticut
+       university of south florida
+       university of georgia
+       university of hawaii - manoa
+       iowa state university
+       murray state university
+       university of louisville
+       western kentucky university
+       louisiana state university - baton rouge
+       university of maryland - college park
+       university of minnesota - twin cities
+       university of montana
+       east carolina university
+       university of north carolina - chapel hill
+       wake forest university
+       university of nebraska - lincoln
+       new mexico state university
+       ohio state university - columbus
+       university of oklahoma
+       pennsylvania state university - university park
+       university of pittsburgh
+       university of tennessee - chattanooga
+       vanderbilt university
+       rice university
+       university of utah
+       university of richmond
+       university of arkansas - pine bluff
+       university of central florida
+       florida atlantic university
+       hampton university
+       liberty university
+       mercer university
+       middle tennessee state university
+       university of nevada - las vegas
+       south carolina state university
+       university of tennessee - martin
+       weber state university
+       youngstown state university
+       university of the incarnate word
+       university of washington
+       university of louisiana - lafayette
+       coastal carolina university
+       utah state university
+       university of alabama
+       university of illinois - urbana-champaign
+       united states air force academy
+       university of akron
+       university of central arkansas
+       university of kansas
+       university of northern colorado
+       university of northern iowa
+       university of south carolina
+       tennessee technological university
+       university of texas - el paso
+       texas tech university
+       tulane university
+       virginia military institute
+       western michigan university
+       wilfrid laurier university
+       university of san diego
+       university of california - san diego
+       brooks institute of photography
+       acupuncture and integrative medicine college - berkeley
+       southern alberta institute of technology
+       susquehanna university
+       university of texas - dallas
+       thunderbird school of global management
+       presidio graduate school
+       école supérieure de commerce de dijon
+       university of california - san francisco
+       hack reactor
+       st. mary''s college of california
+       new england law
+       university of california, merced
+       university of california, hastings college of the law
+       v.n. karazin kharkiv national university
+       sim university (unisim)
+       singapore management university (smu)
+       singapore university of technology and design (sutd)
+       singapore institute of technology (sit)
+       nanyang polytechnic (nyp)
+       ngee ann polytechnic (np)
+       republic polytechnic (rp)
+       singapore polytechnic (sp)
+       temasek polytechnic (tp)
+       insead
+       fundação getúlio vargas
+       acharya nagarjuna university
+       university of california - santa barbara
+       university of california - irvine
+       california state university - long beach
+       robert morris university illinois
+       harold washington college - city colleges of chicago
+       harry s truman college - city colleges of chicago
+       kennedy-king college - city colleges of chicago
+       malcolm x college - city colleges of chicago
+       olive-harvey college - city colleges of chicago
+       richard j daley college - city colleges of chicago
+       wilbur wright college - city colleges of chicago
+       abertay university
+       pontifícia universidade católica de minas gerais
+       other
+       atlanta college of arts
+   please make a selection",Yes
+"discipline
+discipline
+       select an option
+       accounting
+       african studies
+       agriculture
+       anthropology
+       applied health services
+       architecture
+       art
+       asian studies
+       biology
+       business
+       business administration
+       chemistry
+       classical languages
+       communications & film
+       computer science
+       dentistry
+       developing nations
+       discipline unknown
+       earth sciences
+       economics
+       education
+       electronics
+       engineering
+       english studies
+       environmental studies
+       european studies
+       fashion
+       finance
+       fine arts
+       general studies
+       health services
+       history
+       human resources management
+       humanities
+       industrial arts & carpentry
+       information systems
+       international relations
+       journalism
+       languages
+       latin american studies
+       law
+       linguistics
+       manufacturing & mechanics
+       mathematics
+       medicine
+       middle eastern studies
+       naval science
+       north american studies
+       nuclear technics
+       operations research & strategy
+       organizational theory
+       philosophy
+       physical education
+       physical sciences
+       physics
+       political science
+       psychology
+       public policy
+       public service
+       religious studies
+       russian & soviet studies
+       scandinavian studies
+       science
+       slavic studies
+       social science
+       social sciences
+       sociology
+       speech
+       statistics & decision theory
+       urban studies
+       veterinary medicine
+       other",2
+"linkedin profile
+please enter a valid answer",https://www.linkedin.com/in/daeshaun-morrison-bab77b176/
+"will you now, or in the future, require sponsorship for employment visa status (e.g. h-1b visa status)?
+please enter a valid answer",No
+"how many years of work experience do you have with asset management?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with web design?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with ablecommerce?
+enter a whole number between 0 and 99",4
+"can you work on a hybrid schedule in the raleigh or new york city areas? we can only accept applicants in these two areas. 
+can you work on a hybrid schedule in the raleigh or new york city areas? we can only accept applicants in these two areas.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Bronx
+"earliest start date?
+earliest start date?
+required
+november 2024
+s
+m
+t
+w
+t
+f
+s
+27
+28
+29
+30
+31
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+1
+2
+3
+4
+5
+6
+7
+go to today
+cancel",11/23/2024
+"how many years of work experience do you have with etl testing?
+enter a whole number between 0 and 99",3
+"do you have in-depth knowledge of wireless technologies such as gsm and cdma?
+do you have in-depth knowledge of wireless technologies such as gsm and cdma?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have in testing mobile products?
+enter a decimal number larger than 0.0",4
+"how many years of telecom experience do you have?
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have with autocad?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with mobile applications?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with dart?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with api development?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with django?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with microsoft endpoint configuration manager?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with jamf?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with epic systems?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with mechanical product design?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with html5?
+enter a whole number between 0 and 99",3
+"do you have the following license or certification: salesforce certified platform developer ii?
+do you have the following license or certification: salesforce certified platform developer ii?
+required
+yes
+no
+please make a selection",Yes
+"are you local to tx?
+are you local to tx?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have the following license or certification: salesforce certified platform developer ii?
+do you have the following license or certification: salesforce certified platform developer ii?
+required
+yes
+no",Yes
+"how many years of work experience do you have with coding?
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with apex?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with lightning?
+enter a decimal number larger than 0.0",6
+"how many years of experience do you have with salesforce?
+enter a decimal number larger than 0.0",3
+"how many years of experience do you have with marketing cloud?
+enter a decimal number larger than 0.0",4
+"how many years of experience do you have with automation studio?
+enter a decimal number larger than 0.0",3
+"open to work hybrid in new york?
+open to work hybrid in new york?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"salary expectation in usd per hour?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with mobile application development?
+enter a whole number between 0 and 99",5
+"hispanic or latino
+american indian or alaska native (not hispanic or latino)
+asian (not hispanic or latino)
+black or african american (not hispanic or latino)
+native hawaiian or other pacific islander (not hispanic or latino)
+two or more races (not hispanic or latino)
+white (not hispanic or latino)
+i prefer not to specify
+please make a selection",N/A
+"gender
+gender
+required
+male
+female
+i prefer not to specify
+please make a selection",N/A
+"i identify as one or more of the classifications of protected veteran listed above
+i am not a protected veteran
+i prefer not to specify",N/A
+"yes, i have a disability, or have had one in the past
+no, i do not have a disability and have not had one in the past
+i do not want to answer
+please make a selection",no
+"hispanic or latino
+american indian or alaska native (not hispanic or latino)
+asian (not hispanic or latino)
+black or african american (not hispanic or latino)
+native hawaiian or other pacific islander (not hispanic or latino)
+two or more races (not hispanic or latino)
+white (not hispanic or latino)
+i prefer not to specify",N/A
+"gender
+gender
+required
+male
+female
+i prefer not to specify",N/A
+"yes, i have a disability, or have had one in the past
+no, i do not have a disability and have not had one in the past
+i do not want to answer",no
+"have you worked for entertainment benefits group or any of its affiliates in the past?
+have you worked for entertainment benefits group or any of its affiliates in the past?
+required
+yes
+no
+please make a selection",Yes
+"will you now, or at any time in the future, require sponsorship in order to legally work in the united states?
+will you now, or at any time in the future, require sponsorship in order to legally work in the united states?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"ebg offers a hybrid work environment that requires regular onsite work. please choose the ebg location you are currently commutable to or the most appropriate response.
+ebg offers a hybrid work environment that requires regular onsite work. please choose the ebg location you are currently commutable to or the most appropriate response.
+       select an option
+       aventura, fl (miami)
+       orlando, fl
+       austin, tx
+       new york, ny
+       i would need to relocate to commute regularly to an ebg office
+       i am only seeking remote work opportunities",2
+"have you worked for entertainment benefits group or any of its affiliates in the past?
+have you worked for entertainment benefits group or any of its affiliates in the past?
+required
+yes
+no",Yes
+"by checking this box, you will declare that you read and understand the privacy policy of entertainment benefits group.
+by checking this box, you will declare that you read and understand the privacy policy of entertainment benefits group.
+required
+i consent
+select checkbox to proceed",I agree
+"how many years of work experience do you have with qa automation?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with user interface design?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with collibra platform?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with collibra adi?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with api integration?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with kronos?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with human resources (hr)?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with remote terminal unit (rtu)?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with substation automation?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with catia?,6
+"how many years of work experience do you have with repos?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with capital market operations?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with mortgage-backed securities (mbs)?
+enter a whole number between 0 and 99",5
+"how many years of experience do you have at creating api's?
+enter a decimal number larger than 0.0",3
+"do you have the following license or certification: salesforce cloud solutions certifications?
+do you have the following license or certification: salesforce cloud solutions certifications?
+required
+yes
+no",Yes
+"how many years of analyst experience do you currently have?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with sap sales & distribution?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with sd-wan?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with classroom instruction?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with jira?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with patient portal?
+enter a whole number between 0 and 99",6
+"how many years of experience do you have working as a business analyst on projects related to salesforce - service cloud, health cloud, and/or experience cloud?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with oracle database administration?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with root cause analysis?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with vulnerability management?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with tenable nessus?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with pandas (software)?,6
+"how many years of work experience do you have with c# in .net?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with blazor?,4
+"how many years of work experience do you have with nopcommerce?
+enter a whole number between 0 and 99",4
+"what is your level of proficiency in chinese?
+what is your level of proficiency in chinese?
+required
+       select an option
+       none
+       conversational
+       professional
+       native or bilingual
+   please make a selection",2
+"do you have hands-on experience designing and optimizing prompts for generative ai models (e.g., chatgpt, perplexity, chatbase)? 
+do you have hands-on experience designing and optimizing prompts for generative ai models (e.g., chatgpt, perplexity, chatbase)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you worked on fine-tuning or customizing generative ai models to meet specific use cases?
+have you worked on fine-tuning or customizing generative ai models to meet specific use cases?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you integrated ai tools into existing platforms, including using apis for platforms like openai or chatbase? 
+have you integrated ai tools into existing platforms, including using apis for platforms like openai or chatbase?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience building workflows or systems that incorporate generative ai tools for real-time user interactions?
+do you have experience building workflows or systems that incorporate generative ai tools for real-time user interactions?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you proficient in python, particularly for developing and automating ai/ml workflows?
+are you proficient in python, particularly for developing and automating ai/ml workflows?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you used python libraries like transformers, langchain, or other frameworks for ai development and prompt engineering?
+have you used python libraries like transformers, langchain, or other frameworks for ai development and prompt engineering?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience collaborating with non-technical stakeholders to refine ai solutions for educational or user-centric applications?
+do you have experience collaborating with non-technical stakeholders to refine ai solutions for educational or user-centric applications?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with oracle financials?
+enter a whole number between 0 and 99",4
+"how many years of teamcenter development do you have?
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with teamcenter?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with agile development?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with sap ewm?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with orchestration?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with automation?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with oracle hr?
+enter a whole number between 0 and 99",4
+"do you have the following license or certification: aws certifications?
+do you have the following license or certification: aws certifications?
+required
+yes
+no
+please make a selection",Yes
+"are you local for new york, ny ?
+are you local for new york, ny ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you comfortable for inperson interview at new york ny?
+are you comfortable for inperson interview at new york ny?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have the following license or certification: aws certifications?
+do you have the following license or certification: aws certifications?
+required
+yes
+no",Yes
+"do you have the following license or certification: certified public accountant (cpa)?
+do you have the following license or certification: certified public accountant (cpa)?
+required
+yes
+no
+please make a selection",Yes
+"how many years of work experience do you have with home health agencies?
+enter a whole number between 0 and 99",3
+"do you have the following license or certification: certified public accountant (cpa)?
+do you have the following license or certification: certified public accountant (cpa)?
+required
+yes
+no",Yes
+how many years of insurance experience do you currently have?,4
+"how many years of work experience do you have with database administration?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with database design?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with project architecture?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with revit?
+enter a whole number between 0 and 99",4
+"do you have the following license or certification: architect?
+do you have the following license or certification: architect?
+required
+yes
+no
+please make a selection",Yes
+"do you have experience in designing k-12 and higher educational projects?
+do you have experience in designing k-12 and higher educational projects?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have the following license or certification: architect?
+do you have the following license or certification: architect?
+required
+yes
+no",Yes
+"are you a 70% backend and 30% front-end developer? 
+are you a 70% backend and 30% front-end developer?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you from a financial/banking domain company? 
+are you from a financial/banking domain company?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have hands-on experience with react? 
+do you have hands-on experience with react?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have hands-on experience with node?
+do you have hands-on experience with node?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with .net data?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with ibm mainframe?
+enter a whole number between 0 and 99",6
+"how many years of banking experience do you currently have?
+enter a whole number between 0 and 99",3
+"are you familiar with databricks lakehouse or databricks delta tables? 
+are you familiar with databricks lakehouse or databricks delta tables?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with star schema? 
+do you have experience with star schema?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with oracle database/warehouses?
+do you have experience with oracle database/warehouses?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with as400 administration?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with isql?
+enter a whole number between 0 and 99",6
+"have you worked for any of the maantam companies(ie microsoft, apple, alphabet, nvidia, tesla, amazon, meta) ?
+have you worked for any of the maantam companies(ie microsoft, apple, alphabet, nvidia, tesla, amazon, meta) ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you ever worked within a aaa game environment?
+have you ever worked within a aaa game environment?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you interested in a fully remote job opportunity that would start off as an 18-month contract with options to convert to fte or extend? 
+are you interested in a fully remote job opportunity that would start off as an 18-month contract with options to convert to fte or extend?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have using unreal blueprints?
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with game development?
+enter a whole number between 0 and 99",5
+"do you currently hold an h1 visa or need an h1 sponsorship?
+do you currently hold an h1 visa or need an h1 sponsorship?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"are you able and interested in working directly on a w2 contract without requiring a corp-to-corp (c2c) employment or visa sponsorship?
+are you able and interested in working directly on a w2 contract without requiring a corp-to-corp (c2c) employment or visa sponsorship?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"are you able to work core business hours monday-friday in pacific standard time? 
+are you able to work core business hours monday-friday in pacific standard time?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have any experience with machine learning or artificial intelligence (preferably within a game development environment)?
+do you have any experience with machine learning or artificial intelligence (preferably within a game development environment)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you interested in a starting salary range of $70,000-85,000 with benefits? 
+are you interested in a starting salary range of $70,000-85,000 with benefits?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",80000
