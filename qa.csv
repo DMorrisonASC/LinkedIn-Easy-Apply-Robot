@@ -9797,3 +9797,752 @@ required
        yes
        no
    please enter a valid answer",80000
+"how many years of work experience do you have with account reconciliation?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with payroll systems?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with global hcm?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with customer retention?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with quality control?
+enter a whole number between 0 and 99",3
+"do you have at least 9 years of professional experience in it?
+do you have at least 9 years of professional experience in it?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have at least 5 years of professional experience in database design? 
+do you have at least 5 years of professional experience in database design?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have at least 5 years of professional experience in database maintenance?
+do you have at least 5 years of professional experience in database maintenance?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with sap fico?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with bootstrap (framework)?,4
+how many years of work experience do you have with salesforce.com administration?,3
+"how many years of work experience do you have with visio?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with credit cards?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with credit card reconciliation?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with payment card industry data security standard (pci dss)?
+enter a whole number between 0 and 99",6
+"do you have an active secret security clearance?
+do you have an active secret security clearance?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"do you have guidewire experience ?
+do you have guidewire experience ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have with netsuite, including using suitescript (1.0 or 2.x) for development?
+enter a decimal number larger than 0.0",5
+"are you proficient with react? 
+are you proficient with react?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have developing web apis or working with soap and rest webservices?
+enter a decimal number larger than 0.0",5
+"have you implemented solutions using the suitecloud developer framework?
+have you implemented solutions using the suitecloud developer framework?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you used dell boomi for systems integration or handled data mapping between netsuite and external systems?
+have you used dell boomi for systems integration or handled data mapping between netsuite and external systems?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have change management experience using ado and github? 
+do you have change management experience using ado and github?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience working in an agile software development organization? 
+do you have experience working in an agile software development organization?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have developing with salesforce technologies, including apex, visualforce, aura components, and lightning web components (lwc)?
+enter a decimal number larger than 0.0",4
+"how many years of experience do you have integrating salesforce with third-party applications using rest apis and implementing authentication protocols like oauth?
+enter a decimal number larger than 0.0",3
+"how many years of experience do you have with devops tools such as flosum or git to manage ci/cd pipelines for salesforce development?
+enter a decimal number larger than 0.0",3
+"how many years of experience do you have performing salesforce data migrations, system integrations, and upgrades from classic to lightning?
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with appliance troubleshooting?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with react native?
+enter a whole number between 0 and 99",3
+"in 150 characters or fewer, tell us what makes you unique. try to be creative and say something that will catch our eye!
+0/150
+150 maximum characters allowed.",2
+do you have sap business analyst certifications? if so what certifications do you have?,Yes
+"in 150 characters or fewer, tell us what makes you unique. try to be creative and say something that will catch our eye!
+1/150
+150 maximum characters allowed.",2
+how many years of work experience do you have with oracle e-business suite?,5
+"how many years of work experience do you have with oracle order management?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with oracle scm?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with amazon connect?,6
+how many years of work experience do you have with scrum?,6
+"do you have the following license or certification: professional scrum master?
+do you have the following license or certification: professional scrum master?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: professional scrum master?
+do you have the following license or certification: professional scrum master?
+required
+yes
+no",Yes
+"how many years of work experience do you have with informatica mdm?
+enter a whole number between 0 and 99",6
+"do you have experience developing cloud native architecture?
+do you have experience developing cloud native architecture?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with jvm internals?
+do you have experience with jvm internals?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of research experience do you currently have?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with microsoft power platform?
+enter a whole number between 0 and 99",4
+"do you have active dod secret clearance?
+do you have active dod secret clearance?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"at the time of submitting this application, are you physically based in the united states?
+at the time of submitting this application, are you physically based in the united states?
+required
+yes
+no
+please make a selection",NY
+"where are you physically based (city, state / territory), at the time of submitting this application?
+please enter a valid answer",Bronx
+"what is your present work authorization status in the united states?
+what is your present work authorization status in the united states?
+required
+       select an option
+       us citizen
+       us permanent resident (gc holder)
+       h1-b visa (with an approved i-140)
+       h1-b visa (without an approved i-140)
+       tn visa
+       e-3 visa
+       opt ead (based on f-1 visa status)
+       other ead
+   please make a selection",Yes
+how many years of work experience do you have with information security?,3
+"how many years of work experience do you have with operational risk analysis?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with third party risk management (tprm)?
+enter a whole number between 0 and 99",3
+"do you have at least 2 years of experience working in payroll, hr, or other relevant fields?
+do you have at least 2 years of experience working in payroll, hr, or other relevant fields?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with adp payroll?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with microsoft dynamics?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with coupa?,3
+how many years of work experience do you have with automated software testing?,3
+"how many years of work experience do you have with selenium webdriver?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with software testing?
+enter a whole number between 0 and 99",4
+"do u have 10+ years of experience as an individual developer and as architect?
+do u have 10+ years of experience as an individual developer and as architect?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"do u have hands-on experience with bim 360 api and autodesk construction cloud (acc) including forge api?
+do u have hands-on experience with bim 360 api and autodesk construction cloud (acc) including forge api?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"how many years of work experience do you have with floorplanning?
+enter a whole number between 0 and 99",4
+"are you comfortable with the following typical work schedule? 3-4 days per week working both in our brooklyn, ny office and out in the field at project sites within nyc metro. 1-2 days per week remote
+are you comfortable with the following typical work schedule? 3-4 days per week working both in our brooklyn, ny office and out in the field at project sites within nyc metro. 1-2 days per week remote
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have the following license or certification: certified public accountant?
+do you have the following license or certification: certified public accountant?
+required
+yes
+no
+please make a selection",Yes
+"how many years of work experience do you have with generally accepted accounting principles (gaap)?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with sarbanes-oxley act?
+enter a whole number between 0 and 99",5
+"do you have the following license or certification: certified public accountant?
+do you have the following license or certification: certified public accountant?
+required
+yes
+no",Yes
+"how did you hear about this job?
+how did you hear about this job?
+required
+       select an option
+       built in
+       campus event
+       company website
+       comparably
+       diversity job board
+       facebook
+       glassdoor
+       handshake
+       university careers page
+       indeed
+       instagram
+       job fair
+       jopwell
+       linkedin
+       mogul
+       ncsc
+       networking event
+       operations event
+       piazza
+       talent hub
+       the muse
+       twitter
+       uncubed
+       women who code
+   please make a selection",Other
+"have you been employed by yext in the past?
+have you been employed by yext in the past?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"will you now or in the future require sponsorship for employment visa status (e.g. h-1b visa status)?
+will you now or in the future require sponsorship for employment visa status (e.g. h-1b visa status)?
+required
+yes
+no
+please make a selection",No
+"confirm
+select checkbox to proceed",2
+"will you now or in the future require sponsorship for employment visa status (e.g. h-1b visa status)?
+will you now or in the future require sponsorship for employment visa status (e.g. h-1b visa status)?
+required
+yes
+no",No
+"what is your level of proficiency in german?
+what is your level of proficiency in german?
+required
+       select an option
+       none
+       conversational
+       professional
+       native or bilingual
+   please make a selection",2
+"how many years of work experience do you have with natural language processing (nlp)?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with generative ai?
+enter a whole number between 0 and 99",4
+"if hired, will you be able to provide a federal or state government-issued document to prove that you are at least 18 years of age?
+if hired, will you be able to provide a federal or state government-issued document to prove that you are at least 18 years of age?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",NY
+"do you have 3+ years of professional experience coding in python or c#?
+do you have 3+ years of professional experience coding in python or c#?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with payroll taxes?
+enter a whole number between 0 and 99",6
+"salary expectations
+enter a decimal number between 0.0 and 9.9999998e12",3
+"how many years of work experience do you have with private equity?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with user documentation?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with intellectual property?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with firmware?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with .net apis?
+enter a whole number between 0 and 99",4
+"are you ready to work on w2?
+are you ready to work on w2?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you ever worked as a blazor developer?
+have you ever worked as a blazor developer?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of finance experience do you currently have?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with financial analysis?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with test engineering?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with greenfield development?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with routers?,6
+"how many years of work experience do you have with forgerock identity platform?
+enter a whole number between 0 and 99",6
+"how many years of experience do you have as an aem front end developer?
+enter a decimal number larger than 0.0",3
+"do you have the ability to integrate aem with third-party systems and platforms?
+do you have the ability to integrate aem with third-party systems and platforms?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have a master degree in library science or equivalent from an ala accredited school?
+do you have a master degree in library science or equivalent from an ala accredited school?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you fluent in the use of word, excel and powerpoint?
+are you fluent in the use of word, excel and powerpoint?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with financial accounting?,5
+"how many years of accounting experience do you currently have?
+enter a whole number between 0 and 99",4
+"will you now or in the future require sponsorship for employment eligibility?
+will you now or in the future require sponsorship for employment eligibility?
+required
+yes
+no
+please make a selection",No
+"are you currently authorized to work in the united states?
+are you currently authorized to work in the united states?
+yes
+no",Yes
+"will you now or in the future require sponsorship for employment eligibility?
+will you now or in the future require sponsorship for employment eligibility?
+required
+yes
+no",No
+"please be informed that your application to this job offer will trigger some processing of your personal data by the recruiting company, the data controller. smartrecruiters, the data processor, has no control over such personal data processing. for more information on these personal data processing, please refer to the recruiting company’s privacy policy.
+please be informed that your application to this job offer will trigger some processing of your personal data by the recruiting company, the data controller. smartrecruiters, the data processor, has no control over such personal data processing. for more information on these personal data processing, please refer to the recruiting company’s privacy policy.
+required
+i consent
+select checkbox to proceed",N/A
+"willing to work on w2 ?
+willing to work on w2 ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"how many years of work experience do you have with koa.js?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with operational cost analysis?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with chemical manufacturing?
+enter a whole number between 0 and 99",6
+how many years of work experience do you have with cross-team collaboration?,6
+"how many years of it services and it consulting experience do you currently have?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with kotlin?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with microservices?
+enter a whole number between 0 and 99",6
+"how many years of technology, information and internet experience do you currently have?
+enter a whole number between 0 and 99",5
+"have you previously worked with google as a contractor?
+have you previously worked with google as a contractor?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with asp.net web api?,4
+"please indicate your gender
+please indicate your gender
+required
+       select an option
+       male
+       female
+       other gender (including non-binary, third gender)
+       wish not to answer
+   please make a selection",male
+"please indicate your race / ethnic group (choose all that apply) [definitions](https://www.smartrecruiters.com/oneclick-ui/resources/html/eeogeneral?lang=en)
+please indicate your race / ethnic group (choose all that apply) [definitions](https://www.smartrecruiters.com/oneclick-ui/resources/html/eeogeneral?lang=en)
+required
+black or african american
+american-indian / alaskan native
+asian
+hispanic or latino
+native hawaiian or other pacific islander
+white (not of hispanic origin)
+wish not to answer
+please make a selection",black
+"this information will be used by panw to better understand the diversity of our applicants and employees and to assist in our overall diversity efforts. if you do not wish to provide the information requested, choose ""wish not to answer"" do you consider yourself a member of the lgbtqia+ (lesbian, gay, bisexual, transgender, queer, intersex, asexual, or other sexual minority) community?
+this information will be used by panw to better understand the diversity of our applicants and employees and to assist in our overall diversity efforts. if you do not wish to provide the information requested, choose ""wish not to answer"" do you consider yourself a member of the lgbtqia+ (lesbian, gay, bisexual, transgender, queer, intersex, asexual, or other sexual minority) community?
+required
+       select an option
+       yes, i identify as a member of the lgbtqia+ community
+       no, i do not identify as a member of the lgbtqia+ community
+       wish not to answer
+   please make a selection",male
+"palo alto networks is a government contractor subject to the vietnam era veterans' readjustment assistance act of 1974, as amended by the jobs for veterans act of 2002, 38 u.s.c. 4212 (""vevraa""), which requires government contractors to take affirmative action to employ and advance in employment: (1) disabled veterans/ (2) recently separated veterans/ (3) active duty wartime or campaign badge veterans/ and (4) armed forces service medal veterans. if you believe you are a member of any of the categories of protected veterans listed above, please indicate by checking the appropriate box below. your decision to provide the relevant information is purely voluntary on your part, and refusal to provide such information will not subject you to any adverse treatment. the information will not be used in a manner inconsistent with vevraa, as amended. please select one of the options below [definitions](https://www.smartrecruiters.com/oneclick-ui/resources/html/ofccpveterans)
+palo alto networks is a government contractor subject to the vietnam era veterans' readjustment assistance act of 1974, as amended by the jobs for veterans act of 2002, 38 u.s.c. 4212 (""vevraa""), which requires government contractors to take affirmative action to employ and advance in employment: (1) disabled veterans/ (2) recently separated veterans/ (3) active duty wartime or campaign badge veterans/ and (4) armed forces service medal veterans. if you believe you are a member of any of the categories of protected veterans listed above, please indicate by checking the appropriate box below. your decision to provide the relevant information is purely voluntary on your part, and refusal to provide such information will not subject you to any adverse treatment. the information will not be used in a manner inconsistent with vevraa, as amended. please select one of the options below [definitions](https://www.smartrecruiters.com/oneclick-ui/resources/html/ofccpveterans)
+required
+       select an option
+       i am not a veteran
+       identify as a veteran, just not a protected veteran
+       identify as one or more of the classifications of protected veterans
+       i do not wish to self-identify
+   please make a selection",I am not
+"do you consider yourself as a military spouse / domestic partner?
+do you consider yourself as a military spouse / domestic partner?
+       select an option
+       yes
+       no
+       wish not to answer",Yes
+"are you in the reserves?
+are you in the reserves?
+       select an option
+       yes
+       no
+       wish not to answer",Yes
+"do you have (or have a history/record of having) a disability? [definitions](https://www.smartrecruiters.com/oneclick-ui/resources/html/ofccpdisability?lang=en)
+do you have (or have a history/record of having) a disability? [definitions](https://www.smartrecruiters.com/oneclick-ui/resources/html/ofccpdisability?lang=en)
+required
+       select an option
+       yes, i have a disability, or have a history/record of having a disability
+       no, i don’t have a disability, or a history/record of having a disability
+       wish not to answer
+   please make a selection",no
+"i understand that the information i submit as part of my job application will be used in accordance with [palo alto network's candidate privacy notice](https://www.paloaltonetworks.com/legal-notices/privacy/privacy-notice.html). i understand the processing of my information as described in that policy including that, in limited circumstances, palo alto networks may share my contact information with trusted third parties, to assist in certain phases of the hiring process (such as conducting background checks).
+i understand that the information i submit as part of my job application will be used in accordance with [palo alto network's candidate privacy notice](https://www.paloaltonetworks.com/legal-notices/privacy/privacy-notice.html). i understand the processing of my information as described in that policy including that, in limited circumstances, palo alto networks may share my contact information with trusted third parties, to assist in certain phases of the hiring process (such as conducting background checks).
+required
+confirmed
+select checkbox to proceed",Yes
+"by checking this box, you will declare that you read and understand the palo alto networks privacy policy, and the smartrecruiters privacy policy and smartrecruiters  terms of use.
+by checking this box, you will declare that you read and understand the palo alto networks, and the smartrecruitersand smartrecruiters.
+required
+i agree terms & conditions
+select checkbox to proceed",I agree
+"are you legally authorized to work in the country where the job is located without any restrictions?
+are you legally authorized to work in the country where the job is located without any restrictions?
+required
+yes
+no
+please make a selection",Yes
+"do you need sponsorship now or in the future for employment?
+do you need sponsorship now or in the future for employment?
+required
+yes
+no
+please make a selection",No
+"if this role or future roles require relocation:
+if this role or future roles require relocation:
+required
+       select an option
+       i am willing to relocate and will self relocate
+       i am willing to relocate and will need relocation assistance
+       relocation is not an option for me at this time
+   please make a selection",2
+"have you previously worked for palo alto networks?
+have you previously worked for palo alto networks?
+required
+       select an option
+       no - i have not worked for palo alto networks
+       yes - full time/ regular employment
+       yes - intern program
+       yes - contractor /professional vended services
+       yes - independent consultant
+       i am not sure
+   please make a selection",Yes
+"have you interviewed with palo alto networks in the past?
+have you interviewed with palo alto networks in the past?
+required
+yes
+no
+please make a selection",Yes
+"would you like to be considered for future opportunities?
+would you like to be considered for future opportunities?
+required
+yes
+no
+please make a selection",2
+"select the areas of work that are of interest to you:
+select the areas of work that are of interest to you:
+accounting
+corp business strategy
+education
+facilities/real estate
+finance
+legal
+manufacturing
+marketing
+operations
+people team/human resources
+information security
+information technology
+engineering - software
+engineering - hardware
+engineering language/skills
+devops / sre
+data informatics
+data scientist
+product management & tme
+quality assurance
+security research
+technical writing
+business development
+ecosystems
+sales
+sales operations
+systems engineering
+resident engineer
+service account manager
+technical support
+customer success",Yes
+"how did you hear about us?
+how did you hear about us?
+required
+       select an option
+       palo alto networks careers site
+       contacted by the recruiting team
+       job board
+       facebook
+       google search
+       employee referral
+       university program
+       agency partner
+       other
+       conference or event
+   please make a selection",Other
+"if you were referred by a current employee, provide the employee's name.",N/A
+"(motor-vehicle acknowledgment) i acknowledge that the role to which i am applying may require me to travel to and from palo alto networks, inc. business meetings and events and that i have reliable transportation to do so. to the extent i choose to drive in connection with company business, i hereby certify that i have and will maintain a valid driver’s license.
+(motor-vehicle acknowledgment) i acknowledge that the role to which i am applying may require me to travel to and from palo alto networks, inc. business meetings and events and that i have reliable transportation to do so. to the extent i choose to drive in connection with company business, i hereby certify that i have and will maintain a valid driver’s license.
+required
+confirmed
+select checkbox to proceed",2
+"are you legally authorized to work in the country where the job is located without any restrictions?
+are you legally authorized to work in the country where the job is located without any restrictions?
+required
+yes
+no",Yes
+"do you need sponsorship now or in the future for employment?
+do you need sponsorship now or in the future for employment?
+required
+yes
+no",No
+"have you interviewed with palo alto networks in the past?
+have you interviewed with palo alto networks in the past?
+required
+yes
+no",Yes
+"would you like to be considered for future opportunities?
+would you like to be considered for future opportunities?
+required
+yes
+no",2
+"have you worked with data governance in a financial services company? 
+have you worked with data governance in a financial services company?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with extract, transform, load (etl)?",4
+"are you comfortable with the 80k-90k base salary plus bonus and full benefits and unlimited pto?
+are you comfortable with the 80k-90k base salary plus bonus and full benefits and unlimited pto?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",80000
+"are you a us citizen or green card holder currently? not on opt , ead or f-1
+are you a us citizen or green card holder currently? not on opt , ead or f-1
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with data services?
+enter a whole number between 0 and 99",6
+"do you have experience customizing the sharepoint online search experience?
+do you have experience customizing the sharepoint online search experience?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have working with spfx web parts and solutions?
+enter a decimal number larger than 0.0",4
+how many years of work experience do you have with php applications?,3
+"do you have any experience with magento, woocommerce, odoo or nopcommerce?
+do you have any experience with magento, woocommerce, odoo or nopcommerce?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have the following license or certification: professional engineer (pe)?
+do you have the following license or certification: professional engineer (pe)?
+required
+yes
+no",Yes
+"are you currently in or open to relocating to rochester ny?
+are you currently in or open to relocating to rochester ny?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"what are your salary expectations for this role?
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have with ccai?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with dialogflow?
+enter a whole number between 0 and 99",5
+"angular 18
+enter a decimal number larger than 0.0",3
+"ios/ android application development
+enter a decimal number larger than 0.0",6
+"are you able to work directly on my w2 and will not need sponsorship now or in the future?
+are you able to work directly on my w2 and will not need sponsorship now or in the future?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"how many years of work experience do you have with android development?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with android jetpack?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with payroll administration?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with solution architecture?
+enter a whole number between 0 and 99",5
+"do you have at least 10 years of experience in oracle hcm solution architecture?
+do you have at least 10 years of experience in oracle hcm solution architecture?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have strong expertise in oracle hcm modules and system integration?
+do you have strong expertise in oracle hcm modules and system integration?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with revenue cycle management?,6
+"how many years of work experience do you have with electronic medical record (emr)?
+enter a whole number between 0 and 99",4
+"do you have the following license or certification: epiccare certification?
+do you have the following license or certification: epiccare certification?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: epiccare ambulatory?
+do you have the following license or certification: epiccare ambulatory?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: epiccare certification?
+do you have the following license or certification: epiccare certification?
+required
+yes
+no",Yes
+"do you have the following license or certification: epiccare ambulatory?
+do you have the following license or certification: epiccare ambulatory?
+required
+yes
+no",Yes
+"how many years of work experience do you have with peoplesoft financial analytics?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with general ledgers?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with active directory?
+enter a whole number between 0 and 99",4
+"how many years of hospitals and health care experience do you currently have?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with virtual desktop infrastructure?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with citrix xendesktop?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with opentext products?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have in data integration software engineer ?
+enter a decimal number larger than 0.0",3

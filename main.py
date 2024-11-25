@@ -432,7 +432,7 @@ class EasyApplyBot:
                                 if jobID.isdigit():
                                     # Ensure the job ID is unique before adding it for processing.
                                     if "Easy Apply" in link.text and jobID not in jobIDs:
-                                        jobIDs[jobID] = "To be processed"
+                                        jobIDs[jobID] = True
 
                                 else:
                                     log.debug(f"Job ID not found, It is likely a 'promoted' job; It doesn't fit the current query {link.text}")
@@ -455,13 +455,8 @@ class EasyApplyBot:
     def apply_loop(self, jobIDs):
         log.debug("In `apply_loop()`")
         for jobID in jobIDs:
-            if jobIDs[jobID] == "To be processed" and jobID not in self.visited_IDs:
-                applied = self.apply_to_job(jobID)
-                if applied:
-                    log.info(f"Applied to {jobID}")
-                else:
-                    log.info(f"Failed to apply to {jobID}")
-                jobIDs[jobID] = applied
+            if jobID not in self.visited_IDs:
+                self.apply_to_job(jobID)
                 self.visited_IDs[jobID] = True
 
     def is_present(self, locator):
@@ -1038,12 +1033,13 @@ class EasyApplyBot:
                     # date_field.clear()
 
                     # Send the answer (date) to the input
+                    date_field.clear()
                     date_field.send_keys(answer)  # Ensure 'answer' is formatted correctly as "mm/dd/yyyy"
                     time.sleep(1)
                     date_field.click()
                     time.sleep(3)
 
-                    today_button = self.get_elements(By.XPATH, ".//button[contains(@aria-label, 'This is today')]")[0]
+                    today_button = self.get_elements(By.XPATH, "//button[contains(@aria-label, 'This is today')]")[0]
                     
                     self.browser.execute_script("arguments[0].click();", today_button)
 
