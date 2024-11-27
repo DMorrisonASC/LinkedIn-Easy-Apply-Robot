@@ -72,7 +72,7 @@ def setupLogger() -> None:
 class EasyApplyBot:
     setupLogger()
     # MAX_SEARCH_TIME is 10 hours by default.
-    MAX_SEARCH_TIME = 60 * 10 # Modify it to increase search time
+    MAX_SEARCH_TIME = 60 * 15 # Modify it to increase search time
 
     def __init__(self,
                  salary,
@@ -154,7 +154,7 @@ class EasyApplyBot:
             "upload": (By.NAME, "file"),
             "search": (By.CLASS_NAME, "jobs-search-results-list"),
             "links": (By.XPATH, '//div[@data-job-id]'),
-            "fields": (By.CLASS_NAME, "jobs-easy-apply-form-section__grouping"),
+            "fields": (By.XPATH, "//div[starts-with(@class, 'fb-dash-form-element')]"),
             "radio_select": (By.XPATH, ".//input[starts-with(@id, 'urn:li:fsd_formElement:urn:li:jobs_applyformcommon_easyApplyFormElement:') and @type='radio']"),
             "multi_select": (By.XPATH, ".//select[starts-with(@id, 'text-entity-list-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-') and @required='']"),
             "text_select": (By.XPATH, ".//input[starts-with(@id, 'single-line-text-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-') and @type='text']"),
@@ -163,7 +163,8 @@ class EasyApplyBot:
             "location_select": (By.XPATH, ".//input[@aria-autocomplete='list']"),
             "text_area": (By.TAG_NAME, "textarea"),
             "2fa_oneClick": (By.ID, 'reset-password-submit-button'),
-            "easy_apply_button": (By.XPATH, '//button[contains(translate(normalize-space(.), "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz"), "easy apply")]'),
+            "easy_apply_button": (By.XPATH, '//button[contains(@aria-label, "Easy Apply") and .//span[text()="Easy Apply"]]')
+
         }
 
         # Initialize questions and answers file
@@ -259,7 +260,7 @@ class EasyApplyBot:
         log.info("Logging in.....Please wait :)")
         self.browser.get("https://www.linkedin.com/login?trk=guest_homepage-basic_nav-header-signin")
 
-        time.sleep(10)
+        time.sleep(5)
 
         try:
             user_field = self.browser.find_element("id", "username")
@@ -392,7 +393,7 @@ class EasyApplyBot:
                     scrollresults = self.get_elements("search")
 
                     # Scroll through job listings to load more results.
-                    for i in range(300, 2000, 100):
+                    for i in range(300, 1500, 100):
                         self.browser.execute_script("arguments[0].scrollTo(0, {})".format(i), scrollresults[0])
                         time.sleep(0.5)  # Wait for new elements to load.
 
@@ -410,7 +411,7 @@ class EasyApplyBot:
                             )
 
                             # If the job has been applied, dismiss it and skip to the next.
-                            if applied_status.is_displayed() or link.get_attribute("data-job-id") in self.visited_IDs:
+                            if applied_status.is_displayed():
                                 log.debug(f"Job already applied: {link.text}")
                                 dismissBtn = link.find_element(By.XPATH, ".//button[starts-with(@aria-label, 'Dismiss')]")
                                 dismissBtn.click()
@@ -431,7 +432,7 @@ class EasyApplyBot:
 
                                 if jobID.isdigit():
                                     # Ensure the job ID is unique before adding it for processing.
-                                    if "Easy Apply" in link.text and jobID not in jobIDs:
+                                    if "Easy Apply" in link.text:
                                         jobIDs[jobID] = True
 
                                 else:
@@ -455,9 +456,8 @@ class EasyApplyBot:
     def apply_loop(self, jobIDs):
         log.debug("In `apply_loop()`")
         for jobID in jobIDs:
-            if jobID not in self.visited_IDs:
-                self.apply_to_job(jobID)
-                self.visited_IDs[jobID] = True
+            self.apply_to_job(jobID)
+            self.visited_IDs[jobID] = True
 
     def is_present(self, locator):
         """
@@ -495,10 +495,6 @@ class EasyApplyBot:
         # Navigate to the job page using the job ID.
         self.get_job_page(jobID)
 
-        # Let the page fully load before interacting with it.
-        time.sleep(2)
-        # self.set_browser_zoom()
-
         # Try to find the Easy Apply button on the job page.
         button = self.get_easy_apply_button()
     
@@ -528,11 +524,12 @@ class EasyApplyBot:
                 string_easy = "~ Has Easy Apply Button. Clicking now!"
                 self.browser.execute_script("arguments[0].click();", button)
 
-                # clicked = True
-                time.sleep(1)
-
                 # Fill out the necessary fields on the Easy Apply form.
+                time.sleep(5)
+
                 self.fill_out_fields()
+
+                time.sleep(2)
                 
                 # Send the resume and determine if the application was successful.
                 result: bool = self.send_resume()
@@ -572,18 +569,21 @@ class EasyApplyBot:
             scroll_page += 500
             time.sleep(sleep)
 
-        if sleep != 1:
-            self.browser.execute_script("window.scrollTo(0,0);")
-            time.sleep(sleep)
+        self.browser.execute_script("window.scrollTo(0,0);")
 
         page = BeautifulSoup(self.browser.page_source, "lxml")
         return page
 
-
     def get_easy_apply_button(self):
         EasyApplyButton = False
         try:
+            # Wait for up to 30 seconds for the button(s) to appear
+            WebDriverWait(self.browser, 30).until(
+                lambda _: len(self.get_elements("easy_apply_button")) > 0
+            )
+            # Retrieve the buttons once they're present
             buttons = self.get_elements("easy_apply_button")
+            
             for button in buttons:
                 # Capture the button text
                 button_text = button.get_attribute("innerText")
@@ -596,14 +596,16 @@ class EasyApplyBot:
                 if "easy apply" in cleaned_text:
                     print("Found Easy Apply button!")
                     EasyApplyButton = button
-
+                    break  # Exit the loop after finding the first matching button
                 else:
                     print(f"Button text did not match: {repr(cleaned_text)}")
 
         except Exception as e:
             log.error(f"Error finding Easy Apply button: {str(e)}")
             log.error(traceback.format_exc())
+
         return EasyApplyButton
+
 
 
     def fill_out_fields(self):
@@ -641,7 +643,7 @@ class EasyApplyBot:
 
             # Loop to attempt the resume submission.
             while True:
-                time.sleep(2)
+                time.sleep(1.5)
                 
                 # Handle follow button if present.
                 if len(self.get_elements("follow")) > 0:
@@ -668,8 +670,7 @@ class EasyApplyBot:
                         break
                     else:
                         while True:
-                            log.info("Please answer the questions, waiting 5 seconds...")
-                            time.sleep(5)
+                            log.info("Please answer the questions, waiting 2 seconds...")
                             self.process_questions()
 
                             if "application was sent" in self.browser.page_source:
@@ -716,7 +717,7 @@ class EasyApplyBot:
 
                 # Check if the total process time has exceeded 5 minutes
                 elapsed_time = time.time() - start_time
-                if elapsed_time > 300:  # 300 seconds = 5 minutes
+                if elapsed_time > 180:  # 180 seconds = 3 minutes
                     log.info("5 minutes elapsed. Exiting the process.")
                     return False  # Stop the entire process if 5 minutes are exceeded
 
@@ -936,7 +937,7 @@ class EasyApplyBot:
                     text_area.send_keys(answer)
                     log.info(f"Text input field populated with: {answer}")
                 except Exception as e:
-                    log.error(f"(process_questions(1)) Text field error: {e}")
+                    log.error(f"(process_questions(2)) Text field error: {e}")
 
             # Handle fieldset fields
             elif self.is_found_field(self.locator["input_select"], field):  # Adjust options as needed

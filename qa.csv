@@ -10546,3 +10546,586 @@ enter a whole number between 0 and 99",6
 enter a whole number between 0 and 99",3
 "how many years of work experience do you have in data integration software engineer ?
 enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with kpi reporting?
+enter a whole number between 0 and 99",4
+"recent experience with capital market/investment banking/hedge fund ?
+recent experience with capital market/investment banking/hedge fund ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+how many years of work experience do you have with laboratory information management system (lims)?,6
+"can you work on w2..??
+can you work on w2..??
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"how many years of work experience do you have with dbt core/ dbt cloud?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with infrastructure?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with ansys mechanical?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with sap2000?
+enter a whole number between 0 and 99",4
+"do you have experience working in nuclear power?
+do you have experience working in nuclear power?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with cloud security?
+enter a whole number between 0 and 99",5
+"how many years of experience do you have with identity management ie azure ad, extra id and iam best practices ?
+enter a decimal number larger than 0.0",4
+"how many years of experience do you have with office 365 administration ie. exchange, onedrive, teams, sharepoint etc ?
+enter a decimal number larger than 0.0",4
+"years of experience using amazon web services or similar cloud computing platforms (microsoft azure, google compute engine)
+enter a decimal number larger than 0.0",5
+"do you have a computer science or mathematics degree?
+do you have a computer science or mathematics degree?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"years experience working with python data science libraries
+enter a decimal number larger than 0.0",6
+"years of experience building data pipelines or programming etl tools.
+enter a decimal number larger than 0.0",5
+"do you currently have an active security clearance?
+do you currently have an active security clearance?
+       select an option
+       yes - us - secret
+       yes - us - top secret
+       yes - us - top secret/sci
+       yes - us - top secret / sci ci poly
+       yes - us - top secret / sci fsp poly
+       yes - us - department of energy q clearance
+       yes - can - site access
+       yes - can - secret (level ii)
+       yes - can - top secret (level iii)
+       yes - can - enhanced top secret (level iii)
+       yes - aus - baseline (classified & protected)
+       yes - aus - negative vetting level 1 (s-nv1)
+       yes - aus - negative vetting level 2 (ts-nv2)
+       yes - aus - positive vetting (ts-pv caveated)
+       no
+       wish not to answer",No
+"this role is in support of a federal government contract or program that requires that it be performed by a citizen of that country. citizenship is therefore a minimum qualification for the role. are you able to meet this qualification?
+this role is in support of a federal government contract or program that requires that it be performed by a citizen of that country. citizenship is therefore a minimum qualification for the role. are you able to meet this qualification?
+required
+       select an option
+       yes - i have a us citizenship
+       yes - i have a canadian citizenship
+       yes - i have an australian citizenship
+       no
+       wish not to answer
+   please make a selection",I am not
+"how did you hear about us?
+how did you hear about us?
+       select an option
+       palo alto networks careers site
+       contacted by the recruiting team
+       job board
+       facebook
+       google search
+       employee referral
+       university program
+       agency partner
+       other
+       conference or event",Other
+"do you have an exp with azure apim developer portal?
+do you have an exp with azure apim developer portal?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"will you now, or in the future, require sponsorship for employment visa status (e.g. h-1b visa status)?
+will you now, or in the future, require sponsorship for employment visa status (e.g. h-1b visa status)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"do you have the following license or certification: professional engineer?
+do you have the following license or certification: professional engineer?
+required
+yes
+no",Yes
+"how many years of work experience do you have with pavement engineering?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with pavement management systems?
+enter a whole number between 0 and 99",5
+"how many years of management experience do you currently have?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with scripting?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with window?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with data structures?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with it purchasing?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with it procurement?
+enter a whole number between 0 and 99",4
+"do you have the following license or certification: certified ethical hacker?
+do you have the following license or certification: certified ethical hacker?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: certified ethical hacker?
+do you have the following license or certification: certified ethical hacker?
+required
+yes
+no",Yes
+"do you have experience working with hr or sensitive related data? 
+do you have experience working with hr or sensitive related data?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with security systems integration?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with physical access control?
+enter a whole number between 0 and 99",5
+"do you have a background in electrical engineering, plumbing, or any trade school experience?
+do you have a background in electrical engineering, plumbing, or any trade school experience?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with low voltage wiring?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with .net in azure?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with xslt?
+enter a whole number between 0 and 99",3
+"do you have the following license or certification: cisco certified network associate cloud (ccna-cloud)?
+do you have the following license or certification: cisco certified network associate cloud (ccna-cloud)?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: mcse: cloud platform and infrastructure?
+do you have the following license or certification: mcse: cloud platform and infrastructure?
+required
+yes
+no
+please make a selection",Yes
+"how many years of work experience do you have with palo alto networks?
+enter a whole number between 0 and 99",5
+"how many years of biotechnology research experience do you currently have?
+enter a whole number between 0 and 99",3
+"do you have at least 5 years of vpn, firewalls, ad, azure office 365, and exchange experience?
+do you have at least 5 years of vpn, firewalls, ad, azure office 365, and exchange experience?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have the following license or certification: cisco certified network associate cloud (ccna-cloud)?
+do you have the following license or certification: cisco certified network associate cloud (ccna-cloud)?
+required
+yes
+no",Yes
+"do you have the following license or certification: mcse: cloud platform and infrastructure?
+do you have the following license or certification: mcse: cloud platform and infrastructure?
+required
+yes
+no",Yes
+"do you have experience with horizon vdi solutions?
+do you have experience with horizon vdi solutions?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with wagtail cms?,3
+"are you looking for an h1-b transfer, if not, kindly refrain from applying. 
+are you looking for an h1-b transfer, if not, kindly refrain from applying.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have banking / financial services experience in a data analyst role?
+do you have banking / financial services experience in a data analyst role?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with high performance computing (hpc)?
+enter a whole number between 0 and 99",5
+"do you come from a software background? 
+do you come from a software background?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have any experience in a university / research setting? 
+do you have any experience in a university / research setting?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you an active public trust clearance (us citizenship required)
+have you an active public trust clearance (us citizenship required)
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"how many years of work experience do you have with docker products?
+enter a whole number between 0 and 99",6
+"are you available on a w2 basis
+are you available on a w2 basis
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"hybrid
+hybrid
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"visa status
+visa status
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"do you have working experience with an automobile or manufacturing-based company? 
+do you have working experience with an automobile or manufacturing-based company?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you comfortable working in a contractual position? 
+are you comfortable working in a contractual position?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with computer programming?
+enter a whole number between 0 and 99",5
+"how many years of quality assurance experience do you currently have?
+enter a whole number between 0 and 99",5
+"how many years of llm experience do you have?
+enter a decimal number larger than 0.0",6
+"can you work on w2 for this role?
+can you work on w2 for this role?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"how many years of work experience do you have with airflow?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with aws sagemaker?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with large language model operations (llmops)?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with visualforce pages?
+enter a whole number between 0 and 99",3
+"experience in docusign api and integration
+enter a decimal number larger than 0.0",4
+"experience in process builders, triggers, and soql
+enter a decimal number larger than 0.0",4
+"experience with postman for testing api endpoints
+enter a decimal number larger than 0.0",4
+"are you a us citizen or gc ?
+are you a us citizen or gc ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you local to ga state?
+are you local to ga state?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",NY
+"select 1 if you are not a us citizen select 2 if you are a us citizen
+enter a decimal number larger than 0.0",5
+"how many certifications do you have ?
+enter a decimal number larger than 0.0",6
+"do u have 10+ years’ experience as an individual developer and experience as architect?
+do u have 10+ years’ experience as an individual developer and experience as architect?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+how many years of work experience do you have with sas (software)?,5
+"how many years of work experience do you have with xcode?
+enter a whole number between 0 and 99",6
+"experience in react ui
+enter a decimal number larger than 0.0",4
+"experience in full-stack development
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with solumina?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with apache?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with json?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with identity and access management (iam)?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with aws codebuild?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with apache flink?
+enter a whole number between 0 and 99",4
+"total it experience ?
+enter a decimal number larger than 0.0",5
+"please indicate your race / ethnic group (choose all that apply) [definitions](https://www.smartrecruiters.com/oneclick-ui/resources/html/eeogeneral?lang=en)
+please indicate your race / ethnic group (choose all that apply) [definitions](https://www.smartrecruiters.com/oneclick-ui/resources/html/eeogeneral?lang=en)",black
+"i understand that the information i submit as part of my job application will be used in accordance with [palo alto network's candidate privacy notice](https://www.paloaltonetworks.com/legal-notices/privacy/privacy-notice.html). i understand the processing of my information as described in that policy including that, in limited circumstances, palo alto networks may share my contact information with trusted third parties, to assist in certain phases of the hiring process (such as conducting background checks).
+i understand that the information i submit as part of my job application will be used in accordance with [palo alto network's candidate privacy notice](https://www.paloaltonetworks.com/legal-notices/privacy/privacy-notice.html). i understand the processing of my information as described in that policy including that, in limited circumstances, palo alto networks may share my contact information with trusted third parties, to assist in certain phases of the hiring process (such as conducting background checks).",Yes
+"by checking this box, you will declare that you read and understand the palo alto networks privacy policy, and the smartrecruiters privacy policy and smartrecruiters  terms of use.
+by checking this box, you will declare that you read and understand the palo alto networks, and the smartrecruitersand smartrecruiters.",I agree
+"select the areas of work that are of interest to you:
+select the areas of work that are of interest to you:",2
+"(motor-vehicle acknowledgment) i acknowledge that the role to which i am applying may require me to travel to and from palo alto networks, inc. business meetings and events and that i have reliable transportation to do so. to the extent i choose to drive in connection with company business, i hereby certify that i have and will maintain a valid driver’s license.
+(motor-vehicle acknowledgment) i acknowledge that the role to which i am applying may require me to travel to and from palo alto networks, inc. business meetings and events and that i have reliable transportation to do so. to the extent i choose to drive in connection with company business, i hereby certify that i have and will maintain a valid driver’s license.",2
+"street name
+please enter a valid answer",2
+"zip code
+please enter a valid answer",10466
+"state
+please enter a valid answer",NY
+"what are your salary expectations for this position? a range is acceptable.
+please enter a valid answer",80000
+"primary area of interest
+primary area of interest
+       select an option
+       finance/accounting
+       human resources
+       technology
+       business development
+       event planning
+       graphics, multimedia & instructional design
+       healthcare policy
+       science policy
+       communications & outreach
+       science or research
+       evaluation & research
+       administrative support
+       project management
+       public health
+       regulatory",2
+"desired telework arrangement
+desired telework arrangement
+       select an option
+       telework: full-time
+       telework: hybrid (1 day week in office)
+       telework: hybrid (2-3 days week in office)
+       office work",2
+"if offered a position, how soon could you start?
+if offered a position, how soon could you start?
+required
+       select an option
+       immediately
+       one week
+       two weeks
+       three weeks
+       more than three weeks
+       specific date
+       other
+   please make a selection",11/27/2024
+"what is your highest level of education completed?
+what is your highest level of education completed?
+required
+       select an option
+       high school/ged
+       technical school
+       associates
+       undergraduate graduate
+       masters
+       doctorate
+   please make a selection",2
+"are you willing to complete assessments as part of the recruiting process?
+are you willing to complete assessments as part of the recruiting process?
+required
+yes
+no
+please make a selection",Yes
+"ripple effect is currently not set up to sponsor individuals. are you (and will you remain) eligible to work in the united states without sponsorship?
+ripple effect is currently not set up to sponsor individuals. are you (and will you remain) eligible to work in the united states without sponsorship?
+required
+yes
+no
+please make a selection",No
+"are you seeking a pay range between $70,905 to $81,540 per year?
+are you seeking a pay range between $70,905 to $81,540 per year?
+required
+yes
+no
+please make a selection",Yes
+"are you able and willing to work within the u.s. in a state ripple effect is set up to support (not new york or california)?
+are you able and willing to work within the u.s. in a state ripple effect is set up to support (not new york or california)?
+required
+yes
+no
+please make a selection",NY
+"do you have 4 years of relevant work experience?
+do you have 4 years of relevant work experience?
+required
+yes
+no
+please make a selection",Yes
+"do you have at least 2 years of experience working in power platform?
+do you have at least 2 years of experience working in power platform?
+required
+yes
+no
+please make a selection",Yes
+"describe your experience using power platform. which products have you used, in what capacity, and for how long?
+please enter a valid answer",Bronx
+"are you willing to complete assessments as part of the recruiting process?
+are you willing to complete assessments as part of the recruiting process?
+required
+yes
+no",Yes
+"ripple effect is currently not set up to sponsor individuals. are you (and will you remain) eligible to work in the united states without sponsorship?
+ripple effect is currently not set up to sponsor individuals. are you (and will you remain) eligible to work in the united states without sponsorship?
+required
+yes
+no",No
+"are you seeking a pay range between $70,905 to $81,540 per year?
+are you seeking a pay range between $70,905 to $81,540 per year?
+required
+yes
+no",Yes
+"are you able and willing to work within the u.s. in a state ripple effect is set up to support (not new york or california)?
+are you able and willing to work within the u.s. in a state ripple effect is set up to support (not new york or california)?
+required
+yes
+no",NY
+"do you have 4 years of relevant work experience?
+do you have 4 years of relevant work experience?
+required
+yes
+no",Yes
+"do you have at least 2 years of experience working in power platform?
+do you have at least 2 years of experience working in power platform?
+required
+yes
+no",Yes
+"how many years of work experience do you have with cyberark cloud migration?
+enter a decimal number larger than 0.0",4
+"do you have any experience working with cyberark epm(endpoint privilege manager)?
+do you have any experience working with cyberark epm(endpoint privilege manager)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have any experience working with cyberark jit(just in time)?
+do you have any experience working with cyberark jit(just in time)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have any experience working with dynamic privileged access(dpa)?
+do you have any experience working with dynamic privileged access(dpa)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of total experience do you have?
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have with computer networking?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with structured cabling?
+enter a whole number between 0 and 99",6
+"are you citizen of usa?
+are you citizen of usa?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"active secret clearance?
+active secret clearance?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"how many years of work experience do you have with engineering?
+enter a whole number between 0 and 99",6
+"how many years of real estate experience do you currently have?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with instructional design?
+enter a whole number between 0 and 99",3
+"would you agree to a background check?
+would you agree to a background check?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"are you currently enrolled in college courses, or do you have an associate's or bachelor's degree? all fields are welcomed.
+are you currently enrolled in college courses, or do you have an associate's or bachelor's degree? all fields are welcomed.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"would you agree to a background check? 
+would you agree to a background check?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"are you currently enrolled in college courses, or do you have an associate's or bachelor's degree? all fields are welcomed. 
+are you currently enrolled in college courses, or do you have an associate's or bachelor's degree? all fields are welcomed.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you native russian speaker?
+are you native russian speaker?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you native vietnamese speaker?
+are you native vietnamese speaker?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you native chinese speaker
+are you native chinese speaker
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
