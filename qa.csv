@@ -11129,3 +11129,520 @@ required
        yes
        no
    please enter a valid answer",Yes
+how many years of work experience do you have with visualization?,6
+"are you within commuting distance to columbia, south carolina?
+are you within commuting distance to columbia, south carolina?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you a us citizen or green card holder? (must have for client)
+are you a us citizen or green card holder? (must have for client)
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you able to work w2 hourly contract? (client does not accept corp-to-corp)
+are you able to work w2 hourly contract? (client does not accept corp-to-corp)
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with production support?
+enter a whole number between 0 and 99",4
+"how many years of production experience do you currently have?
+enter a whole number between 0 and 99",6
+"did you work in tableau production or any other bi dashboard production environment?
+did you work in tableau production or any other bi dashboard production environment?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with regulatory reporting?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with financial reporting?,3
+"how many years of work experience do you have with forecasting?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with salesforce service cloud?
+enter a whole number between 0 and 99",4
+"are you a us citizen or green card/ead holder who can work without visa sponsorship now or in the future?
+are you a us citizen or green card/ead holder who can work without visa sponsorship now or in the future?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"what's your desired hourly rate?
+enter a decimal number larger than 0.0",3
+"what is your current residence location zip code?
+enter a decimal number larger than 0.0",4
+"how many years of experience do you have working as a business analyst (ba) in the charles river development (crd) platform?
+enter a decimal number larger than 0.0",3
+"how many years of experience do you have with etfs and fixed-income/ equity?
+enter a decimal number larger than 0.0",3
+how many years of work experience do you have with robotic process automation (rpa)?,4
+"how many years of work experience do you have with ipython?
+enter a whole number between 0 and 99",3
+"are you a u.s. citizen?
+are you a u.s. citizen?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"can you pass a background check to obtain a security clearance?
+can you pass a background check to obtain a security clearance?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"how many years of technical experience do you have with generative ai?
+enter a decimal number larger than 0.0",4
+how many years of work experience do you have with healthcare?,3
+"how many years of work experience do you have with project management?
+enter a whole number between 0 and 99",6
+"do currently reside within commuting distance to princeton, nj? 
+do currently reside within commuting distance to princeton, nj?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with privacy compliance?
+enter a whole number between 0 and 99",5
+"how many years of experience do you have working with hipaa privacy and security rules or federal/state health guidelines?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with cerner?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with rcm?
+enter a whole number between 0 and 99",3
+"do you have the right to work in the location of this role?
+do you have the right to work in the location of this role?
+required
+yes
+no
+please make a selection",Yes
+"will you now or in the future require sponsorship for employment visa status (e.g. h-lb visa status)?
+will you now or in the future require sponsorship for employment visa status (e.g. h-lb visa status)?
+required
+yes
+no
+please make a selection",No
+"are you currently subject to a non-compete or employment agreement with another employer?
+are you currently subject to a non-compete or employment agreement with another employer?
+required
+yes
+no
+please make a selection",Yes
+"deloitte is verisk’s external auditor. for the purpose of independence confirmation, are you a current or former employee of deloitte?
+deloitte is verisk’s external auditor. for the purpose of independence confirmation, are you a current or former employee of deloitte?
+required
+yes
+no
+please make a selection",Yes
+"have you ever been employed by a verisk business?
+have you ever been employed by a verisk business?
+required
+yes
+no
+please make a selection",Yes
+"are you currently working as a contractor for a verisk business?
+are you currently working as a contractor for a verisk business?
+required
+yes
+no
+please make a selection",Yes
+"were you referred to this position by a verisk employee?
+were you referred to this position by a verisk employee?
+yes
+no",N/A
+"if yes, what is the name of the employee who referred you to this position?",N/A
+"do you have any relatives working with us?
+do you have any relatives working with us?
+required
+yes
+no
+please make a selection",Yes
+"if yes, name of relative(s)?",2
+"do you have the right to work in the location of this role?
+do you have the right to work in the location of this role?
+required
+yes
+no",Yes
+"will you now or in the future require sponsorship for employment visa status (e.g. h-lb visa status)?
+will you now or in the future require sponsorship for employment visa status (e.g. h-lb visa status)?
+required
+yes
+no",No
+"are you currently subject to a non-compete or employment agreement with another employer?
+are you currently subject to a non-compete or employment agreement with another employer?
+required
+yes
+no",Yes
+"deloitte is verisk’s external auditor. for the purpose of independence confirmation, are you a current or former employee of deloitte?
+deloitte is verisk’s external auditor. for the purpose of independence confirmation, are you a current or former employee of deloitte?
+required
+yes
+no",Yes
+"have you ever been employed by a verisk business?
+have you ever been employed by a verisk business?
+required
+yes
+no",Yes
+"are you currently working as a contractor for a verisk business?
+are you currently working as a contractor for a verisk business?
+required
+yes
+no",Yes
+"do you have any relatives working with us?
+do you have any relatives working with us?
+required
+yes
+no",Yes
+"by checking this box, you will declare that you read and understand the privacy policy of verisk.
+by checking this box, you will declare that you read and understand the privacy policy of verisk.
+required
+i consent
+select checkbox to proceed",I agree
+"by checking this box, you will declare that you read and understand the privacy policy of verisk.
+by checking this box, you will declare that you read and understand the privacy policy of verisk.",I agree
+"do you have a reliable high-speed internet connection?
+do you have a reliable high-speed internet connection?
+required
+yes
+no
+please make a selection",Yes
+"have you previously worked in a remote position?
+have you previously worked in a remote position?
+required
+yes
+no
+please make a selection",Yes
+"can you provide an example of a challenge you faced while working remotely and how you overcame it?
+please enter a valid answer",2
+"do you have a reliable high-speed internet connection?
+do you have a reliable high-speed internet connection?
+required
+yes
+no",Yes
+"have you previously worked in a remote position?
+have you previously worked in a remote position?
+required
+yes
+no",Yes
+"what is your work authorization (1.opt; 2. gc; 3. usc; 4. tn; 5. other) please write numeric according to your work auth?
+enter a decimal number larger than 0.0",5
+how many years of work experience do you have with microsoft power bi?,3
+"do you understand this is an equity-only compensation structure until we secure funding?
+do you understand this is an equity-only compensation structure until we secure funding?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience working with both frontend (e.g., react, next.js) and backend (e.g., django, flask, node.js) technologies?
+do you have experience working with both frontend (e.g., react, next.js) and backend (e.g., django, flask, node.js) technologies?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you proficient in working with cloud platforms such as aws, google cloud, or azure?
+are you proficient in working with cloud platforms such as aws, google cloud, or azure?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have a strong understanding of api design and integration, including restful or graphql apis?
+do you have a strong understanding of api design and integration, including restful or graphql apis?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you able to commit to working 30+ hours per week?
+are you able to commit to working 30+ hours per week?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience building scalable, production-grade software in a fast-paced startup environment?
+do you have experience building scalable, production-grade software in a fast-paced startup environment?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"what is your full legal name, as presented on your id?
+please enter a valid answer",2
+what is your preferred first name?,N/A
+"are you eligible to work in the us?
+are you eligible to work in the us?
+required
+yes
+no
+please make a selection",Yes
+"will you now or in the future require sponsorship ?
+will you now or in the future require sponsorship ?
+required
+yes
+no
+please make a selection",No
+"if yes, please enter visa type
+if yes, please enter visa type
+required
+       select an option
+       h1b
+       tn
+       f1
+       e2
+       l1
+       l2
+       other
+       na
+   please make a selection",2
+"if referred by an alten usa employee, please enter their full name below.",N/A
+"are you eligible to work in the us?
+are you eligible to work in the us?
+required
+yes
+no",Yes
+"will you now or in the future require sponsorship ?
+will you now or in the future require sponsorship ?
+required
+yes
+no",No
+"do you need sponsorship now or in the future for employment?
+do you need sponsorship now or in the future for employment?
+yes
+no",No
+"are you able to work 5 days a week in-person in our arlington, va office?
+are you able to work 5 days a week in-person in our arlington, va office?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have at least 5 years working with the go programming language (golang)?
+do you have at least 5 years working with the go programming language (golang)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you able to work 5 days a week in-person at our arlington, va office?
+are you able to work 5 days a week in-person at our arlington, va office?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have at least 5 years experience building production level applications using go (programming language)?
+do you have at least 5 years experience building production level applications using go (programming language)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"1. are you a us citizen / 2. green card holder?
+enter a decimal number larger than 0.0",5
+"1. are you an immediate joiner / 2. can join within 15 days / 3. more than 30 days?
+enter a decimal number larger than 0.0",5
+"how many yrs. of exp. do you have in power bi?
+enter a decimal number larger than 0.0",4
+"how many yrs. of exp. do you have in tableau?
+enter a decimal number larger than 0.0",3
+"how many yrs. of exp. do you have in ms sql server?
+enter a decimal number larger than 0.0",3
+"how many yrs. of exp. do you have in ws redshift?
+enter a decimal number larger than 0.0",4
+"how many yrs. of exp. do you have in aws?
+enter a decimal number larger than 0.0",3
+"how many yrs. of exp. do you have in snowflake?
+enter a decimal number larger than 0.0",4
+"what is your expected hourly compensation for this position?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with epics?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with rhapsody?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with bridges?
+enter a whole number between 0 and 99",5
+"may we retain your contact information to inform you about future job opportunities and company updates?
+may we retain your contact information to inform you about future job opportunities and company updates?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",11/29/2024
+"what is the hourly salary expectation for freelance job if the offer accepted.
+enter a decimal number larger than 0.0",6
+"what is your legal first name?
+please enter a valid answer",Daeshaun
+"what is your legal last name?
+please enter a valid answer",Morrison
+"what is your preferred first name?
+please enter a valid answer",N/A
+"what is your preferred last name?
+please enter a valid answer",N/A
+"are you authorized to work lawfully in the united states for any employer?
+are you authorized to work lawfully in the united states for any employer?
+required
+yes
+no
+please make a selection",Yes
+"do you now or will you in the future require visa sponsorship for work authorization?
+do you now or will you in the future require visa sponsorship for work authorization?
+required
+yes
+no
+please make a selection",No
+"do you have any friends or relatives currently employed at zoominfo?
+do you have any friends or relatives currently employed at zoominfo?
+required
+yes
+no
+please make a selection",Yes
+"do you have experience in the identity resolution domain specifically?
+do you have experience in the identity resolution domain specifically?
+required
+yes
+no
+please make a selection",Yes
+"do you have experience with identity match resolution graph and marketing database (mdb) solutions, deduplication, record linkage, data matching etc?
+do you have experience with identity match resolution graph and marketing database (mdb) solutions, deduplication, record linkage, data matching etc?
+required
+yes
+no
+please make a selection",Yes
+"are you authorized to work lawfully in the united states for any employer?
+are you authorized to work lawfully in the united states for any employer?
+required
+yes
+no",Yes
+"do you now or will you in the future require visa sponsorship for work authorization?
+do you now or will you in the future require visa sponsorship for work authorization?
+required
+yes
+no",No
+"do you have any friends or relatives currently employed at zoominfo?
+do you have any friends or relatives currently employed at zoominfo?
+required
+yes
+no",Yes
+"do you have experience in the identity resolution domain specifically?
+do you have experience in the identity resolution domain specifically?
+required
+yes
+no",Yes
+"do you have experience with identity match resolution graph and marketing database (mdb) solutions, deduplication, record linkage, data matching etc?
+do you have experience with identity match resolution graph and marketing database (mdb) solutions, deduplication, record linkage, data matching etc?
+required
+yes
+no",Yes
+"how many years of work experience do you have with business strategy?
+enter a whole number between 0 and 99",4
+"are you a veteran?
+are you a veteran?
+required
+yes
+no
+please make a selection",I am not
+"do you claim disability status?
+do you claim disability status?
+required
+yes
+no
+please make a selection",no
+"are you a veteran?
+are you a veteran?
+required
+yes
+no",I am not
+"do you claim disability status?
+do you claim disability status?
+required
+yes
+no",no
+"are you legally authorized to work in the united states on a full-time basis?
+are you legally authorized to work in the united states on a full-time basis?
+required
+yes
+no
+please make a selection",Yes
+"do you currently reside in the united states?
+do you currently reside in the united states?
+required
+yes
+no
+please make a selection",Yes
+"what is your country of citizenship?
+what is your country of citizenship?
+required
+       select an option
+       us citizen
+       non us citizen (includes us permanent residents)
+   please make a selection",2
+"are you subject to any confidentiality, non-solicit or non-compete restrictions with any other employer or company? as a reminder, those restrictions often are found in offer letters, commission, long-term incentive or other compensation agreements and severance agreements.
+are you subject to any confidentiality, non-solicit or non-compete restrictions with any other employer or company? as a reminder, those restrictions often are found in offer letters, commission, long-term incentive or other compensation agreements and severance agreements.
+required
+yes
+no
+please make a selection",Yes
+"have you previously been employed with brightspeed, lumen or centurylink as an employee or a contractor?
+have you previously been employed with brightspeed, lumen or centurylink as an employee or a contractor?
+required
+yes
+no
+please make a selection",Yes
+"are you legally authorized to work in the united states on a full-time basis?
+are you legally authorized to work in the united states on a full-time basis?
+required
+yes
+no",Yes
+"do you currently reside in the united states?
+do you currently reside in the united states?
+required
+yes
+no",Yes
+"are you subject to any confidentiality, non-solicit or non-compete restrictions with any other employer or company? as a reminder, those restrictions often are found in offer letters, commission, long-term incentive or other compensation agreements and severance agreements.
+are you subject to any confidentiality, non-solicit or non-compete restrictions with any other employer or company? as a reminder, those restrictions often are found in offer letters, commission, long-term incentive or other compensation agreements and severance agreements.
+required
+yes
+no",Yes
+"have you previously been employed with brightspeed, lumen or centurylink as an employee or a contractor?
+have you previously been employed with brightspeed, lumen or centurylink as an employee or a contractor?
+required
+yes
+no",Yes
+"by checking this box, you will declare that you read and understand the privacy policy of brightspeed.
+by checking this box, you will declare that you read and understand the privacy policy of brightspeed.
+required
+i consent
+select checkbox to proceed",I agree
+"by checking this box, you will declare that you read and understand the privacy policy of brightspeed.
+by checking this box, you will declare that you read and understand the privacy policy of brightspeed.",I agree
+"how many years of work experience do you have with travel & hospitality ?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with mig welding?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with robotic welding?
+enter a whole number between 0 and 99",5
+"what is your level of proficiency in vietnamese?
+what is your level of proficiency in vietnamese?
+required
+       select an option
+       none
+       conversational
+       professional
+       native or bilingual
+   please make a selection",2
+"how many years of work experience do you have with semantic kernel?
+enter a whole number between 0 and 99",6
