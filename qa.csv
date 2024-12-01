@@ -11646,3 +11646,38 @@ required
    please make a selection",2
 "how many years of work experience do you have with semantic kernel?
 enter a whole number between 0 and 99",6
+"how many years of work experience do you have with data conversion?
+enter a whole number between 0 and 99",4
+"are you open to a full time/salary position (not 1099/c2c)?
+are you open to a full time/salary position (not 1099/c2c)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",80000
+"if employed and under the age of 18, can you provide a work permit?
+if employed and under the age of 18, can you provide a work permit?
+       select an option
+       yes
+       no
+       not applicable",2
+"this position requires in-office attendance at the location listed in the job description. are you willing to relocate or are you within a commutable distance?
+this position requires in-office attendance at the location listed in the job description. are you willing to relocate or are you within a commutable distance?
+required
+yes
+no
+please make a selection",Yes
+"by checking this box, you will declare that you read and agree to the privacy policy of socotec.
+by checking this box, you will declare that you read and agree to the privacy policy of socotec.
+required
+i consent
+select checkbox to proceed",I agree
+"by checking this box, you will declare that you read and agree to the privacy policy of socotec.
+by checking this box, you will declare that you read and agree to the privacy policy of socotec.",I agree
+"have you done hands on dimensional modleing?
+have you done hands on dimensional modleing?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes

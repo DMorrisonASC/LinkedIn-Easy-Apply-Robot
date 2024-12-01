@@ -274,7 +274,7 @@ class EasyApplyBot:
             user_field = self.get_child(self.locator["username_field"])
             pw_field = self.get_child(self.locator["password_field"])
             
-            # Wait for the 'username' inut field to be present before interacting with it
+            # Wait for the 'username' input field to be present before interacting with it
             WebDriverWait(self.browser, 10).until(
                 EC.presence_of_element_located((By.XPATH, "//input[@id = 'username']"))
             )
@@ -290,7 +290,7 @@ class EasyApplyBot:
             
             # Click the login button after ensuring it is clickable
             self.wait.until(EC.element_to_be_clickable(login_button))
-            login_button.click()
+            self.clickjs(login_button)
             # Timer for 20 seconds, in cases where 2FA and/or CAPTCHA needs to be approved
             time.sleep(20)
 
@@ -423,7 +423,7 @@ class EasyApplyBot:
                             if applied_status.is_displayed():
                                 log.debug(f"Job already applied: {link.text}")
                                 dismissBtn = link.find_element(By.XPATH, ".//button[starts-with(@aria-label, 'Dismiss')]")
-                                dismissBtn.click()
+                                clickjs(dismissBtn)
                                 continue  # Skip this job card if it's already applied.
 
                         except NoSuchElementException:
@@ -469,35 +469,6 @@ class EasyApplyBot:
         for jobID in jobIDs:
             self.apply_to_job(jobID)
             self.visited_IDs[jobID] = True
-
-    def is_present(self, locator, field=None):
-        """
-        Checks if an element specified by the locator is present on the page.
-
-        This function checks if the element(s) specified by the given locator are 
-        present on the page. It can search within a specific web element if provided, 
-        or on the entire page (default behavior).
-
-        Args:
-            locator (tuple): A tuple containing the locator strategy and the value 
-                            (e.g., (By.ID, 'element_id')).
-            field (WebElement, optional): A parent WebElement to search within. If 
-                                        None (default), searches on the entire page.
-
-        Returns:
-            bool: True if at least one element matching the locator is found, False otherwise.
-
-        Example:
-            # Checking for an element within the entire page
-            is_present((By.ID, "login"))
-
-            # Checking for an element within a specific field
-            is_present((By.CLASS_NAME, "submit-button"), some_field_element)
-        """
-        if field:
-            return bool(field.find_elements(locator[0], locator[1]))
-        else:
-            return bool(self.browser.find_elements(locator[0], locator[1]))
 
     def apply_to_job(self, jobID):
         """
@@ -548,7 +519,7 @@ class EasyApplyBot:
                 # posted_date = today.
                 # Easy Apply button is available, so click it to proceed.
                 string_easy = "~ Has Easy Apply Button. Clicking now!"
-                self.browser.execute_script("arguments[0].click();", button)
+                self.clickjs(button)
 
                 # Fill out the necessary fields on the Easy Apply form.
                 time.sleep(5)
@@ -678,14 +649,14 @@ class EasyApplyBot:
                     elements = self.get_children(self.locator["follow"])
                     for element in elements:
                         button = self.wait.until(EC.element_to_be_clickable(element))
-                        button.click()
+                        self.clickjs(button)
 
                 # Handle submit button and complete the application.
                 if self.is_present(self.locator["submit"]):
                     elements = self.get_children(self.locator["submit"])
                     for element in elements:
                         button = self.wait.until(EC.element_to_be_clickable(element))
-                        button.click()
+                        self.clickjs(button)
                         log.info("Application Submitted")
                         submitted = True
                         break
@@ -724,7 +695,7 @@ class EasyApplyBot:
 
                     for element in elements:
                         button = self.wait.until(EC.element_to_be_clickable(element))
-                        button.click()
+                        self.clickjs(button)
 
                 elif self.is_present(self.locator["upload_cover"]):
                     elements = self.get_children(self.locator["upload_cover"])
@@ -736,13 +707,13 @@ class EasyApplyBot:
                     elements = self.get_children(self.locator["continue_applying"])
                     for element in elements:
                         button = self.wait.until(EC.element_to_be_clickable(element))
-                        button.click()
+                        self.clickjs(button)
 
                 elif self.is_present(self.locator["review"]):
                     elements = self.get_children(self.locator["review"])
                     for element in elements:
                         button = self.wait.until(EC.element_to_be_clickable(element))
-                        button.click()
+                        self.clickjs(button)
 
                 # Check if the total process time has exceeded 5 minutes
                 elapsed_time = time.time() - start_time
@@ -817,10 +788,7 @@ class EasyApplyBot:
 
                     for radio_button in radio_buttons:
                         if radio_button.get_attribute('value').lower() == answer.lower():
-                            self.browser.execute_script("""
-                                arguments[0].click();
-                                arguments[0].dispatchEvent(new Event('change'));
-                            """, radio_button)
+                            self.clickjs(radio_button)
                             log.info(f"Radio button selected: {radio_button.get_attribute('value')}")
                             selected = True
 
@@ -837,11 +805,7 @@ class EasyApplyBot:
                                     log.error(f"No element found for radio value: {radio_value}")
 
                         if closest_match:
-                            # WebDriverWait(field, 15).until(EC.presence_of_element_located())
-                            self.browser.execute_script("""
-                                arguments[0].click();
-                                arguments[0].dispatchEvent(new Event('change'));
-                            """, closest_match)
+                            self.clickjs(closest_match)
                             log.info(f"Closest radio button selected: {closest_match.get_attribute('value')}")
                             
                         else:
@@ -849,10 +813,7 @@ class EasyApplyBot:
                             value = random.choice(radio_buttons).get_attribute('value')
                             # ran_option = field.find_element(By.XPATH, f".//input[@value=\"{value}\"]")
                             ran_option = self.get_child((By.XPATH, f".//input[@value=\"{value}\"]"), field)
-                            self.browser.execute_script("""
-                                arguments[0].click();
-                                arguments[0].dispatchEvent(new Event('change'));
-                            """, ran_option)
+                            self.clickjs(ran_option)
                             
                 except StaleElementReferenceException:
                     log.warning(f"Retrying due to stale element in radio button. ")
@@ -880,13 +841,13 @@ class EasyApplyBot:
                         options = self.get_children((By.TAG_NAME, "option"), select_element)
                         for option in options:
                             if answer.lower() in option.text.strip().lower():
-                                option.click()
+                                self.clickjs(option)
                                 foundChoice = True
                                 log.info(f"Option selected: {option.text}")
                                 break
 
                         if not foundChoice:
-                            options[1].click()  # Select the 1st option as a fallback
+                            self.clickjs(option[1])  # Select the 1st option as a fallback
                             log.info(f"1st Option selected: {options[1].text}")
 
                         break  # Successfully selected an option, exit loop
@@ -972,10 +933,7 @@ class EasyApplyBot:
                             
                             # Check if the attribute value matches the answer
                             if answer.lower() == attr_value.lower():
-                                self.browser.execute_script("""
-                                    arguments[0].click();
-                                    arguments[0].dispatchEvent(new Event('change'));
-                                """, select_element)
+                                self.clickjs(select_element)
                                 log.info(f"Select element chosen: {attr_value}")
                                 selected = True
                                 break  # Exit loop once the option is selected
@@ -1003,28 +961,15 @@ class EasyApplyBot:
                                 
 
                         if closest_match:
-                            try:
-                                closest_match.click()  # Use click for better simulation
-                                log.info(f"Closest select element chosen: {closest_match.get_attribute('value')}")
-                            except Exception as e:
-                                log.warning(f"Regular click failed for closes match option. Using JavaScript click. Error: {e}")
-                                # Fallback to JavaScript click
-                                self.browser.execute_script("arguments[0].click();", closest_match)
-                                log.info(f"Random option selected via JS: {closest_match.get_attribute('value')}")
-
+                            self.clickjs(closest_match)
+                            log.info(f"Closest select element chosen: {closest_match.get_attribute('value')}")
 
                         else:
                             log.warning("No suitable select option found. Picking the random option")
                             # Pick random choice
                             random_option = random.choice(select_elements)
-                            try:
-                                random_option.click()
-                                log.info(f"Random option selected: {random_option.get_attribute('value')}")
-                            except Exception as e:
-                                log.warning(f"Regular click failed for random option. Using JavaScript click. Error: {e}")
-                                # Fallback to JavaScript click
-                                self.browser.execute_script("arguments[0].click();", random_option)
-                                log.info(f"Random option selected via JS: {random_option.get_attribute('value')}")
+                            self.clickjs(random_option)
+                            log.info(f"Random option selected: {random_option.get_attribute('value')}")
                                 
                 except StaleElementReferenceException:
                     log.warning(f"Retrying due to stale element in fieldset.")
@@ -1050,12 +995,12 @@ class EasyApplyBot:
                     date_field.clear()
                     date_field.send_keys(answer)  # Ensure 'answer' is formatted correctly as "mm/dd/yyyy"
                     time.sleep(1)
-                    date_field.click()
+                    self.clickjs(date_field)
                     time.sleep(3)
 
                     today_button = self.get_child((By.XPATH, "//button[contains(@aria-label, 'This is today')]"), field)
                     
-                    self.browser.execute_script("arguments[0].click();", today_button)
+                    self.clickjs(today_button)
 
                     log.info(f"Date input filled with value: {answer}")
                     
@@ -1066,7 +1011,36 @@ class EasyApplyBot:
             else:
                 log.info(f"Unable to determine field type for question: {question}, moving to next field.")
 
-    def get_child(self, locator, field=None):
+    def is_present(self, locator, field=None, timeout=5):
+        """
+        Checks if an element specified by the locator is present on the page quickly.
+
+        Args:
+            locator (tuple): A tuple containing the locator strategy and value 
+                            (e.g., (By.ID, 'element_id')).
+            field (WebElement, optional): A parent WebElement to search within. If 
+                                        None (default), searches on the entire page.
+            timeout (int, optional): Maximum time to wait for the element to appear. Defaults to 5 seconds.
+
+        Returns:
+            bool: True if the element is found within the timeout, False otherwise.
+        """
+        try:
+            if field:
+                # Using find_elements to avoid the overhead of waiting for only one element
+                elements = field.find_elements(locator[0], locator[1])
+            else:
+                elements = self.browser.find_elements(locator[0], locator[1])
+            
+            # Quickly return True if the element exists
+            return len(elements) > 0
+        except Exception as e:
+            print(f"Error occurred while checking element presence: {e}")
+            return False
+
+
+
+    def get_child(self, locator, field=None, timeout=10):
         # Use self.browser as the default if field is not provided
         if field is None:
             field = self.browser
@@ -1075,10 +1049,10 @@ class EasyApplyBot:
             # locator[0] = A locator strategy supported by Selenium. Example, "id", "name", "class_name", "css_selector", "xpath", etc.
             return field.find_element(locator[0], locator[1])
         except Exception as e:
-            print(f"Error occurred while finding elements: {e}")
+            print(f"Error occurred while finding elements in {locator}: {e}")
             return None  # Return an empty list instead of False
             
-    def get_children(self, locator, field=None):
+    def get_children(self, locator, field=None, timeout=10):
         # Use self.browser as the default if field is not provided
         if field is None:
             field = self.browser
@@ -1087,8 +1061,11 @@ class EasyApplyBot:
             # locator[0] = A locator strategy supported by Selenium. Example, "id", "name", "class_name", "css_selector", "xpath", etc.
             return field.find_elements(locator[0], locator[1])
         except Exception as e:
-            print(f"Error occurred while finding elements: {e}")
+            print(f"Error occurred while finding elements in {locator}: {e}")
             return []  # Return an empty list instead of False
+
+    def clickjs(self, button):
+        self.browser.execute_script("arguments[0].click();", button)
 
     def next_jobs_page(self, position, location, jobs_per_page, experience_level=[], time_filter=""):
         """
