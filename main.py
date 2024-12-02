@@ -1552,8 +1552,27 @@ class EasyApplyBot:
 
     def clickjs(self, element):
         """
-        Clicks an element using JavaScript. If the element is an option, it sets it as selected 
-        and dispatches a change event.
+        Clicks an element using JavaScript. If the element is an <option> element,
+        it sets the option as selected and dispatches a 'change' event. For any other
+        element, it triggers a click event followed by dispatching a 'change' event.
+
+        This method is useful for bypassing Selenium's standard `.click()` which may fail 
+        when interacting with non-visible elements, such as options in dropdowns.
+
+        Args:
+            element (WebElement): The element to be clicked or selected. This can be any 
+                                element, but if it's an <option> element, it will be 
+                                set as selected.
+
+        Example:
+            # Example usage for a normal element
+            clickjs(button_element)
+
+            # Example usage for an <option> element (e.g., selecting an option in a dropdown)
+            clickjs(option_element)
+        
+        Raises:
+            WebDriverException: If the script execution fails or the element is not interactable.
         """
         if element.tag_name.lower() == "option":
             self.browser.execute_script("""
@@ -1565,7 +1584,6 @@ class EasyApplyBot:
                 arguments[0].click();
                 arguments[0].dispatchEvent(new Event('change'));
             """, element)
-
 
     def next_jobs_page(self, position, location, jobs_per_page, experience_level=[], time_filter=""):
         """
