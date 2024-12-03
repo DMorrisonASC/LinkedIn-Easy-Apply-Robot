@@ -12419,3 +12419,537 @@ enter a whole number between 0 and 99",4
 how many years of work experience do you have with purchase orders?,5
 "how many years of work experience do you have with jenkins?
 enter a whole number between 0 and 99",6
+"how many years of work experience do you have with bug tracking?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with enterprise search?
+enter a whole number between 0 and 99",3
+"salary for this position is $99,000-$117,000. is this acceptable?
+salary for this position is $99,000-$117,000. is this acceptable?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",80000
+"how many years of experience do you have in c# back-end development, particularly with sharepoint?
+enter a decimal number larger than 0.0",5
+"how many years of experience do you have with sharepoint migration?
+enter a decimal number larger than 0.0",3
+"per contract guidelines, this position requires us citizenship or green card. is this acceptable?
+per contract guidelines, this position requires us citizenship or green card. is this acceptable?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with data modeling?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with azure data factory?
+enter a whole number between 0 and 99",5
+"experience in full stack development and front end ui
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with progress 4gl?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with software as a service (saas)?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with supply chain management?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with live production?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have within the media and broadcast industry?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with application deployment?
+enter a whole number between 0 and 99",4
+"how many years of consulting experience do you currently have?
+enter a whole number between 0 and 99",6
+"is the payrate listed in the job ad an acceptable rate for you?
+is the payrate listed in the job ad an acceptable rate for you?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"are you able to commit to the scheduled hours, as listed in the job ad? 
+are you able to commit to the scheduled hours, as listed in the job ad?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"please refer to the job ad to review the minimum requirements for this role. do you meet these requirements? 
+please refer to the job ad to review the minimum requirements for this role. do you meet these requirements?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",N/A
+"have you ever been employed with h.a. berkheimer, berkone, creditech, temp poole, inc dba berkhr or any other berkheimer company? 
+have you ever been employed with h.a. berkheimer, berkone, creditech, temp poole, inc dba berkhr or any other berkheimer company?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"at time of hire, are you willing to undergo a background check/drug screen, in accordance with local law/regulations? also, are you able to provide professional references (such as individuals that served in a supervisor capacity)?
+at time of hire, are you willing to undergo a background check/drug screen, in accordance with local law/regulations? also, are you able to provide professional references (such as individuals that served in a supervisor capacity)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",N/A
+"we may use sms during the hiring process. do you give us permission to text you at the mobile number provided? message and data rates may apply. message frequency varies. reply 'stop' at any time if you no longer wish to receive text messages regarding this job.
+we may use sms during the hiring process. do you give us permission to text you at the mobile number provided? message and data rates may apply. message frequency varies. reply 'stop' at any time if you no longer wish to receive text messages regarding this job.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"gender
+gender
+required
+       select an option
+       i choose not to self-identify
+       male
+       female
+   please enter a valid answer",male
+"ethnicity
+ethnicity
+required
+       select an option
+       i choose not to self-identify
+       american indian or alaska native
+       asian
+       black or african american
+       hispanic or latino
+       native hawaiian or other pacific islander
+       white
+       two or more races
+   please enter a valid answer",Bronx
+"veteran status 
+this employer is a government contractor subject to the vietnam era veterans readjustment assistance act of 1974, as amended by the jobs for veterans act of 2002, 38 u.s.c. 4212 (vevraa), which requires government contractors to take affirmative action to employ and advance in employment: (1) disabled veterans; (2) recently separated veterans; (3) active duty wartime or campaign badge veterans; and (4) armed forces service medal veterans. these classifications are defined as follows:
+a ""disabled veteran"" is one of the following:
+a veteran of the u.s. military, ground, naval or air service who is entitled to compensation (or who but for the receipt of military retired pay would be entitled to compensation) under laws administered by the secretary of veterans affairs; or 
+a person who was discharged or released from active duty because of a service-connected disability. 
+a ""recently separated veteran"" means any veteran during the three-year period beginning on the date of such veterans discharge or release from active duty in the u.s. military, ground, naval, or air service. 
+an ""active duty wartime or campaign badge veteran"" means a veteran who served on active duty in the u.s. military, ground, naval or air service during a war, or in a campaign or expedition for which a campaign badge has been authorized under the laws administered by the department of defense. 
+an ""armed forces service medal veteran"" means a veteran who, while serving on active duty in the u.s. military, ground, naval or air service, participated in a united states military operation for which an armed forces service medal was awarded pursuant to executive order 12985. protected veterans may have additional rights under userra - the uniformed services employment and reemployment rights act. in particular, if you were absent from employment in order to perform service in the uniformed service, you may be entitled to be reemployed by your employer in the position you would have obtained with reasonable certainty if not for the absence due to service. for more information, call the u.s. department of labors veterans employment and training service (vets), toll-free, at 1-866-4-usa-dol. 2. if you believe you belong to any of the categories of protected veterans listed above, please indicate by checking the appropriate box below. as a government contractor subject to vevraa, we request this information in order to measure the effectiveness of the outreach and positive recruitment efforts we undertake pursuant to vevraa.
+ please select
+veteran status
+please select
+required
+       select an option
+       i choose not to self-identify
+       not a veteran
+       disabled veteran
+       recently separated veteran
+       protected veteran
+       armed forces service medal veteran
+       active duty wartime or campaign badge veteran
+   please enter a valid answer",12/02/2024
+"do you currently reside (no relocation) within 45 minutes of postal code 20814?
+do you currently reside (no relocation) within 45 minutes of postal code 20814?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",10466
+"dantech supports clients in multiple timezones which necessitates fixed hours. do you agree to onsite each business day with work hours of monday thru friday, 9am to 6pm est with an hour for lunch?
+dantech supports clients in multiple timezones which necessitates fixed hours. do you agree to onsite each business day with work hours of monday thru friday, 9am to 6pm est with an hour for lunch?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of professional work experience do you have using ms office or google suites?
+enter a decimal number larger than 0.0",6
+"how many years of professional work experience do you have using google docs, sheets, and slides?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have applying excellent customer service skills to requests for help?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have troubleshooting and resolving technical issues?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with cloud concepts and terminology?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with networking concepts?
+enter a decimal number larger than 0.0",4
+"are you vaccinated and boosted for covid-19?
+are you vaccinated and boosted for covid-19?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"this position is 100% on-site. do you agree to report on-site as requested?
+this position is 100% on-site. do you agree to report on-site as requested?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have running or supporting applications on aws?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have linux os support?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have powershell?
+enter a decimal number larger than 0.0",6
+"do you have the following license or certification: aws cloud practitioner?
+do you have the following license or certification: aws cloud practitioner?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"must hold one of the following valid visa : h4 ead, asylum ead, green card, gc ead, or citizenship.
+must hold one of the following valid visa : h4 ead, asylum ead, green card, gc ead, or citizenship.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you comfortable for on-site and remote
+are you comfortable for on-site and remote
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"we didn't have direct requirement know, we are work with some clients and marketing, please submit if you are interested.
+we didn't have direct requirement know, we are work with some clients and marketing, please submit if you are interested.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"do you have basic knowledge on java or .net?
+do you have basic knowledge on java or .net?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"we are consultant company, like we are in part of marketing your profile are you comfortable?
+we are consultant company, like we are in part of marketing your profile are you comfortable?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"only full-time
+only full-time
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"are you looking for training and placement?
+are you looking for training and placement?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"是否有机械自动化行业或者物流背景的解决方案规划工作经验？
+是否有机械自动化行业或者物流背景的解决方案规划工作经验？
+required
+       选择一项
+       yes
+       no
+   请输入有效回答",2
+"是否会使用autocad?
+请输入decimal编号 (长度超过 0.0)",2
+"是否会中文？
+是否会中文？
+required
+       选择一项
+       yes
+       no
+   请输入有效回答",2
+"how many years of work experience do you have with teradata?
+enter a whole number between 0 and 99",6
+"how many years of hands-on experience do you have with master data management (mdm) in a data focused role?
+enter a decimal number larger than 0.0",3
+"do you have experience with any of the following mdm tools? ibm infosphere, initiate mdm, informatica mdm, verato, and/or roche?
+do you have experience with any of the following mdm tools? ibm infosphere, initiate mdm, informatica mdm, verato, and/or roche?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have a bachelor's degree or master's degree in computer science (or related field) and 5+ years of experience? 
+do you have a bachelor's degree or master's degree in computer science (or related field) and 5+ years of experience?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have 3yrs+ experience leveraging technologies/tools such as snowflake & tableau?
+do you have 3yrs+ experience leveraging technologies/tools such as snowflake & tableau?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience in relational database modelling and implementation using sql?
+do you have experience in relational database modelling and implementation using sql?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"must have pharma & biotech industry experience in recent project
+must have pharma & biotech industry experience in recent project
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"development of dashboards, reports, and data exports
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with electrical safety?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with functional safety?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with iso 26262?
+enter a whole number between 0 and 99",6
+"any coding language
+enter a decimal number larger than 0.0",3
+"are you a usa citizen?
+are you a usa citizen?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you fully and legally authorized to work in the usa without any future sponsorship?
+are you fully and legally authorized to work in the usa without any future sponsorship?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with jakarta ee?,6
+"how many years of work experience do you have with puppet (software)?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with configure price quote (cpq) software?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with ironpython?
+enter a whole number between 0 and 99",3
+"location preference
+location preference",N/A
+"does your current employment status have any ability to be lost now or in the future?
+does your current employment status have any ability to be lost now or in the future?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"are you open to a conversation salary between $95,000 - $105,000 doe?
+are you open to a conversation salary between $95,000 - $105,000 doe?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",80000
+"are you able to go onsite to west palm beach fl 4-5x a week?
+are you able to go onsite to west palm beach fl 4-5x a week?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience (internships/ educational expereince is fine too!) do you have working with any of the following programming languages: (java, sql, javascript, typescript, ruby, go, c#)
+enter a decimal number larger than 0.0",6
+"do you have experience with github?
+do you have experience with github?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with .net architecture?
+enter a whole number between 0 and 99",3
+"are you willing to work a hybrid schedule in orlando?
+are you willing to work a hybrid schedule in orlando?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you require sponsorship by kellymitchell to be its w-2 employee? 
+do you require sponsorship by kellymitchell to be its w-2 employee?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"how many years of hands-on experience do you have using, designing, and implementing quantum application software tools?
+enter a decimal number larger than 0.0",5
+"how many years of experience do you have in software quality assurance, including test planning, execution, and automation?
+enter a decimal number larger than 0.0",4
+"how many years of experience do you have with one or more of the following test automation frameworks (e.g., pytest, selenium) and scripting languages (e.g., python)?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with hr service delivery?
+enter a whole number between 0 and 99",3
+"how many years of design experience do you currently have?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with confluence?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with product design?
+enter a whole number between 0 and 99",3
+"are you currently located in est or cst zones? 
+are you currently located in est or cst zones?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with embedded software?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with technical support?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with technical documentation?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with training?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with data entry?
+enter a whole number between 0 and 99",4
+"can you be a direct employee of donyati?
+can you be a direct employee of donyati?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"are you able and willing to go into an office setting 5 days a week in alpharetta, georgia?
+are you able and willing to go into an office setting 5 days a week in alpharetta, georgia?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have working in sap bpc (classic and/or embedded) development?
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have in sap analytics cloud (sac) development?
+enter a decimal number larger than 0.0",6
+"are you 18 years of age or older?
+are you 18 years of age or older?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"are you legally authorized to work in the country which you are applying?
+are you legally authorized to work in the country which you are applying?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"will you now, or in the future, require work visa sponsorship (i.e. visa application, transfer, etc.) to legally work in the country which you are applying?
+will you now, or in the future, require work visa sponsorship (i.e. visa application, transfer, etc.) to legally work in the country which you are applying?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+available start date:,12/02/2024
+"how did you hear about this opportunity?
+please enter a valid answer",Other
+"if referred by a current employee, please provide the employee's name:",N/A
+"are you a current employee of perforce?
+are you a current employee of perforce?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"are you a prior employee or contractor of perforce?
+are you a prior employee or contractor of perforce?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"please provide prior dates/company name, that you were previously employed by perforce or any of its subsidiaries worldwide.",2
+desired compensation:,2
+"current location
+please enter a valid answer",2
+"i am allowing perforce to contact me about future job opportunities for up to 3 years. privacy policy
+i am allowing perforce to contact me about future job opportunities for up to 3 years.
+required
+yes
+no
+please make a selection",I agree
+"what is your current location?
+please enter a valid answer",2
+"are you comfortable for on-site or remote
+are you comfortable for on-site or remote
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with servicenow administration?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with customer portal?
+enter a whole number between 0 and 99",4
+"are you open to work on w2 ?
+are you open to work on w2 ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you a usa citizen? we cannot hire visa or green card folks
+are you a usa citizen? we cannot hire visa or green card folks
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of professional experience do you have with linux device drivers?
+enter a decimal number larger than 0.0",3
+"how many years of professional experience do you have writing code in c?
+enter a decimal number larger than 0.0",6
+"will you now, or in the future, require sponsorship for employment visa status ?
+will you now, or in the future, require sponsorship for employment visa status ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"are vou available for relocation across usa? as the training location will be atlanta, georgia and project location will be anywhere in us?
+are vou available for relocation across usa? as the training location will be atlanta, georgia and project location will be anywhere in us?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"this is a consulting position. are you open for it?
+this is a consulting position. are you open for it?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have the following license or certification: analyzing and visualizing data with microsoft power bi?
+do you have the following license or certification: analyzing and visualizing data with microsoft power bi?
+required
+yes
+no
+please make a selection",Yes
+how many years of work experience do you have with microsoft power automate?,5
+how many years of work experience do you have with information technology?,3
+"are you looking for an h1-b transfer, if not, kindly refrain from applying.
+are you looking for an h1-b transfer, if not, kindly refrain from applying.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"this role requires regular in-person working at our denver office. do you currently live within a commutable distance of our office in denver, colorado?
+this role requires regular in-person working at our denver office. do you currently live within a commutable distance of our office in denver, colorado?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes

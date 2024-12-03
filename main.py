@@ -170,7 +170,12 @@ class EasyApplyBot:
         self.veteran = person['demographic']['veteran']
         self.lgbtq = person['demographic']['lgbtq']
         self.profile_path = profile_path
+        # Ensure the directory exists
         self.filename: str = filename
+        directory = os.path.dirname(self.filename)
+        if directory and not os.path.exists(directory):
+            os.makedirs(directory)
+        #
         self.options = self.browser_options()
         self.browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=self.options)
         self.wait = WebDriverWait(self.browser, 30)
@@ -631,8 +636,9 @@ class EasyApplyBot:
         """
         log.debug("In `apply_loop()`")
         for jobID in jobIDs:
-            self.apply_to_job(jobID)
-            self.visited_IDs[jobID] = True
+            if jobID not in self.visited_IDs:
+                self.apply_to_job(jobID)
+                self.visited_IDs[jobID] = True
 
 
     def apply_to_job(self, jobID):
@@ -687,9 +693,9 @@ class EasyApplyBot:
                 self.clickjs(button)
 
                 # Fill out the necessary fields on the Easy Apply form.
-                time.sleep(5)
+                time.sleep(3)
 
-                self.fill_out_fields()
+                # self.fill_out_fields()
 
                 time.sleep(2)
                 
@@ -1061,7 +1067,7 @@ class EasyApplyBot:
 
                 # Check if the total process time has exceeded 5 minutes
                 elapsed_time = time.time() - start_time
-                if elapsed_time > 180:  # 180 seconds = 3 minutes
+                if elapsed_time > 300:  # 300 seconds = 5 minutes
                     log.info("5 minutes elapsed. Exiting the process.")
                     return False  # Stop the entire process if 5 minutes are exceeded
 
@@ -1138,8 +1144,6 @@ class EasyApplyBot:
 
         for i in range(len(form)):
             try:
-                # Attempt to re-locate the elements to help avoid stale elements
-                form = self.get_children(self.locator["fields"])
                 field = form[i]
                 question = field.text.strip()  # Strip whitespace from question
                 answer = self.ans_question(question.lower())  # Get answer based on the current question
@@ -1634,21 +1638,26 @@ class EasyApplyBot:
         return (self.browser, jobs_per_page)
 
     def write_to_file(self, button, jobID, browserTitle, result) -> None:
-        def re_extract(text, pattern):
-            target = re.search(pattern, text)
-            if target:
-                target = target.group(1)
-            return target
+            def re_extract(text, pattern):
+                target = re.search(pattern, text)
+                if target:
+                    target = target.group(1)
+                return target
 
-        timestamp: str = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        attempted: bool = False if button == False else True
-        job = re_extract(browserTitle.split(' | ')[0], r"\(?\d?\)?\s?(\w.*)")
-        company = re_extract(browserTitle.split(' | ')[1], r"(\w.*)")
+            timestamp: str = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            attempted: bool = False if not button else True
+            job = re_extract(browserTitle.split(' | ')[0], r"\(?\d?\)?\s?(\w.*)")
+            company = re_extract(browserTitle.split(' | ')[1], r"(\w.*)")
 
-        toWrite: list = [timestamp, jobID, job, company, attempted, result]
-        with open(self.filename, 'a+') as f:
-            writer = csv.writer(f)
-            writer.writerow(toWrite)
+            toWrite: list = [timestamp, jobID, job, company, attempted, result]
+            print(f"Writing the following data: {toWrite}")  # Debugging line
+        
+            try:
+                with open(self.filename, 'a+', newline='', encoding='utf-8') as f:
+                    writer = csv.writer(f)
+                    writer.writerow(toWrite)
+            except Exception as e:
+                print(f"Failed to write to file: {e}")
 
     def ans_question(self, question):
         """
@@ -1832,9 +1841,27 @@ class EasyApplyBot:
         return str(answer)
 
     def add_job_link(self, date, title, company, ID):
+        """
+        Adds a job posting link to the applications CSV file with a description.
+
+        This method generates a description of the job posting, including the date, title, and company,
+        and appends this information, along with a direct link to the job posting, to a CSV file.
+
+        Parameters:
+        - date (str): The date when the job posting was created or found.
+        - title (str): The title of the job posting.
+        - company (str): The company name associated with the job posting.
+        - ID (str or int): The LinkedIn job ID used to generate the job posting link.
+
+        Returns:
+        - None: This method appends the data to the CSV and does not return a value.
+
+        Exceptions:
+        - Logs any exception that occurs during the CSV writing process.
+        """
         desc = f"Posting({date}): {title} FROM {company}"
         try:
-            # Wrap desc and link in lists to create one row
+            # Wrap description and link in lists to create one row
             new_data = pd.DataFrame({
                 "company": [desc],
                 "link": [f"https://www.linkedin.com/jobs/view/{ID}/"]
@@ -1845,52 +1872,78 @@ class EasyApplyBot:
         except Exception as e:
             log.error(e)
 
-
 if __name__ == '__main__':
-    # all user info needed for the applying. Ex: username, password, 
+    """
+    Main entry point for running the application.
+
+    This script reads the configuration from the `config.yaml` file, validates the input data, 
+    and initializes the `EasyApplyBot` with the necessary parameters for applying to job listings.
+
+    The configuration file should include the following keys:
+        - `positions`: A list of job positions to search for.
+        - `locations`: A list of locations to search in.
+        - `person`: Contains account information (`username`, `password`, `phone_number`) and social media details.
+        - `uploads`: A dictionary containing file upload information (optional).
+        - `salary`, `rate`, `time_filter`, `experience_level`: Parameters used for customizing job search criteria.
+        - `blacklist`: A list of banned companies.
+        - `blackListTitles`: A list of job titles to avoid.
+        - `output_filename`: The desired filename for storing applied job information (optional).
+
+    Raises:
+        - AssertionError: If any required parameter is missing or incorrectly formatted in `config.yaml`.
+        - Exception: If `uploads` is incorrectly formatted as a list instead of a dictionary.
+    """
+
+    # Load configuration from 'config.yaml'
     with open("config.yaml", 'r') as stream:
         try:
             parameters = yaml.safe_load(stream)
         except yaml.YAMLError as exc:
             raise exc
+    
     # Ensure required parameters are present
     assert len(parameters['positions']) > 0, "There are no positions to be searched. Check `config.yaml`"
     assert len(parameters['locations']) > 0, "There are no locations to be searched. Check `config.yaml`"
-    assert parameters['person']['account']['username'] is not None, "No username provided. Check `config.yaml`" 
+    assert parameters['person']['account']['username'] is not None, "No username provided. Check `config.yaml`"
     assert parameters['person']['account']['password'] is not None, "No password provided. Check `config.yaml`"
     assert parameters['person']['social_media']['phone_number'] is not None, "No phone number provided. Check `config.yaml`"
-    # catch configuration errors where uploads is mistakenly formatted as a list instead of a dictionary
+    
+    # Catch configuration errors where 'uploads' is mistakenly formatted as a list instead of a dictionary
     if 'uploads' in parameters.keys() and type(parameters['uploads']) == list:
-        raise Exception("uploads read from the config file appear to be in list format" +
-                        " while should be dict. Try removing '-' from line containing" +
-                        " filename & path")
-    # Log all parameters except for password and username
-    # log.info({k: parameters[k] for k in parameters.keys()})
+        raise Exception("uploads read from the config file appear to be in list format while should be dict. "
+                         "Try removing '-' from line containing filename & path")
 
-    # This WILL output applied jobs in a csv. Does nothing right noe
+    # Parse output filename and blacklist
     output_filename: list = [f for f in parameters.get('output_filename', ['output.csv']) if f is not None]
     output_filename: list = output_filename[0] if len(output_filename) > 0 else 'output.csv'
-    # banned company and job titles
     blacklist = parameters.get('blacklist', [])
     blackListTitles = parameters.get('blackListTitles', [])
-    # Catch any errors in parameters['uploads']
+    
+    # Catch any errors in 'uploads' parameter
     uploads = {} if parameters.get('uploads', {}) is None else parameters.get('uploads', {})
     for key in uploads.keys():
         assert uploads[key] is not None
-    # List comprehension to construct a list of `locations` and `positions` for all items that are not type `None`
-    # Type hint shows that a list is expected
+
+    # Filter locations and positions for valid entries (non-None)
     locations: list = [l for l in parameters['locations'] if l is not None]
     positions: list = [p for p in parameters['positions'] if p is not None]
 
-    bot = EasyApplyBot(parameters['salary'],
-                       parameters['rate'], 
-                       parameters['person'],
-                       parameters['profile_path'],
-                       parameters['time_filter'],
-                       uploads=uploads,
-                       filename=output_filename,
-                       blacklist=blacklist,
-                       blackListTitles=blackListTitles,
-                       experience_level=parameters.get('experience_level', [])
-                       )
+    # Log all parameters
+    log.info({k: parameters[k] for k in parameters.keys()})
+
+    # Initialize the EasyApplyBot with the extracted parameters
+    bot = EasyApplyBot(
+        parameters['salary'],
+        parameters['rate'],
+        parameters['person'],
+        parameters['profile_path'],
+        parameters['time_filter'],
+        uploads=uploads,
+        filename=output_filename,
+        blacklist=blacklist,
+        blackListTitles=blackListTitles,
+        experience_level=parameters.get('experience_level', [])
+    )
+    
+    # Start the job application process
     bot.start_apply(positions, locations)
