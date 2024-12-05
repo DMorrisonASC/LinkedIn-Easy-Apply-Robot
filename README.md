@@ -32,6 +32,7 @@ person:
     city: 
     state: 
     zip:
+    country: 
   demographic: # "Yes" and "No" are booleans in yaml, surround them in quotes
     race: 
     gender: 
