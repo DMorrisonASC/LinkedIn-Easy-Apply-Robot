@@ -160,6 +160,7 @@ class EasyApplyBot:
         self.city = person['address']['city']
         self.state = person['address']['state']
         self.zipcode = person['address']['zip']
+        self.country = person['address']['country']
         self.github = person['social_media']['github']
         self.linkedin = person['social_media']['linkedin']
         self.portfolio = person['social_media']['portfolio']
@@ -695,7 +696,7 @@ class EasyApplyBot:
                 # Fill out the necessary fields on the Easy Apply form.
                 time.sleep(3)
 
-                # self.fill_out_fields()
+                self.fill_out_fields()
 
                 time.sleep(2)
                 
@@ -916,6 +917,22 @@ class EasyApplyBot:
                     field_input = self.get_child((By.TAG_NAME, "input"), field)
                     field_input.clear()  # Clear any pre-existing value
                     field_input.send_keys(self.phone_number)  # Enter the phone number
+
+                elif "first name" in field.text:
+                    # Locate the input field within the current field element
+                    field_input = self.get_child((By.TAG_NAME, "input"), field)
+                    field_input.clear()  # Clear any pre-existing value
+                    field_input.send_keys(self.first_name)  # Enter the phone number
+                
+                elif "city" in field.text:
+                    # Locate the input field within the current field element
+                    field_input = self.get_child((By.TAG_NAME, "input"), field)
+                    field_input.clear()
+                    field_input.send_keys(self.city)
+                    time.sleep(1)
+                    field_input.send_keys(Keys.ARROW_DOWN)
+                    field_input.send_keys(Keys.ENTER)
+
 
         except Exception as e:
             log.error(e)
