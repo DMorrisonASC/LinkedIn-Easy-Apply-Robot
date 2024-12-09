@@ -911,20 +911,20 @@ class EasyApplyBot:
         try:
             fields = self.get_children(self.locator["fields"])
             for field in fields:
-
-                if "Mobile phone number" in field.text:
+                quest = field.text.lower()
+                if "mobile phone number" in quest:
                     # Locate the input field within the current field element
                     field_input = self.get_child((By.TAG_NAME, "input"), field)
                     field_input.clear()  # Clear any pre-existing value
                     field_input.send_keys(self.phone_number)  # Enter the phone number
 
-                elif "first name" in field.text:
-                    # Locate the input field within the current field element
-                    field_input = self.get_child((By.TAG_NAME, "input"), field)
-                    field_input.clear()  # Clear any pre-existing value
-                    field_input.send_keys(self.first_name)  # Enter the phone number
+                # elif "first name" in quest:
+                #     # Locate the input field within the current field element
+                #     field_input = self.get_child((By.TAG_NAME, "input"), field)
+                #     field_input.clear()  # Clear any pre-existing value
+                #     field_input.send_keys(self.first_name)  # Enter the phone number
                 
-                elif "city" in field.text:
+                elif "city" in quest and "location" in quest:
                     # Locate the input field within the current field element
                     field_input = self.get_child((By.TAG_NAME, "input"), field)
                     field_input.clear()
