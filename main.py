@@ -1160,6 +1160,7 @@ class EasyApplyBot:
         print("Length: ", len(form))
 
         for i in range(len(form)):
+            time.sleep(random.randint(1, 3))
             try:
                 field = form[i]
                 question = field.text.strip()  # Strip whitespace from question
@@ -1573,17 +1574,12 @@ class EasyApplyBot:
 
     def clickjs(self, element):
         """
-        Clicks an element using JavaScript. If the element is an <option> element,
-        it sets the option as selected and dispatches a 'change' event. For any other
-        element, it triggers a click event followed by dispatching a 'change' event.
-
-        This method is useful for bypassing Selenium's standard `.click()` which may fail 
-        when interacting with non-visible elements, such as options in dropdowns.
+        Attempts to click an element using Selenium's `click()`. If it fails, 
+        it falls back to clicking using JavaScript. For <option> elements, 
+        it sets the option as selected and dispatches a 'change' event.
 
         Args:
-            element (WebElement): The element to be clicked or selected. This can be any 
-                                element, but if it's an <option> element, it will be 
-                                set as selected.
+            element (WebElement): The element to be clicked or selected.
 
         Example:
             # Example usage for a normal element
@@ -1591,20 +1587,48 @@ class EasyApplyBot:
 
             # Example usage for an <option> element (e.g., selecting an option in a dropdown)
             clickjs(option_element)
-        
+
         Raises:
-            WebDriverException: If the script execution fails or the element is not interactable.
+            WebDriverException: If the fallback also fails.
+
+        **Why This Method is Useful**:
+        Sometimes a button may not be interactable using Selenium. However, using JavaScript (execute_script) to 
+        simulate user actions, like button clicks, can sometimes raise red flags with platforms like LinkedIn. 
+        This is because these platforms actively monitor for automated or "bot-like" behavior to protect against scraping, spam, and other abusive activities. 
         """
         if element.tag_name.lower() == "option":
-            self.browser.execute_script("""
-                arguments[0].selected = true;
-                arguments[0].parentElement.dispatchEvent(new Event('change'));
-            """, element)
+            try:
+                # Scroll to the parent <select> element before attempting to interact
+                self.browser.execute_script("arguments[0].scrollIntoView(true);", element.parent)
+                # Attempt to click using Selenium's click()
+                element.click()
+            except Exception as e:
+                # Fallback to JavaScript for <option> elements
+                try:
+                    log.debug("Click failed('option' element). Using js...")
+                    self.browser.execute_script("""
+                        arguments[0].selected = true;
+                        arguments[0].parentElement.dispatchEvent(new Event('change'));
+                    """, element)
+                except Exception as js_exception:
+                    raise js_exception
         else:
-            self.browser.execute_script("""
-                arguments[0].click();
-                arguments[0].dispatchEvent(new Event('change'));
-            """, element)
+            try:
+                # Scroll to the element before attempting to click
+                self.browser.execute_script("arguments[0].scrollIntoView(true);", element)
+                # Attempt to click using Selenium's click()
+                element.click()
+            except Exception as e:
+                # Fallback to JavaScript for other elements
+                try:
+                    log.debug("Click failed. Using js...")
+                    self.browser.execute_script("""
+                        arguments[0].click();
+                        arguments[0].dispatchEvent(new Event('change'));
+                    """, element)
+                except Exception as js_exception:
+                    raise js_exception
+
 
     def next_jobs_page(self, position, location, jobs_per_page, experience_level=[], time_filter=""):
         """
@@ -1775,7 +1799,7 @@ class EasyApplyBot:
             answer = "Yes"
         elif ("eligible" in question or "able" in question) and "clearance" in question:
             answer = "Yes"
-        elif ("have" in question or "obtain" in question or "obtained" in question) and "clearance" in question:
+        elif ("have" in question or "active" in question or "obtain" in question) and "clearance" in question:
             answer = "No"
         elif ("US" in question or "U.S." in question or "green" in question ) and ("citizen" in question or "card" in question):
             answer = "Yes"
