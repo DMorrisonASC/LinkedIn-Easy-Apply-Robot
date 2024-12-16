@@ -17494,3 +17494,1275 @@ please make a selection",Yes
 enter a whole number between 0 and 99",6
 "how many years of work experience do you have with sales analysis?
 enter a whole number between 0 and 99",6
+"are you studying at some university? 
+are you studying at some university?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with systems engineering?,6
+"how many years of work experience do you have with power systems?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with ellucian banner?
+enter a whole number between 0 and 99",5
+"do you have argos/banner development experience? 
+do you have argos/banner development experience?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you comfortable working in an onsite setting?
+are you comfortable working in an onsite setting?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you legally authorized to work in the united states? and will you now, or in the future, not require sponsorship for employment visa?
+are you legally authorized to work in the united states? and will you now, or in the future, not require sponsorship for employment visa?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you available for relocation across usa? as the training location will be atlanta, georgia and project location will be anywhere in us.
+are you available for relocation across usa? as the training location will be atlanta, georgia and project location will be anywhere in us.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"this is a consulting job are you ok with it?
+this is a consulting job are you ok with it?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you completed the following level of education: [bachelor of science - it/ cs]?
+have you completed the following level of education: [bachelor of science - it/ cs]?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of government administration experience do you currently have?
+enter a whole number between 0 and 99",5
+"do you have the following license or certification: mulesoft certifications?
+do you have the following license or certification: mulesoft certifications?
+required
+yes
+no
+please make a selection",Yes
+"how many years of work experience do you have with business development?
+enter a whole number between 0 and 99",6
+"current job title (or most recent):
+please enter a valid answer",2
+"current company (or most recent):
+please enter a valid answer",2
+"are you currently based in the usa?
+are you currently based in the usa?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"do you require visa sponsorship to work in the us?
+do you require visa sponsorship to work in the us?
+required
+       select an option
+       yes
+       no
+   please make a selection",No
+"what is your desired salary?
+please enter a valid answer",80000
+"how many years of work experience do you have with figma (software)?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with adobe creative cloud?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with data visualization?
+enter a whole number between 0 and 99",4
+"we are looking for someone with data architecture experience and familiarity with aws tools & technologies. python and pyspark are the preferred coding languages. do you have this? 
+we are looking for someone with data architecture experience and familiarity with aws tools & technologies. python and pyspark are the preferred coding languages. do you have this?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with ad hoc analysis?
+enter a whole number between 0 and 99",3
+"are you located in the dallas-fort worth, philadelphia, or new jersey area?
+are you located in the dallas-fort worth, philadelphia, or new jersey area?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"can you commute to canastota, ny?
+can you commute to canastota, ny?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience engineering takeoffs?
+do you have experience engineering takeoffs?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with building management systems?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with hvac?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with troubleshooting?
+enter a whole number between 0 and 99",3
+"delta controls experience?
+enter a decimal number larger than 0.0",3
+"in 3-4 sentences, please share your personal mission (your beliefs, values, passions) and how it aligns with the mission of uncommon and the students we serve.
+0/1,440
+1440 maximum characters allowed.
+please enter a valid answer",Yes
+"when will you have received a bachelor's degree?
+when will you have received a bachelor's degree?
+required
+       select an option
+       i have my bachelor's degree
+       i will not have my bachelor's degree by august 2025
+       winter 2024 (october 2024- february 2025)
+       spring 2025 (march -june 2025)
+       summer 2025 (july - august 2025)
+   please make a selection",2
+"what is your cumulative undergraduate gpa? note: in order to receive an offer for a teaching position, you will need to provide an official copy of your transcript to verify your gpa and confirm eligibility for teaching certification which is a legal state requirement for employment with uncommon schools.
+what is your cumulative undergraduate gpa? note: in order to receive an offer for a teaching position, you will need to provide an official copy of your transcript to verify your gpa and confirm eligibility for teaching certification which is a legal state requirement for employment with uncommon schools.
+required
+       select an option
+       3.5-4.0
+       3.0-3.5
+       2.75-3.0
+       2.5-2.75
+       below 2.5
+   please make a selection",NY
+"how many years of full-time teaching experience do you have? (please do not include substitute or student teaching experience.)
+how many years of full-time teaching experience do you have? (please do not include substitute or student teaching experience.)
+required
+       select an option
+       less than one year
+       1 year
+       2 years
+       3 years
+       4 years
+       5 years
+       6 years
+       7 years
+       more than 7 years
+   please make a selection",4
+"do you hold a valid teaching certificate or license in the u.s., or are you in the process of obtaining your certification through alternate route?
+do you hold a valid teaching certificate or license in the u.s., or are you in the process of obtaining your certification through alternate route?
+required
+yes
+no
+please make a selection",Yes
+"please select all regions where you're willing to work.
+please select all regions where you're willing to work.
+required
+boston
+camden
+new york city
+newark
+rochester
+please make a selection",Bronx
+"please select all regions where you're willing to work.
+please select all regions where you're willing to work.",2
+"please select all grade levels you're interested in working with.
+please select all grade levels you're interested in working with.
+required
+pre-k
+elementary school (k-4)
+middle school (5-8)
+high school (9-12)
+please make a selection",2
+"please select all grade levels you're interested in working with.
+please select all grade levels you're interested in working with.",2
+"what subjects or disciplines are you most interested in teaching?
+what subjects or disciplines are you most interested in teaching?
+required
+english language arts
+english as a new/second language
+history
+math
+physical education
+science
+spanish
+special education
+visual and performing arts
+please make a selection",2
+"what subjects or disciplines are you most interested in teaching?
+what subjects or disciplines are you most interested in teaching?",Yes
+"would you be open to being considered for any of the types of roles listed below? (please choose all that apply.)
+would you be open to being considered for any of the types of roles listed below? (please choose all that apply.)
+required
+school-based operations team
+regional support team
+home office
+i'm not open to other roles
+please make a selection",2
+"would you be open to being considered for any of the types of roles listed below? (please choose all that apply.)
+would you be open to being considered for any of the types of roles listed below? (please choose all that apply.)",2
+"describe all the ways you heard of uncommon schools.
+describe all the ways you heard of uncommon schools.
+required
+uncommon website
+uncommon schools recruiter
+current or former uncommon staff member
+event, panel, or career fair
+linkedin
+indeed
+digital ad
+facebook, instagram, or twitter
+google
+other
+please make a selection",https://www.linkedin.com/in/daeshaun-morrison-bab77b176/
+"describe all the ways you heard of uncommon schools.
+describe all the ways you heard of uncommon schools.",2
+(optional) please provide more detail regarding your response above.,2
+"please select all affiliation you have with uncommon schools.
+please select all affiliation you have with uncommon schools.
+required
+i am a current uncommon schools employee
+i am a former uncommon schools employee
+i am an uncommon schools alumni
+i have a student that currently attends uncommon schools or has attended in the past
+i have none of the above affiliations with uncommon schools
+please make a selection",2
+"please select all affiliation you have with uncommon schools.
+please select all affiliation you have with uncommon schools.",2
+"if you are a current or previous uncommon employee, please share your most recent uncommon email address. please note that submitting an application for this role authorizes us to notify your manager of your interest.",Bronx
+"are you a current member or alumnus of any of the following programs? (choose all that apply.)
+are you a current member or alumnus of any of the following programs? (choose all that apply.)
+required
+americorps program (non-tfa)
+braven
+breakthrough collaborative
+broad residency
+teach for america
+none of the above
+please make a selection",Yes
+"are you a current member or alumnus of any of the following programs? (choose all that apply.)
+are you a current member or alumnus of any of the following programs? (choose all that apply.)",Yes
+"please share your availability to start.
+please share your availability to start.
+required
+       select an option
+       immediate (school year 24-25)
+       january 2025 (school year 24-25)
+       next school year (starting august 2025)
+   please make a selection",Yes
+"will you now or in the future require visa sponsorship for employment at uncommon schools? as a reminder, all staff must be authorized to work in the united states at the time of employment, and uncommon is unable to sponsor visas at this time.
+will you now or in the future require visa sponsorship for employment at uncommon schools? as a reminder, all staff must be authorized to work in the united states at the time of employment, and uncommon is unable to sponsor visas at this time.
+required
+       select an option
+       yes
+       no
+   please make a selection",No
+"have you ever been terminated from or asked to leave any previous position? (please choose ""no"" if termination was due to layoff or position was excessed.)
+have you ever been terminated from or asked to leave any previous position? (please choose ""no"" if termination was due to layoff or position was excessed.)
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"how would you describe yourself?
+how would you describe yourself?
+required
+       select an option
+       american indian or alaska native
+       asian
+       black or african american
+       hispanic or latinx
+       native hawaiian or pacific islader
+       multi-racial
+       white
+       i prefer not to say
+   please make a selection",N/A
+"how would you describe your gender? please select all that may apply.
+how would you describe your gender? please select all that may apply.
+required
+woman
+man
+cisgender
+transgender
+non-binary
+i prefer not to say
+other
+please make a selection",N/A
+"how would you describe your gender? please select all that may apply.
+how would you describe your gender? please select all that may apply.",male
+"(optional) if you selected other, please use this space to share your gender.",male
+(optional) please share your pronouns.,Yes
+"how many years of work experience do you have with hand tools?
+enter a whole number between 0 and 99",4
+"are you comfortable commuting to this job's location at brooklyn navy yard and occasionally to work sites across the nyc five boroughs? 
+are you comfortable commuting to this job's location at brooklyn navy yard and occasionally to work sites across the nyc five boroughs?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have a burning desire to work with an early-stage startup?
+do you have a burning desire to work with an early-stage startup?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with hvac?,3
+"how many years of work experience do you have with electronic data interchange (edi)?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with business-to-business (b2b)?
+enter a whole number between 0 and 99",6
+"do you have experience with ibm sterling b2b integrate standard/enterprise edition?
+do you have experience with ibm sterling b2b integrate standard/enterprise edition?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you local to illinois?
+are you local to illinois?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you worked on edi migration projects?
+have you worked on edi migration projects?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with building management systems?,3
+"how many years of work experience do you have with distributed systems?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with secondary education?
+enter a whole number between 0 and 99",3
+"do you have the following license or certification: teaching license?
+do you have the following license or certification: teaching license?
+required
+yes
+no
+please make a selection",Yes
+how many years of work experience do you have with onbase?,4
+"how many years of work experience do you have with business process management?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with real-time operating systems (rtos)?
+enter a whole number between 0 and 99",3
+"experience with stm32mp131
+enter a decimal number larger than 0.0",5
+"please be aware that this is not a researcher/scientist role. is this ok with you? 
+please be aware that this is not a researcher/scientist role. is this ok with you?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"how many years of work experience do you have with hl7 standards?
+enter a whole number between 0 and 99",5
+"how many years of aviation and aerospace component manufacturing experience do you currently have?
+enter a whole number between 0 and 99",6
+"when will you have received a bachelor's degree?
+when will you have received a bachelor's degree?
+required
+       select an option
+       i have my bachelor's degree
+       i will not have my bachelor's degree by august 2024
+       winter 2023 (october 2023- february 2024)
+       spring 2024 (march -june 2024)
+       summer 2024 (july - august 2024)
+   please make a selection",2
+"please share your availability to start.
+please share your availability to start.
+required
+       select an option
+       immediate (school year 24-25)
+       january 2025 (school year 24-25)
+   please make a selection",Yes
+"how many years of work experience do you have with cantonese?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with mandarin?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with computer engineering?
+enter a whole number between 0 and 99",4
+how many years of work experience do you have with shopify plus?,4
+"how many years of work experience do you have with picture archiving and communication system (pacs)?
+enter a whole number between 0 and 99",3
+"do you have the following license or certification: interventional cardiology?
+do you have the following license or certification: interventional cardiology?
+required
+yes
+no
+please make a selection",Yes
+"how many years of experience do you have working with spark clusters?
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have with coding experience?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with equities technology?
+enter a whole number between 0 and 99",4
+"do you have experience in a start-up environment?
+do you have experience in a start-up environment?
+required
+yes
+no
+please make a selection",Yes
+"are you eligible to work in the united states without sponsorship now and in the future?
+are you eligible to work in the united states without sponsorship now and in the future?
+required
+yes
+no
+please make a selection",No
+"if you were referred to codehunter by a current employee, please let us know who referred you.
+please enter a valid answer",N/A
+"are you currently located in the us? 
+are you currently located in the us?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have commercial experience working in c++17 or newer?
+do you have commercial experience working in c++17 or newer?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of capital markets experience do you currently have?,4
+how many years of work experience do you have with confluent?,4
+"how many years of work experience do you have with kafka streams?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with datastage?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with trading systems?
+enter a whole number between 0 and 99",6
+"do you have commercial hft experience? 
+do you have commercial hft experience?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you currently based in the us? 
+are you currently based in the us?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have >3 years of experience with front-end development for mobile apps? 
+do you have >3 years of experience with front-end development for mobile apps?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you willing to relocate to new york and work on-site? 
+are you willing to relocate to new york and work on-site?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"what is your annual salary requirement?
+enter a decimal number larger than 0.0",3
+"are you currently located in the nj/ny area?
+are you currently located in the nj/ny area?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have in the utility industry?
+enter a decimal number larger than 0.0",5
+"how many years of compleat experience ? 
+how many years of compleat experience ?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",6
+"how many years of experience do you have with technical conversions between fscm and payroll modules?
+enter a decimal number larger than 0.0",6
+"do you have experience with software verification, with a focus on safety-critical embedded systems?
+do you have experience with software verification, with a focus on safety-critical embedded systems?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with financial statements?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with scala in spark?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with ibm planning analytics by tm1?
+enter a whole number between 0 and 99",3
+"are you a us citizen or permanent green card holder?
+are you a us citizen or permanent green card holder?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"""how many years of work experience do you have with adobe click-stream?""
+""how many years of work experience do you have with adobe click-stream?""
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",6
+"do you hands-on experience with saas and api (rest) integration?
+do you hands-on experience with saas and api (rest) integration?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have responding to rfp's or rfi's?
+enter a decimal number larger than 0.0",4
+"have you been the technical point person in a customer-facing role?
+ have you been the technical point person in a customer-facing role?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you consent to being contacted about this job via text/sms?
+do you consent to being contacted about this job via text/sms?
+required
+yes
+no",Yes
+"what's your highest level of education completed?
+what's your highest level of education completed?
+required
+       select an option
+       ged or equivalent
+       high school
+       some college
+       college - associates
+       college - bachelor of arts
+       college - bachelor of fine arts
+       college - bachelor of science
+       college - master of arts
+       college - master of science
+       college - master of fine arts
+       college - master of business administration
+       college - doctorate
+       medical doctor
+       other",2
+"do you have your active cp beaker certification?
+do you have your active cp beaker certification?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you comfortable being client facing?
+are you comfortable being client facing?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you ever worked for a managed service provider before? 
+have you ever worked for a managed service provider before?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with architecture development?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with erp design?
+enter a whole number between 0 and 99",5
+"are you authorized to work in united states?
+are you authorized to work in united states?
+required
+yes
+no
+please make a selection",Yes
+"how many years of work experience do you have with azure infrastructure management?
+how many years of work experience do you have with azure infrastructure management?
+required
+1
+2
+3
+4
+5
+5+
+please make a selection",3
+"how many years of work experience do you have with azure infrastructure management?
+how many years of work experience do you have with azure infrastructure management?",4
+"how many years of work experience do you have with aws infrastructure management??
+how many years of work experience do you have with aws infrastructure management??
+required
+1
+2
+3
+4
+5
+5+
+please make a selection",6
+"how many years of work experience do you have with aws infrastructure management??
+how many years of work experience do you have with aws infrastructure management??",5
+"do you have previous experience working for a managed service provider?
+do you have previous experience working for a managed service provider?
+required
+yes
+no
+please make a selection",Yes
+"how many years of work experience do you have with advertising project management?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with network architecture?
+enter a whole number between 0 and 99",5
+"do you have experience leading teams?
+do you have experience leading teams?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with sass?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with data warehouse architecture?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with data streaming?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with aws cloud migration?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with saas development?
+enter a whole number between 0 and 99",3
+"how many years of health care provider experience do you currently have?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with test automation?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with jbpm?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with kyc verification?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with actimize?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with reactive programming?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with linux system administration?
+enter a whole number between 0 and 99",3
+"will you need a visa transfer?
+will you need a visa transfer?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"are you legally authorized to work in the country in which this position is located?
+are you legally authorized to work in the country in which this position is located?
+required
+yes
+no
+please make a selection",Yes
+"do you now, or will you in the future, need curinos to sponsor your visa or work authorization to be eligible to work in the country in which this position is located (e.g. h1- b or tn visa)?
+do you now, or will you in the future, need curinos to sponsor your visa or work authorization to be eligible to work in the country in which this position is located (e.g. h1- b or tn visa)?
+required
+yes
+no
+please make a selection",No
+"if you require sponsorship for work eligibility, please explain. if you do not require sponsorship, enter n/a.
+0/1,440
+1440 maximum characters allowed.
+please enter a valid answer",No
+"please enter visa or work authorization issue date and end date. if you do not require sponsorship, enter n/a.
+0/1,440
+1440 maximum characters allowed.
+please enter a valid answer",No
+"why are you looking for a new position?
+0/1,440
+1440 maximum characters allowed.
+please enter a valid answer",Good glassdoor reviews and the workers I talked to love their jobs
+"what are your compensation requirements?
+please enter a valid answer",Yes
+"have you ever worked for informa or novantas or any subsidiaries?
+have you ever worked for informa or novantas or any subsidiaries?
+required
+yes
+no
+please make a selection",Yes
+"if yes, please explain your previous employment. if no, enter n/a
+if yes, please explain your previous employment. if no, enter n/a
+required
+yes
+no
+please make a selection",2
+"do you currently work for curinos?
+do you currently work for curinos?
+required
+yes
+no
+please make a selection",Yes
+"what is your mailing address?
+0/1,440
+1440 maximum characters allowed.
+please enter a valid answer",Bronx
+"how did you hear about this opportunity?
+0/1,440
+1440 maximum characters allowed.
+please enter a valid answer",Other
+"when can you start?
+0/1,440
+1440 maximum characters allowed.
+please enter a valid answer",Yes
+"how many years experience do you have with scala?
+0/1,440
+1440 maximum characters allowed.
+please enter a valid answer",5
+"how many years experience do you have with databricks? please explain.
+0/1,440
+1440 maximum characters allowed.
+please enter a valid answer",6
+"how many years experience do you have with python? please explain.
+0/1,440
+1440 maximum characters allowed.
+please enter a valid answer",5
+"how many years of java experience do you have? please explain.
+0/1,440
+1440 maximum characters allowed.
+please enter a valid answer",6
+"how many years of sql do you have? please explain.
+0/1,440
+1440 maximum characters allowed.
+please enter a valid answer",6
+"how many years of spark/hadoop experience do you have?
+0/1,440
+1440 maximum characters allowed.
+please enter a valid answer",4
+"how many years of experience do you have with application services and/or apis?
+0/1,440
+1440 maximum characters allowed.
+please enter a valid answer",3
+"how many years of experience do you have with web front end development?
+0/1,440
+1440 maximum characters allowed.
+please enter a valid answer",6
+"if you believe you belong to any of the categories of protected veterans listed above, please indicate by checking the appropriate box below. as a government contractor subject to vevraa, we request this information in order to measure the effectiveness of the outreach and positive recruitment efforts we undertake pursuant to vevraa.
+if you believe you belong to any of the categories of protected veterans listed above, please indicate by checking the appropriate box below. as a government contractor subject to vevraa, we request this information in order to measure the effectiveness of the outreach and positive recruitment efforts we undertake pursuant to vevraa.
+required
+       select an option
+       i identify as one or more of the classifications of protected veteran listed above
+       i am not a protected veteran
+       i choose not to self-identify
+   please make a selection",I am not
+"please check one of the boxes below:
+please check one of the boxes below:
+required
+       select an option
+       yes, i have a disability, or have had one in the past
+       no, i do not have a disability and have not had one in the past
+       i do not want to answer
+   please make a selection",no
+"name:
+please enter a valid answer",2
+"employee id (if applicable)
+please enter a valid answer",2
+"date:
+please enter a valid answer",2
+"by checking this box, you will declare that you read and understand the privacy policy of informa group plc..
+by checking this box, you will declare that you read and understand the privacy policy of informa group plc..
+required
+i consent
+select checkbox to proceed",I agree
+"by checking this box, you will declare that you read and understand the privacy policy of informa group plc..
+by checking this box, you will declare that you read and understand the privacy policy of informa group plc..",I agree
+"how many years of work experience do you have with [ci/cd] ?
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with [microservices ]?
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with [infrastructure migration]?
+enter a decimal number larger than 0.0",3
+"how many years of work experience do you have with [enterprise architect]?
+enter a decimal number larger than 0.0",6
+"are you willing to work in office 4 days a week?
+are you willing to work in office 4 days a week?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with redux.js?,4
+how many years of work experience do you have with angularjs?,6
+"how many years of work experience do you have with financial services industry?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with devops?
+enter a decimal number larger than 0.0",6
+"how many years of work experience do you have with ci/cd?
+enter a decimal number larger than 0.0",3
+"do you have the following license or certification: magnetic resonance imaging technologist?
+do you have the following license or certification: magnetic resonance imaging technologist?
+required
+yes
+no
+please make a selection",Yes
+name,2
+required,2
+"do you understand this role is not salaried, compensated through wages or other monetary payment? rather you will be given equity in klinn (amount to be discussed after interview process).
+do you understand this role is not salaried, compensated through wages or other monetary payment? rather you will be given equity in klinn (amount to be discussed after interview process).
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you enrolled in an undergraduate degree program or do you have a bachelor's degree?
+are you enrolled in an undergraduate degree program or do you have a bachelor's degree?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with human capital management?,4
+"are you open to working primarily on a primarily asynchronous, contract-basis, with hourly compensation?
+are you open to working primarily on a primarily asynchronous, contract-basis, with hourly compensation?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you currently located within 30 miles of andover, ma
+are you currently located within 30 miles of andover, ma
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have a bachelor’s degree or higher in data science, computer engineering, physics, ee, ece, or optics?
+do you have a bachelor’s degree or higher in data science, computer engineering, physics, ee, ece, or optics?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you proficient in both c# and python programming languages? 
+are you proficient in both c# and python programming languages?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience with object-oriented programming and software architecture?
+do you have experience with object-oriented programming and software architecture?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you worked with machine learning models, specifically convolutional neural networks (cnns)?
+have you worked with machine learning models, specifically convolutional neural networks (cnns)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you experienced with image processing algorithms such as blob analysis, edge detection, or feature extraction?
+are you experienced with image processing algorithms such as blob analysis, edge detection, or feature extraction?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience using opencv or similar image processing libraries?
+do you have experience using opencv or similar image processing libraries?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you worked with optical measurement systems (e.g., cameras, lasers, 3d measurement)?
+have you worked with optical measurement systems (e.g., cameras, lasers, 3d measurement)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience in metrology, inspection, or product quality in manufacturing?
+do you have experience in metrology, inspection, or product quality in manufacturing?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you comfortable collaborating with cross-functional engineering teams?
+are you comfortable collaborating with cross-functional engineering teams?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you open to a contractor position with the potential for long-term opportunities?
+are you open to a contractor position with the potential for long-term opportunities?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you located in the est time zone and meet all the qualifications outlined in the job description?
+are you located in the est time zone and meet all the qualifications outlined in the job description?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with satellite imagery?
+enter a whole number between 0 and 99",5
+"how many years of experience do you have in promod, powerworld, tara, promod, pss/e, or pslf?
+enter a decimal number larger than 0.0",6
+"how many years of experience do you have in transmission and market simulation modeling (or equivalent)?
+enter a decimal number larger than 0.0",5
+"how many years of work experience do you have with cryptocurrency?
+введіть число whole між 0 і 99",3
+how many years of work experience do you have with restful architecture?,5
+"are you open to paid relocation to the us major cities listed in the job description?
+are you open to paid relocation to the us major cities listed in the job description?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"have you watched both short videos linked in the job description? 
+have you watched both short videos linked in the job description?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you currently attending school?
+ are you currently attending school?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"did you graduate between 2020 and 2024?
+did you graduate between 2020 and 2024?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have the following license or certification: registered diagnostic medical sonographer (rdms)?
+do you have the following license or certification: registered diagnostic medical sonographer (rdms)?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: registered diagnostic medical sonographer - abdomen (rdms)?
+do you have the following license or certification: registered diagnostic medical sonographer - abdomen (rdms)?
+required
+yes
+no
+please make a selection",Yes
+"how many years of work experience do you have with ultrasound therapy?
+enter a whole number between 0 and 99",3
+"do you have the following license or certification: x-ray technician?
+do you have the following license or certification: x-ray technician?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: licensed radiological technologist?
+do you have the following license or certification: licensed radiological technologist?
+required
+yes
+no
+please make a selection",Yes
+"how many years of work experience do you have with radiology?
+enter a whole number between 0 and 99",4
+"do you have an active aart certification?
+do you have an active aart certification?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with cdp?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with endocrinology?
+enter a whole number between 0 and 99",5
+"do you have the following license or certification: basic life support (bls)?
+do you have the following license or certification: basic life support (bls)?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: registered diagnostic medical sonographer?
+do you have the following license or certification: registered diagnostic medical sonographer?
+required
+yes
+no
+please make a selection",Yes
+"how many years of work experience do you have with american registry for diagnostic medical sonography (ardms)?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with obstetrics?
+enter a whole number between 0 and 99",5
+"do you have the following license or certification: registered diagnostic medical sonographer - obstetrics and gynecology (rdms)?
+do you have the following license or certification: registered diagnostic medical sonographer - obstetrics and gynecology (rdms)?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: x-ray technologist (chiropractic)?
+do you have the following license or certification: x-ray technologist (chiropractic)?
+required
+yes
+no
+please make a selection",Yes
+"how many years of work experience do you have with medical imaging?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with basic life support (bls)?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with immunization?
+enter a whole number between 0 and 99",5
+"do you have the following license or certification: certified mri technologists?
+do you have the following license or certification: certified mri technologists?
+required
+yes
+no
+please make a selection",Yes
+"do you have 3 years of work experience with golang?
+do you have 3 years of work experience with golang?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience of security tools like sast, dast or sca?
+do you have experience of security tools like sast, dast or sca?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with cch axcess tax?
+enter a whole number between 0 and 99",4
+"configuration analyst expert in sql & data debugging issues
+configuration analyst expert in sql & data debugging issues
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"i have read and approved the privacy notice to job applicant.
+i have read and approved the privacy notice to job applicant.
+required
+yes
+no
+please make a selection",2
+"i agree to be considered for other job positions and allow my information to be collected, processed and searchable as described in the privacy notice to job applicant.
+i agree to be considered for other job positions and allow my information to be collected, processed and searchable as described in the privacy notice to job applicant.
+required
+yes
+no
+please make a selection",2
+"what is your desired salary?
+enter a decimal number between 0.0 and 9.9999998e12",5
+"how many years of work experience do you have with debugging?
+enter a whole number between 0 and 99",3
+"how many years of back end engineering do you have?
+enter a decimal number larger than 0.0",5
+"how many years of experience do you have in a client facing role?
+enter a decimal number larger than 0.0",6
+"do you have a nj state certification?
+do you have a nj state certification?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",NY
+"if you do not yet have a nj certification, are you willing to work to acquire the certification before june 2025? if you are already certified, you can select yes.
+if you do not yet have a nj certification, are you willing to work to acquire the certification before june 2025? if you are already certified, you can select yes.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have the following license or certification: special education certification?
+do you have the following license or certification: special education certification?
+required
+yes
+no
+please make a selection",Yes
+"do you have the following license or certification: american board of internal medicine?
+do you have the following license or certification: american board of internal medicine?
+required
+yes
+no
+please make a selection",Yes
+"how much leadership experience do you have?
+enter a decimal number larger than 0.0",4
+"do you have the following license or certification: certified coding specialist?
+do you have the following license or certification: certified coding specialist?
+required
+yes
+no
+please make a selection",Yes
+"how many years of work experience do you have with current procedural terminology (cpt)?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with anesthesiology?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with ecsa?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with interconnect?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with filemaker?
+enter a whole number between 0 and 99",4
+"how many years of work experience do you have with machinery?
+enter a whole number between 0 and 99",3
+"how many years industrial machinery maintenance experience do you have?
+enter a decimal number larger than 0.0",5
+"can you read pneumatic, hydraulic, and electrical schematics?
+can you read pneumatic, hydraulic, and electrical schematics?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"how many years of cnc machining repair and troubleshooting experience do you have?
+how many years of cnc machining repair and troubleshooting experience do you have?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",6
+"do you have experience quality management system such as iso9001 or as9100 highly preferred?
+do you have experience quality management system such as iso9001 or as9100 highly preferred?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how man years of programming and setup of cnc lathes/mills do you have?
+enter a decimal number larger than 0.0",6
+"do you have lean manufacturing/six sigma/process improvement tools experience highly preferred?
+do you have lean manufacturing/six sigma/process improvement tools experience highly preferred?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"are you able to work overtime? 
+are you able to work overtime?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience managing and documenting support tickets using jira or servicenow
+do you have experience managing and documenting support tickets using jira or servicenow
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience escalating issues and collaborating with l2/l3 support teams
+do you have experience escalating issues and collaborating with l2/l3 support teams
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have basic networking knowledge (tcp/ip, dns, etc.)?
+do you have basic networking knowledge (tcp/ip, dns, etc.)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with qlik sense?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with cics?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with sap s/4hana?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with sap gl?
+enter a whole number between 0 and 99",6
+"how many years of experience do you have using selenium, cypress, or playwright?
+enter a decimal number larger than 0.0",5
+"how many years of experience do you have testing etl processes, data pipelines, or big data workflows?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with perl?
+enter a whole number between 0 and 99",5
+"how many years of machinery manufacturing experience do you currently have?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with salesforce automation?
+enter a whole number between 0 and 99",4
+"any visa holders who are open to working on a w2 basis are eligible to apply for this position.
+any visa holders who are open to working on a w2 basis are eligible to apply for this position.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"how many years of work experience do you have with ifix?
+enter a whole number between 0 and 99",4
+"do you have operating/management company tax accounting experience?
+do you have operating/management company tax accounting experience?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have strong automation/systems experience?
+do you have strong automation/systems experience?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with hyperion?
+enter a whole number between 0 and 99",5
+"do you have the ability to obtain a security clearance?
+do you have the ability to obtain a security clearance?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"must have strong mongo db and nodejs experience. max rate $45/hr on w2. it is a 100% remote position
+must have strong mongo db and nodejs experience. max rate $45/hr on w2. it is a 100% remote position
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+"please select yes if you're a us citizen or a green card holder and are available to work on w2.
+please select yes if you're a us citizen or a green card holder and are available to work on w2.
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of experience do you have working as a senior business/technical analyst in the it industry?
+enter a decimal number larger than 0.0",3
+"how many years of experience do you have with sdlc and azure devops?
+enter a decimal number larger than 0.0",5
+"do you have a knowledge of agile principles and frameworks (ex. two weeks sprints, story points, story refinement and estimation, retrospectives)?
+do you have a knowledge of agile principles and frameworks (ex. two weeks sprints, story points, story refinement and estimation, retrospectives)?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"do you have experience leading and managing agile projects as a technical analyst or product owner?
+do you have experience leading and managing agile projects as a technical analyst or product owner?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes

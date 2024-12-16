@@ -228,7 +228,7 @@ class EasyApplyBot:
             "upload_cover": (By.XPATH, "//*[contains(@id, 'jobs-document-upload-file-input-upload-cover-letter')]"),
             "follow": (By.CSS_SELECTOR, "label[for='follow-company-checkbox']"),
             "upload": (By.NAME, "file"),
-            "search": (By.CLASS_NAME, "jobs-search-results-list"),
+            # "search": (By.XPATH, f'//div[.//div[@data-job-id]]'),
             "links": (By.XPATH, '//div[@data-job-id]'),
             "fields": (By.XPATH, "//div[starts-with(@class, 'fb-dash-form-element')]"),
             "radio_select": (By.XPATH, ".//input[starts-with(@id, 'urn:li:fsd_formElement:urn:li:jobs_applyformcommon_easyApplyFormElement:') and @type='radio']"),
@@ -242,6 +242,8 @@ class EasyApplyBot:
             "easy_apply_button": (By.XPATH, '//button[contains(@aria-label, "Easy Apply") and .//span[text()="Easy Apply"]]')
 
         }
+        # Add "search" after defining "links"
+        self.locator["search"] = (By.XPATH, f'//div[{self.locator["links"][1]}]')
 
         # After locators are compeleted, login into LinkedIn
         self.start_linkedin(person['account']['username'], person['account']['password'])
@@ -664,6 +666,8 @@ class EasyApplyBot:
         # Navigate to the job page using the job ID.
         self.get_job_page(jobID)
 
+        time.sleep(15)
+
         # Try to find the Easy Apply button on the job page.
         button = self.get_easy_apply_button()
     
@@ -685,7 +689,6 @@ class EasyApplyBot:
                     company_name = company_element.text
                 else:
                     company_name = "No title available"
-
 
                 posted_date = date.today().strftime("%m/%d/%Y")
                 # posted_date = today.
