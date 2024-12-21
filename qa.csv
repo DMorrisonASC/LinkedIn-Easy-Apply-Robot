@@ -18766,3 +18766,84 @@ required
        yes
        no
    please enter a valid answer",Yes
+"how many years of experience do you have implementing figma designs into web applications?
+enter a decimal number larger than 4.0",5
+"on a scale from 1 to 10, how much do you love animals? 1 meaning not much, and 10 meaning you're absolutely passionate about them.
+enter a decimal number larger than 0.0",3
+"on a scale of 1-10, how experienced are you in designing uis for ai-powered features?
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with sensors?
+enter a whole number between 0 and 99",6
+"do you have experience working at manufacturing facilities to integrate products and solutions?
+do you have experience working at manufacturing facilities to integrate products and solutions?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+how many years of work experience do you have with sensors?,3
+how many years of work experience do you have with 3rd party integrations?,4
+how many years of work experience do you have with slate?,4
+how many years of higher education experience do you currently have?,4
+how many years of front-end web development experience do you have?,4
+"how many years of work experience do you have with telecommunications?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with cloud applications?
+enter a whole number between 0 and 99",3
+how many years of work experience do you have with autocad?,4
+how many years of work experience do you have with computer numerical control (cnc)?,5
+"how many years of work experience do you have with node.js?
+enter a whole number between 0 and 99",5
+how many years of work experience do you have with postgresql?,3
+how many years of work experience do you have with sql?,3
+"are you legally authorized to work in the united states?
+are you legally authorized to work in the united states?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"will you now or in the future require sponsorship for employment visa status (e.g. h-1b visa status)?
+will you now or in the future require sponsorship for employment visa status (e.g. h-1b visa status)?
+required
+       select an option
+       yes
+       no
+   please make a selection",No
+"have you been employed by gemini in the past?
+have you been employed by gemini in the past?
+required
+       select an option
+       yes
+       no
+   please make a selection",Yes
+"applicant privacy statement
+applicant privacy statement
+required
+by clicking this box and submitting your application, you consent to our applicant privacy statement.
+select checkbox to proceed",NY
+"applicant privacy statement
+applicant privacy statement",NY
+"are you legally authorized to work in the united states?
+are you legally authorized to work in the united states?
+required
+       select an option
+       yes
+       no",Yes
+"will you now or in the future require sponsorship for employment visa status (e.g. h-1b visa status)?
+will you now or in the future require sponsorship for employment visa status (e.g. h-1b visa status)?
+required
+       select an option
+       yes
+       no",No
+"applicant privacy statement
+applicant privacy statement
+required
+by clicking this box and submitting your application, you consent to our applicant privacy statement.",NY
+"have you been employed by gemini in the past?
+have you been employed by gemini in the past?
+required
+       select an option
+       yes
+       no",Yes
+,2

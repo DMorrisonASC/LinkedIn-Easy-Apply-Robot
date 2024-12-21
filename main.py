@@ -14,7 +14,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, ElementClickInterceptedException
 from selenium.common.exceptions import StaleElementReferenceException
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
@@ -23,6 +23,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.action_chains import ActionChains
 
 from selenium.webdriver.chrome.service import Service as ChromeService
 import webdriver_manager.chrome as ChromeDriverManager
@@ -383,11 +384,11 @@ class EasyApplyBot:
             login_button = self.get_child(self.locator["login_button"])
             
             user_field.send_keys(username)
-            time.sleep(0.5)
+            time.sleep(random.uniform(0.5, 2.0))
             user_field.send_keys(Keys.TAB)
-            time.sleep(1)
+            time.sleep(random.uniform(0.5, 2.0))
             pw_field.send_keys(password)
-            time.sleep(1)
+            time.sleep(random.uniform(0.5, 2.0))
             
             # Click the login button after ensuring it is clickable
             self.wait.until(EC.element_to_be_clickable(login_button))
@@ -537,8 +538,8 @@ class EasyApplyBot:
 
                     # Scroll through job listings to load more results.
                     for i in range(300, 1500, 100):
-                        self.browser.execute_script("arguments[0].scrollTo(0, {})".format(i), scrollresults[0])
-                        time.sleep(0.5)  # Wait for new elements to load.
+                        self.browser.execute_script("arguments[0].scrollTo(0, {})".format(i + random.uniform(0.5, 5.0)), scrollresults[0])
+                        time.sleep(random.uniform(0.5, 2.0))  # Wait for new elements to load.
 
                 # Check if job links are present on the page.
                 if self.is_present(self.locator["links"]):
@@ -666,7 +667,7 @@ class EasyApplyBot:
         # Navigate to the job page using the job ID.
         self.get_job_page(jobID)
 
-        time.sleep(15)
+        time.sleep(random.uniform(15, 20))
 
         # Try to find the Easy Apply button on the job page.
         button = self.get_easy_apply_button()
@@ -697,11 +698,11 @@ class EasyApplyBot:
                 self.clickjs(button)
 
                 # Fill out the necessary fields on the Easy Apply form.
-                time.sleep(3)
+                time.sleep(random.uniform(1, 2.0))
 
                 self.fill_out_fields()
 
-                time.sleep(2)
+                time.sleep(random.uniform(0.5, 2.0))
                 
                 # Send the resume and determine if the application was successful.
                 result: bool = self.send_resume()
@@ -776,8 +777,8 @@ class EasyApplyBot:
         scroll_page = 0
         while scroll_page < 4000:
             self.browser.execute_script("window.scrollTo(0," + str(scroll_page) + " );")
-            scroll_page += 500
-            time.sleep(sleep)
+            scroll_page += 500 + random.uniform(0.5, 5.0)
+            time.sleep(random.uniform(0.5, 2.0))
 
         self.browser.execute_script("window.scrollTo(0,0);")
 
@@ -932,7 +933,7 @@ class EasyApplyBot:
                     field_input = self.get_child((By.TAG_NAME, "input"), field)
                     field_input.clear()
                     field_input.send_keys(self.city)
-                    time.sleep(1)
+                    time.sleep(random.uniform(0.5, 2.0))
                     field_input.send_keys(Keys.ARROW_DOWN)
                     field_input.send_keys(Keys.ENTER)
 
@@ -1012,7 +1013,7 @@ class EasyApplyBot:
 
             # Loop to attempt the resume submission.
             while True:
-                time.sleep(1.5)
+                time.sleep(random.uniform(0.5, 2.0))
                 
                 # Handle follow button if present.
                 if self.is_present(self.locator["follow"]):
@@ -1163,7 +1164,7 @@ class EasyApplyBot:
         print("Length: ", len(form))
 
         for i in range(len(form)):
-            time.sleep(random.randint(1, 3))
+            time.sleep(random.uniform(3, 6))
             try:
                 field = form[i]
                 question = field.text.strip()  # Strip whitespace from question
@@ -1274,7 +1275,7 @@ class EasyApplyBot:
                         )
                     
                     text_field.clear()
-                    time.sleep(0.5)
+                    time.sleep(random.uniform(0.5, 2.0))
                     text_field.send_keys(answer)
                     log.info(f"Text input field populated with: {answer}")
                 except Exception as e:
@@ -1304,9 +1305,9 @@ class EasyApplyBot:
                     text_area = WebDriverWait(field, 10).until(
                             EC.presence_of_element_located(self.locator["text_area"])
                         )
-                    time.sleep(3)
+                    time.sleep(random.uniform(1, 3))
                     text_area.clear()
-                    time.sleep(0.5)
+                    time.sleep(random.uniform(0.5, 2.0))
                     text_area.send_keys(answer)
                     log.info(f"Text input field populated with: {answer}")
                 except Exception as e:
@@ -1392,10 +1393,9 @@ class EasyApplyBot:
 
                     # Send the answer (date) to the input
                     date_field.clear()
-                    date_field.send_keys(answer)  # Ensure 'answer' is formatted correctly as "mm/dd/yyyy"
-                    time.sleep(1)
+                    time.sleep(random.uniform(0.5, 2.0))
                     self.clickjs(date_field)
-                    time.sleep(3)
+                    time.sleep(random.uniform(0.5, 2.0))
 
                     today_button = self.get_child((By.XPATH, ".//button[contains(@aria-label, 'This is today')]"), field)
                     
@@ -1577,60 +1577,66 @@ class EasyApplyBot:
 
     def clickjs(self, element):
         """
-        Attempts to click an element using Selenium's `click()`. If it fails, 
-        it falls back to clicking using JavaScript. For <option> elements, 
-        it sets the option as selected and dispatches a 'change' event.
+        Attempts to scroll to and click an element. For <option> elements, scrolls to and interacts with the parent <select> first.
+        Uses ActionChains for precise clicking and handles covered elements.
 
         Args:
-            element (WebElement): The element to be clicked or selected.
-
-        Example:
-            # Example usage for a normal element
-            clickjs(button_element)
-
-            # Example usage for an <option> element (e.g., selecting an option in a dropdown)
-            clickjs(option_element)
+            element (WebElement): The element to interact with.
 
         Raises:
-            WebDriverException: If the fallback also fails.
-
-        **Why This Method is Useful**:
-        Sometimes a button may not be interactable using Selenium. However, using JavaScript (execute_script) to 
-        simulate user actions, like button clicks, can sometimes raise red flags with platforms like LinkedIn. 
-        This is because these platforms actively monitor for automated or "bot-like" behavior to protect against scraping, spam, and other abusive activities. 
+            TimeoutException: If the element is not clickable within the timeout.
+            Exception: For any other failure during the click process.
         """
-        if element.tag_name.lower() == "option":
-            try:
-                # Scroll to the parent <select> element before attempting to interact
-                self.browser.execute_script("arguments[0].scrollIntoView(true);", element.parent)
-                # Attempt to click using Selenium's click()
+        try:
+            if element.tag_name.lower() == "option":
+                # Get the parent <select> element
+                parent_select = self.browser.execute_script("return arguments[0].parentElement;", element)
+                # Scroll the parent <select> into view
+                self.browser.execute_script("arguments[0].scrollIntoView({block: 'center'});", parent_select)
+
+                # Wait until the parent <select> is clickable and click it
+                WebDriverWait(self.browser, 15).until(EC.element_to_be_clickable(parent_select))
+                parent_select.click()
+                time.sleep(1)
+                # Now click the <option> element
                 element.click()
-            except Exception as e:
-                # Fallback to JavaScript for <option> elements
+
+            else:
+                # Scroll the element into view
+                self.browser.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
+
                 try:
-                    log.debug("Click failed('option' element). Using js...")
-                    self.browser.execute_script("""
-                        arguments[0].selected = true;
-                        arguments[0].parentElement.dispatchEvent(new Event('change'));
-                    """, element)
-                except Exception as js_exception:
-                    raise js_exception
-        else:
-            try:
-                # Scroll to the element before attempting to click
-                self.browser.execute_script("arguments[0].scrollIntoView(true);", element)
-                # Attempt to click using Selenium's click()
-                element.click()
-            except Exception as e:
-                # Fallback to JavaScript for other elements
-                try:
-                    log.debug("Click failed. Using js...")
-                    self.browser.execute_script("""
-                        arguments[0].click();
-                        arguments[0].dispatchEvent(new Event('change'));
-                    """, element)
-                except Exception as js_exception:
-                    raise js_exception
+                    # Wait until the element is clickable
+                    WebDriverWait(self.browser, 10).until(EC.element_to_be_clickable(element))
+
+                    # Attempt to click using ActionChains
+                    actions = ActionChains(self.browser)
+                    actions.move_to_element(element).click().perform()
+                    log.debug("Element clicked successfully.")
+                
+                except ElementClickInterceptedException:
+                    # Scroll slightly to account for overlapping elements
+                    self.browser.execute_script("window.scrollBy(0, -100);")
+                    actions.move_to_element(element).click().perform()
+
+                except TimeoutException:
+                    log.warning("Element is covered. Trying to click the parent element.")
+
+                    # Attempt to click the parent element as a fallback
+                    parent = self.browser.execute_script("return arguments[0].parentElement;", element)
+                    if parent:
+                        parent.click()
+                        log.debug("Parent element clicked successfully.")
+                    else:
+                        log.error("Parent element not found.")
+                        raise
+
+        except TimeoutException as te:
+            log.error(f"Element not clickable within the timeout period: {te}")
+            raise
+        except Exception as e:
+            log.error(f"Click action failed: {e}")
+            raise
 
 
     def next_jobs_page(self, position, location, jobs_per_page, experience_level=[], time_filter=""):
@@ -1873,7 +1879,7 @@ class EasyApplyBot:
         if answer is None:
             log.info("Not able to answer question automatically. Please provide answer")
             answer = "2"  # Placeholder for unanswered questions
-            time.sleep(5)
+            time.sleep(random.uniform(0.5, 2.0))
 
         # Append question and answer to the CSV
         if question not in self.answers:
