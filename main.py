@@ -1854,8 +1854,6 @@ class EasyApplyBot:
             answer = "Yes"
         elif "state" in question:
             answer = self.state
-        elif ("us citizen" in question or "u.s. citizen" in question) and "clearance" in question:
-            answer = "Yes"
         elif "salary" in question or "annual compensation" in question:
             answer = self.salary
         elif "gender" in question:
