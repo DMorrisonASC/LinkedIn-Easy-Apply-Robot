@@ -1400,8 +1400,6 @@ class EasyApplyBot:
                     today_button = self.get_child((By.XPATH, ".//button[contains(@aria-label, 'This is today')]"), field)
                     
                     self.clickjs(today_button)
-
-                    log.info(f"Date input filled with value: {answer}")
                     
                 except Exception as e:
                     log.error(f"Error while filling the date input: {e}")
@@ -1786,7 +1784,7 @@ class EasyApplyBot:
             answer = "10"
         elif "hourly" in question and ("rate" in question or "salary" in question or "what" in question):
             answer = self.rate
-        elif "why" in question and ("position" in question or "role" in questions):
+        elif "why" in question and ("position" in question or "role" in question):
             answer = "Good glassdoor reviews and the workers I talked to love their jobs"
         elif "do you" in question and "experience" in question:
             answer = "Yes"
