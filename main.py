@@ -186,7 +186,6 @@ class EasyApplyBot:
         self.experience_level = experience_level
         self.time_filter = time_filter
         self.visited_IDs = {}
-        self.zoom_level = 90
 
         # First message
         log.info("Welcome to Easy Apply Bot")
