@@ -5,12 +5,12 @@ Automate the applying for jobs on LinkedIn (Only for 'easy apply' jobs).
 
 Python 3
 
-The run the bot install requirements
+1) The run the bot install requirements
 ```bash
 pip3 install -r requirements.txt
 ```
 
-1) Enter your username, password, and search settings into the `config.yaml` file
+2) Enter your username, password, and search settings into the `config.yaml` file
 
 ```yaml
 # Quotes are not needed in the key's values. Example `first_name: John`
@@ -123,8 +123,17 @@ experience_level:
   - 6 # Internship
 time_filter:  4 # 1 = 24 hours, 2 = Last week, 3 = Last month. Else, it will pick anytime
 ```
+__NOTE: Add `config.yaml`, 'resume/' and 'cover_letters' into .gitignore file!__
+### Main.py
+Edit the `def ans_question(self, question)` function to modify answers to the questions on applications
 
-`rules.json` is a .json file used to add answers to questions. For example,
+### Uploads
+
+You can list as many files as you want in the uploads section.
+The program reads the titles from the input boxes and matches them with the list in the config file.
+
+3) Edit `rules.json`.
+It is a .json file used to add answers to questions. For example,
 an "if statement" in python:
 ```python
 question = question.lower().strip()   
@@ -411,14 +420,6 @@ Example `rules.json`
     "default": "2"
   }
 ```
-__NOTE: Add `config.yaml`, 'resume/' and 'cover_letters' into .gitignore file!__
-### Main.py
-Edit the `def ans_question(self, question)` function to modify answers to the questions on applications
-
-### Uploads
-
-You can list as many files as you want in the uploads section.
-The program reads the titles from the input boxes and matches them with the list in the config file.
 
 ## Execute
 
