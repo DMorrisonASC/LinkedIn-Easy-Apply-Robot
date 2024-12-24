@@ -126,6 +126,276 @@ experience_level:
   - 6 # Internship
 time_filter:  # 1 = 24 hours, 2 = Last week, 3 = Last month. Else, it will pick anytime
 ```
+
+```json
+{
+    "rules": [
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["english"] },
+          { "type": "OR", "keywords": ["speak", "communicate"] }
+        ],
+        "response": "Yes"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["english"] },
+          { "type": "OR", "keywords": ["proficiency", "level"] }
+        ],
+        "response": "Native"
+      },
+      {
+        "conditions": [
+          { "type": "OR", "keywords": ["how many", "how much", "enter a decimal number"] }
+        ],
+        "response": "random_choice"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["rate"] },
+          { "type": "OR", "keywords": ["yourself", "proficient", "proficiency"] }
+        ],
+        "response": "10"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["hourly"] },
+          { "type": "OR", "keywords": ["rate", "salary", "what"] }
+        ],
+        "response": "dynamic_rate"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["why"] },
+          { "type": "OR", "keywords": ["position", "role"] }
+        ],
+        "response": "Good glassdoor reviews and the workers I talked to love their jobs"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["do you"] },
+          { "type": "AND", "keywords": ["experience"] }
+        ],
+        "response": "Yes"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["how did you hear"] }
+        ],
+        "response": "Other"
+      },
+      {
+        "conditions": [
+          { "type": "OR", "keywords": ["refer", "referred"] }
+        ],
+        "response": "N/A"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["can you start"] }
+        ],
+        "response": "Yes"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["legal", "work"] }
+        ],
+        "response": "Yes"
+      },
+      {
+        "conditions": [
+          { "type": "OR", "keywords": ["sponsor", "sponsorship"] },
+          { "type": "OR", "keywords": ["require", "will you", "do you need"] }
+        ],
+        "response": "No"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["work"] },
+          { "type": "OR", "keywords": ["authorization", "authorized"] }
+        ],
+        "response": "Yes"
+      },
+      {
+        "conditions": [
+          { "type": "OR", "keywords": ["W2"] }
+        ],
+        "response": "Yes"
+      },
+      {
+        "conditions": [
+          { "type": "OR", "keywords": ["eligible", "able"] },
+          { "type": "AND", "keywords": ["clearance"] }
+        ],
+        "response": "Yes"
+      },
+      {
+        "conditions": [
+          { "type": "OR", "keywords": ["have", "active", "obtain"] },
+          { "type": "AND", "keywords": ["clearance"] }
+        ],
+        "response": "No"
+      },
+      {
+        "conditions": [
+          { "type": "OR", "keywords": ["US", "U.S.", "green"] },
+          { "type": "OR", "keywords": ["citizen", "card"] }
+        ],
+        "response": "Yes"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["privacy policy"] }
+        ],
+        "response": "I agree"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["date"] },
+          { "type": "OR", "keywords": ["earliest", "start", "mm/dd/yyyy", "format"] }
+        ],
+        "response": "dynamic_date"
+      },
+      {
+        "conditions": [
+          { "type": "OR", "keywords": ["city", "address"] }
+        ],
+        "response": "dynamic_city"
+      },
+      {
+        "conditions": [
+          { "type": "OR", "keywords": ["zip", "area code", "postal"] }
+        ],
+        "response": "dynamic_zipcode"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["first"] }
+        ],
+        "response": "dynamic_first_name"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["last"] }
+        ],
+        "response": "dynamic_last_name"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["your name"] }
+        ],
+        "response": "dynamic_full_name"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["github"] }
+        ],
+        "response": "dynamic_github"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["linkedin"] }
+        ],
+        "response": "dynamic_linkedin"
+      },
+      {
+        "conditions": [
+          { "type": "OR", "keywords": ["portfolio", "personal website"] }
+        ],
+        "response": "dynamic_portfolio"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["disability"] }
+        ],
+        "response": "dynamic_disability"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["drug test"] },
+          { "type": "OR", "keywords": ["positive"] }
+        ],
+        "response": "No"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["drug test"] },
+          { "type": "OR", "keywords": ["can you"] }
+        ],
+        "response": "Yes"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["can you"] },
+          { "type": "AND", "keywords": ["commute"] }
+        ],
+        "response": "Yes"
+      },
+      {
+        "conditions": [
+          { "type": "OR", "keywords": ["criminal", "felon", "charged"] }
+        ],
+        "response": "No"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["currently reside"] }
+        ],
+        "response": "Yes"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["state"] }
+        ],
+        "response": "dynamic_state"
+      },
+      {
+        "conditions": [
+          { "type": "OR", "keywords": ["salary", "annual compensation"] }
+        ],
+        "response": "dynamic_salary"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["gender"] }
+        ],
+        "response": "dynamic_gender"
+      },
+      {
+        "conditions": [
+          { "type": "OR", "keywords": ["race", "ethnicity"] }
+        ],
+        "response": "dynamic_race"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["lgbtq"] }
+        ],
+        "response": "dynamic_lgbtq"
+      },
+      {
+        "conditions": [
+          { "type": "OR", "keywords": ["government", "veteran"] }
+        ],
+        "response": "dynamic_veteran"
+      },
+      {
+        "conditions": [
+          { "type": "AND", "keywords": ["phone"] },
+          { "type": "OR", "keywords": ["mobile", "number"] }
+        ],
+        "response": "dynamic_phone_number"
+      },
+      {
+        "conditions": [
+          { "type": "OR", "keywords": ["do you", "did you", "have you", "are you"] }
+        ],
+        "response": "Yes"
+      }
+    ],
+    "default": "2"
+  }
+```
 __NOTE: Add `config.yaml`, 'resume/' and 'cover_letters' into .gitignore file!__
 ### Main.py
 Edit the `def ans_question(self, question)` function to modify answers to the questions on applications
