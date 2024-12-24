@@ -5,12 +5,12 @@ Automate the applying for jobs on LinkedIn (Only for 'easy apply' jobs).
 
 Python 3
 
-1) The run the bot install requirements
+The run the bot install requirements
 ```bash
 pip3 install -r requirements.txt
 ```
 
-2) Enter your username, password, and search settings into the `config.yaml` file
+Enter your username, password, and search settings into the `config.yaml` file
 
 ```yaml
 # Quotes are not needed in the key's values. Example `first_name: John`
@@ -124,15 +124,13 @@ experience_level:
 time_filter:  4 # 1 = 24 hours, 2 = Last week, 3 = Last month. Else, it will pick anytime
 ```
 __NOTE: Add `config.yaml`, 'resume/' and 'cover_letters' into .gitignore file!__
-### Main.py
-Edit the `def ans_question(self, question)` function to modify answers to the questions on applications
 
 ### Uploads
 
 You can list as many files as you want in the uploads section.
 The program reads the titles from the input boxes and matches them with the list in the config file.
 
-3) Edit `rules.json`.
+### Edit `rules.json`.
 It is a .json file used to add answers to questions. For example,
 an "if statement" in python:
 ```python
@@ -421,7 +419,10 @@ Example `rules.json`
   }
 ```
 
-## Execute
+### Main.py
+Edit the `def ans_question(self, question)` function to modify answers to the questions on applications
+
+### Execute
 
 To execute the bot run the following in your terminal
 ```
@@ -431,4 +432,4 @@ python3 main.py
 - Uploading resume doesn't work; upload it manually
 - a slight chance that the bot gets stuck in a loop if the job is closed while still applying
 - Small chance that previously applied jobs appear when bot is supposed to ignore applied jobs
-- Have not accounted foir all possible web elements yet. Ex: if bot was not programmed to answer a specific web element and/or the 'locator' breaks(often when LinkedIn changes id and class names)
+- Have not accounted for all possible web elements yet. Ex: if bot was not programmed to answer a specific web element and/or the 'locator' breaks(often when LinkedIn changes id and class names)
