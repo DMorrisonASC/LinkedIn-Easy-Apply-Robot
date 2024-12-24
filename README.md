@@ -127,6 +127,23 @@ experience_level:
 time_filter:  # 1 = 24 hours, 2 = Last week, 3 = Last month. Else, it will pick anytime
 ```
 
+Json file to add answers to questions. For example,
+an "if statement" in python:
+```python
+question = question.lower().strip()   
+if "english" in question and ( "speak" in question or "communicate" in question):
+        answer = "Native"
+```
+It's json version
+```json
+{
+  "conditions": [
+    { "type": "AND", "keywords": ["english"] },
+    { "type": "OR", "keywords": ["speak", "communicate"] }
+  ],
+  "response": "Yes"
+},
+```
 ```json
 {
     "rules": [
