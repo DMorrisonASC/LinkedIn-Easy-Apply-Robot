@@ -127,7 +127,7 @@ experience_level:
 time_filter:  # 1 = 24 hours, 2 = Last week, 3 = Last month. Else, it will pick anytime
 ```
 
-Json file to add answers to questions. For example,
+`rules.json` is a .json file used to add answers to questions. For example,
 an "if statement" in python:
 ```python
 question = question.lower().strip()   
@@ -144,6 +144,7 @@ It's json version
   "response": "Yes"
 },
 ```
+Example `rules.json`
 ```json
 {
     "rules": [
