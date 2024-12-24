@@ -150,6 +150,9 @@ cover_letters/
 .dmypy.json
 dmypy.json
 
+# json
+rules.json
+
 # Pyre type checker
 .pyre/
 

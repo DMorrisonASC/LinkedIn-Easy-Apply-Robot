@@ -8,7 +8,7 @@ import time
 from datetime import datetime, timedelta
 from datetime import date
 from pathlib import Path
-
+import json
 import yaml
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -276,6 +276,10 @@ class EasyApplyBot:
             df = pd.DataFrame(data)
             # Write only the header to a CSV file (this will create an empty file with headers)
             df.head(0).to_csv('applications.csv', index=False)
+
+
+        with open("rules.json", 'r', encoding='utf-8') as file:
+            self.rules = json.load(file)
 
     def create_empty_csv(self):
         """Creates an empty CSV file with the correct headers."""
@@ -1107,7 +1111,6 @@ class EasyApplyBot:
         different types of fields such as radio buttons, multi-select, text input, location select, date inputs, and more.
 
         **Workflow**:
-        - **Clearing existing selections**: Ensures any pre-selected radio buttons or other choices are unselected.
         - **Form Field Processing**: Iterates over all form fields and determines the appropriate answer based on the question.
         - **Answer Selection**:
         - For **radio buttons**, the method attempts to select the correct option based on predefined answers.
@@ -1129,7 +1132,6 @@ class EasyApplyBot:
         - **Error Recovery**: Handles edge cases like stale elements, missing fields, or unresponsive elements by retrying actions or selecting fallback options.
 
         **Key Functional Steps**:
-        1. **Clear Existing Selections**: Clears radio buttons or selections that may be pre-set.
         2. **Form Iteration**: Iterates through each form field to determine its type and select the appropriate answer.
         3. **Answer Selection**:
         - For **radio buttons**, the method attempts to select the exact match for the answer, or the closest match if an exact match is not found.
@@ -1168,6 +1170,8 @@ class EasyApplyBot:
                 field = form[i]
                 question = field.text.strip()  # Strip whitespace from question
                 answer = self.ans_question(question.lower())  # Get answer based on the current question
+                log.debug(f"Question: '{question}'\nAnswer: {answer}")
+
 
             except StaleElementReferenceException:
                 log.warning(f"Element became stale: {field}, re-fetching form elements.")
@@ -1221,7 +1225,6 @@ class EasyApplyBot:
                     log.warning(f"Retrying due to stale element in radio button. ")
 
                 except Exception as e:
-                    log.error(f"Radio button error for question: {question}, answer: {answer}")
                     log.error(traceback.format_exc())  # Full traceback for better debugging
                 
             # Multi-select case
@@ -1276,7 +1279,7 @@ class EasyApplyBot:
                     text_field.clear()
                     time.sleep(random.uniform(0.5, 2.0))
                     text_field.send_keys(answer)
-                    log.info(f"Text input field populated with: {answer}")
+
                 except Exception as e:
                     log.error(f"('text_select' error: {e}") 
 
@@ -1292,7 +1295,6 @@ class EasyApplyBot:
                     time.sleep(5)
                     text_field.send_keys(Keys.ARROW_DOWN)
                     text_field.send_keys(Keys.ENTER)
-                    log.info(f"Auto complete input field populated with: {answer}")
 
                 except Exception as e:
                     log.error(f"'location_select' error: {e}") 
@@ -1308,7 +1310,7 @@ class EasyApplyBot:
                     text_area.clear()
                     time.sleep(random.uniform(0.5, 2.0))
                     text_area.send_keys(answer)
-                    log.info(f"Text input field populated with: {answer}")
+
                 except Exception as e:
                     log.error(f"'text_area' error: {e}")
 
@@ -1370,14 +1372,13 @@ class EasyApplyBot:
                             log.warning("No suitable select option found. Picking the random option")
                             # Pick random choice
                             random_option = random.choice(select_elements)
-                            self.clickjs(random_option)
                             log.info(f"Random option selected: {random_option.get_attribute('value')}")
+                            self.clickjs(random_option)
                                 
                 except StaleElementReferenceException:
                     log.warning(f"Retrying due to stale element in fieldset.")
 
                 except Exception as e:
-                    log.error(f"Select element error for question: {question}, answer: {answer}")
                     log.error(traceback.format_exc())  # Full traceback for better debugging
 
             # Handle date input fields
@@ -1619,10 +1620,13 @@ class EasyApplyBot:
                 except TimeoutException:
                     log.warning("Element is covered. Trying to click the parent element.")
 
-                    # Attempt to click the parent element as a fallback
+                    # Attempt to click the parent element and label as a fallback
                     parent = self.browser.execute_script("return arguments[0].parentElement;", element)
                     if parent:
-                        parent.click()
+                        actions = ActionChains(self.browser)
+                        actions.move_to_element_with_offset(parent, 5, 5).click().perform()
+                        label = self.get_child((By.XPATH, f".//label[@data-test-text-selectable-option__label='{element.get_attribute('value')}']"), parent)
+                        label.click()
                         log.debug("Parent element clicked successfully.")
                     else:
                         log.error("Parent element not found.")
@@ -1707,184 +1711,110 @@ class EasyApplyBot:
                 print(f"Failed to write to file: {e}")
 
     def ans_question(self, question):
-        """
-        Automatically provides answers to questions based on predefined patterns.
-
-        **Purpose**:
-        This method analyzes a given question, matches it to a set of predefined patterns, and returns an appropriate answer. It uses keyword matching and pre-set rules for various question categories such as English proficiency, work authorization, basic personal information, and others. If a question cannot be automatically answered, a default response or placeholder is returned.
-
-        **Parameters**:
-        - `question` (str): The question for which an answer is needed. It should be a string containing the question text, typically in lowercase and without extra whitespace.
-
-        **Returns**:
-        - `answer` (str): The answer to the question, returned as a string. If the question cannot be automatically answered, a default response (such as "2") is returned. The answer is also logged and appended to a CSV file for record-keeping.
-
-        **Behavior**:
-        - The method searches for specific keywords or patterns in the `question` string (e.g., "english", "rate", "how many", "city", etc.).
-        - Based on these keywords, it determines the correct answer from a set of predefined responses.
-        - If the question matches a known pattern, it returns the corresponding answer.
-        - If the question doesn't match any predefined pattern, a default answer (e.g., "2") is provided, and the system logs the failure to answer the question automatically.
-        - The answer is saved in a CSV file alongside the question for later reference.
-
-        **Categories of Question Handling**:
-        - **English Proficiency**: Questions about language skills, such as speaking or communication abilities.
-        - **Experience and Salary**: Questions about work experience, hourly rates, salary expectations, and work roles.
-        - **Work Authorization**: Questions about legal eligibility to work, sponsorship, and visa status.
-        - **Personal Information**: Questions about basic details like name, address, city, and contact information.
-        - **Social Media and Websites**: Questions about social media profiles like GitHub, LinkedIn, and personal portfolios.
-        - **Disability and Drug Testing**: Questions about disability status or drug test results.
-        - **Commuting and Legal Issues**: Questions about commuting ability, criminal background, and legal matters.
-        - **General Yes/No Questions**: Questions that ask for a simple affirmation or negation (e.g., "Do you have experience?" or "Can you commute?").
-        - **Default Handling**: For questions not matching any specific pattern, a placeholder response ("2") is given.
-
-        **Exceptions**:
-        - If no matching category is found, the method logs the question and assigns a placeholder answer.
-        - The `time.sleep(5)` is used in cases where a question cannot be answered automatically, ensuring that the process can continue with a placeholder answer.
-
-        **Example Usage**:
-        ```python
-        # Example: Automatically answer a question about English proficiency
-        question = "Do you speak English?"
-        answer = self.ans_question(question)
-        print(answer)  # Output: "Yes"
-        ```
-
-        **Why This Method is Useful**:
-        - This method automates the process of answering frequently asked questions in forms or surveys.
-        - It helps reduce the manual intervention needed for repetitive question-answering tasks, especially when the questions follow certain patterns.
-        - The answers are automatically logged for future reference, ensuring traceability and record-keeping.
-
-        **Notes**:
-        - The method expects the `question` parameter to be in lowercase to improve matching accuracy.
-        - If there are changes to the question patterns or categories, the method can be extended with additional if-else branches or keyword patterns.
-
-        **Possible Improvements**:
-        - Expand the predefined categories to include more specific questions.
-        - Implement more sophisticated natural language processing (NLP) methods for better question understanding and answer prediction.
-        - Add logging for unanswered questions or failed attempts to provide an answer.
-        - Refactor the logic to handle specific keywords or phrases in a more modular fashion, such as using a dictionary of keywords and answers.
-        """
-
-        answer = None
         question = question.lower().strip()
         choices = ["6", "5", "4", "3"]
+        answer = None
 
-        # English proficiency-related questions
-        if "english" in question:
-            if "speak" in question or "communicate" in question:
-                answer = "Yes"
-            elif "proficiency" in question or "level" in question:
-                answer = "Native"
+        for rule in self.rules["rules"]:
+            if self.evaluate_conditions(question, rule["conditions"]):
+                if rule["response"] == "random_choice":
+                    answer = random.choice(choices)
+                    break
 
-        # Experience-related questions
-        elif "how many" in question or "how much" in question or "enter a decimal number" in question:
-            answer = random.choice(choices)
-        elif "rate" in question and ("yourself" in question or "proficient" in question or "proficiency" in question):
-            answer = "10"
-        elif "hourly" in question and ("rate" in question or "salary" in question or "what" in question):
-            answer = self.rate
-        elif "why" in question and ("position" in question or "role" in question):
-            answer = "Good glassdoor reviews and the workers I talked to love their jobs"
-        elif "do you" in question and "experience" in question:
-            answer = "Yes"
-        elif "how did you hear" in question:
-            answer = "Other"
-        elif "refer" in question or "referred" in question:
-            answer = "N/A"
-        elif "can you start" in question:
-            answer = "Yes"
+                elif rule["response"] == "dynamic_rate":
+                    answer = self.rate
+                    break
 
-        # Work authorization questions
-        elif ("legal" in question or "legally" in question) and ("work" in question or "author" in question):
-            answer = "Yes"
-        elif "sponsor" in question or "sponsorship" in question:
-            answer = "No"
-        elif "work" in question and ("authorization" in question or "authorized" in question):
-            answer = "Yes"
-        elif "W2" in question:
-            answer = "Yes"
-        elif ("eligible" in question or "able" in question) and "clearance" in question:
-            answer = "Yes"
-        elif ("have" in question or "active" in question or "obtain" in question) and "clearance" in question:
-            answer = "No"
-        elif ("US" in question or "U.S." in question or "green" in question ) and ("citizen" in question or "card" in question):
-            answer = "Yes"
-        elif ("privacy policy" in question):
-            answer = "I agree"
-        elif "date" in question and ("earliest" in question or "start" in question or "mm/dd/yyyy" in question or "format" in question):
-            today = date.today()
-            answer = today.strftime("%m/%d/%Y")
-        # basic info
-        elif ("city" in question or "address" in question):
-            answer = self.city
-        elif ("zip" in question or "area code" in question or "postal" in question):
-            answer = self.zipcode
-        elif ("first" in question):
-            answer = self.first_name
-        elif ("last" in question):
-            answer = self.last_name
-        elif ("your name" in question):
-            answer = self.first_name + " " + self.last_name
-        # Socials
-        elif ("github" in question):
-            answer = self.github
-        elif ("linkedin" in question):
-            answer = self.linkedin
-        elif "portfolio" in question or "personal website" in question:
-            answer = self.portfolio
+                elif rule["response"] == "dynamic_date":
+                    today = date.today()
+                    answer = today.strftime("%m/%d/%Y")
+                    break
+                
+                elif rule["response"] == "dynamic_city":
+                    answer = self.city
+                    break
 
-        # Disability and drug test-related questions
-        elif "disability" in question:
-            answer = self.disability
-        elif "drug test" in question:
-            if "positive" in question:
-                answer = "No"
-            elif "can you" in question:
-                answer = "Yes"
+                elif rule["response"] == "dynamic_zipcode":
+                    answer = self.zipcode
+                    break
 
-        # Commuting and legal questions
-        elif "can you" in question and "commute" in question:
-            answer = "Yes"
-        elif "criminal" in question or "felon" in question or "charged" in question:
-            answer = "No"
+                elif rule["response"] == "dynamic_first_name":
+                    answer = self.first_name
+                    break
 
-        # Other personal questions
-        elif "currently reside" in question:
-            answer = "Yes"
-        elif "state" in question:
-            answer = self.state
-        elif "salary" in question or "annual compensation" in question:
-            answer = self.salary
-        elif "gender" in question:
-            answer = self.gender
-        elif "race" in question or "ethnicity" in question:
-            answer = self.race
-        elif "lgbtq" in question:
-            answer = self.lgbtq
-        elif "government" in question or "veteran" in question:
-            answer = self.veteran
-        elif "phone" in question and ("mobile" in question or "number" in question):
-            answer = self.phone_number
+                elif rule["response"] == "dynamic_last_name":
+                    answer = self.last_name
+                    break
+                
+                elif rule["response"] == "dynamic_full_name":
+                    answer = self.first_name + self.last_name
+                    break
 
-        # General affirmative questions
-        elif "do you" in question or "did you" in question or "have you" in question or "are you" in question:
-            answer = "Yes"
+                elif rule["response"] == "dynamic_full_name":
+                    answer = self.first_name + self.last_name
+                    break
 
-        # Default case for unanswered questions
-        if answer is None:
-            log.info("Not able to answer question automatically. Please provide answer")
-            answer = "2"  # Placeholder for unanswered questions
-            time.sleep(random.uniform(0.5, 2.0))
+                elif rule["response"] == "dynamic_github":
+                    answer = self.github
+                    break
 
+                elif rule["response"] == "dynamic_linkedin":
+                    answer = self.linkedin
+                    break
+
+                elif rule["response"] == "dynamic_portfolio":
+                    answer = self.portfolio
+                    break
+
+                elif rule["response"] == "dynamic_disability":
+                    answer = self.disability
+                    break
+
+                elif rule["response"] == "dynamic_state":
+                    answer = self.state
+                    break
+
+                elif rule["response"] == "dynamic_gender":
+                    answer = self.gender
+                    break
+
+                elif rule["response"] == "dynamic_lgbtq":
+                    answer = self.lgbtq
+                    break
+
+                elif rule["response"] == "dynamic_veteran":
+                    answer = self.veteran
+                    break
+
+                elif rule["response"] == "dynamic_phone_number":
+                    answer = self.phone_number
+                    break
+
+                else:
+                    answer = rule["response"]
+                    break
+                   
+            else: 
+                answer = self.rules["default"]
+        
         # Append question and answer to the CSV
         if question not in self.answers:
             self.answers[question] = answer
             new_data = pd.DataFrame({"Question": [question], "Answer": [answer]})
             new_data.to_csv(self.qa_file, mode='a', header=False, index=False, encoding='utf-8')
 
-        log.info("Answering question: " + question + "\nwith answer: " + str(answer))
-        return str(answer)
+        return answer
 
+    def evaluate_conditions(self, question, conditions):
+        for condition in conditions:
+            if condition["type"] == "AND":
+                if not all(keyword in question for keyword in condition["keywords"]):
+                    return False
+            elif condition["type"] == "OR":
+                if not any(keyword in question for keyword in condition["keywords"]):
+                    return False
+        return True
+    
     def add_job_link(self, date, title, company, ID):
         """
         Adds a job posting link to the applications CSV file with a description.

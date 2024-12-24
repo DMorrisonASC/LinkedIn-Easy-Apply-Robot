@@ -18847,3 +18847,211 @@ required
        yes
        no",Yes
 ,2
+"how many years of experience do you have in software development with java ee (servlet, jsp)?
+enter a decimal number larger than 0.0",5
+"can you work without visa sponsorship?
+can you work without visa sponsorship?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",No
+"how many years of experience do you have with ibm identity and access management (iam) suite?
+enter a decimal number larger than 0.0",3
+"ability to use and monitor tools such as s3, athena, glue, lamdba, step functions, cloudwatch, dynamodb, quicksight, emr studio, jhub, ssms, ssis, and tableau?
+ability to use and monitor tools such as s3, athena, glue, lamdba, step functions, cloudwatch, dynamodb, quicksight, emr studio, jhub, ssms, ssis, and tableau?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",2
+how many years of work experience do you have with python (programming language)?,6
+"ability to use and monitor tools such as s3, athena, glue, lamdba, step functions, cloudwatch, dynamodb, quicksight, emr studio, jhub, ssms, ssis, and tableau?
+ability to use and monitor tools such as s3, athena, glue, lamdba, step functions, cloudwatch, dynamodb, quicksight, emr studio, jhub, ssms, ssis, and tableau?
+required
+       select an option
+       yes
+       no",2
+"how many years of work experience do you have with cisco unified communications manager (cucm)?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with voicexml (vxml)?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with fortran?
+enter a whole number between 0 and 99",4
+"what is your experience with manman development
+enter a decimal number larger than 0.0",4
+"how many years of work experience do you have with cloudflare?
+enter a whole number between 0 and 99",6
+"do you have experience specifically with cloudflare durable objects? 
+do you have experience specifically with cloudflare durable objects?
+required
+       select an option
+       yes
+       no
+   please enter a valid answer",Yes
+"how many years of work experience do you have with digital asset management?
+enter a whole number between 0 and 99",6
+"how many years of work experience do you have with adobe workfront?
+enter a whole number between 0 and 99",3
+"how many years of work experience do you have with global investment?
+enter a whole number between 0 and 99",5
+"how many years of work experience do you have with access to finance?
+enter a whole number between 0 and 99",3
+"address line 1: house number and street address/po box address
+please enter a valid answer",Bronx
+"address line 2: city
+please enter a valid answer",Bronx
+"address line 3: state or province abbreviation
+please enter a valid answer",Bronx
+"address line 4: zip code
+please enter a valid answer",Bronx
+"address line 5: country abbreviation
+please enter a valid answer",Bronx
+"will you now or in the future require sponsorship for employment visa status (e.g., visa status is h-1b, tn, f-1, other)?
+will you now or in the future require sponsorship for employment visa status (e.g., visa status is h-1b, tn, f-1, other)?
+required
+yes
+no
+please make a selection",No
+"are you a current colleague? if yes, please apply via the commons.
+are you a current colleague? if yes, please apply via the commons.
+required
+yes
+no
+please make a selection",Yes
+"what is your pay expectation for this position?
+please enter a valid answer",2
+"what is the highest level of education you've completed?
+what is the highest level of education you've completed?
+required
+       select an option
+       high school diploma/ged
+       associate's degree
+       bachelor's degree
+       master's degree
+       doctorate degree/phd
+   please make a selection",2
+"have you ever been employed by adtalem global education affiliates, subsidiaries or divisions?
+have you ever been employed by adtalem global education affiliates, subsidiaries or divisions?
+required
+yes
+no
+please make a selection",Yes
+"if you answered ""yes"" to the question above, please indicate the institution below:
+if you answered ""yes"" to the question above, please indicate the institution below:
+       select an option
+       adtalem global education
+       american university of the caribbean
+       chamberlain college of nursing
+       ross university school of medicine
+       ross university school of veterinary medicine
+       walden university",2
+"are you an alumnus/member of any of the adtalem global education institutions?
+are you an alumnus/member of any of the adtalem global education institutions?
+required
+yes
+no
+please make a selection",Yes
+"if you answered ""yes"" to the question above, please indicate the institution:
+if you answered ""yes"" to the question above, please indicate the institution:
+       select an option
+       american university of the caribbean
+       chamberlain college of nursing
+       ross university school of medicine
+       ross university school of veterinary medicine
+       walden university",2
+"i represent that all information entered on this form and on any other forms or resumes completed by me in connection with my request to be considered for employment or a contract with adtalem global education or its affiliates to be true and correct. i understand and agree that any false statements or omissions of information will be reason for discharge if i am employed and for contract termination if i am under contract.
+i represent that all information entered on this form and on any other forms or resumes completed by me in connection with my request to be considered for employment or a contract with adtalem global education or its affiliates to be true and correct. i understand and agree that any false statements or omissions of information will be reason for discharge if i am employed and for contract termination if i am under contract.
+required
+yes
+no
+please make a selection",NY
+"legal gender
+legal gender
+required
+       select an option
+       female
+       male
+       opt out
+   please make a selection",male
+"race
+race
+required
+       select an option
+       american indian/alaskan native
+       asian
+       black or african american
+       hispanic or latino
+       native hawaiian or other pacific islander
+       not specified
+       two or more races
+       white
+       opt out
+   please make a selection",dynamic_race
+"do you have a disability or have a history/record of having a disability?
+do you have a disability or have a history/record of having a disability?
+required
+       select an option
+       yes
+       no
+       opt out
+   please make a selection",no
+"are you a veteran?
+are you a veteran?
+required
+       select an option
+       yes
+       no
+       opt out
+   please make a selection",I am not
+address line 1: house number and street address/po box address,Bronx
+address line 2: city,Bronx
+address line 3: state or province abbreviation,Bronx
+address line 4: zip code,Bronx
+address line 5: country abbreviation,Bronx
+what is your pay expectation for this position?,2
+"what is the highest level of education you've completed?
+what is the highest level of education you've completed?
+required
+       select an option
+       high school diploma/ged
+       associate's degree
+       bachelor's degree
+       master's degree
+       doctorate degree/phd",2
+"legal gender
+legal gender
+required
+       select an option
+       female
+       male
+       opt out",male
+"race
+race
+required
+       select an option
+       american indian/alaskan native
+       asian
+       black or african american
+       hispanic or latino
+       native hawaiian or other pacific islander
+       not specified
+       two or more races
+       white
+       opt out",dynamic_race
+"do you have a disability or have a history/record of having a disability?
+do you have a disability or have a history/record of having a disability?
+required
+       select an option
+       yes
+       no
+       opt out",no
+"are you a veteran?
+are you a veteran?
+required
+       select an option
+       yes
+       no
+       opt out",I am not
+"how many years of work experience do you have with xamarin products?
+enter a whole number between 0 and 99",6
