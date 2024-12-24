@@ -10,44 +10,41 @@ The run the bot install requirements
 pip3 install -r requirements.txt
 ```
 
-Enter your username, password, and search settings into the `config.yaml` file
+1) Enter your username, password, and search settings into the `config.yaml` file
 
 ```yaml
 # Quotes are not needed in the key's values. Example `first_name: John`
 person:
   name: 
-    title: ''
-    first_name:  
-    last_name: 
+    title: '' # Enter your...
+    first_name:  # Enter your...
+    last_name:  # Enter your...
   account:
-    username:  # your email
-    password: 
+    username:  # Enter your...
+    password:  # Enter your...
   social_media:
-    github: 
-    linkedin: 
-    portfolio: 
-    phone_number: 
+    github: # Enter if applicable
+    linkedin:  # Enter if applicable
+    portfolio:  # Enter if applicable
+    phone_number: # Enter your...
   address:
-    street: 
-    city: 
-    state: 
-    zip:
-    country: 
+    street: # Enter your...
+    city: # Enter your...
+    state: # Enter your...
+    zip:  # Enter your...
+    country: # Enter your...
   demographic: # "Yes" and "No" are booleans in yaml, surround them in quotes
-    race: 
-    gender: 
-    disability: 
-    veteran: 
-    lgbtq: 
+    race: # Ex: Asian, Black, White
+    gender: # Ex: Male, Female
+    disability: '' # Ex: 'Yes' or 'No'
+    veteran: '' # Ex: 'Yes' or 'No'
+    lgbtq: '' # hetero, gay, pansexual, etc.
 
 profile_path: '' # Use it to log into a specific chrome profile. Ex: 'C:\Users\<user>\AppData\Local\Google\Chrome\User Data\Profile 1'
 
 positions:
-- Software Engineer
-- Data Engineer
-- Front End developer
-- Backend developer
 - full stack developer
+- Dentist
 
 locations:
 - Remote
@@ -105,17 +102,17 @@ locations:
 salary: 70000
 rate: 40
 # --------- Optional Parameters -------
-uploads:
-  resume: 
-  cover_letter: 
+uploads: ''
+  resume: ''
+  cover_letter: ''
 
 output_filename:
-- 
+- ''
 
 blacklist: # Company names you want to ignore
 - SynergisticIT 
-# blackListTitles:
-# - # jobs you want to ignore
+# blackListTitles: # jobs you want to ignore
+# - 
 
 experience_level:
   - 1 # Entry level
@@ -124,7 +121,7 @@ experience_level:
   - 4 # Director
   - 5 # Executive
   - 6 # Internship
-time_filter:  # 1 = 24 hours, 2 = Last week, 3 = Last month. Else, it will pick anytime
+time_filter:  4 # 1 = 24 hours, 2 = Last week, 3 = Last month. Else, it will pick anytime
 ```
 
 `rules.json` is a .json file used to add answers to questions. For example,
@@ -134,7 +131,7 @@ question = question.lower().strip()
 if "english" in question and ( "speak" in question or "communicate" in question):
         answer = "yes"
 ```
-The above statement would be converted to json like this:
+The "if statement" above would be converted to json like this:
 ```json
 {
   "conditions": [
