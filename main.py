@@ -1625,9 +1625,14 @@ class EasyApplyBot:
                     if parent:
                         actions = ActionChains(self.browser)
                         actions.move_to_element_with_offset(parent, 5, 5).click().perform()
-                        label = self.get_child((By.XPATH, f".//label[@data-test-text-selectable-option__label='{element.get_attribute('value')}']"), parent)
-                        label.click()
                         log.debug("Parent element clicked successfully.")
+
+                        try:
+                            label = self.get_child((By.XPATH, f".//label[@data-test-text-selectable-option__label='{element.get_attribute('value')}']"), parent)
+                            label.click()
+                        except Exception as e:
+                            log.debug("Element did not have label: {e}")
+                            
                     else:
                         log.error("Parent element not found.")
                         raise
