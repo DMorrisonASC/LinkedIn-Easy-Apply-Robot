@@ -134,7 +134,7 @@ question = question.lower().strip()
 if "english" in question and ( "speak" in question or "communicate" in question):
         answer = "yes"
 ```
-It's json version
+The above statement would be converted to json like this:
 ```json
 {
   "conditions": [
