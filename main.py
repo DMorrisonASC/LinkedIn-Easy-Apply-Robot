@@ -670,7 +670,7 @@ class EasyApplyBot:
         # Navigate to the job page using the job ID.
         self.get_job_page(jobID)
 
-        time.sleep(random.uniform(15, 20))
+        time.sleep(random.uniform(5, 10))
 
         # Try to find the Easy Apply button on the job page.
         button = self.get_easy_apply_button()
