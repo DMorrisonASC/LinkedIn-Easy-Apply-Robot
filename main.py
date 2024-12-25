@@ -1331,7 +1331,7 @@ class EasyApplyBot:
                         try:
                             attr_value = select_element.get_attribute('data-test-text-selectable-option__input')
                             # select_element = field.find_element(By.XPATH, f".//input[@data-test-text-selectable-option__input=\"{attr_value}\"]")
-                            select_element = self.get_element((By.XPATH, f".//input[@data-test-text-selectable-option__input=\"{attr_value}\"]"), field)
+                            select_element = self.get_child((By.XPATH, f".//input[@data-test-text-selectable-option__input=\"{attr_value}\"]"), field)
 
                             
                             # Check if the attribute value matches the answer
@@ -1728,6 +1728,10 @@ class EasyApplyBot:
 
                 elif rule["response"] == "dynamic_rate":
                     answer = self.rate
+                    break
+
+                elif rule["response"] == "dynamic_salary":
+                    answer = self.salary
                     break
 
                 elif rule["response"] == "dynamic_date":
