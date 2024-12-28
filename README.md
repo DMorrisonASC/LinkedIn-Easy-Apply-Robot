@@ -115,12 +115,12 @@ blacklist: # Company names you want to ignore
 # - 
 
 experience_level:
-  - 1 # Entry level
-  - 2 # Associate
-  - 3 # Mid-Senior level
-  - 4 # Director
-  - 5 # Executive
-  - 6 # Internship
+  # - 1 # Internship
+  # - 2 # Entry level
+  # - 3 # Associate
+  # - 4 # Mid-Senior level
+  # - 5 # Director
+  # - 6 # Executive
 time_filter:  4 # 1 = 24 hours, 2 = Last week, 3 = Last month. Else, it will pick anytime
 ```
 __NOTE: Add `config.yaml`, 'resume/' and 'cover_letters' into .gitignore file!__
