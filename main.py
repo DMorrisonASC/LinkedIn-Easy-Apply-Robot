@@ -1756,7 +1756,7 @@ class EasyApplyBot:
                     break
                 
                 elif rule["response"] == "dynamic_full_name":
-                    answer = self.first_name + self.last_name
+                    answer = self.first_name + " " + self.last_name
                     break
 
                 elif rule["response"] == "dynamic_full_name":
