@@ -233,6 +233,7 @@ class EasyApplyBot:
             "fields": (By.XPATH, "//div[starts-with(@class, 'fb-dash-form-element')]"),
             "radio_select": (By.XPATH, ".//input[starts-with(@id, 'urn:li:fsd_formElement:urn:li:jobs_applyformcommon_easyApplyFormElement:') and @type='radio']"),
             "multi_select": (By.XPATH, ".//select[starts-with(@id, 'text-entity-list-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-') and @required='']"),
+            "date_select": (By.XPATH, ".//select[starts-with(@id, 'date-range-form') and @required='']"),
             "text_select": (By.XPATH, ".//input[starts-with(@id, 'single-line-text-form-component-formElement-urn-li-jobs-applyformcommon-easyApplyFormElement-') and @type='text']"),
             "input_select": (By.XPATH, ".//input[@type='checkbox' or @type='radio']"),
             "date_input": (By.XPATH, ".//input[@placeholder='mm/dd/yyyy']"),
@@ -1267,6 +1268,49 @@ class EasyApplyBot:
                     except Exception as e:
                         log.error(f"Multi-select error: {e}")
                         break  # Exit loop on any other exception
+                
+            # date_select case
+            elif self.is_present(self.locator["date_select"], field):
+                max_retries = 5
+                retry_count = 0
+                while retry_count < max_retries:
+                    try:
+                        log.debug("Locator: date_select")
+                        # Refresh or re-fetch the select element each time
+                        select_elements = WebDriverWait(field, 10).until(
+                            EC.presence_of_all_elements_located(self.locator["date_select"])
+                        )
+
+                        foundChoice = False
+
+                        for select_element in select_elements:
+                            # Get all options again to avoid stale references
+                            options = self.get_children((By.TAG_NAME, "option"), select_element)
+                            for option in options:
+                                if answer.lower() in option.text.strip().lower():
+                                    self.clickjs(option)
+                                    foundChoice = True
+                                    log.info(f"Option selected: {option.text}")
+                                    break
+
+                            if not foundChoice:
+                                foundChoice = False
+                                self.clickjs(options[1])  # Select the 1st option as a fallback
+                                log.info(f"1st Option selected: {options[1].text}")
+
+                        break  # Successfully selected an option, exit loop early
+
+                    except StaleElementReferenceException:
+                        retry_count += 1
+                        log.warning(f"Retrying due to stale element in multi-select. Attempt {retry_count}/{max_retries}")
+                        
+                        if retry_count >= max_retries:
+                            log.error("Exceeded max retries due to stale element issue")
+                            break  # Exit loop after max retries
+
+                    except Exception as e:
+                        log.error(f"date_select error: {e}")
+                        break  # Exit loop on any other exception
 
             # Handle text input fields
             elif self.is_present(self.locator["text_select"], field):
@@ -1611,13 +1655,8 @@ class EasyApplyBot:
                     actions = ActionChains(self.browser)
                     actions.move_to_element(element).click().perform()
                     log.debug("Element clicked successfully.")
-                
-                except ElementClickInterceptedException:
-                    # Scroll slightly to account for overlapping elements
-                    self.browser.execute_script("window.scrollBy(0, -100);")
-                    actions.move_to_element(element).click().perform()
 
-                except TimeoutException:
+                except Exception as e:
                     log.warning("Element is covered. Trying to click the parent element.")
 
                     # Attempt to click the parent element and label as a fallback
@@ -1628,14 +1667,13 @@ class EasyApplyBot:
                         log.debug("Parent element clicked successfully.")
 
                         try:
-                            label = self.get_child((By.XPATH, f".//label[@data-test-text-selectable-option__label='{element.get_attribute('value')}']"), parent)
+                            label = self.get_child((By.XPATH, f".//label"), parent)
                             label.click()
-                        except Exception as e:
-                            log.debug("Element did not have label: {e}")
+                        except Exception:
+                            log.debug("Element did not have label")
                             
                     else:
                         log.error("Parent element not found.")
-                        raise
 
         except TimeoutException as te:
             log.error(f"Element not clickable within the timeout period: {te}")
@@ -1686,7 +1724,7 @@ class EasyApplyBot:
         self.browser.get(
             # URL for jobs page with Easy Apply, position, location, and time filter
             "https://www.linkedin.com/jobs/search/?f_LF=f_AL&keywords=" +
-            position + location + "&start=" + str(jobs_per_page) + experience_level_param + time_posted_param
+            position + location + "&start=" + str(jobs_per_page) + experience_level_param + time_posted_param 
         )
 
         log.info(f"Loading next job page with time filter: {time_filter}")
